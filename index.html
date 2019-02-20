@@ -49,7 +49,11 @@
             <div class="col-12 col-md-6 pt-5 pt-md-0">
                 <div class="row justify-content-center justify-content-md-end">
                     <div class="col-auto">
-                        <img src="images/ui-mockup-pixel.webp" alt="ui mockup" class="mockup-image">
+                        <picture>
+                            <source srcset="images/ui-mockup.webp" type="image/webp">
+                            <source srcset="images/ui-mockup.png" type="image/png">
+                            <img src="images/ui-mockup.png" alt="ui mockup" class="mockup-image">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -106,5 +110,7 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" integrity="sha256-iT+n/otuaeKCgxnASny7bxKeqCDbaV1M7VdX1ZRQtqg=" crossorigin="anonymous"></script>
 </body>
 </html>
