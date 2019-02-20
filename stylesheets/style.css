@@ -11,9 +11,9 @@ body {
 
 .main-body {
     font-family: 'Inter', sans-serif;
-    min-height: calc(100vh - 310px);
+    min-height: calc(100vh - 270px);
     background-image: url("../images/lx-background.svg");
-    background-position: bottom;
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -74,8 +74,8 @@ li {
 }
 
 .navigation-bar {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .btn--green {

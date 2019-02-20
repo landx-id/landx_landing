@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1440px" height="881px" viewBox="0 0 1440 881" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 8 Copy</title>
+    <title>Group 8</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="42.6024718%" y1="21.9512214%" x2="67.4474185%" y2="87.5243484%" id="linearGradient-1">
+        <linearGradient x1="48.0885221%" y1="36.2709041%" x2="67.4474185%" y2="87.5243484%" id="linearGradient-1">
             <stop stop-color="#EAEFF4" offset="0%"></stop>
             <stop stop-color="#C0CCD6" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="89.7593438%" y1="113.85227%" x2="93.5481342%" y2="-6.29196347%" id="linearGradient-2">
+        <linearGradient x1="89.7593438%" y1="113.85227%" x2="39.601154%" y2="5.97693672%" id="linearGradient-2">
             <stop stop-color="#ADBCC8" offset="0%"></stop>
-            <stop stop-color="#EAEFF4" offset="100%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="0%" y1="-11.1004416%" x2="100%" y2="100%" id="linearGradient-3">
             <stop stop-color="#EAEFF4" offset="0%"></stop>
@@ -22,12 +22,14 @@
         </linearGradient>
     </defs>
     <g id="01-Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-8-Copy" fill-rule="nonzero">
-            <rect id="Rectangle" fill="url(#linearGradient-1)" transform="translate(720.000000, 440.000000) scale(-1, 1) translate(-720.000000, -440.000000) " x="0" y="0" width="1440" height="880"></rect>
-            <path d="M314.219758,866.56805 L0,454 L0,9.66338121e-13 L1086.52399,9.66338121e-13 L414.331238,866.809851 C407.701701,875.35881 397.491418,880.361569 386.673125,880.361569 L342.0637,880.361569 C331.138237,880.361569 320.83949,875.259707 314.219758,866.56805 Z" id="Path-2" fill="url(#linearGradient-2)"></path>
-            <g id="Group-6" transform="translate(233.000000, 696.000000)">
-                <path d="M165.113711,184 C168.14544,184 169.119122,180.004911 166.422648,178.634668 C158.330018,174.525524 148.126407,167.346402 138.452145,154.89541 C129.135595,142.90539 68.8892139,64 68.8892139,64 L0,64 L82.8784756,172.6753 C88.317942,179.806899 96.8356556,184 105.874698,184 L165.113711,184 Z" id="Fill-11" fill="url(#linearGradient-3)"></path>
-                <path d="M315,0 L247.442961,0 L145.73298,131.717935 C144.755941,132.985228 144.755941,134.736053 145.731373,136.003346 L157.116758,150.781063 C167.615096,164.409999 188.449469,164.405258 198.942986,150.773162 L315,0 Z" id="Fill-8" fill="url(#linearGradient-4)"></path>
+        <g id="Desktop-Copy-10" transform="translate(0.000000, -120.000000)" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(0.000000, 120.000000)">
+                <rect id="Rectangle" fill="url(#linearGradient-1)" transform="translate(720.000000, 440.000000) scale(-1, 1) translate(-720.000000, -440.000000) " x="0" y="0" width="1440" height="880"></rect>
+                <path d="M314.221182,866.505226 L0,452 L0,9.66338121e-13 L1093.52399,9.66338121e-13 L416.331893,866.907541 C409.698923,875.398739 399.524634,880.361569 388.749814,880.361569 L342.112861,880.361569 C331.159651,880.361569 320.838065,875.233894 314.221182,866.505226 Z" id="Path-2" fill="url(#linearGradient-2)"></path>
+                <g id="Group-6" transform="translate(233.000000, 696.000000)">
+                    <path d="M165.113711,184 C168.14544,184 169.119122,180.004911 166.422648,178.634668 C158.330018,174.525524 148.126407,167.346402 138.452145,154.89541 C129.135595,142.90539 68.8892139,64 68.8892139,64 L0,64 L82.8784756,172.6753 C88.317942,179.806899 96.8356556,184 105.874698,184 L165.113711,184 Z" id="Fill-11" fill="url(#linearGradient-3)"></path>
+                    <path d="M315,0 L247.442961,0 L145.73298,131.717935 C144.755941,132.985228 144.755941,134.736053 145.731373,136.003346 L157.116758,150.781063 C167.615096,164.409999 188.449469,164.405258 198.942986,150.773162 L315,0 Z" id="Fill-8" fill="url(#linearGradient-4)"></path>
+                </g>
             </g>
         </g>
     </g>
