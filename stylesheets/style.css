@@ -91,3 +91,52 @@ li {
     width: 340px;
     max-width: 60vw;
 }
+
+.verify-body {
+    background-image: linear-gradient(-135deg, #FFFFFF 0%, #C0CCD6 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.verify-body .verification-container {
+    height: 100%;
+    width: 100%;
+}
+
+.verify-body h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.verify-body p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    color: #5e798d;
+}
+
+@media (max-width: 768) {
+    .verify-body .verify-mockup-image {
+        width: 340px;
+        max-width: 60vw;
+    }
+}
+
+.verify-body .verify-mockup-image {
+    height: 50%;
+    max-height: 955px;
+}
+
+.verify-body .btn--verify {
+    border: none;
+    border-radius: 3px;
+    padding: 11px 65px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+    background-color: #2dbe60;   
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+}
