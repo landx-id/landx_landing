@@ -91,3 +91,15 @@ li {
     width: 340px;
     max-width: 60vw;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
