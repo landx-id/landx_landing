@@ -169,13 +169,5 @@ li {
 }
 
 a {
-    color: white;
-}
-
-a:hover {
-    color: white;
-}
-
-a:active {
-    color: white;
+    color: inherit;
 }
