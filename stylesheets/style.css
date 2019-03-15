@@ -119,18 +119,6 @@ li {
     color: #5e798d;
 }
 
-@media (max-width: 768) {
-    .verification-body .verify-mockup-image {
-        width: 340px;
-        max-width: 60vw;
-    }
-}
-
-.verification-body .verify-mockup-image {
-    height: 50%;
-    max-height: 955px;
-}
-
 .verification-body .btn--verify {
     border: none;
     border-radius: 3px;
