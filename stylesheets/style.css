@@ -156,6 +156,6 @@ li {
     outline: none !important;
 }
 
-a {
+a, a:hover, a:active {
     color: inherit;
 }
