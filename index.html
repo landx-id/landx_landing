@@ -25,24 +25,35 @@
 
         gtag('config', 'UA-107958816-4');
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="row navigation-bar">
-            <div class="col-12 col-md text-center text-md-left">
-                <a href="index.html">
-                    <img src="images/landx-logo-tagline-center.png" alt="landx logo" height="70px">
-                </a>
-            </div>
-            <div class="col-auto align-self-center d-none d-md-block">
-                <div class="row">
-                    <div class="col-auto"><span>Download</span></div>
-                    <div class="col-auto"><span><a href="blog">Blog</a></span></div>
-                    <div class="col-auto"><span>hello@landx.id</span></div>
-                </div>
-            </div>
+        <div class="navbar navbar-expand flex-column flex-md-row">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/landx-logo-tagline-center.png" alt="landx logo" height="70px">
+            </a>
+            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Download
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1453823676&mt=8">
+                            iOS
+                        </a>
+                        <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=store.numoney.landxapp">
+                            Android
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="mailto:hello@landx.id">hello@landx.id</a></li>
+            </ul>
         </div>
     </div>
 
