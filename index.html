@@ -38,7 +38,10 @@
     <div class="container">
         <div class="navbar navbar-expand flex-column flex-md-row">
             <a class="navbar-brand" href="index.html">
-                <img src="images/landx-logo-tagline-center.png" alt="landx logo" height="70px">
+                <picture>
+                    <source srcset="images/landx-logo-tagline-center.webp" type="image/webp">
+                    <img src="images/landx-logo-tagline-center.png" alt="landx logo" height="70px">
+                </picture>
             </a>
             <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
                 <li class="nav-item dropdown p-2">
@@ -91,7 +94,10 @@
                     </div>
                     <div class="row justify-content-center justify-content-md-start">
                         <div class="col-12 col-md-auto text-center">
-                            <img src="images/ojk-logo.png" alt="app store" width="160px">
+                            <picture width="160px">
+                                <source srcset="images/ojk-logo.webp 1x,images/ojk-logo@2x.webp 2x" type="image/webp">
+                                <img src="images/ojk-logo.png" srcset="images/ojk-logo@2x.png 2x" alt="app store">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -100,7 +106,6 @@
                         <div class="col-auto">
                             <picture>
                                 <source srcset="images/ui-mockup.webp" type="image/webp">
-                                <source srcset="images/ui-mockup.png" type="image/png">
                                 <img src="images/ui-mockup.png" alt="ui mockup" class="mockup-image">
                             </picture>
                         </div>
