@@ -17,11 +17,11 @@ fetch(url, {
       fundsRaised += (1000 - parseInt(data.lot_reserve[propertyName])) * propertyPrice[propertyName];
     });
 
-    fundsRaisedText = "Rp. " + (fundsRaised / 1000000000) + " M";
+    fundsRaisedText = "Rp. " + (fundsRaised / 1000000000).toFixed(2) + " M";
 
     document.querySelector('#funds-stats').innerHTML = fundsRaisedText;
 
-    dividentPayoutText = "Rp. " + (data.divident_payout / 1000000) + " JT";
+    dividentPayoutText = "Rp. " + (data.divident_payout / 1000000).toFixed(2) + " JT";
 
     document.querySelector('#divident-stats').innerHTML = dividentPayoutText;
 
