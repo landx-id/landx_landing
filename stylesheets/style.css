@@ -573,3 +573,8 @@ a, a:hover, a:active {
   font-size: 12px;
   color: #5e798d;
 }
+
+.registered {
+  color: #425766;
+  font-size: 16px;
+}
