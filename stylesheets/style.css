@@ -576,5 +576,18 @@ a, a:hover, a:active {
 
 .registered {
   color: #425766;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .visible-small {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .visible-wide {
+    display: none;
+  }
 }
