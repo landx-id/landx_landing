@@ -579,3 +579,7 @@ a, a:hover, a:active {
   font-size: 20px;
   font-weight: normal;
 }
+
+.equity-disclaimer-list {
+  padding-left: 13px;
+}
