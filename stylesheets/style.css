@@ -574,6 +574,18 @@ a, a:hover, a:active {
   color: #5e798d;
 }
 
+.partners hr{
+  display: none;
+  margin-top: 13px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 576px) {
+  .partners hr{
+    display: block;
+  }
+}
+
 .registered {
   color: #5e798d;
   font-size: 20px;
