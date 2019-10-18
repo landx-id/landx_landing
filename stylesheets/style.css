@@ -568,7 +568,7 @@ a, a:hover, a:active {
   font-weight: 500;
 }
 
-.disclaimer {
+.disclaimer, .risk-register {
   background-color: #eaeff4;
   font-size: 12px;
   color: #5e798d;
@@ -594,4 +594,18 @@ a, a:hover, a:active {
 
 .equity-disclaimer-list {
   padding-left: 13px;
+}
+
+.risk-register h1{
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.risk-register h4{
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.risk-register h3{
+  font-size: 24px;
 }
