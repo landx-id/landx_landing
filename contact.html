@@ -66,24 +66,44 @@
 
   <body>
     <div class="container">
-      <div class="navbar navbar-expand flex-column flex-md-row">
-        <a class="navbar-brand" href="index.html">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-links"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand d-none d-md-block" href="index.html">
           <picture>
             <source srcset="images/landx-logo-tagline-center.webp" type="image/webp" />
-            <img src="images/landx-logo-tagline-center.png" alt="landx logo" height="70px" />
-          </picture>
-        </a>
-        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-          <li class="nav-item dropdown p-2"></li>
-          <li class="nav-item p-2">
-            <a class="nav-link" href="pendaftaran-perusahaan.html">Pendaftaran Perusahaan</a>
-          </li>
-          <li class="nav-item p-2"><a class="nav-link" href="blog">Blog</a></li>
-          <li class="nav-item p-2">
-            <a class="nav-link" href="mailto:hello@landx.id">hello@landx.id</a>
-          </li>
-        </ul>
-      </div>
+            <img
+              src="images/landx-logo-tagline-center.png"
+              alt="landx logo"
+              height="70px"
+            /> </picture
+        ></a>
+
+        <a class="navbar-brand mr-auto ml-auto d-block d-sm-none" href="index.html">
+          <img src="images/landx-logo-self.svg" alt="landx logo" height="40px"
+        /></a>
+
+        <div class="collapse navbar-collapse" id="main-links">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="pendaftaran-perusahaan.html">Pendaftaran Perusahaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:hello@landx.id">hello@landx.id</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <div class="main-body py-5">

@@ -1,12 +1,12 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
 html {
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Inter var', sans-serif;
+    font-family: "Inter var", sans-serif;
   }
 }
 
@@ -19,7 +19,7 @@ hr {
 }
 
 .main-body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   min-height: calc(100vh - 270px);
   background-image: url("../images/lx-background.svg");
   background-position: top left;
@@ -79,7 +79,7 @@ hr {
 }
 
 .footer {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   min-height: 170px;
   background-color: #eaeff4;
 }
@@ -123,7 +123,7 @@ li {
   background-color: #2dbe60;
   padding: 20px 35px;
   color: white;
-  width: 200px
+  width: 200px;
 }
 
 .mockup-image {
@@ -132,7 +132,7 @@ li {
 }
 
 .verification-body {
-  background-image: linear-gradient(-135deg, #FFFFFF 0%, #C0CCD6 100%);
+  background-image: linear-gradient(-135deg, #ffffff 0%, #c0ccd6 100%);
   width: 100%;
   height: 100%;
 }
@@ -158,7 +158,8 @@ li {
   border: none;
   border-radius: 3px;
   padding: 11px 65px;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14);
   background-color: #2dbe60;
   cursor: pointer;
 
@@ -177,7 +178,8 @@ li {
   border: none;
   border-radius: 3px;
   padding: 11px 65px;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14);
   background-color: #d0021b;
   cursor: pointer;
 
@@ -192,13 +194,15 @@ li {
   outline: none !important;
 }
 
-a, a:hover, a:active {
-    color: inherit;
+a,
+a:hover,
+a:active {
+  color: inherit;
 }
 
 .circle-section-1 {
   background-color: rgb(247, 244, 244);
-  background-image: url('../images/circle/header-bg.png');
+  background-image: url("../images/circle/header-bg.png");
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -270,7 +274,6 @@ a, a:hover, a:active {
   color: #5e798d;
 }
 
-
 .circle-section-4 .card-wrapper {
   padding-left: 7.5px;
   padding-top: 7.5px;
@@ -279,7 +282,7 @@ a, a:hover, a:active {
 }
 
 .circle-section-4 .h-card {
-  background-image: url('../images/circle/card-bg-1.png');
+  background-image: url("../images/circle/card-bg-1.png");
   background-size: cover;
   background-color: #516a7c;
   color: white;
@@ -340,7 +343,6 @@ a, a:hover, a:active {
   width: 70%;
 }
 
-
 .circle-section-5 .dot-divider {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -375,13 +377,12 @@ a, a:hover, a:active {
 }
 
 .circle-section-6 .h-card {
-  background-image: url('../images/circle/card-bg-2.png');
+  background-image: url("../images/circle/card-bg-2.png");
   background-size: cover;
   background-color: #516a7c;
   padding: 20px;
   min-height: 550px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
 }
 
 .circle-section-6 .h-card .h-card-header {
@@ -518,10 +519,9 @@ a, a:hover, a:active {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-
 .circle-section-10 {
   text-align: center;
-  background-image: url('../images/circle/footer-bg.png');
+  background-image: url("../images/circle/footer-bg.png");
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -533,7 +533,7 @@ a, a:hover, a:active {
 
 .circle-thanks-section-1 {
   background-color: rgb(247, 244, 244);
-  background-image: url('../images/circle/header-bg.png');
+  background-image: url("../images/circle/header-bg.png");
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -568,20 +568,21 @@ a, a:hover, a:active {
   font-weight: 500;
 }
 
-.disclaimer, .risk-register {
+.disclaimer,
+.risk-register {
   background-color: #eaeff4;
   font-size: 12px;
   color: #5e798d;
 }
 
-.partners hr{
+.partners hr {
   display: none;
   margin-top: 13px;
   margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 576px) {
-  .partners hr{
+  .partners hr {
     display: block;
   }
 }
@@ -596,16 +597,21 @@ a, a:hover, a:active {
   padding-left: 13px;
 }
 
-.risk-register h1{
+.risk-register h1 {
   font-size: 36px;
   margin-bottom: 60px;
 }
 
-.risk-register h4{
+.risk-register h4 {
   font-weight: normal;
   font-size: 20px;
 }
 
-.risk-register h3{
+.risk-register h3 {
   font-size: 24px;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
 }
