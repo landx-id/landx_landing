@@ -79,6 +79,7 @@ hr {
 }
 
 .footer {
+  color: #516a7c;
   font-family: "Inter", sans-serif;
   min-height: 170px;
   background-color: #eaeff4;
@@ -568,8 +569,7 @@ a:active {
   font-weight: 500;
 }
 
-.disclaimer,
-.risk-register {
+.disclaimer {
   background-color: #eaeff4;
   font-size: 12px;
   color: #5e798d;
@@ -579,12 +579,6 @@ a:active {
   display: none;
   margin-top: 13px;
   margin-bottom: 32px;
-}
-
-@media only screen and (max-width: 576px) {
-  .partners hr {
-    display: block;
-  }
 }
 
 .registered {
@@ -597,21 +591,60 @@ a:active {
   padding-left: 13px;
 }
 
-.risk-register h1 {
-  font-size: 36px;
-  margin-bottom: 60px;
+.risk-register,
+.isms-policy {
+  background-color: #eaeff4;
+  font-size: 16px;
+  color: #5e798d;
+  line-height: 28px;
+}
+
+.risk-register h1,
+.isms-policy h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.risk-register h3 {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .risk-register h4 {
   font-weight: normal;
   font-size: 20px;
-}
-
-.risk-register h3 {
-  font-size: 24px;
+  margin-top: 20px;
 }
 
 .navbar-toggler {
   border: none;
   padding: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .risk-register,
+  .isms-policy {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .risk-register h1,
+  .isms-policy h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .risk-register h3 {
+    font-size: 20px;
+  }
+
+  .risk-register h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .partners hr {
+    display: block;
+  }
 }
