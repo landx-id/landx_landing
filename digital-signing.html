@@ -22,12 +22,12 @@
           dev: true,
           container: ".privy-document",
           signature: {
-            page: 3,
-            x: 540,
-            y: 820,
-            fixed: true
-          }
-        }).on("after-sign", data => {
+            page: 4,
+            x: 520,
+            y: 460,
+            fixed: false,
+          },
+        }).on("after-sign", (data) => {
           location.href = "landx-app://document-signing-completed?doc_token=" + documentToken;
         });
       }
