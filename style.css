@@ -1,0 +1,282 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
+/* TYPOGRAPHY */
+
+h1{
+    font-size: 34px;
+    font-family: 'Inter',sans-serif;
+    font-weight: normal;
+    letter-spacing: 0,25px;
+    color: #2dbe60; 
+    text-align: center; 
+}
+
+h2 {
+    font: 'Inter', sans-serif 48px bold;
+    color: #2dbe60;
+    text-align: center;
+}
+
+h4 {
+    font: 'Inter', sans-serif 34px normal;
+    color: #5e798d;
+    text-align: center;
+    letter-spacing: 0.25px;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+h5 {
+    font: 'Inter', sans-serif 24px bold;
+    color: #5e798d;
+    text-align: center;
+    letter-spacing: 0.25px;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+p {
+    font: 'Inter, sans-serif' 20px normal;
+    color: #5e798d;
+    text-align: center;
+}
+
+.lx-title {
+    font: 'Inter, sans-serif' 20px;
+    font-weight: 700;
+    color: #5e798d;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 8px
+}
+
+p.overline {
+    font: 'Inter', sans-serif 11px normal;
+    line-height: 16px;
+    color: #5e798d;
+    letter-spacing: 1.65px;
+    text-align: center;
+    margin: 0px;
+}
+p.captionPrimary {
+    font: 'Inter', sans-serif 16px normal;
+    line-height: 24px;
+    color: #5e798d ;
+    letter-spacing: 0.15px;
+    text-align: left;
+    margin: 0px;
+}
+p.captionGreen {
+    font: 'Inter', sans-serif 16px normal;
+    line-height: 24px;
+    color: #2dbe60 ;
+    letter-spacing: 0.15px;
+    text-align: left;
+    margin: 0px;
+}
+
+p.captionGrey {
+    font: 'Inter', sans-serif 16px normal;
+    line-height: 24px;
+    color: #9e9e9e ;
+    letter-spacing: 0.15px;
+    text-align: left;
+    margin: 0px;
+}
+p.captionSmall{
+    font: 'Inter', sans-serif 8px normal;
+    line-height: 22px;
+    color: #5e798d ;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0px;
+}
+
+h6 {
+    font: 'Inter', sans-serif 20px bold;
+    letter-spacing: 0.15px;
+    color: #5e798d;
+    text-align: left; 
+    padding-bottom: 16px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+/* CUSTOM STYLES */
+
+
+#navigation{
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    background-color:#fffffff1;  
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.btn.btn-primary {
+    background-color: #2dbe60;
+    border-color: #2dbe60; 
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    text-align: center; 
+    color:white; 
+    border-radius: 4px;
+    padding: 8px 16px;
+
+}
+/*#lx-btn-secondary {
+    background-color: white; 
+    border-color: #2dbe60; 
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    text-align: center; 
+    color:#2dbe60; 
+    border-radius: 4px;
+    padding: 8px 16px;
+} */
+
+.btn.btn-outline-primary {
+    background-color: white; 
+    border-color: #2dbe60; 
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    text-align: center; 
+    color:#2dbe60; 
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+
+#lx-hero {
+
+    background-image: url(img/heroBackground2.png);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    padding-top: 96px;
+}
+
+
+#lx-why {
+    background-image: url(img/whyChoseLandxBackground.png);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+div.card {
+    width: auto; 
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 14px; 
+    border-color: #e5e5e5;
+    color: white;
+}
+
+div.progress {
+    width: 100%;
+    height: 8px;
+    text-align: left;
+}
+
+div.progress-bar {
+    background-color: #2dbe60;
+}
+
+#lx-divider {
+    width: auto;
+    height: 2px;
+    background-color: #f8f8f8;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+#lx-dividerPrimary {
+    width: auto;
+    height: 1px;
+    background-color:#ccd7df;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+button.lx-fab {
+    width: 56px;
+    height: 56px;
+    background-color: #2dbe60;
+    border-radius: 100%;
+    border-color: #00b242;
+    z-index: 2;
+    box-shadow:0px 6px 12px #bebebe;
+    position: absolute;
+    right: 16px;
+    top: 204px;
+}
+
+#lx-how {
+    background-image: url(img/howLandXWorksBackground2.png);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    padding-bottom: 280px;
+}
+
+.carousel-control-prev-icon {
+    color: grey;
+}
+
+#lx-CTA {
+    background-image: url(img/CTA.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+#lx-footer{
+    background-image: url(img/footerBackground.png);
+    background-repeat: no-repeat;
+    background-color: #eaeff4;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+li.list-group-item {
+    font: 'Inter', sans-serif 16px normal;
+    color: #5e798d;
+    letter-spacing: 0.44px;
+    line-height: 48px;
+    padding: 0px ;
+    background: none;
+    border: none;
+}
+
+li.list-group-item-title {
+    font: 'Inter', sans-serif 16px;
+    font-weight: 900;
+    color: #5e798d;
+    letter-spacing: 0.44px;
+    line-height: 48px;
+    padding: 0px ;
+    background: none;
+    border: none;
+    list-style-type: none;
+}
