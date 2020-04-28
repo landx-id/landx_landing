@@ -39,6 +39,23 @@ h5 {
     padding-bottom: 16px;
     margin: 0;
 }
+h5.class-title {
+    font: 'Inter', sans-serif 24px medium;
+    color: #2dbe60;
+    text-align: center;
+    letter-spacing: 0.25px;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+h6 {
+    font: 'Inter', sans-serif 20px bold;
+    letter-spacing: 0.15px;
+    color: #5e798d;
+    text-align: left; 
+    padding-bottom: 16px;
+    margin: 0px;
+}
 
 p {
     font: 'Inter, sans-serif' 20px normal;
@@ -97,13 +114,14 @@ p.captionSmall{
     margin: 0px;
 }
 
-h6 {
-    font: 'Inter', sans-serif 20px bold;
-    letter-spacing: 0.15px;
-    color: #5e798d;
-    text-align: left; 
-    padding-bottom: 16px;
+p.card-text {
+    font: 'Inter', sans-serif 16px normal;
+    line-height: 28px;
+    color: #5e798d ;
+    letter-spacing: 0.44px;
+    text-align: left;
     margin: 0px;
+    padding-bottom: 24px;
 }
 
 
@@ -119,6 +137,7 @@ h6 {
 #navigation{
     z-index: 10;
     width: 100%;
+    margin: auto;
     position: fixed;
     background-color:#fffffff1;  
     border-bottom: 1px solid #E7E7E7;
@@ -254,6 +273,7 @@ button.lx-fab {
     background-image: url(img/footerBackground.png);
     background-repeat: no-repeat;
     background-color: #eaeff4;
+    background-size: 100%;
     width: auto;
     height: auto;
     margin: 0px;
