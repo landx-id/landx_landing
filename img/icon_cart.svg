@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Atom/Icon/Cart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atom/Icon/Cart" transform="translate(-2.000000, -1.042471)" fill="#ffffff" fill-rule="nonzero">
+            <path d="M4,16 L4,4 L2,4 L2,2 L5,2 C5.55228475,2 6,2.44771525 6,3 L6,15 L18.438,15 L20.438,7 L8,7 L8,5 L21.72,5 C22.0280147,5 22.3188398,5.14196009 22.5083345,5.38478683 C22.6978292,5.62761356 22.7648476,5.94421762 22.69,6.243 L20.19,16.243 C20.0785409,16.6879311 19.6786794,17 19.22,17 L5,17 C4.44771525,17 4,16.5522847 4,16 L4,16 Z M6,23 C4.8954305,23 4,22.1045695 4,21 C4,19.8954305 4.8954305,19 6,19 C7.1045695,19 8,19.8954305 8,21 C8,22.1045695 7.1045695,23 6,23 Z M18,23 C16.8954305,23 16,22.1045695 16,21 C16,19.8954305 16.8954305,19 18,19 C19.1045695,19 20,19.8954305 20,21 C20,22.1045695 19.1045695,23 18,23 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
