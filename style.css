@@ -5,6 +5,8 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 
+
+
 /* TYPOGRAPHY */
 
 h1{
@@ -14,6 +16,11 @@ h1{
     letter-spacing: 0,25px;
     color: #2dbe60; 
     text-align: center; 
+}
+
+h1.heroTitle{
+    padding-top: 96px; 
+    padding-bottom: 88px;
 }
 
 h2 {
@@ -31,6 +38,10 @@ h4 {
     margin: 0;
 }
 
+h4.title {
+    text-align: left;
+}
+
 h5 {
     font: 'Inter', sans-serif 24px bold;
     color: #5e798d;
@@ -39,10 +50,19 @@ h5 {
     padding-bottom: 16px;
     margin: 0;
 }
+
 h5.class-title {
     font: 'Inter', sans-serif 24px medium;
     color: #2dbe60;
     text-align: center;
+    letter-spacing: 0.25px;
+    padding-bottom: 16px;
+    margin: 0;
+}
+h5.subtitle {
+    font: 'Inter', sans-serif 24px medium;
+    color: #5e798d;
+    text-align: left;
     letter-spacing: 0.25px;
     padding-bottom: 16px;
     margin: 0;
@@ -57,10 +77,27 @@ h6 {
     margin: 0px;
 }
 
+h6.contentContact{
+    font-weight: normal;
+    line-height: 22px;
+    padding-bottom: 24px;
+    
+}
+
+h6.subtitle {
+    font-weight: bold;
+    text-align: left;
+}
+
 p {
     font: 'Inter, sans-serif' 20px normal;
     color: #5e798d;
     text-align: center;
+}
+
+p.left{
+    text-align: left;
+    margin: 0px;
 }
 
 .lx-title {
@@ -74,7 +111,7 @@ p {
 
 p.overline {
     font: 'Inter', sans-serif 11px normal;
-    line-height: 16px;
+    line-height: 24px;
     color: #5e798d;
     letter-spacing: 1.65px;
     text-align: center;
@@ -94,6 +131,16 @@ p.captionGreen {
     color: #2dbe60 ;
     letter-spacing: 0.15px;
     text-align: left;
+    margin: 0px;
+}
+p.captionGreenTable {
+    font: 'Inter', sans-serif 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #2dbe60 ;
+    letter-spacing: 0.15px;
+    text-align: left;
+    padding: 0px 0px 8px;
     margin: 0px;
 }
 
@@ -124,7 +171,19 @@ p.card-text {
     padding-bottom: 24px;
 }
 
+ul.left{
+    font: 'Inter, sans-serif' 20px normal;
+    color: #5e798d;
+    text-align: left;
+    padding-left:18px;
+}
 
+ol.left{
+    font: 'Inter, sans-serif' 20px normal;
+    color: #5e798d;
+    text-align: left;
+    padding-left:18px;
+}
 
 
 
@@ -141,6 +200,25 @@ p.card-text {
     position: fixed;
     background-color:#fffffff1;  
     border-bottom: 1px solid #E7E7E7;
+}
+
+#hamburgerMenu{
+    text-align: left;  
+    margin: auto;
+}
+#hamburgerMenu img{
+    height: 24px;
+    cursor: pointer;
+}
+
+#landxLogo {
+    text-align: center;
+    margin: auto; 
+}
+
+#landxLogo img {
+    height: 32px;
+    cursor: pointer;
 }
 
 .btn.btn-primary {
@@ -192,6 +270,9 @@ p.card-text {
     padding-top: 96px;
 }
 
+.statisticRow{
+    padding-top: 96px;
+}
 
 #lx-why {
     background-image: url(img/whyChoseLandxBackground.png);
@@ -299,4 +380,133 @@ li.list-group-item-title {
     background: none;
     border: none;
     list-style-type: none;
+}
+
+#lx-icon{
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+th{
+    font: 'Inter', sans-serif 16px bold;
+    color: #2dbe60;
+}
+
+td{
+    font: 'Inter', sans-serif 16px normal;
+    color: #2dbe60;
+}
+
+.table-background{
+    background-color: #f8f8f8;
+    border: none;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+
+/* MEDIA BREAKPOINT */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    div#nav-container-desktop {
+        display: none;
+    }
+
+    div#nav-container-mobile  {
+        display: block;
+    }
+
+    div#hamburgerMenu.col-sm-1 {
+        padding: 0px;
+    }
+
+    div#landxLogo.col-sm-11{
+        padding: 0px;
+        margin-left: -32px; 
+    }
+}
+
+/* Small devices (landscape phones, less than 768px */
+@media (max-width: 768px) {
+    div#nav-container-desktop {
+        display: none;
+    }
+
+    div#nav-container-mobile  {
+        display: block;
+    }
+
+    div#hamburgerMenu.col-sm-1 {
+        padding: 0px;
+    }
+
+    div#landxLogo.col-sm-11{
+        padding: 0px;
+        margin-left: -40px; 
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    div#nav-container-desktop {
+        display: none;
+    }
+
+    div#nav-container-mobile  {
+        display: block;
+    }
+
+    div#hamburgerMenu.col-sm-1 {
+        padding: 0px;
+    }
+
+    div#landxLogo.col-sm-11{
+        padding: 0px;
+        margin-left: -64px; 
+    }
+    
+    h1.heroTitle{
+        font-size: 24px;
+        padding: 48px 0px;
+    }
+
+  
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    div#nav-container-desktop {
+        display: none;
+    }
+
+    div#nav-container-mobile  {
+        display: block;
+    }
+
+    div#hamburgerMenu.col-sm-1 {
+        padding: 0px;
+    }
+
+    div#landxLogo.col-sm-11{
+        padding: 0px;
+        margin-left: -96px; 
+    }
+
+}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    div#nav-container-mobile  {
+        display: none;
+    }
+    div#nav-container-desktop {
+        display: flex;
+    }
+
 }
