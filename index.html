@@ -15,84 +15,93 @@
 
   <body>
     <!-- HEADER SECTION -->
-    <div>
-        <!-- Navigation -->
-            <div class="row p-4" id="navigation">
-                <div class="col-md-4" id="hamburgerMenu" style="text-align: left;  margin: auto;"> 
-                    <img src="img/hamburgerMenu.svg" alt="" height="24px" style="cursor: pointer">
-                </div>
-                <div class="col-md-4" style="text-align: center; margin: auto">
-                    <img src="img/LandX_Logo.png" alt="LandX_Logo" height="32px" style="cursor: pointer">
-                </div>
-                <div class="col-md-4" style="text-align: right; margin: auto">
-                    <button type="button" class="btn btn-outline-primary"> COMPANY REGISTER </button> 
-                </div>
+    <!-- Navigation Desktop-->
+    <div id="nav-container-desktop">
+        <div class="row p-4" id="navigation">
+            <div class="col-lg-4" id="hamburgerMenu"> 
+                <img src="img/hamburgerMenu.svg" alt="Menu">
             </div>
+            <div class="col-lg-4" id="landxLogo">
+                <img src="img/LandX_Logo.png" alt="LandX_Logo">
+            </div>
+            <div class="col-lg-4" style="text-align: right; margin: auto">
+                <button type="button" class="btn btn-outline-primary"> COMPANY REGISTER </button> 
+            </div>
+        </div>
     </div> 
+    <!-- Navigation Mobile-->
+    <div id="nav-container-mobile">
+        <div class="row p-4" id="navigation">
+            <div class="col-sm-1" id="hamburgerMenu"> 
+                <img src="img/hamburgerMenu.svg" alt="Menu">
+            </div>
+            <div class="col-sm-11" id="landxLogo">
+                <img src="img/LandX_Logo.png" alt="LandX_Logo">
+            </div>
+        </div>
+    </div> 
+    
+
 
     <!-- HERO SECTION -->
     <div id="lx-hero">
     <div class="container">
 
         <!-- Headline -->
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-6">
-                <h1 style="padding-top: 96px; padding-bottom: 88px;"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h1>
-            </div>
-            <div class="col"></div>
+        <div class="flex-row">           
+            <div class="col-lg-12-center">
+                <h1 class="heroTitle"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h1>
+            </div>           
         </div>
     
         <!-- Phone -->
-        <div class="row">
-            <div class="col-lg">
+        <div class="flex-row">
+            <div class="col-lg-12 col-md-12 col-sm-12" class="heroPhone">
                 <img src="img/heroPhone.png" alt="heroPhone" class="mx-auto d-block"/>
-                <!--<img src="img/Play Store.svg" alt="Play Store"  style="height:80px">
-                <img src="img/App Store.svg" alt="App Store"  style="height:80px">-->
             </div>
         </div>
 
         <!-- Play & App Store -->
         <div class="row">
             <div class="col"></div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-2">
                 <img src="img/Play Store.svg" alt="Play Store" style="float:right; height:80px">
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-2">
                 <img src="img/App Store.svg" alt="App Store" style="float:left; height:80px">
             </div>
             <div class="col"></div>
         </div>
 
         <!-- Statistics -->
-        <div class="row" style="padding-top: 124px">
+        <div class="row statisticRow">
             <div class="col"></div>
-            <div class="col-lg-2">
+            <div class="col-lg-2-center col-md-2 col-sm-1">
                 <h2>00</h2>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2-center col-md-2 col-sm-1">
                 <h2>00</h2>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2-center col-md-2 col-sm-1">
                 <h2>00 M</h2>
                 </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2-center col-md-2 col-sm-1">
                 <h2>00 Jt</h2>
             </div>
             <div class="col"></div>
         </div>
         <div class="row">
             <div class="col"></div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-1">
                 <p>Properties</p>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-1">
                 <p>Investor</p>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-1">
                 <p>Fund Raised</p>
                 </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-1">
                 <p>Profit are Shared</p>
             </div>
             <div class="col"></div>
