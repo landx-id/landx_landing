@@ -417,6 +417,8 @@ td{
 }
 
 
+
+
 /* MEDIA BREAKPOINT */
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -483,7 +485,7 @@ td{
         width: 288px;
     } 
 
-    div img.icon-lx {
+    div img.iconlx {
         margin-left: auto;
         margin-right: auto;
     }
