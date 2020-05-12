@@ -104,7 +104,7 @@ p.left{
     font: 'Inter, sans-serif' 20px;
     font-weight: 700;
     color: #5e798d;
-    text-align: center;
+    text-align: left;
     margin: 0px;
     padding-bottom: 8px
 }
@@ -192,34 +192,39 @@ ol.left{
 
 /* CUSTOM STYLES */
 
+.navbar {
+    height: 108px;
+    background-color:rgba(255, 255, 255, 0.900);
+    border-bottom: #E7E7E7 solid 1px;
+    padding: 32px;
+}
+
+.bg-light {
+    color:red; 
+}
+
+.navbar-brand{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    
+}
 
 #navigation{
     z-index: 10;
     width: 100%;
     margin: auto;
     position: fixed;
-    background-color:#fffffff1;  
+    background: color #ffffff;  
     border-bottom: 1px solid #E7E7E7;
 }
 
-#hamburgerMenu{
-    text-align: left;  
-    margin: auto;
-}
-#hamburgerMenu img{
-    height: 24px;
+
+.landxLogo img {
+    height: 40px;
     cursor: pointer;
 }
 
-#landxLogo {
-    text-align: center;
-    margin: auto; 
-}
-
-#landxLogo img {
-    height: 32px;
-    cursor: pointer;
-}
 
 .btn.btn-primary {
     background-color: #2dbe60;
@@ -264,21 +269,18 @@ ol.left{
 #lx-hero {
 
     background-image: url(img/heroBackground2.png);
-    background-repeat: no-repeat;
-    width: auto;
-    height: auto;
-    padding-top: 96px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
 }
 
-.statisticRow{
-    padding-top: 96px;
-}
 
 #lx-why {
-    background-image: url(img/whyChoseLandxBackground.png);
-    background-repeat: no-repeat;
-    width: auto;
-    height: auto;
+    background-image: url(img/whyChoseLandxBackground2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 
 div.card {
@@ -344,19 +346,17 @@ button.lx-fab {
 
 #lx-CTA {
     background-image: url(img/CTA.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: auto;
-    height: auto;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
 }
 
 #lx-footer{
     background-image: url(img/footerBackground.png);
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
     background-color: #eaeff4;
-    background-size: 100%;
-    width: auto;
-    height: auto;
     margin: 0px;
 }
 
@@ -405,95 +405,137 @@ td{
     margin-bottom: 8px;
 }
 
+.iconlx{
+    display: block;
+    height: 96px;
+    padding: 24px 0px 0px;
+    margin-bottom: 16px;
+}
+
+.card-img-top {
+    background: cover;
+}
+
 
 /* MEDIA BREAKPOINT */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
-    div#nav-container-desktop {
-        display: none;
+
+    .navbar {
+        padding: 16px;
+        height: 72px;
     }
 
-    div#nav-container-mobile  {
-        display: block;
+    div#hamburgerMenu img{
+        width: 24px;
     }
 
-    div#hamburgerMenu.col-sm-1 {
-        padding: 0px;
+    div.landxLogo img{
+        height: 24px;
     }
 
-    div#landxLogo.col-sm-11{
-        padding: 0px;
-        margin-left: -32px; 
+    div.headline {
+        padding: 0px 16px;
+    }
+
+    div.heroPhone {
+        margin: auto;
+    }
+
+    div.heroPhone img {
+        width: 288px;
+    } 
+
+    div.storeContainer img{
+        width: 148px;
+    }
+  
+    div.progress-bar{
+        width: 15%;
     }
 }
 
 /* Small devices (landscape phones, less than 768px */
 @media (max-width: 768px) {
-    div#nav-container-desktop {
-        display: none;
+    .navbar {
+        padding: 16px;
+        height: 72px;
     }
 
-    div#nav-container-mobile  {
-        display: block;
+    div#hamburgerMenu img{
+        width: 24px;
     }
 
-    div#hamburgerMenu.col-sm-1 {
-        padding: 0px;
+    div.landxLogo img{
+        height: 24px;
     }
 
-    div#landxLogo.col-sm-11{
-        padding: 0px;
-        margin-left: -40px; 
+    div.storeContainer{
+        margin-bottom: 16px;
     }
 
+    div.heroPhone {
+        margin: auto;
+    }
+
+    div.heroPhone img {
+        width: 288px;
+    } 
+
+    div img.icon-lx {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.lx-title{
+        text-align: center;
+    }
+
+    p.left{
+        text-align: center;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
-    div#nav-container-desktop {
-        display: none;
+
+    .navbar {
+        padding: 16px;
+        height: 72px;
     }
 
-    div#nav-container-mobile  {
-        display: block;
+    div#hamburgerMenu img{
+        width: 24px;
     }
 
-    div#hamburgerMenu.col-sm-1 {
-        padding: 0px;
+    div.landxLogo img{
+        height: 24px;
     }
 
-    div#landxLogo.col-sm-11{
-        padding: 0px;
-        margin-left: -64px; 
-    }
-    
     h1.heroTitle{
         font-size: 24px;
         padding: 48px 0px;
     }
 
-  
-    
+    h2 {
+        font-size: 20px;
+    }
+
+    div.storeContainer{
+        margin-bottom: 96px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    div#nav-container-desktop {
-        display: none;
+
+    div.landxLogo {
+        padding-left: 172px;
     }
 
-    div#nav-container-mobile  {
-        display: block;
-    }
-
-    div#hamburgerMenu.col-sm-1 {
-        padding: 0px;
-    }
-
-    div#landxLogo.col-sm-11{
-        padding: 0px;
-        margin-left: -96px; 
+    div.storeContainer{
+        margin-bottom: 156px;
     }
 
 }
@@ -502,11 +544,5 @@ td{
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    div#nav-container-mobile  {
-        display: none;
-    }
-    div#nav-container-desktop {
-        display: flex;
-    }
 
 }
