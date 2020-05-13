@@ -23,6 +23,12 @@ h1.heroTitle{
     padding-bottom: 88px;
 }
 
+h1.bottomCTATitle {
+    padding: 0px 96px;
+    color: #5e798d;
+    margin: 32px 0px;
+}
+
 h2 {
     font: 'Inter', sans-serif 48px bold;
     color: #2dbe60;
@@ -188,8 +194,6 @@ ol.left{
 
 
 
-
-
 /* CUSTOM STYLES */
 
 .navbar {
@@ -340,15 +344,16 @@ button.lx-fab {
     padding-bottom: 280px;
 }
 
-.carousel-control-prev-icon {
-    color: grey;
-}
 
-#lx-CTA {
-    background-image: url(img/CTA.png);
+div.lx-CTA {
+    background-image: url(img/CTA-3.png);
     background-repeat:no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position:center;
+    border-radius: 12px;
+    width: 100%;
+    /* margin: 96px 0px; */
+    box-shadow:0px 6px 12px #bebebe; 
 }
 
 #lx-footer{
@@ -416,7 +421,57 @@ td{
     background: cover;
 }
 
+img.testimonyProfile{
+    width: 96px;
+    margin: auto;
+    margin-bottom: 232px;
+}
 
+.carousel-caption {
+    margin-top: 16px;
+}
+.carousel-control-prev-icon {
+    background-image: url(img/prevIcon.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(img/nextIcon.svg);
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #CCD7DFff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.bottomStoreContainer{
+    margin: 0px 0px 32px;
+    height: 80px;
+}
+
+.spacer32 {
+    margin-bottom: 32px;
+}
+.spacer96 {
+    margin-bottom: 96px;
+}
+
+.copyright {
+    padding-bottom: 40px;
+    margin-top:-68px
+}
 
 
 /* MEDIA BREAKPOINT */
@@ -450,11 +505,25 @@ td{
     } 
 
     div.storeContainer img{
-        width: 148px;
+        width: 232px;
     }
   
     div.progress-bar{
         width: 15%;
+    }
+
+    h1.bottomCTATitle{
+        font-size: 24px;
+        color: #5e798d;
+        padding: 0px 24px;
+    }
+
+    .bottomStoreContainer img{
+        width: 232px;
+    }
+
+    .lx-CTA {
+        padding-bottom: 96px;
     }
 }
 
@@ -497,6 +566,16 @@ td{
     p.left{
         text-align: center;
     }
+
+    h1.bottomCTATitle{
+        font-size: 24px;
+        color: #5e798d;
+        padding: 0px 32px;
+    }
+
+    .copyright {
+        margin-top: 0px;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -527,6 +606,11 @@ td{
     div.storeContainer{
         margin-bottom: 96px;
     }
+
+    .copyright {
+        margin-top: 0px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
