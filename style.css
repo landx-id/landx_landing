@@ -10,33 +10,28 @@ html { font-family: 'Inter', sans-serif; }
 /* TYPOGRAPHY */
 
 h1{
-    font-size: 34px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter',sans-serif !important; 
+    font-size: 24px;
     font-weight: normal;
     letter-spacing: 0,25px;
     color: #2dbe60; 
     text-align: center; 
-}
-
-h1.heroTitle{
-    padding-top: 96px; 
-    padding-bottom: 88px;
+    margin: 0px;
 }
 
 h1.bottomCTATitle {
-    padding: 0px 96px;
     color: #5e798d;
-    margin: 32px 0px;
 }
 
 h2 {
-    font: 'Inter', sans-serif 48px bold;
+    font: 'Inter', sans-serif 48px bold !important;
     color: #2dbe60;
     text-align: center;
+    margin: 0px;
 }
 
 h4 {
-    font: 'Inter', sans-serif 34px normal;
+    font: 'Inter', sans-serif 34px normal !important;
     color: #5e798d;
     text-align: center;
     letter-spacing: 0.25px;
@@ -96,9 +91,10 @@ h6.subtitle {
 }
 
 p {
-    font: 'Inter, sans-serif' 20px normal;
+    font: 'Inter, sans-serif' 16px normal;
     color: #5e798d;
     text-align: center;
+    margin: 0px;
 }
 
 p.left{
@@ -110,7 +106,7 @@ p.left{
     font: 'Inter, sans-serif' 20px;
     font-weight: 700;
     color: #5e798d;
-    text-align: left;
+    text-align: center;
     margin: 0px;
     padding-bottom: 8px
 }
@@ -124,7 +120,7 @@ p.overline {
     margin: 0px;
 }
 p.captionPrimary {
-    font: 'Inter', sans-serif 16px normal;
+    font: 'Inter', sans-serif 14px normal;
     line-height: 24px;
     color: #5e798d ;
     letter-spacing: 0.15px;
@@ -132,7 +128,7 @@ p.captionPrimary {
     margin: 0px;
 }
 p.captionGreen {
-    font: 'Inter', sans-serif 16px normal;
+    font: 'Inter', sans-serif 14px normal;
     line-height: 24px;
     color: #2dbe60 ;
     letter-spacing: 0.15px;
@@ -140,7 +136,7 @@ p.captionGreen {
     margin: 0px;
 }
 p.captionGreenTable {
-    font: 'Inter', sans-serif 16px;
+    font: 'Inter', sans-serif 14px;
     font-weight: bold;
     line-height: 24px;
     color: #2dbe60 ;
@@ -151,7 +147,7 @@ p.captionGreenTable {
 }
 
 p.captionGrey {
-    font: 'Inter', sans-serif 16px normal;
+    font: 'Inter', sans-serif 14px normal;
     line-height: 24px;
     color: #9e9e9e ;
     letter-spacing: 0.15px;
@@ -178,33 +174,30 @@ p.card-text {
 }
 
 ul.left{
-    font: 'Inter, sans-serif' 20px normal;
+    font: 'Inter, sans-serif' 16px normal;
     color: #5e798d;
     text-align: left;
     padding-left:18px;
 }
 
 ol.left{
-    font: 'Inter, sans-serif' 20px normal;
+    font: 'Inter, sans-serif' 16px normal;
     color: #5e798d;
     text-align: left;
     padding-left:18px;
 }
 
-
+.navActive {
+    display: block;
+}
 
 
 /* CUSTOM STYLES */
 
 .navbar {
-    height: 108px;
     background-color:rgba(255, 255, 255, 0.900);
     border-bottom: #E7E7E7 solid 1px;
-    padding: 32px;
-}
 
-.bg-light {
-    color:red; 
 }
 
 .navbar-brand{
@@ -223,9 +216,13 @@ ol.left{
     border-bottom: 1px solid #E7E7E7;
 }
 
+div#hamburgerMenu img{
+    width: 32px;
+}
+
 
 .landxLogo img {
-    height: 40px;
+    height: 32px;
     cursor: pointer;
 }
 
@@ -269,19 +266,20 @@ ol.left{
     padding: 8px 16px;
 }
 
-
 #lx-hero {
-
-    background-image: url(img/heroBackground2.png);
+    background-image: url(img/heroBackground.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
 
 }
 
+.storeContainer img{
+    height: 72px;
+}
 
 #lx-why {
-    background-image: url(img/whyChoseLandxBackground2.png);
+    background-image: url(img/whyChoseLandxBackground3.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -308,7 +306,6 @@ div.progress-bar {
 }
 
 #lx-divider {
-    width: auto;
     height: 2px;
     background-color: #f8f8f8;
     margin: auto;
@@ -316,11 +313,8 @@ div.progress-bar {
 }
 
 #lx-dividerPrimary {
-    width: auto;
     height: 1px;
     background-color:#ccd7df;
-    margin: auto;
-    margin-bottom: 16px;
 }
 
 button.lx-fab {
@@ -337,11 +331,8 @@ button.lx-fab {
 }
 
 #lx-how {
-    background-image: url(img/howLandXWorksBackground2.png);
+    background-color: #EAEFF4;
     background-repeat: no-repeat;
-    width: auto;
-    height: auto;
-    padding-bottom: 280px;
 }
 
 
@@ -352,7 +343,6 @@ div.lx-CTA {
     background-position:center;
     border-radius: 12px;
     width: 100%;
-    /* margin: 96px 0px; */
     box-shadow:0px 6px 12px #bebebe; 
 }
 
@@ -420,7 +410,6 @@ td{
 .card-img-top {
     background: cover;
 }
-
 img.testimonyProfile{
     width: 96px;
     margin: auto;
@@ -442,8 +431,8 @@ img.testimonyProfile{
     border-radius: 50%;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
@@ -454,23 +443,18 @@ img.testimonyProfile{
     border-bottom: 10px solid transparent;
     opacity: .5;
     transition: opacity .6s ease;
+    
 }
 
-.bottomStoreContainer{
-    margin: 0px 0px 32px;
-    height: 80px;
-}
 
-.spacer32 {
-    margin-bottom: 32px;
-}
-.spacer96 {
-    margin-bottom: 96px;
+.socMed {
+    width: 24px;
+    margin-right: 24px;
 }
 
 .copyright {
     padding-bottom: 40px;
-    margin-top:-68px
+    margin-top:-50px
 }
 
 
@@ -492,38 +476,17 @@ img.testimonyProfile{
         height: 24px;
     }
 
-    div.headline {
-        padding: 0px 16px;
-    }
-
-    div.heroPhone {
-        margin: auto;
-    }
-
     div.heroPhone img {
         width: 288px;
     } 
-
-    div.storeContainer img{
-        width: 232px;
-    }
   
     div.progress-bar{
         width: 15%;
     }
 
-    h1.bottomCTATitle{
-        font-size: 24px;
-        color: #5e798d;
-        padding: 0px 24px;
-    }
-
-    .bottomStoreContainer img{
-        width: 232px;
-    }
-
-    .lx-CTA {
-        padding-bottom: 96px;
+    h1.bottomCTATitle {
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 
@@ -542,10 +505,6 @@ img.testimonyProfile{
         height: 24px;
     }
 
-    div.storeContainer{
-        margin-bottom: 16px;
-    }
-
     div.heroPhone {
         margin: auto;
     }
@@ -559,18 +518,8 @@ img.testimonyProfile{
         margin-right: auto;
     }
 
-    p.lx-title{
-        text-align: center;
-    }
-
     p.left{
         text-align: center;
-    }
-
-    h1.bottomCTATitle{
-        font-size: 24px;
-        color: #5e798d;
-        padding: 0px 32px;
     }
 
     .copyright {
@@ -601,34 +550,11 @@ img.testimonyProfile{
 
     h2 {
         font-size: 20px;
-    }
-
-    div.storeContainer{
-        margin-bottom: 96px;
+        font-weight: bold;
     }
 
     .copyright {
         margin-top: 0px;
     }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-    div.landxLogo {
-        padding-left: 172px;
-    }
-
-    div.storeContainer{
-        margin-bottom: 156px;
-    }
-
-}
-
-
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
 
 }
