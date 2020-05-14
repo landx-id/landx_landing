@@ -11,13 +11,14 @@
 
     <!-- LX Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-    <!-- NAVIGATION-->   
-    <nav class="navbar d-flex-inline sticky-top navbar-expand-lg py-4">
-        <div class="float-sm-left float-md-left float-lg-left" id="hamburgerMenu"> 
+    <!-- NAVIGATION -->
+    <nav class="navbar d-flex-inline sticky-top navbar-expand-lg py-4" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="float-sm-left float-md-left float-lg-left hamburgerMenu"> 
             <img src="img/hamburgerMenu.svg" alt="Menu">
         </div>
         <div class="navbar-brand float-sm-none landxLogo" href="">
@@ -30,6 +31,60 @@
         </div>
     </nav>
 
+    <!-- COLLAPSE NAVIGATION -->
+    </nav>
+    <nav class="align-items-start collapse navbar-collapse bg-light transparent py-4" id="navbarActive">
+        <div class="container flex-md-column flex-lg-row">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-4">
+                        <li class="nav-item">
+                            <h6 class="nav-link text-primary font-weight-bold">Perusahaan</h6>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Tentang LandX</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Kebijakan Privasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Kebijakan ISMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Paparan Risiko</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>  
+
+                <div class="col-sm-4">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-4">
+                        <li class="nav-item">
+                            <h6 class="nav-link text-primary font-weight-bold">Dukungan</h6>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">hello@landx.id</a>
+                        </li>
+                    </ul>
+                </div> 
+
+                <div class="col-sm-4 mt-3">
+                    <button type="button" class="btn btn-outline-primary btn-sm float-sm-right float-md-right d-sm-block d-lg-none"> 
+                        COMPANY REGISTER 
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
 
     <!-- HERO SECTION -->
     <div id="lx-hero">
@@ -37,7 +92,7 @@
         
             <!-- Headline & Phone -->
             <div class="row heroPhone justify-content-center mx-auto">
-                    <h1 class="my-5 py-4"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h1> 
+                    <h3 class="my-5 py-4 text-secondary text-center font-weight-normal"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h3> 
                     <img src="img/heroPhone.png" alt="heroPhone"/>
             </div>
             <!-- Play & App Store -->
@@ -52,20 +107,20 @@
     <div class="container">
         <div class="row flex-sm-row my-5">            
             <div class="col-6 col-sm-6 col-md-3 mb-3">
-                <h2>00</h2>
-                <p>Properties</p>
+                <h2 class="text-secondary text-center">00</h2>
+                <p class="text-primary text-center">Properti</p>
             </div>
             <div class="col-6 col-sm-6 col-md-3 mb-3">
-                <h2>00</h2>
-                <p>Investor</p>
+                <h2 class="text-secondary text-center">00</h2>
+                <p class="text-primary text-center">Investor</p>
             </div>
             <div class="col-6 col-sm-6 col-md-3">
-                <h2>00 M</h2>
-                <p>Fund Raised</p>
+                <h2 class="text-secondary text-center">00 M</h2>
+                <p class="text-primary text-center">Dana Terkumpul</p>
             </div>
             <div class="col-6 col-sm-6 col-md-3">
-                <h2>00 Jt</h2>
-                <p>Profit are Shared</p>
+                <h2 class="text-secondary text-center">00 Jt</h2>
+                <p class="text-primary text-center">Keuntungan yang Dibagikan</p>
             </div>
         </div>
     </div>
@@ -77,7 +132,7 @@
         <div class="container" >
             <div class="row">
                 <div class="col-12 mt-5"> 
-                    <h4> Why Choose LandX </h4>
+                    <h4 class="text-center text-primary"> Mengapa Memilih LandX </h4>
                     <img src="img/titleDivider.png" alt="titleDivider" class="mx-auto d-block pb-4">
                 </div>
             </div>
@@ -86,15 +141,15 @@
             <div class="row flex-column flex-sm-column flex-md-row flex-lg-row mb-5">
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block">
                     <img src="img/icon/imbal_hasil_tinggi.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p>Miliki Bisnis Properti dengan Imbal Hasil Tinggi dan Rendah Risiko</p>
+                    <p class="text-primary text-center">Miliki Bisnis Properti dengan Imbal Hasil Tinggi dan Rendah Risiko</p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <img src="img/icon/tepat_waktu.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p>Imbal hasil dibayar tepat waktu</p>
+                    <p class="text-primary text-center">Imbal hasil dibayar tepat waktu</p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <img src="img/icon/anggunan.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p>100% portfolio pendanaan memiliki agunan properti yang bernilai tinggi</p>
+                    <p class="text-primary text-center">100% portfolio pendanaan memiliki agunan properti yang bernilai tinggi</p>
                 </div>
             </div>
         </div>
@@ -103,7 +158,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-5"> 
-                    <h4> Ongoing Funding Projects</h4>
+                    <h4 class="text-primary text-center">Pendanaan yang Sedang Berlangsung</h4>
                     <img src="img/titleDivider.png" alt="titleDivider" class="mx-auto d-block pb-4">
                 </div>
             </div>
@@ -122,7 +177,7 @@
                                 <img src="img/ico_Cart.svg" alt="add to cart">
                             </button>
                             <!-- Progress Bar -->
-                            <p class="captionGreen">15% Dana Terkumpul</p>
+                            <p class="text-secondary text-left">15% Dana Terkumpul</p>
                             <div class="row flex-sm-row flex-md-row" style="padding: 0px 16px 16px">
                                 <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
                                     <div class="progress">
@@ -130,7 +185,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
-                                    <p class="captionGreen" style="text-align:right">20 Hari Lagi</p>
+                                    <p class="text-secondary text-right">20 Hari Lagi</p>
                                 </div>
                             </div>
 
@@ -140,8 +195,8 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <p class="captionGrey">JKT003</p>
-                                    <h6>Project Name Lorem Ipsum Dolor Sit Amet</h6>
+                                    <p class="text-muted text-left">JKT003</p>
+                                    <h6 class="text-primary text-left">Project Name Lorem Ipsum Dolor Sit Amet</h6>
                                 </div>
                             </div>
 
@@ -151,31 +206,31 @@
 
                             <div class="row">
                                 <div class="col-12 col-sm-6 col-md-6" >
-                                    <p class="captionGrey">Estimasi Deviden</p>
-                                    <h6>15,5%</h6>
+                                    <p class="text-left text-muted">Estimasi Deviden</p>
+                                    <h6 class="text-left text-primary">15,5%</h6>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-6">
-                                    <p class="captionGrey">Harga Penawaran</p>
-                                    <h6>Rp. 2,730,000</h6>
+                                    <p class="text-left text-muted">Harga Penawaran</p>
+                                    <h6 class="text-left text-primary">Rp. 2,730,000</h6>
                                 </div>
                             </div>
 
                             <div class="row flex-sm-row flex-md-row">
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
-                                    <p class="captionGrey">Kamar</p>
-                                    <h6>11</h6>
+                                    <p class="text-left text-muted">Kamar</p>
+                                    <h6 class="text-left text-primary">11</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
-                                    <p class="captionGrey">Lantai</p>
-                                    <h6>4</h6>
+                                    <p class="text-left text-muted">Lantai</p>
+                                    <h6 class="text-left text-primary">4</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
-                                    <p class="captionGrey">LT</p>
-                                    <h6>93 m2</h6>
+                                    <p class="text-left text-muted">LT</p>
+                                    <h6 class="text-left text-primary">93 m2</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
-                                    <p class="captionGrey">LB</p>
-                                    <h6>105 m2</h6>
+                                    <p class="text-left text-muted">LB</p>
+                                    <h6 class="text-left text-primary">105 m2</h6>
                                 </div>
                             </div>          
                         </div>
@@ -192,7 +247,7 @@
                                 <img src="img/ico_Cart.svg" alt="add to cart">
                             </button>
                             <!-- Progress Bar -->
-                            <p class="captionGreen">15% Dana Terkumpul</p>
+                            <p class="text-secondary text-left">15% Dana Terkumpul</p>
                             <div class="row flex-sm-row flex-md-row" style="padding: 0px 16px 16px">
                                 <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
                                     <div class="progress">
@@ -200,7 +255,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
-                                    <p class="captionGreen" style="text-align:right">20 Hari Lagi</p>
+                                    <p class="text-secondary text-right">20 Hari Lagi</p>
                                 </div>
                             </div>
 
@@ -210,8 +265,8 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <p class="captionGrey">JKT003</p>
-                                    <h6>Project Name Lorem Ipsum Dolor Sit Amet</h6>
+                                    <p class="text-muted text-left">JKT003</p>
+                                    <h6 class="text-primary text-left">Project Name Lorem Ipsum Dolor Sit Amet</h6>
                                 </div>
                             </div>
 
@@ -221,31 +276,31 @@
 
                             <div class="row">
                                 <div class="col-12 col-sm-6 col-md-6" >
-                                    <p class="captionGrey">Estimasi Deviden</p>
-                                    <h6>15,5%</h6>
+                                    <p class="text-left text-muted">Estimasi Deviden</p>
+                                    <h6 class="text-left text-primary">15,5%</h6>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-6">
-                                    <p class="captionGrey">Harga Penawaran</p>
-                                    <h6>Rp. 2,730,000</h6>
+                                    <p class="text-left text-muted">Harga Penawaran</p>
+                                    <h6 class="text-left text-primary">Rp. 2,730,000</h6>
                                 </div>
                             </div>
 
                             <div class="row flex-sm-row flex-md-row">
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
-                                    <p class="captionGrey">Kamar</p>
-                                    <h6>11</h6>
+                                    <p class="text-left text-muted">Kamar</p>
+                                    <h6 class="text-left text-primary">11</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
-                                    <p class="captionGrey">Lantai</p>
-                                    <h6>4</h6>
+                                    <p class="text-left text-muted">Lantai</p>
+                                    <h6 class="text-left text-primary">4</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
-                                    <p class="captionGrey">LT</p>
-                                    <h6>93 m2</h6>
+                                    <p class="text-left text-muted">LT</p>
+                                    <h6 class="text-left text-primary">93 m2</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
-                                    <p class="captionGrey">LB</p>
-                                    <h6>105 m2</h6>
+                                    <p class="text-left text-muted">LB</p>
+                                    <h6 class="text-left text-primary">105 m2</h6>
                                 </div>
                             </div>          
                         </div>
@@ -262,7 +317,7 @@
                                 <img src="img/ico_Cart.svg" alt="add to cart">
                             </button>
                             <!-- Progress Bar -->
-                            <p class="captionGreen">15% Dana Terkumpul</p>
+                            <p class="text-secondary text-left">15% Dana Terkumpul</p>
                             <div class="row flex-sm-row flex-md-row" style="padding: 0px 16px 16px">
                                 <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
                                     <div class="progress">
@@ -270,7 +325,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
-                                    <p class="captionGreen" style="text-align:right">20 Hari Lagi</p>
+                                    <p class="text-secondary text-right">20 Hari Lagi</p>
                                 </div>
                             </div>
 
@@ -280,8 +335,8 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <p class="captionGrey">JKT003</p>
-                                    <h6>Project Name Lorem Ipsum Dolor Sit Amet</h6>
+                                    <p class="text-muted text-left">JKT003</p>
+                                    <h6 class="text-primary text-left">Project Name Lorem Ipsum Dolor Sit Amet</h6>
                                 </div>
                             </div>
 
@@ -291,36 +346,37 @@
 
                             <div class="row">
                                 <div class="col-12 col-sm-6 col-md-6" >
-                                    <p class="captionGrey">Estimasi Deviden</p>
-                                    <h6>15,5%</h6>
+                                    <p class="text-left text-muted">Estimasi Deviden</p>
+                                    <h6 class="text-left text-primary">15,5%</h6>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-6">
-                                    <p class="captionGrey">Harga Penawaran</p>
-                                    <h6>Rp. 2,730,000</h6>
+                                    <p class="text-left text-muted">Harga Penawaran</p>
+                                    <h6 class="text-left text-primary">Rp. 2,730,000</h6>
                                 </div>
                             </div>
 
                             <div class="row flex-sm-row flex-md-row">
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
-                                    <p class="captionGrey">Kamar</p>
-                                    <h6>11</h6>
+                                    <p class="text-left text-muted">Kamar</p>
+                                    <h6 class="text-left text-primary">11</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
-                                    <p class="captionGrey">Lantai</p>
-                                    <h6>4</h6>
+                                    <p class="text-left text-muted">Lantai</p>
+                                    <h6 class="text-left text-primary">4</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
-                                    <p class="captionGrey">LT</p>
-                                    <h6>93 m2</h6>
+                                    <p class="text-left text-muted">LT</p>
+                                    <h6 class="text-left text-primary">93 m2</h6>
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
-                                    <p class="captionGrey">LB</p>
-                                    <h6>105 m2</h6>
+                                    <p class="text-left text-muted">LB</p>
+                                    <h6 class="text-left text-primary">105 m2</h6>
                                 </div>
                             </div>          
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!--CTA-->
@@ -338,7 +394,7 @@
         <div class="container">
             <div class="row pt-5">
                 <div class="col-12"> 
-                    <h4> How LandX Works</h4>
+                    <h4 class="text-center text-primary"> Cara Kerja LandX</h4>
                     <img src="img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4">
                 </div>
             </div>
@@ -348,23 +404,23 @@
             <div class="row flex-sm-column flex-md-row flex-lg-row pb-5">
                 <div class="col-sm col-md-6 col-lg-3">
                     <img src="img/icon/pilih_proyek.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p class="lx-title">Pilih Proyek Pendanaan</p>
-                    <p class=>Pilih proyek pendanaan dari perusahaan-perusahaan properti yang sesuai dengan portfolio pendanaanmu.</p>
+                    <p class="text-center text-primary font-weight-bold">Pilih Proyek Pendanaan</p>
+                    <p class="text-center text-primary">Pilih proyek pendanaan dari perusahaan-perusahaan properti yang sesuai dengan portfolio pendanaanmu.</p>
                 </div>
                 <div class="col-sm col-md-6 col-lg-3">
                     <img src="img/icon/beli_saham.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p class="lx-title">Beli Saham</p>
-                    <p class=>Dengan memiliki saham, Anda turut memiliki bisnis properti tersebut.</p>
+                    <p class="text-center text-primary font-weight-bold">Beli Saham</p>
+                    <p class="text-center text-primary">Dengan memiliki saham, Anda turut memiliki bisnis properti tersebut.</p>
                 </div>
                 <div class="col-sm col-md-6 col-lg-3">
                     <img src="img/icon/imbal_hasil.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p class="lx-title">Terima Imbal Hasil</p>
-                    <p class=>Terima keuntungan sewa setiap bulan.</p>
+                    <p class="text-center text-primary font-weight-bold">Terima Imbal Hasil</p>
+                    <p class="text-center text-primary">Terima keuntungan sewa setiap bulan.</p>
                 </div>
                 <div class="col-sm col-md-6 col-lg-3">
                     <img src="img/icon/capital_gain.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p class="lx-title">Keuntungan Capital Gain</p>
-                    <p class=>Dapatkan keuntungan dari kenaikan harga properti ketika dijual.</p>
+                    <p class="text-center text-primary font-weight-bold">Keuntungan Capital Gain</p>
+                    <p class="text-center text-primary">Dapatkan keuntungan dari kenaikan harga properti ketika dijual.</p>
                 </div>
             </div>
         </div>
@@ -385,22 +441,22 @@
                         <div class="carousel-item active">
                         <img src="img/testimonyProfilePicture.png" class="testimonyProfile mx-auto d-block" alt="Herbert">
                         <div class="carousel-caption">
-                            <h5>Herbert Kosan</h5>
-                            <p>“LandX memberikan solusi mudah dan cepat untuk mengembangkan uang saya. Lumayan ya terima hasil tiap bulan.”</p>
+                            <h5 class="text-center text-primary">Herbert Kosan</h5>
+                            <p class="text-center text-primary">“LandX memberikan solusi mudah dan cepat untuk mengembangkan uang saya. Lumayan ya terima hasil tiap bulan.”</p>
                         </div>
                         </div>
                         <div class="carousel-item">
                         <img src="img/testimonyProfilePicture.png" class="testimonyProfile mx-auto d-block" alt="...">
                         <div class="carousel-caption">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h5 class="text-center text-primary">Second slide label</h5>
+                            <p class="text-center text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         </div>
                         <div class="carousel-item">
                         <img src="img/testimonyProfilePicture.png" class="testimonyProfile mx-auto d-block" alt="...">
                         <div class="carousel-caption">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h5 class="text-center text-primary">Third slide label</h5>
+                            <p class="text-center text-primary">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </div>
                         </div>
                     </div>
@@ -425,7 +481,7 @@
         <div class="container" >
             <div class="row px-3">
                 <div class="col-sm-12 col-sm-12 col-lg-12 lx-CTA">
-                    <h1 class="bottomCTATitle px-4 py-5">Kini memiliki bisnis properti jadi jauh lebih mudah. Unduh aplikasi LandX sekarang!</h1>
+                    <h3 class="text-center text-primary font-weight-normal px-4 py-5">Kini memiliki bisnis properti jadi jauh lebih mudah. Unduh aplikasi LandX sekarang!</h3>
                     <!-- Play & App Store -->     
                     <div class="row flex-sm-row d-flex-inline justify-content-center storeContainer pb-5">
                         <img src="img/Play Store.svg" alt="Play Store">
@@ -439,12 +495,12 @@
         <div class="container">
             <div class="row flex-sm-row flex-md-row flex-lg-row pt-5 mt-5">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                    <p class="overline my-5">TELAH TERDAFTAR OLEH KEMENTRIAN KOMUNIKASI DAN INFORMATIKA</p>
+                    <h6 class="text-center text-primary my-5">TELAH TERDAFTAR OLEH KEMENTRIAN KOMUNIKASI DAN INFORMATIKA</h6>
                     <img src="img/logo_kominfo.png" alt="logo_kominfo" class="mx-auto d-block my-5">
-                    <p class="captionGrey" style="text-align: center">*Saat ini LandX sedang dalam proses perijinan OJK</p>
+                    <p class="text-center text-primary">*Saat ini LandX sedang dalam proses perijinan OJK</p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                    <p class="overline my-5">MEMBER OF</p>
+                    <h6 class="text-center text-primary my-5">MEMBER OF</h6>
                     <img src="img/Fintech Logo@2x.svg" alt="logo_fintech_indonesia" class="mx-auto d-block my-5">
                 </div>
             </div> 
@@ -460,8 +516,8 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <p class="captionPrimary" style="font-weight: bold;">Disclaimer</p> <br>
-                    <p class="captionSmall">
+                    <p class="text-left text-primary font-weight-bold">Disclaimer</p> <br>
+                    <p class="text-left text-primary">
                         PT Numex Teknologi Indonesia (“LandX” atau “Penyelenggara”) hadir dalam rangka mendukung program pemerintah di bidang perumahan dengan mengembangkan bisnis layanan urun dana bersama, dengan mempertemukan Pemilik Dana dan pihak pengembang properti (“Penerbit”) (selanjutnya Pemilik Dana dan Penerbit disebut bersama-sama sebagai “Pengguna”). Pada layanan urun dana ini, timbulnya hubungan perdata terjadi apabila Pemilik Dana sepakat untuk membeli saham yang ditawarkan oleh Penerbit, sehingga segala risiko yang timbul dari hubungan tersebut akan menjadi tanggung jawab masing-masing pihak. 
 
                         Risiko yang timbul dari hak sebagai Pemilik Dana untuk menerima dividen dari Penerbit merupakan risiko yang wajib ditanggung oleh Pemilik Dana sesuai kebijakan dividen Penerbit. Lebih lanjut, LandX TIDAK BERTANGGUNG JAWAB terhadap risiko kerugian dan gugatan hukum serta segala bentuk risiko lain yang timbul, baik sekarang maupun dikemudian hari, atas segala kesepakatan dan keputusan jual beli saham yang telah disepakati antara sesama Pemilik Dana dan antara Pemilik Dana dengan Penerbit.
@@ -472,7 +528,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
-                    <p class="captionSmall">
+                    <p class="text-left text-primary">
                         a.  OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI 
                             EFEK INI, TIDAK JUGA MENYATAKAN KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN URUN 
                             DANA INI. SETIAP PERNYATAAN YANG BERTENTANGAN DENGAN HAL TERSEBUT ADALAH PERBUATAN 
@@ -508,27 +564,27 @@
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3 mb-3">
                     <ul class="list-group">
-                        <li class="list-group-item-title">PERUSAHAAN</li>
-                        <li class="list-group-item">Blog</li>
-                        <li class="list-group-item">Tentang LandX</li>
+                        <li class="list-group-item-title text-left text-primary">PERUSAHAAN</li>
+                        <li class="list-group-item text-left text-primary">Blog</li>
+                        <li class="list-group-item text-left text-primary">Tentang LandX</li>
                         <li class="list-group-item">Kebijakan Privasi</li>
-                        <li class="list-group-item">Kebijakan ISMS</li>
-                        <li class="list-group-item">Paparan Risiko</li>
-                        <li class="list-group-item">FAQ</li>
+                        <li class="list-group-item text-left text-primary">Kebijakan ISMS</li>
+                        <li class="list-group-item text-left text-primary">Paparan Risiko</li>
+                        <li class="list-group-item text-left text-primary">FAQ</li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
                     <ul class="list-group">
                         <li class="list-group-item-title">DUKUNGAN</li>
-                        <li class="list-group-item">Kontak</li>
-                        <li class="list-group-item">hello@landx.id</li>
+                        <li class="list-group-item text-left text-primary">Kontak</li>
+                        <li class="list-group-item text-left text-primary">hello@landx.id</li>
                     </ul>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-12 copyright">
-                    <p class="captionSmall">© 2020 LandX Indonesia. All Rights Reserved.</p>
+                    <p class="text-left text-primary">© 2020 LandX Indonesia. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
