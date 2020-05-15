@@ -91,6 +91,13 @@ p {
     padding: 8px 16px;
 
 }
+
+.btn-primary:hover, .btn-primary:active {
+    color: white !important;
+    background-color: #00A339!important;
+  }
+
+
 /*#lx-btn-secondary {
     background-color: white; 
     border-color: #2dbe60; 
@@ -117,6 +124,12 @@ p {
     padding: 8px 16px;
 }
 
+.btn-outline-primary:hover, .btn-outline-primary:active {
+    border-color: #00A339;
+    color: #00A339;
+    background-color:white!important;
+}
+
 #lx-hero {
     background-image: url(img/heroBackground.png);
     background-repeat:no-repeat;
@@ -125,8 +138,29 @@ p {
 
 }
 
+button.demo-fab {
+    width: 136px;
+    height: 136px;
+    background-color: #2dbe60;
+    background-image: url(img/demoFAB-bacground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    box-shadow:0px 6px 12px #bebebe;
+    color: white;
+    position: absolute;
+    left: 36%;
+    top: 36%;
+}
+
+.heroPhone{
+    position: relative;
+}
+
+
 .storeContainer img{
     height: 72px;
+    cursor: pointer;
 }
 
 #lx-why {
@@ -168,6 +202,7 @@ div.progress-bar {
     background-color:#ccd7df;
 }
 
+
 button.lx-fab {
     width: 56px;
     height: 56px;
@@ -179,6 +214,25 @@ button.lx-fab {
     position: absolute;
     right: 16px;
     top: 204px;
+}
+
+.modal-body {
+    background-image: url(img/StoreModalBackground.png);
+    background-repeat: none;
+    background-size: cover;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: #2dbe60;
+    border-radius: 8px;
+}
+
+button.close img  {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: #5e798d;
 }
 
 #lx-how {
@@ -302,7 +356,6 @@ img.testimonyProfile{
     
 }
 
-
 .socMed {
     width: 24px;
     margin-right: 24px;
@@ -310,8 +363,10 @@ img.testimonyProfile{
 
 .copyright {
     padding-bottom: 40px;
-    margin-top:-50px
+    margin-top:-50px;
 }
+
+
 
 
 /* MEDIA BREAKPOINT */
@@ -365,13 +420,26 @@ img.testimonyProfile{
         padding-right: 32px;
     }
 
+    button.demo-fab {
+        width: 96px;
+        height: 96px;
+        left: 33%;
+        top: 36%;
+    }
+
+    button.demo-fab h5 {
+        font-size: 16px;
+        margin: 0px;
+    }
 
     div.heroPhone {
         margin: auto;
+        position: relative;
     }
 
     div.heroPhone img {
         width: 288px;
+    
     } 
 
     div img.iconlx {
@@ -418,6 +486,11 @@ img.testimonyProfile{
     }
     .copyright {
         margin-top: 0px;
+    }
+
+    btn.demo-fab {
+        left: 100px;
+        top: 532px;
     }
 
 }

@@ -32,7 +32,6 @@
     </nav>
 
     <!-- COLLAPSE NAVIGATION -->
-    </nav>
     <nav class="align-items-start collapse navbar-collapse bg-light transparent py-4" id="navbarActive">
         <div class="container flex-md-column flex-lg-row">
             <div class="row">
@@ -91,9 +90,14 @@
         <div class="container">
         
             <!-- Headline & Phone -->
-            <div class="row heroPhone justify-content-center mx-auto">
-                    <h3 class="my-5 py-4 text-secondary text-center font-weight-normal"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h3> 
-                    <img src="img/heroPhone.png" alt="heroPhone"/>
+            <div class="row justify-content-center mx-auto">
+                    <h3 class="my-5 px-3 py-4 text-secondary text-center font-weight-normal"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h3> 
+                    <div class="heroPhone">
+                        <img src="img/heroPhone2.png" alt="heroPhone" />
+                        <button class="demo-fab"> 
+                            <h5 class="text-center my-0">Click Me!</h5>
+                        </button>
+                    </div>
             </div>
             <!-- Play & App Store -->
             <div class="row d-flex-inline justify-content-center storeContainer pb-5">
@@ -102,6 +106,9 @@
             </div>
         </div>
     </div>
+
+    
+    
 
     <!-- STATISTIC -->
     <div class="container">
@@ -138,16 +145,16 @@
             </div>
         </div> 
         <div class="container">
-            <div class="row flex-column flex-sm-column flex-md-row flex-lg-row mb-5">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block">
+            <div class="row flex-column flex-sm-column flex-md-row flex-lg-row mb-5 px-3">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block iconlx mx-auto">
                     <img src="img/icon/imbal_hasil_tinggi.png" alt="iconPlaceholder" class="iconlx mx-auto">
                     <p class="text-primary text-center">Miliki Bisnis Properti dengan Imbal Hasil Tinggi dan Rendah Risiko</p>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block bm" data-file="tepat_waktu">
                     <img src="img/icon/tepat_waktu.png" alt="iconPlaceholder" class="iconlx mx-auto">
                     <p class="text-primary text-center">Imbal hasil dibayar tepat waktu</p>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block bm" data-file="anggunan">
                     <img src="img/icon/anggunan.png" alt="iconPlaceholder" class="iconlx mx-auto">
                     <p class="text-primary text-center">100% portfolio pendanaan memiliki agunan properti yang bernilai tinggi</p>
                 </div>
@@ -157,7 +164,7 @@
         <!-- Ongoing Funding Projects -->
         <div class="container">
             <div class="row">
-                <div class="col-12 mt-5"> 
+                <div class="col-12 mt-5 pt-3"> 
                     <h4 class="text-primary text-center">Pendanaan yang Sedang Berlangsung</h4>
                     <img src="img/titleDivider.png" alt="titleDivider" class="mx-auto d-block pb-4">
                 </div>
@@ -166,7 +173,7 @@
 
         <!-- Projects Card -->
         <div class="container">
-            <div class="row flex-sm-column flex-md-column flex-lg-row mb-5">
+            <div class="row flex-sm-column flex-md-column flex-lg-row mb-4">
                 <!-- Card 1-->
                 <div class="col-12 col-sm col-md col-lg-4 mx-auto d-block">
                     <div class="card" style="width: auto">
@@ -215,7 +222,7 @@
                                 </div>
                             </div>
 
-                            <div class="row flex-sm-row flex-md-row">
+                            <div class="row flex-sm-row flex-md-row mb-2">
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
                                     <p class="text-left text-muted">Kamar</p>
                                     <h6 class="text-left text-primary">11</h6>
@@ -285,7 +292,7 @@
                                 </div>
                             </div>
 
-                            <div class="row flex-sm-row flex-md-row">
+                            <div class="row flex-sm-row flex-md-row mb-2">
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
                                     <p class="text-left text-muted">Kamar</p>
                                     <h6 class="text-left text-primary">11</h6>
@@ -355,7 +362,7 @@
                                 </div>
                             </div>
 
-                            <div class="row flex-sm-row flex-md-row">
+                            <div class="row flex-sm-row flex-md-row mb-2">
                                 <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
                                     <p class="text-left text-muted">Kamar</p>
                                     <h6 class="text-left text-primary">11</h6>
@@ -376,16 +383,36 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!--CTA-->
             <div class="row">
                 <div class="col-12 mb-5">
-                    <button type="button" class="btn btn-primary mx-auto d-block">SEE OTHER PROJECTS</button>
+                    <button type="button" class="btn btn-primary mx-auto d-block" data-toggle="modal" data-target="#storeModal">SEE OTHER PROJECTS</button>
                 </div>
             </div>
         </div>
+
+        <!-- APP & PLAY STORE MODAL -->
+        <!-- Modal -->
+        <div class="modal fade" id="storeModal" tabindex="-1" role="dialog" aria-labelledby="storeModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered px-4" role="document">
+                <div class="modal-content">
+                    <div class="modal-body row flex-sm-row d-flex-inline justify-content-center storeContainer py-5">                       
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/ico_close.svg" alt="close" aria-hidden="true">
+                        </button>
+                        <div class="flex-sm-column">
+                            <h5 class="modal-title text-center text-primary mb-4" id="exampleModalLongTitle">Pilih Sesuai Platform Ponsel Anda</h5>
+                            <div class="flex-sm-column flex-md-row d-flex-inline">
+                                <img src="img/Play Store.svg" alt="Play Store" >
+                                <img src="img/App Store.svg" alt="App Store" > 
+                            </div>   
+                         </div>
+                    </div>
+                </div>
+                </div>
+            </div>
 
     </div>
 
@@ -426,6 +453,7 @@
         </div>
     
     </div>
+
 
     <!--TESTIMONY-->
     <div class="container">
@@ -593,7 +621,21 @@
 
 
     <!-- Optional JavaScript -->
+    <script>
+        var bm = document.getElementsByClassName('bm')
+        Array.prototype.forEach.call(bm,icon => {
+            var anim = bodymovin.loadAnimation({
+                container: icon,
+                path: `lottie/${icon.dataset.file}.jason`,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true
+            })
+        })
+
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
