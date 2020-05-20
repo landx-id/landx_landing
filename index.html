@@ -17,9 +17,9 @@
   <body>
 
     <!-- NAVIGATION -->
-    <nav class="navbar d-flex-inline sticky-top navbar-expand-lg py-4" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar d-flex-inline fixed-top navbar-expand-lg py-4 mb-3">
         <div class="float-sm-left float-md-left float-lg-left hamburgerMenu"> 
-            <img src="img/hamburgerMenu.svg" alt="Menu">
+            <img src="img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
         </div>
         <div class="navbar-brand float-sm-none landxLogo" href="">
             <img src="img/LandX_Logo.png" alt="LandX_Logo">   
@@ -32,50 +32,58 @@
     </nav>
 
     <!-- COLLAPSE NAVIGATION -->
-    <nav class="align-items-start collapse navbar-collapse bg-light transparent py-4" id="navbarActive">
+    <nav class="align-items-start collapse navbar-collapse bg-light transparent sticky-top" id="navbarActive">
         <div class="container flex-md-column flex-lg-row">
             <div class="row">
                 <div class="col-sm-4">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-4">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
                         <li class="nav-item">
-                            <h6 class="nav-link text-primary font-weight-bold">Perusahaan</h6>
+                            <h6 class="nav-link text-secondary font-weight-bold">PERUSAHAAN</h6>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">Blog</a>
+                            <span></span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">Tentang LandX</a>
+                            <span></span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">Kebijakan Privasi</a>
+                            <span></span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">Kebijakan ISMS</a>
+                            <span></span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">Paparan Risiko</a>
+                            <span></span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">FAQ</a>
+                            <span></span>
                         </li>
                     </ul>
                 </div>  
 
                 <div class="col-sm-4">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-4">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
                         <li class="nav-item">
-                            <h6 class="nav-link text-primary font-weight-bold">Dukungan</h6>
+                            <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">Kontak</a>
+                            <span></span>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">hello@landx.id</a>
+                            <span></span>
                         </li>
                     </ul>
                 </div> 
 
-                <div class="col-sm-4 mt-3">
+                <div class="col-sm-4 mt-4 pb-3">
                     <button type="button" class="btn btn-outline-primary btn-sm float-sm-right float-md-right d-sm-block d-lg-none"> 
                         COMPANY REGISTER 
                     </button>
@@ -90,11 +98,11 @@
         <div class="container">
         
             <!-- Headline & Phone -->
-            <div class="row justify-content-center mx-auto">
-                    <h3 class="my-5 px-3 py-4 text-secondary text-center font-weight-normal"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h3> 
+            <div class=" row justify-content-center mx-auto ">
+                    <h3 class="headlineTitle px-3 text-secondary text-center font-weight-normal"> Now you can invest in property for 1 JUTA and get 17% annual dividends every quarter </h3> 
                     <div class="heroPhone">
                         <img src="img/heroPhone2.png" alt="heroPhone" />
-                        <button class="demo-fab"> 
+                        <button class="demo-fab" data-toggle="modal" data-target="#demoModal"> 
                             <h5 class="text-center my-0">Click Me!</h5>
                         </button>
                     </div>
@@ -107,8 +115,19 @@
         </div>
     </div>
 
-    
-    
+    <!-- DEMO MODAL -->
+    <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered a" role="document">
+            <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="img/ico_close_white.svg" alt="close" aria-hidden="true">
+                    </button>
+                    <div class="flex-sm-column flex-md-row d-flex-inline mx-auto demoPhone">
+                        <img src="img/demoPhone.png" alt="demo" >
+                    </div>
+            </div>
+        </div>
+    </div>
 
     <!-- STATISTIC -->
     <div class="container">
@@ -146,15 +165,15 @@
         </div> 
         <div class="container">
             <div class="row flex-column flex-sm-column flex-md-row flex-lg-row mb-5 px-3">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block iconlx mx-auto">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block mx-auto">
                     <img src="img/icon/imbal_hasil_tinggi.png" alt="iconPlaceholder" class="iconlx mx-auto">
-                    <p class="text-primary text-center">Miliki Bisnis Properti dengan Imbal Hasil Tinggi dan Rendah Risiko</p>
+                    <p class="text-primary text-center">Miliki Bisnis Properti dengan Imbal Hasil Tinggi dan Rendah Risik</p>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block bm" data-file="tepat_waktu">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block mx-auto" data-file="tepat_waktu">
                     <img src="img/icon/tepat_waktu.png" alt="iconPlaceholder" class="iconlx mx-auto">
                     <p class="text-primary text-center">Imbal hasil dibayar tepat waktu</p>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block bm" data-file="anggunan">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block mx-auto" data-file="anggunan">
                     <img src="img/icon/anggunan.png" alt="iconPlaceholder" class="iconlx mx-auto">
                     <p class="text-primary text-center">100% portfolio pendanaan memiliki agunan properti yang bernilai tinggi</p>
                 </div>
@@ -396,23 +415,23 @@
         <!-- APP & PLAY STORE MODAL -->
         <!-- Modal -->
         <div class="modal fade" id="storeModal" tabindex="-1" role="dialog" aria-labelledby="storeModalTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered px-4" role="document">
-                <div class="modal-content">
-                    <div class="modal-body row flex-sm-row d-flex-inline justify-content-center storeContainer py-5">                       
+            <div class="modal-dialog modal-dialog-centered px-4" role="document">
+            <div class="modal-content">
+                <div class="modal-body-store row flex-sm-row d-flex-inline justify-content-center storeContainer py-5">         
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="img/ico_close.svg" alt="close" aria-hidden="true">
                         </button>
-                        <div class="flex-sm-column">
-                            <h5 class="modal-title text-center text-primary mb-4" id="exampleModalLongTitle">Pilih Sesuai Platform Ponsel Anda</h5>
-                            <div class="flex-sm-column flex-md-row d-flex-inline">
-                                <img src="img/Play Store.svg" alt="Play Store" >
-                                <img src="img/App Store.svg" alt="App Store" > 
-                            </div>   
-                         </div>
+                    <div class="flex-sm-column">
+                        <h5 class="modal-title text-center text-primary mb-4" id="exampleModalLongTitle">Pilih Sesuai Platform Ponsel Anda</h5>
+                        <div class="flex-sm-column flex-md-row d-flex-inline">
+                            <img src="img/Play Store.svg" alt="Play Store" >
+                            <img src="img/App Store.svg" alt="App Store" > 
+                        </div>   
                     </div>
                 </div>
-                </div>
             </div>
+            </div>
+        </div>
 
     </div>
 
@@ -586,11 +605,60 @@
         <div class="container">
             <div class="row flex-sm-column flex-md-row flex-lg-row">
                 <div class="col-sm-12 col-md-6 col-lg-6 mb-5"> 
-                    <img src="img/linkedin.svg" alt="LandX LinkedIn" class="socMed">
-                    <img src="img/facebook.svg" alt="LandX Facebook" class="socMed">
-                    <img src="img/logo-instagram.svg" alt="LandX Instagram" class="socMed">
+                    <img src="img/linkedin.svg" alt="LandX LinkedIn" class="socMed" href="#">
+                    <img src="img/facebook.svg" alt="LandX Facebook" class="socMed" href="#">
+                    <img src="img/logo-instagram.svg" alt="LandX Instagram" class="socMed" href="#">
                 </div>
+
                 <div class="col-sm-12 col-md-3 col-lg-3 mb-3">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
+                        <li class="nav-item">
+                            <h6 class="nav-link text-secondary font-weight-bold">PERUSAHAAN</h6>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Blog</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Tentang LandX</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Kebijakan Privasi</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Kebijakan ISMS</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Paparan Risiko</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">FAQ</a>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
+                        <li class="nav-item">
+                            <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Kontak</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">hello@landx.id</a>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col-sm-12 col-md-3 col-lg-3 mb-3">
                     <ul class="list-group">
                         <li class="list-group-item-title text-left text-primary">PERUSAHAAN</li>
                         <li class="list-group-item text-left text-primary">Blog</li>
@@ -608,7 +676,7 @@
                         <li class="list-group-item text-left text-primary">hello@landx.id</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row">
                 <div class="col-lg-12 copyright">
