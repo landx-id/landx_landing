@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: 'Inter' !important;
 }
 
+
+
+
+
 /* TEXT COLOR */
 
 .text-primary {
@@ -36,6 +40,7 @@ p {
 }
 
 
+
 /* CUSTOM STYLES */
 
 .bg-light{
@@ -47,7 +52,6 @@ p {
 .navbar {
     background-color:rgba(255, 255, 255, 0.900);
     border-bottom: #E7E7E7 solid 1px;
-
 }
 
 .navbar-brand{
@@ -57,26 +61,20 @@ p {
     
 }
 
-#navigation{
-    z-index: 10;
-    width: 100%;
-    margin: auto;
-    position: fixed;
-    background: color #ffffff;  
-    border-bottom: 1px solid #E7E7E7;
+#navbarActive{
+    padding: 100px 0px 16px;
 }
 
 .hamburgerMenu img{
     width: 32px;
+    cursor: pointer;
 }
-
 
 .landxLogo img {
     height: 32px;
     padding-left:248px;
     cursor: pointer;
 }
-
 
 .btn.btn-primary {
     background-color: #2dbe60;
@@ -89,7 +87,6 @@ p {
     color:white; 
     border-radius: 4px;
     padding: 8px 16px;
-
 }
 
 .btn-primary:hover, .btn-primary:active {
@@ -98,18 +95,9 @@ p {
   }
 
 
-/*#lx-btn-secondary {
-    background-color: white; 
-    border-color: #2dbe60; 
-    font-family: 'Inter',sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1.35px;
-    text-align: center; 
-    color:#2dbe60; 
-    border-radius: 4px;
-    padding: 8px 16px;
-} */
+.headlineTitle {
+    padding: 144px 0px 32px;
+}
 
 .btn.btn-outline-primary {
     background-color: white; 
@@ -216,7 +204,8 @@ button.lx-fab {
     top: 204px;
 }
 
-.modal-body {
+
+.modal-body-store {
     background-image: url(img/StoreModalBackground.png);
     background-repeat: none;
     background-size: cover;
@@ -224,13 +213,14 @@ button.lx-fab {
     border-top-width: 4px;
     border-top-color: #2dbe60;
     border-radius: 8px;
+    padding: 0;
 }
 
 button.close img  {
     width: 24px;
     height: 24px;
     position: absolute;
-    right: 16px;
+    right: 0px;
     top: 16px;
     color: #5e798d;
 }
@@ -269,6 +259,7 @@ li.list-group-item {
     background: none;
     border: none;
 }
+
 
 li.list-group-item-title {
     font: 'Inter';
@@ -359,14 +350,56 @@ img.testimonyProfile{
 .socMed {
     width: 24px;
     margin-right: 24px;
+    cursor: pointer;
 }
+
 
 .copyright {
     padding-bottom: 40px;
-    margin-top:-50px;
+    margin-top:-70px;
 }
 
+.nav-item {
+    width: 100%;
+    height: 48px;
+}
 
+.nav-item span{
+    display: block;
+    width: 32px;
+    height: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover span {
+    border-bottom: 2px solid #2dbe60;
+}
+
+.nav-item:active span {
+    border-bottom: 2px solid #2dbe60;
+}
+
+.nav-item a.nav-link.text-primary:hover {
+    color: #2dbe60 !important; 
+}
+
+.nav-item a.nav-link.text-primary:active {
+    color: #5e798d !important; 
+}
+
+.nav-item a.nav-link.text-primary:visited {
+    color: #5e798d !important; 
+}
+
+.modal-content{
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+.demoPhone img{
+    margin: auto;
+}
 
 
 /* MEDIA BREAKPOINT */
@@ -473,6 +506,10 @@ img.testimonyProfile{
         height: 24px;
         padding-left: 0px;
         padding-right: 32px;
+    }
+
+    #navbarActive{
+        padding-top: 72px;
     }
 
     h2, h3{
