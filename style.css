@@ -76,6 +76,7 @@ p {
     cursor: pointer;
 }
 
+
 .btn.btn-primary {
     background-color: #2dbe60;
     border-color: #2dbe60; 
@@ -89,17 +90,21 @@ p {
     padding: 8px 16px;
 }
 
-.btn-primary:hover, .btn-primary:active {
+.btn-primary:hover {
     color: white !important;
     background-color: #00A339!important;
-  }
+}
 
+.btn-primary:active, :visited{
+    color: white !important;
+    background-color: #2dbe60!important;
+}
 
 .headlineTitle {
     padding: 144px 0px 32px;
 }
 
-.btn.btn-outline-primary {
+.btn-outline-primary {
     background-color: white; 
     border-color: #2dbe60; 
     font-family: 'Inter';
@@ -114,8 +119,8 @@ p {
 
 .btn-outline-primary:hover, .btn-outline-primary:active {
     border-color: #00A339;
-    color: #00A339;
-    background-color:white!important;
+    color: white;
+    background-color:#2dbe60!important;
 }
 
 #lx-hero {
@@ -139,6 +144,10 @@ button.demo-fab {
     position: absolute;
     left: 36%;
     top: 36%;
+}
+
+button.demo-fab:hover {
+    color: #00A339;
 }
 
 .heroPhone{
@@ -191,7 +200,7 @@ div.progress-bar {
 }
 
 
-button.lx-fab {
+.lx-fab {
     width: 56px;
     height: 56px;
     background-color: #2dbe60;
