@@ -286,7 +286,6 @@ li.list-group-item-title {
 #lx-icon{
     width: 32px;
     height: 32px;
-    margin: auto;
 }
 
 th{
@@ -357,9 +356,8 @@ img.testimonyProfile{
 }
 
 .socMed {
-    width: 24px;
-    margin-right: 24px;
-    cursor: pointer;
+    width: 32px;
+    height: 32px;
 }
 
 
@@ -410,6 +408,21 @@ img.testimonyProfile{
     margin: auto;
 }
 
+.card-img-top{
+    height: auto; 
+    padding-bottom:8px; 
+    border-radius: 14px 14px 0px 0px;
+}
+
+.card-body {
+    padding:16px 16px 0px; 
+    min-height: 256px; 
+    border-radius: 14px;
+}
+
+img.landxFlow {
+    height: 400px;
+}
 
 /* MEDIA BREAKPOINT */
 
@@ -443,6 +456,12 @@ img.testimonyProfile{
         font-size: 20px;
         font-weight: 500;
     }
+
+    img.landxFlow {
+        height: 30px;
+    }
+
+
 }
 
 /* Small devices (landscape phones, less than 768px */
@@ -496,6 +515,7 @@ img.testimonyProfile{
     .copyright {
         margin-top: 0px;
     }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -521,6 +541,11 @@ img.testimonyProfile{
         padding-top: 72px;
     }
 
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
     h2, h3{
         font-size: 24px;
         font-weight: 400;
@@ -530,6 +555,7 @@ img.testimonyProfile{
         font-size: 18px;
         font-weight: 600;
     }
+
     .copyright {
         margin-top: 0px;
     }
@@ -539,6 +565,10 @@ img.testimonyProfile{
         top: 532px;
     }
 
+    img.landxFlow {
+        height: 200px;
+    }
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
