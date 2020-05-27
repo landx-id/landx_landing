@@ -542,7 +542,7 @@ img.landxFlow {
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 600;
     }
 
@@ -555,6 +555,18 @@ img.landxFlow {
         font-size: 18px;
         font-weight: 600;
     }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
 
     .copyright {
         margin-top: 0px;
