@@ -1,402 +1,686 @@
-<!DOCTYPE html>
-<html lang="id">
+<!doctype html>
+<html lang="en">
   <head>
     <title>LandX | Investasi Properti Semudah Belanja Online</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta
-      name="Description"
-      content="LandX | Investasi properti dengan modal kecil. Terima penghasilan sewa dan kenaikan harga properti secara online."
-    />
-    <meta
-      name="Keywords"
-      content="investasi, jual beli properti, investasi properti, rumah, properti, uang, dana, investasi properti online"
-    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="stylesheets/style.css" />
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107958816-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-107958816-4");
-    </script>
-    <script
-      defer
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-      fbq("init", "341440499911698");
-      fbq("track", "PageView");
-    </script>
-    <!-- <script async src="scripts/platform-data.js"></script> -->
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=341440499911698&ev=PageView&noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
+    <!-- LX Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar d-flex-inline fixed-top navbar-expand-lg py-4 mb-3">
+            <div class="float-sm-left float-md-left float-lg-left hamburgerMenu"> 
+                <img src="img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
+            </div>
+            <div class="navbar-brand float-sm-none landxLogo" href="">
+                <a href="index.html">
+                    <img src="img/LandX_Logo.png" alt="LandX_Logo">  
+                </a> 
+            </div>
+            <div>
+                <a href="pendaftaran-perusahaan.html">
+                    <button type="button" class="btn btn-outline-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block"> 
+                        PENDAFTARAN PERUSAHAAN 
+                    </button>
+                </a>
+            </div>
+    </nav>
+
+    <!-- COLLAPSE NAVIGATION -->
+    <nav class="align-items-start collapse navbar-collapse bg-light transparent sticky-top" id="navbarActive">
+        <div class="container flex-md-column flex-lg-row">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
+                        <li class="nav-item">
+                            <h6 class="nav-link text-secondary font-weight-bold">PERUSAHAAN</h6>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="https://landx.id/blog/">Blog</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="about-landx.html">Tentang LandX</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="privacy-policy.html">Kebijakan Privasi</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="kebijakan-isms.html">Kebijakan ISMS</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="paparan-risiko.html">Paparan Risiko</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="https://landx.id/blog/faq-landx/">FAQ</a>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>  
+
+                <div class="col-sm-4">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
+                        <li class="nav-item">
+                            <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="contact.html">Kontak</a>
+                            <span></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="mailto:hello@landx.id">hello@landx.id</a>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div> 
+
+                <div class="col-sm-4 mt-4 pb-3">
+                  <a href="pendaftaran-perusahaan.html">
+                    <button type="button" class="btn btn-outline-primary btn-sm float-sm-right float-md-right d-sm-block d-lg-none"> 
+                        PENDAFTARAN PERUSAHAAN 
+                    </button>
+                  </a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div id="lx-hero">
+        <div class="container">
+            <!-- Headline & Phone -->
+            <div class=" row justify-content-center mx-auto ">
+                    <h3 class="headlineTitle px-3 text-secondary text-center font-weight-normal"> Miliki dan Nikmati Keuntungan dari Bisnis Rendah Risiko Mulai dari Rp. 3 juta </h3> 
+                    <div class="heroPhone">
+                        <img src="img/heroPhone.png" alt="heroPhone" />
+                        <!-- <button class="btn demo-fab" data-toggle="modal" data-target="#demoModal"> 
+                            <h5 class="text-center my-0">Click Me!</h5>
+                        </button> -->
+                    </div>
+            </div>
+            <!-- Play & App Store -->
+            <div class="row d-flex-inline justify-content-center storeContainer pb-5">
+                <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="img/Play Store.svg" alt="Play Store" > </a>
+                <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="img/App Store.svg" alt="App Store" > </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEMO MODAL -->
+    <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered a" role="document">
+            <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="img/ico_close_white.svg" alt="close" aria-hidden="true">
+                    </button>
+                    <div class="flex-sm-column flex-md-row d-flex-inline mx-auto demoPhone">
+                        <img src="img/demoPhone.png" alt="demo" >
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATISTIC -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#main-links"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a class="navbar-brand d-none d-md-block" href="index.html">
-          <picture>
-            <source srcset="images/landx-logo-tagline-center.webp" type="image/webp" />
-            <img src="images/landx-logo-tagline-center.png" alt="landx logo" height="70px" />
-          </picture>
-        </a>
-
-        <a class="navbar-brand mr-auto ml-auto d-block d-sm-none" href="index.html">
-          <img src="images/landx-logo-self.svg" alt="landx logo" height="40px"
-        /></a>
-
-        <div class="collapse navbar-collapse" id="main-links">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="pendaftaran-perusahaan.html">Pendaftaran Perusahaan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:hello@landx.id">hello@landx.id</a>
-            </li>
-          </ul>
+        <div class="row flex-sm-row my-5">            
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+                <h2 id="property-count" class="text-secondary text-center">0</h2>
+                <p class="text-primary text-center">Properti</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+                <h2 id="registered-users" class="text-secondary text-center">0</h2>
+                <p class="text-primary text-center">Pengguna Terdaftar</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+                <h2 id="raised-funds" class="text-secondary text-center">0</h2>
+                <p class="text-primary text-center">Dana Terkumpul</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+                <h2 id="dividend-payout" class="text-secondary text-center">0</h2>
+                <p class="text-primary text-center">Keuntungan Dibagikan</p>
+            </div>
         </div>
-      </nav>
     </div>
 
-    <div class="main-body py-5">
-      <div class="container pt-md-5">
-        <div class="row pt-md-4 justify-content-center">
-          <div class="col-12 col-md-6 px-4 px-md-0 align-self-center">
-            <h1 class="text--green">Akhirnya Bisa Investasi Properti Bagus Tanpa Modal Besar</h1>
-            <p class="text--green mt-4">
-              Bagaimana kalau kamu bisa membeli properti-properti terbaik yang sudah dianalisa oleh
-              tim profesional dengan modal kecil? Kamu juga bisa menerima penghasilan dari properti
-              tanpa perlu repot mengurus legal, mencari penyewa, dan pajak properti yang kamu punya.
-              Coming Soon!
-            </p>
-            <div hidden class="platform-stats">
-              <div class="row pt-3">
-                <div class="col">
-                  <div class="stats-number" id="property-stats">
-                    00
-                  </div>
-                  <div class="stats-info">Properti</div>
-                </div>
-                <div class="col">
-                  <div class="stats-number" id="investor-stats">
-                    000
-                  </div>
-                  <div class="stats-info">Investor</div>
-                </div>
-              </div>
-              <div class="row pt-3">
-                <div class="col">
-                  <div class="stats-number" id="funds-stats">
-                    Rp. 0,0 M
-                  </div>
-                  <div class="stats-info">Dana Terkumpul</div>
-                </div>
-                <div class="col">
-                  <div class="stats-number" id="divident-stats">
-                    Rp. 000 JT
-                  </div>
-                  <div class="stats-info">Keuntungan Dibagikan</div>
-                </div>
-              </div>
-            </div>
-            <div class="row pt-5 justify-content-center justify-content-md-start">
-              <div class="col-12 col-md-auto text-center">
-                <a
-                  href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <!--              <img src="images/google-play-badge.svg" alt="google play" width="160px">-->
-                </a>
-              </div>
-              <div class="col-12 col-md-auto text-center mt-2 mt-md-0">
-                <a
-                  href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1453823676&mt=8"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <!--              <img src="images/app-store-badge.svg" alt="app store" width="160px">-->
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 pt-5 pt-md-0">
-            <div class="row justify-content-center justify-content-md-end">
-              <div class="col-auto">
-                <picture>
-                  <source srcset="images/ui-mockup.webp" type="image/webp" />
-                  <img src="images/ui-mockup.png" alt="ui mockup" class="mockup-image" />
-                </picture>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row d-md-none justify-content-center py-5">
-          <div class="col-auto">
-            <button class="btn--green"><a href="mailto:hello@landx.id">hello@landx.id</a></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="disclaimer pt-4">
-      <div class="container">
-        <div class="partners row">
-          <div class="col-sm">
-            <div class="row text-center">
-              <div class="col-sm">
-                <h5 class="registered text-center pb-2">
-                  Telah Terdaftar oleh Kementerian Komunikasi dan Informatika
-                </h5>
-              </div>
-            </div>
+    <!-- WHY CHOOSE LANDX & ONGOING FUNDING PROJECTS SECTION -->
+    <div id="lx-why">
+
+        <!-- Why Choose LandX -->
+        <div class="container" >
             <div class="row">
-              <div class="col-12 pb-4">
-                <div class="row justify-content-center">
-                  <div class="col-auto">
-                    <picture>
-                      <source srcset="images/kemkominfo-logo.webp" type="image/webp" />
-                      <img src="images/kemkominfo-logo.png" alt="kemenkominfo logo" />
-                    </picture>
-                  </div>
+                <div class="col-12 mt-5"> 
+                    <h4 class="text-center text-primary"> Mengapa Memilih LandX </h4>
+                    <img src="img/titleDivider.png" alt="titleDivider" class="mx-auto d-block pb-4">
                 </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-sm">
-                <h5 class="text-center pb-3">*Saat ini LandX sedang dalam proses perijinan OJK.</h5>
-              </div>
-            </div>
-            <hr />
-          </div>
-          <div class="col-sm">
-            <div class="row text-center">
-              <div class="col-sm">
-                <h5 class="registered text-center pb-2">Member of</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 pb-5">
-                <div class="row justify-content-center">
-                  <div class="col-auto">
-                    <picture>
-                      <source srcset="images/fintech_indonesia_logo.webp" type="image/webp" />
-                      <img src="images/fintech_indonesia_logo.png" alt="kemenkominfo logo" />
-                    </picture>
-                  </div>
+        </div> 
+        <div class="container">
+            <div class="row flex-column flex-sm-column flex-md-row flex-lg-row mb-5 px-3">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block mx-auto">
+                    <img src="img/icon/imbal_hasil_tinggi.png" alt="iconPlaceholder" class="iconlx mx-auto">
+                    <p class="text-primary text-center">Miliki Bisnis Properti dengan Imbal Hasil Tinggi dan Rendah Risik</p>
                 </div>
-              </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block mx-auto" data-file="tepat_waktu">
+                    <img src="img/icon/tepat_waktu.png" alt="iconPlaceholder" class="iconlx mx-auto">
+                    <p class="text-primary text-center">Imbal hasil dibayar tepat waktu</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mx-auto d-block mx-auto" data-file="anggunan">
+                    <img src="img/icon/anggunan.png" alt="iconPlaceholder" class="iconlx mx-auto">
+                    <p class="text-primary text-center">100% portfolio pendanaan memiliki agunan properti yang bernilai tinggi</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="container">
-        <hr />
-        <div class="row pt-5 pb-2">
-          <div class="col">
-            <h4><i>Disclaimer</i></h4>
-          </div>
-        </div>
-        <div class="row pb-5">
-          <div class="col-12 col-md-6">
-            <p>
-              PT Numex Teknologi Indonesia (“LandX” atau “Penyelenggara”) hadir dalam rangka
-              mendukung program pemerintah di bidang perumahan dengan mengembangkan bisnis layanan
-              urun dana bersama, dengan mempertemukan Pemilik Dana dan pihak pengembang properti
-              (“Penerbit”) (selanjutnya Pemilik Dana dan Penerbit disebut bersama-sama sebagai
-              “Pengguna”). Pada layanan urun dana ini, timbulnya hubungan perdata terjadi apabila
-              Pemilik Dana sepakat untuk membeli saham yang ditawarkan oleh Penerbit, sehingga
-              segala risiko yang timbul dari hubungan tersebut akan menjadi tanggung jawab
-              masing-masing pihak.
-            </p>
-            <p>
-              Risiko yang timbul dari hak sebagai Pemilik Dana untuk menerima dividen dari Penerbit
-              merupakan risiko yang wajib ditanggung oleh Pemilik Dana sesuai kebijakan dividen
-              Penerbit. Lebih lanjut, LandX TIDAK BERTANGGUNG JAWAB terhadap risiko kerugian dan
-              gugatan hukum serta segala bentuk risiko lain yang timbul, baik sekarang maupun
-              dikemudian hari, atas segala kesepakatan dan keputusan jual beli saham yang telah
-              disepakati antara sesama Pemilik Dana dan antara Pemilik Dana dengan Penerbit.
-            </p>
-            <p>
-              Sebagai Penyelenggara Sistem Elektronik, LandX tunduk mematuhi Undang-Undang No. 11
-              Tahun 2008 tentang Informasi dan Transaksi Elektronik beserta setiap perubahannya dan
-              instrumen hukum lainnya yang berhubungan beserta segala peraturan pelaksanaannya.
-              Penyelenggara telah mendapatkan persetujuan dari Pengguna atas perolehan, penggunaan
-              data pribadi, data transaksi, dan data keuangan (“Pemanfaatan Data”), termasuk pada
-              perangkat elektronik baik perangkat keras maupun lunak, dokumen elektronik, aplikasi
-              atau sistem elektronik yang dikuasai Pengguna, dengan terlebih dahulu memberitahukan
-              maksud dan tujuan serta batasan dari Pemanfaatan Data oleh LandX kepada Pengguna.
-            </p>
-            <p>
-              Sesuai dengan Pasal 23 Peraturan Otoritas Jasa Keuangan No. 37 Tahun 2018 tentang
-              Layanan Urun Dana melalui Penawaran Saham Berbasis Teknologi Informasi atau Equity
-              Crowdfunding (“POJK 37/2018”), kami menyatakan bahwa:
-            </p>
-          </div>
-          <div class="col-12 col-md-6">
-            <ol class="equity-disclaimer-list" type="a">
-              <li>
-                OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI
-                EFEK INI, TIDAK JUGA MENYATAKAN KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN
-                URUN DANA INI. SETIAP PERNYATAAN YANG BERTENTANGAN DENGAN HAL TERSEBUT ADALAH
-                PERBUATAN MELANGGAR HUKUM.
-              </li>
-              <li>
-                INFORMASI DALAM LAYANAN URUN DANA INI PENTING DAN PERLU MENDAPAT PERHATIAN SEGERA.
-                APABILA TERDAPAT KERAGUAN PADA TINDAKAN YANG AKAN DIAMBIL, SEBAIKNYA BERKONSULTASI
-                DENGAN PENYELENGGARA.
-              </li>
-              <li>
-                PENERBIT SAHAM DAN PENYELENGGARA, BAIK SENDIRI-SENDIRI MAUPUN BERSAMA-SAMA,
-                BERTANGGUNG JAWAB SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM
-                LAYANAN URUN DANA INI.
-              </li>
-            </ol>
-            <p>
-              Sebelum membuat keputusan untuk menggunakan Platform LandX, Pengguna wajib mempelajari
-              bisnis model dan seluruh potensi risiko dalam rangka pendanaan langsung melalui
-              Platform LandX. Oleh karenanya bagi Pemilik Dana yang belum memiliki pengetahuan atau
-              berpengalaman pada investasi pasar saham, disarankan untuk terlebih dahulu mengerti
-              proses bisnis dari layanan urunan dana.
-            </p>
-            <p>
-              Oleh karena bisnis model berbasis digital ini tergolong baru, maka LandX sedang dalam
-              proses permohonan perizinan sesuai dengan Peraturan Otoritas Jasa Keuangan No. 37
-              Tahun 2018 tentang Layanan Urun Dana melalui Penawaran Saham Berbasis Teknologi
-              Informasi atau Equity Crowdfunding. Kami terus berkonsultasi dengan OJK dan
-              berkomitmen untuk memenuhi seluruh kewajiban dan kepatuhan pada peraturan
-              perundang-undangan di Republik Indonesia.
-            </p>
-          </div>
-        </div>
-        <hr class="pt-3" />
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row flex-row-reverse">
-          <div class="col-12 col-md">
+
+        <!-- Ongoing Funding Projects -->
+        <div class="container">
             <div class="row">
-              <div class="col-12 col-md">
-                <ul class="bulletless">
-                  <li><span class="text--light-green footer-title">PERUSAHAAN</span></li>
-                  <li>Tentang LandX</li>
-                  <li><a href="privacy-policy.html">Kebijakan Privasi</a></li>
-                  <li><a href="kebijakan-isms.html">Kebijakan ISMS</a></li>
-                  <li><a href="paparan-risiko.html">Paparan Risiko</a></li>
-                  <li><a href="blog/faq-landx/">FAQ</a></li>
-                </ul>
-                <hr class="d-md-none pt-3" />
-              </div>
-              <div class="col-12 col-md">
-                <ul class="bulletless">
-                  <li><span class="text--light-green footer-title">DUKUNGAN</span></li>
-                  <li><a href="contact.html">Kontak</a></li>
-                  <li>hello@landx.id</li>
-                </ul>
-                <hr class="d-md-none pt-3" />
-              </div>
+                <div class="col-12 mt-5 pt-3"> 
+                    <h4 class="text-primary text-center">Pendanaan yang Sedang Berlangsung</h4>
+                    <img src="img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4">
+                </div>
             </div>
-          </div>
-          <div class="col-12 col-md pt-2 pt-md-0">
-            <div class="row text-center text-md-left">
-              <div class="col social-media-icon">
-                <a
-                  href="https://id.linkedin.com/company/landx-id?trk=public_profile_topcard_current_company"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-              <div class="col social-media-icon">
-                <a href="https://www.facebook.com/landx.id"><i class="fab fa-facebook-f"></i></a>
-              </div>
-              <!--          <div class="col social-media-icon"><a href="https://www.instagram.com/landx.id"><i-->
-              <!--                  class="fab fa-instagram"></i></a></div>-->
-            </div>
-            <div class="row pt-5 pb-3 pb-md-0">
-              <div class="col text-center text-md-left pb-3 pb-md-0">
-                <i class="fa fa-copyright" aria-hidden="true"></i> 2019 LandX. All Rights Reserved.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <!-- Projects Card -->
+        <div class="container">
+            <div class="row flex-sm-column flex-md-column flex-lg-row mb-4">
+                <!-- Card 1-->
+                <div class="col-12 col-sm col-md col-lg-4 mx-auto d-block">
+                        <div class="card" style="width: auto">
+                            <img src="img/JKT002_1.png" class="card-img-top" alt="imgPlaceholder" style="height: 240px; padding-bottom:8px; border-radius: 14px 14px 0px 0px">
+                            <div class="card-body flex-sm-column flex-md-row" style="padding:16px 16px 0px; height: 100%; border-radius: 14px">
+                                <!-- FAB -->
+                                <button class="btn lx-fab" data-toggle="modal" data-target="#storeModal"> 
+                                    <img src="img/ico_Cart.svg" alt="add to cart">
+                                </button>
+                                <!-- Progress Bar -->
+                                <p class="text-secondary text-left">100% Dana Terkumpul</p>
+                                <div class="row flex-sm-row flex-md-row" style="padding: 0px 16px 16px">
+                                    <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:100%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
+                                        <p class="text-secondary text-right">0 Hari Tersisa</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row" id="lx-divider">
+                                    <div class="col"></div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text-muted text-left">JKT002</p>
+                                        <p class="text-primary text-left font-weight-normal">Kost-Hotel KK Tanjung Duren <br> - PT. Victory Dana Investama</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row" id="lx-divider">
+                                    <div class="col"></div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-6 mb-2" >
+                                        <p class="text-left text-muted">Estimasi Deviden</p>
+                                        <p class="text-left text-primary font-weight-normal">16,0%</p>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 mb-2">
+                                        <p class="text-left text-muted">Harga Penawaran</p>
+                                        <p class="text-left text-primary font-weight-normal">Rp. 3,260,000</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row flex-sm-row flex-md-row mb-2">
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
+                                        <p class="text-left text-muted">Kamar</p>
+                                        <p class="text-left text-primary font-weight-normal">11</p>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
+                                        <p class="text-left text-muted">Lantai</p>
+                                        <p class="text-left text-primary font-weight-normal">3</p>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
+                                        <p class="text-left text-muted">LT</p>
+                                        <p class="text-left text-primary font-weight-normal">55m2</p>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
+                                        <p class="text-left text-muted">LB</p>
+                                        <p class="text-left text-primary font-weight-normal">140m2</p>
+                                    </div>
+                                </div>          
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Card 2-->
+                <div class="col-12 col-sm col-md col-lg-4 mx-auto d-block">
+                        <div class="card" style="width: auto">
+                            <img src="img/JKT003_1.png" class="card-img-top" alt="imgPlaceholder" style="height: 240px; padding-bottom:8px; border-radius: 14px 14px 0px 0px">
+                            <div class="card-body flex-sm-column flex-md-row" style="padding:16px 16px 0px; height: 100%; border-radius: 14px">
+                                <!-- FAB -->
+                                <button class="btn lx-fab" data-toggle="modal" data-target="#storeModal"> 
+                                    <img src="img/ico_Cart.svg" alt="add to cart">
+                                </button>
+                                <!-- Progress Bar -->
+                                <p class="text-secondary text-left">100% Dana Terkumpul</p>
+                                <div class="row flex-sm-row flex-md-row" style="padding: 0px 16px 16px">
+                                    <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:100%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
+                                        <p class="text-secondary text-right">0 Hari Tersisa</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row" id="lx-divider">
+                                    <div class="col"></div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text-muted text-left">JKT003</p>
+                                        <p class="text-primary text-left font-weight-normal">Kost-Hotel KK Taman Mahkota 8 <br> - PT. Wira Dana Sejahtera</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row" id="lx-divider">
+                                    <div class="col"></div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-6 mb-2" >
+                                        <p class="text-left text-muted">Estimasi Deviden</p>
+                                        <p class="text-left text-primary font-weight-normal">15,5%</p>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 mb-2">
+                                        <p class="text-left text-muted">Harga Penawaran</p>
+                                        <p class="text-left text-primary font-weight-normal">Rp. 2,730,000</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row flex-sm-row flex-md-row mb-2">
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
+                                        <p class="text-left text-muted">Kamar</p>
+                                        <p class="text-left text-primary font-weight-normal">14</p>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
+                                        <p class="text-left text-muted">Lantai</p>
+                                        <p class="text-left text-primary font-weight-normal">5</p>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
+                                        <p class="text-left text-muted">LT</p>
+                                        <p class="text-left text-primary font-weight-normal">60m2</p>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
+                                        <p class="text-left text-muted">LB</p>
+                                        <p class="text-left text-primary font-weight-normal">300m2</p>
+                                    </div>
+                                </div>          
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Card 3-->
+                <div class="col-12 col-sm col-md col-lg-4 mx-auto d-block">
+                    <div class="card" style="width: auto">
+                        <img src="img/JKT004_1.png" class="card-img-top" alt="imgPlaceholder" style="height: 240px; padding-bottom:8px; border-radius: 14px 14px 0px 0px">
+                        <div class="card-body flex-sm-column flex-md-row" style="padding:16px 16px 0px; height: 100%; border-radius: 14px">
+                            <!-- FAB -->
+                            <button class="btn lx-fab" data-toggle="modal" data-target="#storeModal"> 
+                                <img src="img/ico_Cart.svg" alt="add to cart">
+                            </button>
+                            <!-- Progress Bar -->
+                            <p class="text-secondary text-left">100% Dana Terkumpul</p>
+                            <div class="row flex-sm-row flex-md-row" style="padding: 0px 16px 16px">
+                                <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width:100%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6" style="padding:0; margin: auto">
+                                    <p class="text-secondary text-right">0 Hari Lagi</p>
+                                </div>
+                            </div>
+
+                            <div class="row" id="lx-divider">
+                                <div class="col"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-muted text-left">JKT004</p>
+                                    <p class="text-primary text-left font-weight-normal">Ruko-Kost KK Latumeten 27 <br> - PT Penta Dana Setiatama</p>
+                                </div>
+                            </div>
+
+                            <div class="row" id="lx-divider">
+                                <div class="col"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-6 mb-2" >
+                                    <p class="text-left text-muted">Estimasi Deviden</p>
+                                    <p class="text-left text-primary font-weight-normal">16,0%</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 mb-2">
+                                    <p class="text-left text-muted">Harga Penawaran</p>
+                                    <p class="text-left text-primary font-weight-normal">Rp. 2,520,000</p>
+                                </div>
+                            </div>
+
+                            <div class="row flex-sm-row flex-md-row mb-2">
+                                <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
+                                    <p class="text-left text-muted">Kamar</p>
+                                    <p class="text-left text-primary font-weight-normal">27</p>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-3 justify-content-sm-start">
+                                    <p class="text-left text-muted">Lantai</p>
+                                    <p class="text-left text-primary font-weight-normal">4,5</p>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
+                                    <p class="text-left text-muted">LT</p>
+                                    <p class="text-left text-primary font-weight-normal">60m2</p>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-3 justify-content-sm-end">
+                                    <p class="text-left text-muted">LB</p>
+                                    <p class="text-left text-primary font-weight-normal">260m2</p>
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CTA-->
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <button type="button" class="btn btn-primary mx-auto d-block" data-toggle="modal" data-target="#storeModal">LIHAT PROJECT LAIN</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- APP & PLAY STORE MODAL -->
+        <!-- Modal -->
+        <div class="modal fade" id="storeModal" tabindex="-1" role="dialog" aria-labelledby="storeModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered px-4" role="document">
+            <div class="modal-content">
+                <div class="modal-body-store row flex-sm-row d-flex-inline justify-content-center storeContainer py-5">         
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="img/ico_close.svg" alt="close" aria-hidden="true">
+                        </button>
+                    <div class="flex-sm-column">
+                        <h5 class="modal-title text-center text-primary mb-4" id="exampleModalLongTitle">Pilih Sesuai Platform Ponsel Anda</h5>
+                        <div class="flex-sm-column flex-md-row d-flex-inline">
+                            <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="img/Play Store.svg" alt="Play Store" > </a>
+                            <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="img/App Store.svg" alt="App Store" > </a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
     </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"
-      integrity="sha256-iT+n/otuaeKCgxnASny7bxKeqCDbaV1M7VdX1ZRQtqg="
-      crossorigin="anonymous"
-    ></script>
+    <!-- HOW LANDX WORKS -->
+    <div id="lx-how">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12"> 
+                    <h4 class="text-center text-primary"> Cara Kerja LandX</h4>
+                    <img src="img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row flex-sm-column flex-md-row flex-lg-row pb-5">
+                <div class="col-sm col-md-6 col-lg-3">
+                    <img src="img/icon/pilih_proyek.png" alt="iconPlaceholder" class="iconlx mx-auto">
+                    <p class="text-center text-primary font-weight-bold">Pilih Proyek Pendanaan</p>
+                    <p class="text-center text-primary">Pilih proyek pendanaan dari perusahaan-perusahaan properti yang sesuai dengan portfolio pendanaanmu.</p>
+                </div>
+                <div class="col-sm col-md-6 col-lg-3">
+                    <img src="img/icon/beli_saham.png" alt="iconPlaceholder" class="iconlx mx-auto">
+                    <p class="text-center text-primary font-weight-bold">Beli Saham</p>
+                    <p class="text-center text-primary">Dengan memiliki saham, Anda turut memiliki bisnis properti tersebut.</p>
+                </div>
+                <div class="col-sm col-md-6 col-lg-3">
+                    <img src="img/icon/imbal_hasil.png" alt="iconPlaceholder" class="iconlx mx-auto">
+                    <p class="text-center text-primary font-weight-bold">Terima Imbal Hasil</p>
+                    <p class="text-center text-primary">Terima keuntungan sewa setiap bulan.</p>
+                </div>
+                <div class="col-sm col-md-6 col-lg-3">
+                    <img src="img/icon/capital_gain.png" alt="iconPlaceholder" class="iconlx mx-auto">
+                    <p class="text-center text-primary font-weight-bold">Keuntungan Capital Gain</p>
+                    <p class="text-center text-primary">Dapatkan keuntungan dari kenaikan harga properti ketika dijual.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <!--TESTIMONY-->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 col-lg-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="img/testimonyProfilePicture.png" class="testimonyProfile mx-auto d-block" alt="Herbert">
+                        <div class="carousel-caption">
+                            <h5 class="text-center text-primary">Herbert</h5>
+                            <p class="text-center text-primary">“LandX memberikan solusi mudah dan cepat untuk mengembangkan uang saya. Lumayan ya terima hasil tiap bulan.”</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="img/testimonyProfilePicture2.png" class="testimonyProfile mx-auto d-block" alt="Valerie">
+                        <div class="carousel-caption">
+                            <h5 class="text-center text-primary">Valerie</h5>
+                            <p class="text-center text-primary">“Akhirnya ada solusi untuk investasi properti bagi yang tidak punya waktu. Layanan LandX sangat baik, kinerja investasi sangat memuaskan, aplikasi mudah digunakan, plus saya dapat memeriksa investasi saya kapan saja!"</p>
+                        </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <!--CTA & FOOTER-->
+    <div id="lx-footer">
+        
+        <!--CTA-->
+        <div class="container" >
+            <div class="row px-3">
+                <div class="col-sm-12 col-sm-12 col-lg-12 lx-CTA">
+                    <h3 class="text-center text-primary font-weight-normal px-4 py-5">Kini memiliki bisnis properti jadi jauh lebih mudah. Unduh aplikasi LandX sekarang!</h3>
+                    <!-- Play & App Store -->     
+                    <div class="row flex-sm-row d-flex-inline justify-content-center storeContainer pb-5">
+                        <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="img/Play Store.svg" alt="Play Store" > </a>
+                        <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="img/App Store.svg" alt="App Store" > </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Membership-->
+        <div class="container">
+            <div class="row flex-sm-row flex-md-row flex-lg-row pt-5 mt-5">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <h6 class="text-center text-primary my-5">TELAH TERDAFTAR OLEH KEMENTRIAN KOMUNIKASI DAN INFORMATIKA</h6>
+                    <img src="img/logo_kominfo.png" alt="logo_kominfo" class="mx-auto d-block my-5">
+                    <p class="text-center text-primary">*Saat ini LandX sedang dalam proses perijinan OJK</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <h6 class="text-center text-primary my-5">MEMBER OF</h6>
+                    <img src="img/Fintech Logo@2x.svg" alt="logo_fintech_indonesia" class="mx-auto d-block my-5">
+                </div>
+            </div> 
+        </div>
+        
+        <div class="container">
+            <div class="row my-5 px-3">
+                <div class="col" id="lx-dividerPrimary"></div>
+            </div>
+        </div>
+
+        <!--Disclaimer-->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <p class="text-left text-primary font-weight-bold">Disclaimer</p> <br>
+                    <p class="text-left text-primary">
+                        PT Numex Teknologi Indonesia (“LandX” atau “Penyelenggara”) hadir dalam rangka mendukung program pemerintah di bidang perumahan dengan mengembangkan bisnis layanan urun dana bersama, dengan mempertemukan Pemodal dan pihak pengembang properti (“Penerbit”) (selanjutnya Pemodal dan Penerbit disebut bersama-sama sebagai “Pengguna”). Pada layanan urun dana ini, timbulnya hubungan perdata terjadi apabila Pemodal sepakat untuk membeli saham yang ditawarkan oleh Penerbit, sehingga segala risiko yang timbul dari hubungan tersebut akan menjadi tanggung jawab masing-masing pihak. Risiko yang timbul dari hak sebagai Pemodal untuk menerima dividen dari Penerbit merupakan risiko yang wajib ditanggung oleh Pemodal sesuai kebijakan dividen Penerbit. LandX hanya bertindak sebagai layanan urun dana yang mempertemukan antara Pemodal dengan Penerbit, dan tidak bertindak sebagai pelaku usaha yang menjalankan usaha untuk mengumpulkan dana terkait atau pengelola investasi (Penerbit). Sesuai dengan Pasal 23 Peraturan Otoritas Jasa Keuangan No. 37 Tahun 2018 tentang Layanan Urun Dana melalui Penawaran Saham Berbasis Teknologi Informasi atau Equity Crowdfunding (“POJK 37/2018”), kami menyatakan bahwa:
+                        <br> <br>
+                        a.  OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI EFEK INI, TIDAK JUGA MENYATAKAN KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN URUN DANA INI. SETIAP PERNYATAAN YANG BERTENTANGAN DENGAN HAL TERSEBUT ADALAH PERBUATAN MELANGGAR HUKUM.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
+                    <p class="text-left text-primary">
+                            b.  INFORMASI DALAM LAYANAN URUN DANA INI PENTING DAN PERLU MENDAPAT PERHATIAN SEGERA. APABILA TERDAPAT KERAGUAN PADA TINDAKAN YANG AKAN DIAMBIL, SEBAIKNYA BERKONSULTASI DENGAN PENYELENGGARA.
+                        <br> <br>
+                        c.  PENERBIT SAHAM DAN PENYELENGGARA, BAIK SENDIRI-SENDIRI MAUPUN BERSAMA-SAMA, BERTANGGUNG JAWAB SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM LAYANAN URUN DANA INI.
+                        <br> <br>
+                        Sebelum membuat keputusan untuk menggunakan Platform LandX, Pengguna wajib mempelajari bisnis model dan seluruh potensi risiko dalam rangka pendanaan langsung melalui Platform LandX. Oleh karenanya bagi Pemodal yang belum memiliki pengetahuan atau berpengalaman pada investasi pasar saham, disarankan untuk terlebih dahulu mengerti proses bisnis dari layanan urunan dana. Oleh karena bisnis model berbasis digital ini tergolong baru, maka LandX sedang dalam proses permohonan perizinan sesuai dengan Peraturan Otoritas Jasa Keuangan No. 37 Tahun 2018 tentang Layanan Urun Dana melalui Penawaran Saham Berbasis Teknologi Informasi atau Equity Crowdfunding. Kami berkomitmen untuk senantiasa melakukan upaya terbaik kami dalam mematuhi peraturan perundang-undangan yang berlaku di Republik Indonesia.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row my-5 px-3">
+                <div class="col" id="lx-dividerPrimary"></div>
+            </div>
+        </div>
+
+        <!--Sosial media & footer menu-->
+        <div class="container">
+                <div class="row flex-sm-column flex-md-row flex-lg-row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
+                        <a href="https://id.linkedin.com/company/landx-id?trk=public_profile_topcard_current_company">
+                            <img src="img/ico_linkedin.svg" alt="LandX LinkedIn" class="socMed mr-3">
+                        </a> 
+                        <a href="https://www.facebook.com/landx.id">
+                            <img src="img/ico_facebook.svg" alt="LandX Facebook" class="socMed mr-3">
+                        </a>
+                        <a  href="https://www.instagram.com/landx.id/">
+                            <img src="img/ico_instagram.svg" alt="LandX Instagram" class="socMed mr-3">
+                        </a>    
+                    </div>
+    
+                    <div class="col-sm-12 col-md-3 col-lg-3 mb-3">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
+                            <li class="nav-item">
+                                <h6 class="nav-link text-secondary font-weight-bold">PERUSAHAAN</h6>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="https://landx.id/blog">Blog</a>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="about-landx.html">Tentang LandX</a>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="privacy-policy.html">Kebijakan Privasi</a>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="kebijakan-isms.html">Kebijakan ISMS</a>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="paparan-risiko.html">Paparan Risiko</a>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="https://landx.id/blog/faq-landx/">FAQ</a>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
+                            <li class="nav-item">
+                                <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="contact.html">Kontak</a>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="mailto:hello@landx.id">hello@landx.id</a>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                <div class="row">
+                    <div class="col-lg-12 copyright">
+                        <p class="text-left text-primary">© 2020 LandX Indonesia. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    
+    </div> 
+
+
+    <!-- Optional JavaScript for animated icon -->
+    <script>
+        var bm = document.getElementsByClassName('bm')
+        Array.prototype.forEach.call(bm,icon => {
+            var anim = bodymovin.loadAnimation({
+                container: icon,
+                path: `lottie/${icon.dataset.file}.jason`,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true
+            })
+        })
+
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="scripts/statistics.js"></script>
   </body>
 </html>
