@@ -328,6 +328,7 @@ img.testimonyProfile{
 .carousel-caption {
     margin-top: 16px;
 }
+
 .carousel-control-prev-icon {
     background-image: url(img/prevIcon.svg);
 }
@@ -352,7 +353,6 @@ img.testimonyProfile{
     border-bottom: 10px solid transparent;
     opacity: .5;
     transition: opacity .6s ease;
-    
 }
 
 .socMed {
