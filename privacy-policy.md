@@ -82,7 +82,7 @@ Pengguna dengan ini setuju dan memberikan izin untuk Kami untuk dapat mengungkap
   Pengguna berhak untuk meminta kami agar tidak memanfaatkan Data Pribadi Pengguna untuk tujuan pemasaran. Kami akan memberitahu Pengguna dan meminta persetujuan dari Pengguna sebelum Kami menggunakan Data Pribadi Pengguna untuk tujuan tersebut atau jika kami bermaksud mengungkapkan Data Pribadi Pengguna kepada pihak ketiga manapun untuk tujuan tersebut. Pengguna dapat menggunakan hak Pengguna untuk menolak pengolahan tersebut dengan cara memberikan tanda pada formulir yang terkait yang kami gunakan untuk mengumpulkan data Pengguna. Bahkan setelah Pengguna memberikan persetujuan Pengguna atas Data Pribadi yang akan digunakan untuk tujuan pemasaran, Pengguna dapat, setiap saat setelah itu, menarik persetujuan Pengguna dengan menghubungi kami di hello@landx.id.
 
 ### Jangka Waktu Kebijakan Privasi
-  Privacy Policy ini akan berlaku secara terus menerus selama layanan urun dana ini berlangsung, terhitung sejak disetujuinya Kebijakan Privasi ini kecuali diakhiri dengan persetujuan tertulis oleh para pihak.
+  Kebijakan Privasi ini akan berlaku secara terus menerus selama layanan urun dana ini berlangsung, terhitung sejak disetujuinya Kebijakan Privasi ini kecuali diakhiri dengan persetujuan tertulis oleh para pihak.
 
 ### Keberlakuan Ketentuan
   Apabila salah satu atau beberapa ketentuan dalam Kebijakan Privasi ini menjadi tidak berlaku atau tidak dapat dilaksanakan karena melawan ketentuan peraturan perundang-undangan yang berlaku, hal tersebut tidak akan mempengaruhi ketentuan lainnya pada Kebijakan Privasi ini. Kami setuju untuk merubah ketentuan-ketentuan yang berlawanan tersebut sehingga dapat dilaksanakan sesuai dengan peraturan perundang-undangan yang berlaku.
@@ -90,22 +90,21 @@ Pengguna dengan ini setuju dan memberikan izin untuk Kami untuk dapat mengungkap
   Kami memiliki hak serta kewajiban untuk merubah ketentuan-ketentuan pada Kebijakan Privasi ini untuk alasan tertentu.
 
 ### Ganti Rugi
-  Para pihak setuju untuk memberikan ganti rugi dalam bentuk finansial apabila terjadi pelanggaran dalam Kebijakan Privasi ini, sepanjang hal tersebut dapat dibuktikan oleh pihak yang dirugikan dan melanggar Kebijakan Privasi ini.
+  Para pihak setuju untuk memberikan ganti rugi dalam bentuk finansial apabila terjadi pelanggaran dalam Kebijakan Privasi ini, sepanjang hal tersebut dapat dibuktikan oleh pihak yang dirugikan dengan putusan hukum yang berkekuatan tetap dan secara nyata melanggar Kebijakan Privasi ini.
 
 ### Perubahan Kebijakan Privasi Dari Waktu ke Waktu
   Kebijakan Privasi ini mungkin diubah dan/atau diperbaharui dari waktu ke waktu dengan memberikan pemberitahuan terlebih dahulu. LandX menghimbau agar Pengguna membaca secara seksama dan memeriksa halaman Kebijakan Privasi ini dari waktu ke waktu untuk mengetahui perubahan apapun yang dapat terjadi. Dengan tetap mengakses dan menggunakan Aplikasi dan Layanan LandX, maka pengguna menyetujui perubahan-perubahan dalam Kebijakan Privasi ini.
 
 ### Risiko
-  Mohon diperhatikan bahwa berbagai jenis investasi yang terdapat dalam situs ini melibatkan berbagai tingkatan risiko dan tidak terdapat jaminan bahwa investasi tertentu cocok, sesuai atau menguntungkan bagi Pengguna. Setiap produk investasi mengandung risiko dan Pengguna wajib mencari informasi sebelum memutuskan keputusan investasi.
+  Mohon diperhatikan bahwa berbagai jenis investasi yang terdapat dalam situs/aplikasi ini melibatkan berbagai tingkatan risiko dan tidak terdapat jaminan bahwa investasi tertentu cocok, sesuai atau menguntungkan bagi Pengguna. Setiap produk investasi mengandung risiko dan Pengguna wajib mencari informasi sebelum memutuskan keputusan investasi.
 
 ### Hukum Yang Berlaku
 Kebijakan Privasi ini berlaku berdasarkan peraturan perundang-undangan dan hukum di Negara Kesatuan Republik Indonesia.
 
 ### Penyelesaian Sengketa
 
-  1. Apabila terdapat perselisihan antara para pihak sehubungan dengan Kebijakan Privasi ini, maka pihak-pihak yang bersengketa akan mencoba menyelesaikannya dengan melakukan musyawarah dengan mencapai kata mufakat untuk menyelesaikan perselisihan tersebut dalam waktu 30 (tiga puluh) hari kalender sejak penerimaan pemberitahuan dari salah satu pihak yang bersengketa kepada pihak lainnya.
-  2. Apabila perselisihan yang dimaksudkan pada poin 1 di atas tidak dapat diselesaikan, maka pihak-pihak yang berselisih dengan ini sepakat untuk menyelesaikan perselisihan tersebut melalui Badan Arbitrase Nasional Indonesia.
-  3. Dengan tidak mengesampingkan penyelesaian sengketa berdasarkan poin 2 di atas, pihak-pihak yang berselisih dengan ini setuju apabila penyelesaian perselisihan tersebut diselesaikan oleh Otoritas Jasa Keuangan maupun regulator berwenang lainnya dengan metode penyelesaian sengketa lainnya.
+  1. Dalam hal terdapat suatu perselisihan atau sengketa yang timbul dari atau sehubungan dengan penafsiran atau pelaksanaan dari Syarat dan Ketentuan ini, Pengunjung Platform maupun Pengguna Platform sepakat untuk menggunakan segala upaya untuk menyelesaikan perselisihan atau sengketa tersebut melalui musyawarah untuk mufakat.
+  2. Semua sengketa yang timbul dari dan/atau sehubungan dengan Syarat dan Ketentuan ini dan/atau pelaksanaan Syarat dan Ketentuan ini, yang tidak dapat diselesaikan secara musyawarah, baik mengenai cidera janji maupun perbuatan melawan hukum, termasuk mengenai pengakhiran dan/atau keabsahan Syarat dan Ketentuan ini, akan diselesaikan dan diputus melalui Badan Arbitrase Nasional Indonesia yang saat ini beralamat di Wahana Graha lantai 1&2, Jalan Mampang Prapatan No. 2, Duren Tiga, Pancoran, Indonesia. Meskipun terdapat suatu perselisihan atau sengketa, Pengunjung Platform atau Pengguna Platform harus tetap memenuhi kewajibannya berdasarkan Syarat dan Ketentuan ini, tanpa mengurangi keberlakuan keputusan arbitrase final.
 
 ### Hubungi Kami
 Apabila Pengguna memiliki pertanyaan terkait Kebijakan Privasi ini, Pengguna dapat menghubungi Kami di hello@landx.id.
