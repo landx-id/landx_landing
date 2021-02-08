@@ -22,6 +22,6 @@ $.when($.ready).then(function () {
             $('#property-count').text(landingData.property_count);
             $('#registered-users').text(numeral(landingData.registered_users).format('0,0'));
             $('#raised-funds').text(numeral(raisedFunds).format('0.00 a'));
-            $('#dividend-payout').text(numeral(parseInt(dividendPayout)).format('0 a'));
+            $('#dividend-payout').text(numeral(parseInt(dividendPayout)).format('0.00 a'));
         });
 });
