@@ -1,5 +1,6 @@
 $.when($.ready).then(function () {
-    const raisedFunds = 13750000000;
+    const raisedFunds = 20440000000;
+    const dividendPayout = 1360000000;
 
     fetch('https://mobile.landx.id/mobile/landing_data')
         .then(data => data.json())
@@ -21,6 +22,6 @@ $.when($.ready).then(function () {
             $('#property-count').text(landingData.property_count);
             $('#registered-users').text(numeral(landingData.registered_users).format('0,0'));
             $('#raised-funds').text(numeral(raisedFunds).format('0.00 a'));
-            $('#dividend-payout').text(numeral(parseInt(landingData.dividend_payout)).format('0 a'));
+            $('#dividend-payout').text(numeral(parseInt(dividendPayout)).format('0.00 a'));
         });
 });
