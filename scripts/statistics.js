@@ -1,5 +1,5 @@
 $.when($.ready).then(function () {
-    const raisedFunds = 13750000000;
+    const raisedFunds = 20440000000;
 
     fetch('https://mobile.landx.id/mobile/landing_data')
         .then(data => data.json())
