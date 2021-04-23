@@ -1,0 +1,246 @@
+/* This is for daftar-proyek.html file*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap');
+
+/* Set General Item Font */
+.custom-input {
+    font-family: 'Inter', sans-serif !important;
+    color:#2dbe60;
+}
+
+.text-primary {
+    font-family: 'Roboto', sans-serif !important;
+    /* color: #5e798d; */
+}
+
+.custom-select {
+    font-family: 'Inter', sans-serif !important;
+    color: #9e9e9e;
+}
+
+#btnFilter {
+    font-family: 'Inter' !important;
+    /* font-weight: 500; */
+    font-size: x-small;
+    height: 60%;
+    margin-top: 14%;
+}
+
+a > span {
+    font-family: 'Roboto';
+    font-size: x-small;
+}
+
+span {
+    font-family: 'Roboto';
+}
+
+
+/* Carousel Navigator*/
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-bottom {
+    bottom: 280px;
+}
+
+/* INDEKOS */
+.semi-transparent-button {
+    background-color: #e4f6e8;
+    border-color: #bde8c7;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2dbe60;
+}
+.semi-transparent-button:hover {
+    background-color: #e4f6e8;
+    color: rgb(34, 139, 80);
+}
+
+
+/* Card details */
+.small-text {
+    font-family: Roboto;
+    color: #9e9e9e;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+.region-code {
+    font-size: 11px;
+    letter-spacing: 1.65px;
+    font-family: 'Roboto';
+}
+.text-primary {
+    font-family: Roboto;
+}
+
+.carousel-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+/* Project listing filter */
+.filter-link{
+    margin-left: 1em;
+    color: #2dbe60 !important;
+    font-size: 11px;
+}
+
+.filter-link:hover{
+    color: inherit !important;
+}
+
+/* Custom Slider */
+
+/* Functional styling;
+* These styles are required for noUiSlider to function.
+* You don't need to change these rules to apply your design.
+*/
+.noUi-target,.noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.noUi-target {
+    position: relative;
+    direction: ltr;
+}
+
+.noUi-base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+/* Fix 401 */
+}
+
+.noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.noUi-handle {
+    position: relative;
+    z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+/* This class is applied to the lower origin when
+    its values is > 50%. */
+    z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+    -webkit-transition: left 0.3s,top .3s;
+    transition: left 0.3s,top .3s;
+}
+
+.noUi-state-drag * {
+    cursor: inherit !important;
+}
+
+/* Painting and performance;
+* Browsers can paint handles in their own layer.
+*/
+.noUi-base,.noUi-handle {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+*/
+.noUi-horizontal {
+    height: 4px;
+    width: 40%;
+    left: -1em;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    background-color: #2dbe60;
+}
+
+/* Styling;
+*/
+.noUi-background {
+    background: #D6D7D9;
+}
+
+.noUi-connect {
+    background: #2dbe60;
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+}
+
+.noUi-origin {
+    border-radius: 2px;
+}
+
+.noUi-target {
+    border-radius: 2px;
+}
+
+.noUi-target.noUi-connect {
+}
+
+/* Handles and cursors;
+*/
+.noUi-draggable {
+    cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+    cursor: n-resize;
+}
+
+.noUi-handle {
+    cursor: default;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+    border: 8px solid #2dbe60;
+    border: 8px solid rgba(53,93,187,0.38);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    left: -14px;
+    top: -14px;
+}
+
+/* Disabled state;
+*/
+[disabled].noUi-connect,[disabled] .noUi-connect {
+    background: #B8B8B8;
+}
+
+[disabled].noUi-origin,[disabled] .noUi-handle {
+    cursor: not-allowed;
+}
+
+/****************************/
