@@ -1,6 +1,6 @@
 function createProjectHeader(projectDirectory, projectName) {
     return `
-      <div class="col">
+        <div class="col">
             <div class="text-left">
                 <span class="text-secondary region-code">${projectDirectory}</span>
             </div>
@@ -10,19 +10,19 @@ function createProjectHeader(projectDirectory, projectName) {
                 </a>
             </div>
             <span class="card-title text-primary">${projectName}</span>
-      </div>
+        </div>
     `;
-  }
-  
-  function createProjectCategory(projectCategory) {
+}
+
+function createProjectCategory(projectCategory) {
     return `
         <div class="col justify-content-start">
             <button class="btn btn-sm rounded-pill semi-transparent-button" style="font-size: x-small;">${projectCategory}</button>
         </div>
     `;
-  }
-  
-  function createProjectProgress(fundingProgress, totalFunding, remainingDays, progress) {
+}
+
+function createProjectProgress(fundingProgress, totalFunding, remainingDays, progress) {
     return `
         <div class="col-8">
             <div class="text-left">
@@ -45,9 +45,9 @@ function createProjectHeader(projectDirectory, projectName) {
             </div>
         </div>
     `;
-  }
-  
-  function createProjectLotDetails(lotPrice, totalLot) {
+}
+
+function createProjectLotDetails(lotPrice, totalLot) {
     return `
         <div class="col">
             <div class="text-left">
@@ -62,17 +62,16 @@ function createProjectHeader(projectDirectory, projectName) {
             </div>
         </div>
     `;
-  }
-  
-  function createProjectDividendDetails(dividendSchedule, annualRentYield, annualRentYieldUpper) {
+}
+
+function createProjectDividendDetails(dividendSchedule, annualRentYield, annualRentYieldUpper) {
     var dividendPeriodDesc = "Periode dividen aktual akan tetap mengacu pada laporan keuangan dan " +
-      "persetujuan Rapat Umum Pemegang Saham (RUPS).";
+        "persetujuan Rapat Umum Pemegang Saham (RUPS).";
     var dividendEstimates = "Disclaimer: kinerja masa lalu bukan merupakan indikasi kinerja masa depan. Estimasi dividen adalah " + 
-      "ilustrasi berdasarkan proyeksi konservatif, dividen aktual akan tetap mengacu pada kinerja penerbit dan " +
-      "persetujuan Rapat Umum Pemegang Saham (RUPS). Estimasi dividen belum termasuk potensi capital gain dari " +
-      "kenaikan harga saham";
-  
-    
+        "ilustrasi berdasarkan proyeksi konservatif, dividen aktual akan tetap mengacu pada kinerja penerbit dan " +
+        "persetujuan Rapat Umum Pemegang Saham (RUPS). Estimasi dividen belum termasuk potensi capital gain dari " +
+        "kenaikan harga saham";
+
     return `
     <div class="col">
         <div class="text-left">
@@ -92,26 +91,18 @@ function createProjectHeader(projectDirectory, projectName) {
         </div>
     </div>
     `;
-  }
-  
-  
-  /* for button invest sekarang */
-  function getMobileOperatingSystem() {
+}
+
+function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  
-        // Windows Phone must come first because its UA also contains "Android"
-      if (/windows phone/i.test(userAgent)) {
-            return "Windows Phone";
-      }
-  
-      if (/android/i.test(userAgent)) {
-            return "Android";
-      }
-  
-      // iOS detection from: http://stackoverflow.com/a/9039885/177710
-      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            return "iOS";
-      }
-  
-      return "unknown";
-  }  
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "Unknown";
+}  
