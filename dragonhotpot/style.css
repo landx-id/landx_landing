@@ -617,6 +617,15 @@ div.funding-container {
     margin-left: -13em;
 }
 
+div.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+div.contact-container > div{
+    margin-right: 1em;
+}
+
 /* MEDIA BREAKPOINT */
 
 /* Extra extra small devices (portrait phones, less than 414px) */
@@ -750,6 +759,15 @@ div.funding-container {
 
     .btn-whatsapp > img {
         margin-bottom: 5px;
+    }
+
+    div.contact-container {
+        display: grid;
+    }
+
+    div.contact-container > div.content {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -912,6 +930,15 @@ div.funding-container {
         height: 54px;
         width: 152px;
         margin-bottom: 0px;
+    }
+
+    div.contact-container {
+        display: grid;
+    }
+
+    div.contact-container > div.content {
+        display: flex;
+        justify-content: center;
     }
 }
 
