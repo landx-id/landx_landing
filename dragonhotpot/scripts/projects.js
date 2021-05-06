@@ -57,7 +57,7 @@ fetch("https://api.landx.id/", {
       var projectDirectory = currentProject["mapImageUrl"].split("/")[4];
       var projectName = currentProject["name"];
       var projectCategory = currentProject["category"];
-      var fundingProgress = numeral(currentProject["propertyPrice"]).format("0,0");
+      var fundingProgress = numeral(currentProject["launchProgress"] * currentProject["totalPurchasePrice"]).format("0,0");
       var totalFunding = numeral(currentProject["totalPurchasePrice"]).format("0,0");
 
       /* calculate the remaining days */
