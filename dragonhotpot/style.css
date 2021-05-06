@@ -473,7 +473,7 @@ div.header-background > div.bowl1 > img#bowl {
     position: absolute;
     margin-top: 400px;
     width: 400px;
-    right: -100px;
+    right: -140px;
 }
 
 div.header-background > div.bowl2 {
@@ -843,7 +843,7 @@ div.carousel-card {
 
     div.header-background > div.bowl1 > img#bowl {
         margin-top: 200px;
-        width: 300px;
+        width: 200px;
     }
 
     div.header-background > div.bowl2 > img#bowl {
@@ -917,6 +917,10 @@ div.carousel-card {
 @media (max-width: 550px) {
     div.header-background > div.bowl1 > img#bowl {
         width: 200px;
+    }
+
+    div.header-background > div.bowl2 > img#bowl {
+        left: -100px;
     }
 
     div.section-info > div.highlight > * {
