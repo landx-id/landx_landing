@@ -1,6 +1,6 @@
 var listOfProjects = {};
 
-fetch("https://api.landx.id/", {
+fetch("http://api.landx.id/", {
   method: "POST",
   mode: "cors",
   headers: {
@@ -48,9 +48,9 @@ fetch("https://api.landx.id/", {
   var cardName = "carouselCards";
   var base = document.getElementById("base-cards");
 
-  for (var i = projects.length - 3; i < projects.length; i++) {
+  for (var i = projects.length - 4; i < projects.length; i++) {
       var cardBase = document.createElement("div");
-      cardBase.setAttribute("class", "col-auto mt-3");
+      cardBase.setAttribute("style", "margin-left: -30px");
 
       /* for easier management */
       var currentProject = projects[i]["landXProperty"];
