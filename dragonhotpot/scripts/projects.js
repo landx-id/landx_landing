@@ -10,20 +10,15 @@ fetch("https://api.landx.id/", {
   body: JSON.stringify({query: `{
     currencies {
       landXProperty {
-        acquisitionCost
         address
         annualRentYield
         annualRentYieldUpper
-        cashReserved
         category
-        description
         dividendSchedule
         id
         initialTokenPrice
-        issuerName
         launchProgress
         mapImageUrl
-        mapUrl
         name
         previewImages
         propertyPrice
