@@ -1,6 +1,6 @@
 var listOfProjects = {};
 
-fetch("http://api.landx.id/", {
+fetch("https://api.landx.id/", {
   method: "POST",
   mode: "cors",
   headers: {
