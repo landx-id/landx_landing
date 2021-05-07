@@ -7,10 +7,6 @@ html, body {
     overflow-x: hidden;
 }
 
-body {
-    position: relative;
-}
-
 /* Fonts */
 .custom-input {
     font-family: 'Inter', sans-serif !important;
