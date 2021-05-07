@@ -461,7 +461,7 @@ h5.card-title {
 
 /* Header Banner */
 div.header-background {
-    background-image: url(assets/Header-image-01.png), url(assets/Header-background.png);
+    background-image: url(assets/Header-image-01-min.png), url(assets/Header-background-min.png);
     background-position-x: center, center;
     background-position-y: -250px, center;
     background-size: 600px, cover;
@@ -553,6 +553,7 @@ div.section-info {
 
 div.section-info > div.highlight > * {
     font-family: Inter !important;
+    font-weight: 300;
 }
 
 div.section-info > div.sub-highlight > * {
@@ -656,7 +657,7 @@ div.carousel-card {
     }
 }
 
-/* Medium devices (tablets, less than 1200px) */
+/* Consider this a laptop devices */
 @media (max-width: 1200px) {
 
     .navbar {
@@ -730,17 +731,17 @@ div.carousel-card {
     }
 
     div.details-content-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
         margin-left: 20px;
     }
 
     .text-details-info {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .text-details-content {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .capital-average {
@@ -750,9 +751,9 @@ div.carousel-card {
     }
 
     span.outlet > ul {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
         margin-left: -40px;
     }
     
@@ -778,6 +779,8 @@ div.carousel-card {
     .btn-whatsapp > img {
         margin-bottom: 5px;
     }
+
+
 }
 
 @media (max-width: 1000px) {
@@ -799,6 +802,17 @@ div.carousel-card {
 
     #navbarActive{
         padding-top: 72px;
+    }
+
+    div.details-content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    span.outlet > ul {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        margin-left: -40px;
     }
 }
 
