@@ -746,7 +746,7 @@ div.carousel-card {
 
     .capital-average {
         display: grid;
-        justify-content: start;
+        justify-content: center;
         margin-left: 20px;
     }
 
