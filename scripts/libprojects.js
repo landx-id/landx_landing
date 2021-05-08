@@ -1,11 +1,11 @@
-function createProjectHeader(projectDirectory, projectName) {
+function createProjectHeader(projectDirectory, projectName, projectLink) {
     return `
         <div class="col">
             <div class="text-left">
                 <span class="text-secondary region-code">${projectDirectory}</span>
             </div>
             <div class="btn-buy">
-                <a href="#" class="btn btn-sm btn-primary rounded-pill" id="btnBuy" role="button">
+                <a href="${projectLink}" class="btn btn-sm btn-primary rounded-pill" id="btnBuy" role="button">
                     <span>BELI</span>
                 </a>
             </div>

@@ -32,6 +32,7 @@ fetch("https://api.landx.id/", {
 .then(r => r.json())
 .then(data => listOfProjects = data)
 .then(() => {
+  
   listOfProjects["data"]["currencies"].forEach(function(item, index) {
       if ( item["landXProperty"] == null 
         || item["landXProperty"] == "") {
@@ -50,14 +51,14 @@ fetch("https://api.landx.id/", {
 
   for (var i = projects.length - 4; i < projects.length; i++) {
       var cardBase = document.createElement("div");
-      cardBase.setAttribute("style", "margin-left: -30px");
+      cardBase.setAttribute("class", "project-item");
 
       /* for easier management */
       var currentProject = projects[i]["landXProperty"];
       var projectDirectory = currentProject["mapImageUrl"].split("/")[4];
       var projectName = currentProject["name"];
       var projectCategory = currentProject["category"];
-      var fundingProgress;
+      var fundingProgress = numeral(currentProject["launchProgress"] * currentProject["totalPurchasePrice"]).format("0,0");
       var totalFunding = numeral(currentProject["totalPurchasePrice"]).format("0,0");
 
       /* calculate the remaining days */
@@ -72,15 +73,6 @@ fetch("https://api.landx.id/", {
       var dividendSchedule = currentProject["dividendSchedule"];
       var annualRentYield = parseFloat(currentProject["annualRentYield"]) * 100;
       var annualRentYieldUpper = parseFloat(currentProject["annualRentYieldUpper"]) * 100;
-
-
-      if (currentProject["launchProgress"] == null) {
-        // market closed,
-        // make assumption that it has been bought completely
-        fundingProgress = numeral(currentProject["totalPurchasePrice"]).format("0,0");
-      } else {
-        fundingProgress = numeral(currentProject["launchProgress"] * currentProject["totalPurchasePrice"]).format("0,0");
-      }
 
       if (remainingDays < 0) {
           remainingDays = 0;
@@ -134,7 +126,7 @@ fetch("https://api.landx.id/", {
           /* Set the text based on its image directory */
           var itemCardBodyRow1 = document.createElement("div");
           itemCardBodyRow1.setAttribute("class", "row")
-          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, `/project/${projectDirectory.toLowerCase()}`);
+          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, `https://landx.id/project/${projectDirectory.toLowerCase()}`);
 
           /* Project Category */
           var itemCardBodyRow2 = document.createElement("div");
@@ -174,14 +166,7 @@ fetch("https://api.landx.id/", {
           slide.append(carouselBase);
           cardBase.append(slide);
       }
-      base.append(cardBase);
-  }
 
-  if (getMobileOperatingSystem() == "iOS") {
-    var btnInvest = document.getElementById("btn-invest");
-    btnInvest.href = "https://apps.apple.com/id/app/landx/id1453823676";
-  } else {
-    var btnInvest = document.getElementById("btn-invest");
-    btnInvest.href = "https://play.google.com/store/apps/details?id=store.numoney.landxapp&hl=en&gl=US";
+      base.append(cardBase);
   }
 });
