@@ -138,7 +138,7 @@ function capitalizeTheFirstLetterOfEachWord(words) {
 }
 
 async function fetchProperties() {
-    return fetch('http://api.nmx.127.0.0.1.nip.io:8080/', {
+    return fetch('https://api.landx.id/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
