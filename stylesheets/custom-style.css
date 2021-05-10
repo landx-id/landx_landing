@@ -26,6 +26,10 @@
     margin-top: 14%;
 }
 
+#btnResetFilter {
+    cursor:pointer;
+}
+
 a > span {
     font-family: 'Roboto';
     font-size: x-small;
@@ -53,6 +57,10 @@ span {
     bottom: 280px;
 }
 
+.carousel-top {
+    top: 140px;
+}
+
 /* INDEKOS */
 .semi-transparent-button {
     background-color: #e4f6e8 !important;
@@ -60,7 +68,7 @@ span {
     font-weight: bold;
     font-family: Roboto;
     font-size: 12px;
-    font-weight: normal;
+    margin-top: -12px;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;
@@ -166,8 +174,7 @@ span {
 */
 .noUi-horizontal {
     height: 4px;
-    width: 40%;
-    left: -1em;
+    width: 100%;
 }
 
 .noUi-horizontal .noUi-handle {
