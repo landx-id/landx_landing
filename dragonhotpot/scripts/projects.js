@@ -25,6 +25,9 @@ fetch("https://api.landx.id/", {
         settlementDate
         tokenSupply
         totalPurchasePrice
+        token {
+          symbol
+        }
       }
     }
   }`})
@@ -54,7 +57,7 @@ fetch("https://api.landx.id/", {
 
       /* for easier management */
       var currentProject = projects[i]["landXProperty"];
-      var projectDirectory = currentProject["mapImageUrl"].split("/")[4];
+      var projectDirectory = currentProject["token"]["symbol"];
       var projectName = currentProject["name"];
       var projectCategory = currentProject["category"];
       var fundingProgress;

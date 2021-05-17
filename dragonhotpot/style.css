@@ -62,13 +62,14 @@ p {
 }
 
 .hamburgerMenu img{
-    width: 32px;
+    width: 28px;
     cursor: pointer;
 }
 
 .landxLogo img {
     height: 32px;
     padding-left:248px;
+    margin: -8px 10px 0 0;
     cursor: pointer;
 }
 
@@ -463,60 +464,71 @@ h5.card-title {
 div.header-background {
     background-image: url(assets/Header-image-01-min.png), url(assets/Header-background-min.png);
     background-position-x: center, center;
-    background-position-y: -250px, center;
-    background-size: 600px, cover;
+    background-position-y: -205px, center;
+    background-size: 660px, cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
 div.header-background > div.bowl1 > img#bowl {
     position: absolute;
-    margin-top: 400px;
-    width: 400px;
-    right: -140px;
+    margin-top: 475px;
+    width: 505px;
+    height: 510px;
+    right: -200px;
 }
 
-div.header-background > div.bowl2 {
-    height: 200px;
-}
 div.header-background > div.bowl2 > img#bowl {
     position: absolute;
-    margin-top: -40px;
-    width: 400px;
-    left: -40px;
+    margin-top: -360px;
+    width: 565px;
+    height: 535px;
+    left: -70px;
 }
 
 div.header-background > div.title {
-    margin-top: 400px;
+    margin-top: 473px;
 }
 
 div.header-background > div.title h3 {
     font-family: Arsenal !important;
     color: #8e3825;
     font-weight: bold;
+    font-size: 40px;
+    line-height: 33pt;
+}
+
+.row.details-company {
+    margin-left: 140px;
+    margin-top: 70px;
 }
 
 div.details-content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 408px 1fr;
 }
 
 .dhp-icon {
+    margin-top: 72px;
     height: auto;
-    width: auto;
+    width: 210px;
 }
 
 .text-details-info {
     font-family: Arsenal !important;
-    font-size: 24px;
-    letter-spacing: 0.25px;
+    font-size: 17px;
+    letter-spacing: -0.3px;
     color: #8e3825;
     display: block;
 }
 
+.text-details-info {
+    margin-bottom: 9px;
+}
+
 .text-details-content {
     font-family: Arsenal !important;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     letter-spacing: 0.25px;
     color: #8e3825;
@@ -524,13 +536,18 @@ div.details-content-grid {
 
 span.outlet > ul {
     -moz-column-count: 2;
-    -moz-column-gap: 20px;
+    -moz-column-gap: 25px;
     -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
+    -webkit-column-gap: 25px;
     column-count: 2;
-    column-gap: 20px;
+    column-gap: 25px;
     list-style: none;
-    margin-left: -40px;
+    margin-left: -41px;
+    margin-top: 8px;
+}
+
+span.outlet > ul > li {
+    margin: 0 0 22px 0;
 }
 
 span.outlet > ul > li:before {
@@ -540,6 +557,13 @@ span.outlet > ul > li:before {
 .capital-average {
     display: grid;
     justify-content: center;
+    margin-top: 27px;
+    margin-left: 90px;
+    margin-bottom: 145px;
+}
+
+.capital-average > .text-details-info {
+    margin-bottom: 5px;
 }
 
 div.section-info {
@@ -547,13 +571,14 @@ div.section-info {
     justify-content: center;
     text-align: center;
     color: #8e3825;
-    margin-top: 150px;
+    margin-top: 235px;
     margin-bottom: 50px;
 }
 
 div.section-info > div.highlight > * {
     font-family: Inter !important;
     font-weight: 300;
+    font-size: 38px;
 }
 
 div.section-info > div.sub-highlight > * {
@@ -643,6 +668,27 @@ div.carousel-card {
     position: absolute;
     top: -2.3em;
     margin-left: 70%;
+}
+
+
+/* Project Category */
+.semi-transparent-button {
+    background-color: #e4f6e8 !important;
+    border-color: #bde8c7 !important;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2dbe60 !important;
+}
+.semi-transparent-button:hover {
+    background-color: #e4f6e8;
+    color: rgb(34, 139, 80);
 }
 
 /* MEDIA BREAKPOINT */

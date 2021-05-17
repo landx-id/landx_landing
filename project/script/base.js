@@ -27,6 +27,9 @@ fetch("https://api.landx.id/", {
                 annualRentYieldUpper
                 description
                 address
+                token {
+                    symbol
+                }
             }
         }
     }`})
@@ -49,7 +52,7 @@ fetch("https://api.landx.id/", {
     });
 
     if (currentProject != null) {
-        var projectDirectory = currentProject["mapImageUrl"].split("/")[4];
+        var projectDirectory = currentProject["token"]["symbol"];
         var projectName = currentProject["name"];
         var projectIssuerName = currentProject["issuerName"];
         var projectCategory = currentProject["category"];

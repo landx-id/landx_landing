@@ -2,28 +2,10 @@ html, body {
     overflow-x: hidden;
 }
 
-div.details-container {
-    display: grid;
-    grid-template-columns: 600px 1fr;
-    justify-content: center;
-}
-
-div.description-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
 div.projects-container {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     justify-content: center;
-}
-
-.container.projects {
-    margin-left: 20px;
 }
 
 #project-directory {
@@ -79,8 +61,8 @@ div.projects-container {
 }
 
 .progress.xs.custom-progress {
-    width: 600px;
-    margin-left: -20px;
+    width: 95%;
+    margin-left: -15px;
 }
 
 .row-buttons {
@@ -105,101 +87,38 @@ div.projects-container {
     margin-left: 10px;
 }
 
+.button-back {
+    font-size: 24px;
+    font-weight: 500;
+}
+
 /* Media Break Point */
 
 @media (max-width: 1200px) {
-    
-    .container.projects {
-        margin-top: 40px;
-        margin-left: 80px;
-    }
 
     div.projects-container {
         grid-template-columns: 300px 300px;
-    }
-    
-    div.details-container {
-        grid-template-columns: 1fr;
-    }
-    
-    div.description-container {
-        grid-template-columns: 1fr;
-    }
-
-    .progress.xs.custom-progress {
-        width: 920px;
-        margin-left: -20px;
     }
 }
 
 @media (max-width: 992px) {
 
-    .container.projects {
-        margin-top: 40px;
-        margin-left: 80px;
-    }
-
     div.projects-container {
         grid-template-columns: 300px 300px 300px;
-    }
-
-    div.details-container {
-        grid-template-columns: 1fr;
-    }
-    
-    div.description-container {
-        grid-template-columns: 1fr;
-    }
-
-    .progress.xs.custom-progress {
-        width: 680px;
-        margin-left: -20px;
     }
 }
 
 @media (max-width: 917px) {
 
-    .container.projects {
-        margin-top: 40px;
-        margin-left: 50px;
-    }
-
     div.projects-container {
         grid-template-columns: 300px 300px;
     }
-
-    div.details-container {
-        grid-template-columns: 1fr;
-    }
-    
-    div.description-container {
-        grid-template-columns: 1fr;
-    }
-
-    .progress.xs.custom-progress {
-        width: 488px;
-        margin-left: -20px;
-    }
 }
 
-@media (max-width: 600px) {
-    
-    .container.projects {
-        margin-top: 40px;
-        margin-left: 10px;
-    }
-
-    div.details-container {
-        grid-template-columns: 400px;
-    }
+@media (max-width: 768px) {
 
     div.projects-container {
         grid-template-columns: 300px;
-    }
-
-    .progress.xs.custom-progress {
-        width: 330px;
-        margin-left: -20px;
     }
 
     .btn-detail-bottom {
@@ -222,9 +141,13 @@ div.projects-container {
         margin-right: 10px;
     }
 
-    .progress.xs.custom-progress {
-        width: 388px;
-        margin-left: -20px;
+    .box-2 {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .button-back {
+        font-size: 20px;
     }
 }
 
@@ -234,22 +157,11 @@ div.projects-container {
         font-size: 22px;
     }
 
-    .container.projects {
-        margin-top: 40px;
-        margin-left: 20px;
-    }
-    
-    div.details-container {
-        grid-template-columns: 350px;
-    }
-
     .detail, .sub-detail-2 {
         font-size: 16px;
     }
 
-    .progress.xs.custom-progress {
-        width: 330px;
-        margin-left: -20px;
+    .button-back {
+        font-size: 16px;
     }
-    
 }
