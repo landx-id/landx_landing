@@ -68,6 +68,14 @@ fetch("https://api.landx.id/", {
         var mapPicture = currentProject["mapImageUrl"]
         var progressBar = currentProject["launchProgress"] * 100;
 
+        var dividendPeriodDesc = "Periode dividen aktual akan tetap mengacu pada laporan keuangan dan " +
+        "persetujuan Rapat Umum Pemegang Saham (RUPS).";
+    
+        var dividendEstimates = "Disclaimer: kinerja masa lalu bukan merupakan indikasi kinerja masa depan. Estimasi dividen adalah " + 
+        "ilustrasi berdasarkan proyeksi konservatif, dividen aktual akan tetap mengacu pada kinerja penerbit dan " +
+        "persetujuan Rapat Umum Pemegang Saham (RUPS). Estimasi dividen belum termasuk potensi capital gain dari " +
+        "kenaikan harga saham";
+
         /* calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
         const today = new Date().getTime();
@@ -104,6 +112,8 @@ fetch("https://api.landx.id/", {
         $("#download-prospectus").attr("href", `/prospektus/${projectDirectory}.pdf`);
         $("#progress-bar").attr("style", `width: ${progressBar}%`)
         $("#progress-bar").attr("aria-valuenow", progressBar)
+        $("#dividend-period-desc").attr("title", dividendPeriodDesc);
+        $("#dividend-estimates").attr("title", dividendEstimates);
     }
 
     if (getMobileOperatingSystem() == "iOS") {
