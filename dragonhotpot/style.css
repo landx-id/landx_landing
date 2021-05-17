@@ -571,18 +571,26 @@ div.section-info {
     justify-content: center;
     text-align: center;
     color: #8e3825;
-    margin-top: 235px;
+    margin-top: 233px;
     margin-bottom: 50px;
+}
+
+div.section-info > div.highlight{
+    margin-bottom: 30px;
 }
 
 div.section-info > div.highlight > * {
     font-family: Inter !important;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 40px;
+    margin-bottom: 0px;
 }
 
-div.section-info > div.sub-highlight > * {
+div.section-info > div.sub-highlight > p {
     font-family: Inter !important;
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    line-height: 17px;
 }
 
 div.works-container {
@@ -768,12 +776,15 @@ div.carousel-card {
 
 
     div.header-background > div.bowl1 > img#bowl {
-        width: 300px;
+        width: 350px;
+        height: auto;
+        right: -150px;
     }
 
     div.header-background > div.bowl2 > img#bowl {
-        width: 300px;
-        margin-top: 10px;
+        width: 450px;
+        height: auto;
+        margin-top: -280px;
     }
 
     div.details-content-grid {
@@ -850,8 +861,20 @@ div.carousel-card {
         padding-top: 72px;
     }
 
+
+    div.header-background {
+        background-size: 560px, cover;
+    }
+
     div.details-content-grid {
         grid-template-columns: 1fr;
+        margin-left: 0px;
+    }
+
+    
+    .row.details-company {
+        margin-left: 0px;
+        margin-top: 70px;
     }
     
     span.outlet > ul {
@@ -860,10 +883,14 @@ div.carousel-card {
         column-count: 1;
         margin-left: -40px;
     }
+    
+    div.header-background > div.title {
+        margin-top: 380px;
+    }
 }
 
 /* Phones (portrait phones, less than 700px) */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .navbar {
         padding: 16px;
         height: 72px;
@@ -889,31 +916,31 @@ div.carousel-card {
     }
 
     .text-details-info {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .text-details-content {
-        font-size: 24px;
+        font-size: 18px;
         display: block;
     }
 
     div.header-background {
-        background-size: 380px 380px, cover;
+        background-size: 480px, cover;
     }
 
     div.header-background > div.bowl1 > img#bowl {
-        margin-top: 200px;
-        width: 200px;
+        margin-top: 350px;
+        width: 350px;
     }
 
     div.header-background > div.bowl2 > img#bowl {
-        margin-top: 40px;
-        width: 300px;
-        left: -50px;
+        margin-top: -193px;
+        width: 350px;
+        left: -123px;
     }
 
     div.header-background > div.title {
-        margin-top: 150px;
+        margin-top: 300px;
     }
 
     div.header-background > div.title h3 {
@@ -939,6 +966,7 @@ div.carousel-card {
         display: grid;
         justify-content: start;
         margin-left: 20px;
+        margin-bottom: 210px;
     }
 
     div.works-container {
@@ -975,16 +1003,34 @@ div.carousel-card {
 }
 
 @media (max-width: 550px) {
+    div.header-background {
+        background-position-y: -100px, center;
+        background-size: 280px, cover;
+    }
+
     div.header-background > div.bowl1 > img#bowl {
-        width: 200px;
+        height: 209px;
+        width: auto;
+        right: -115px;
+        margin-top: 440px;
     }
 
     div.header-background > div.bowl2 > img#bowl {
+        height: 285px;
+        width: auto;
         left: -100px;
+    }
+    
+    div.title {
+        margin-top: 50px;
+    }
+
+    div.header-background > div.title h3 {
+        font-size: 24px;
     }
 
     div.section-info > div.highlight > * {
-        font-size: 24px;
+        font-size: 28px !important;
     }
 
     div.section-info > div.sub-highlight > * {
@@ -997,5 +1043,27 @@ div.carousel-card {
 
     div.why-container {
         grid-template-columns: 250px;
+    }
+
+    div.details-content-grid {
+        margin-left: 0px
+    }
+
+    .text-details-info {
+        font-size: 24px;
+    }
+
+    .text-details-content {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    
+    div.section-info > div.highlight > * {
+        font-size: 24px;
+    }
+
+    div.section-info > div.sub-highlight > * {
+        font-size: 16px;
     }
 }
