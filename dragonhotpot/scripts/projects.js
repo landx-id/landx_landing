@@ -25,6 +25,9 @@ fetch("https://api.landx.id/", {
         settlementDate
         tokenSupply
         totalPurchasePrice
+        token {
+          symbol
+        }
       }
     }
   }`})
@@ -54,10 +57,10 @@ fetch("https://api.landx.id/", {
 
       /* for easier management */
       var currentProject = projects[i]["landXProperty"];
-      var projectDirectory = currentProject["mapImageUrl"].split("/")[4];
+      var projectDirectory = currentProject["token"]["symbol"];
       var projectName = currentProject["name"];
       var projectCategory = currentProject["category"];
-      var fundingProgress = numeral(currentProject["launchProgress"] * currentProject["totalPurchasePrice"]).format("0,0");
+      var fundingProgress;
       var totalFunding = numeral(currentProject["totalPurchasePrice"]).format("0,0");
 
       /* calculate the remaining days */
@@ -72,6 +75,15 @@ fetch("https://api.landx.id/", {
       var dividendSchedule = currentProject["dividendSchedule"];
       var annualRentYield = parseFloat(currentProject["annualRentYield"]) * 100;
       var annualRentYieldUpper = parseFloat(currentProject["annualRentYieldUpper"]) * 100;
+
+
+      if (currentProject["launchProgress"] == null) {
+        // market closed,
+        // make assumption that it has been bought completely
+        fundingProgress = numeral(currentProject["totalPurchasePrice"]).format("0,0");
+      } else {
+        fundingProgress = numeral(currentProject["launchProgress"] * currentProject["totalPurchasePrice"]).format("0,0");
+      }
 
       if (remainingDays < 0) {
           remainingDays = 0;
@@ -125,7 +137,7 @@ fetch("https://api.landx.id/", {
           /* Set the text based on its image directory */
           var itemCardBodyRow1 = document.createElement("div");
           itemCardBodyRow1.setAttribute("class", "row")
-          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName);
+          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, `/project/${projectDirectory.toLowerCase()}`);
 
           /* Project Category */
           var itemCardBodyRow2 = document.createElement("div");
