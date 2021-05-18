@@ -314,9 +314,6 @@ td{
     margin-bottom: 16px;
 }
 
-.card-img-top {
-    background: cover;
-}
 img.testimonyProfile{
     width: 96px;
     margin: auto;
@@ -414,7 +411,7 @@ img.testimonyProfile{
     border-radius: 14px 14px 0px 0px;
 }
 
-.card-body {
+div.card-body {
     padding:16px 16px 0px; 
     min-height: 264px; 
     border-radius: 14px;
@@ -434,12 +431,15 @@ img.landxFlow {
 }
 
 h5.card-title {
+    font-family: Inter !important;
+    font-weight: bold;
     margin-top: 5em;
-    color:#2dbe60 !important;
+    color:#5e798d !important;
 }
 
 .card-text {
-    color: #2dbe60 !important;
+    font-family: Inter !important;
+    color: #5e798d !important;
 }
 
 .why-ico {
@@ -605,10 +605,37 @@ div.why-container {
     justify-content: center;
 }
 
+div.why-container > div.card {
+    height: 350px;
+}
+
+#btn-invest {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+div.why-container > div.card > img {
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+div.why-container > div.card > div.card-title {
+    margin-left: 10px;
+    word-spacing: -1px;
+}
+
+div.why-container > div.card > div.card-body {
+    margin-left: 10px;
+}
+
 div.funding-container > div#base-cards{
     display: grid;
     justify-content: center;
     grid-template-columns: 300px 300px 300px;
+}
+
+.emoji{
+    font-size: 100px;
 }
 
 .btn-whatsapp, .btn-whatsapp:hover, .btn-whatsapp:active {
@@ -699,6 +726,12 @@ div.carousel-card {
     color: rgb(34, 139, 80);
 }
 
+
+.text-brand {
+    font-family: Inter;
+    font-size: 32px;
+}
+
 /* MEDIA BREAKPOINT */
 
 /* High to Low*/
@@ -708,6 +741,293 @@ div.carousel-card {
 @media (min-width: 1200px) {
     div.funding-container > div#base-cards {
         grid-template-columns: 300px 300px 300px 300px;
+    }
+}
+
+/* Non HiDPI screen (1440px and up) */
+
+@media (min-width: 1440px) {
+
+    .navbar {
+        padding: 32px;
+        height: 135px;
+    }
+
+    div.hamburgerMenu img {
+        width: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    div.landxLogo img {
+        height: 48px;
+        margin-top: 4px;
+        margin-left: -15px;
+    }
+
+    div.header-background {
+        background-size: 970px 940px, cover;
+        background-position-x: center, center;
+        background-position-y: -300px, center;
+    }
+
+    div.header-background > div.title {
+        margin-top: 700px;
+        margin-left: 15px;
+    }
+    
+    div.header-background > div.title h3 {
+        font-size: 60px;
+        letter-spacing: -0.5px;
+        line-height: 68px;
+    }
+
+    .dhp-icon {
+        margin-top: 107px;
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    div.details-content-grid {
+        margin-left: 100px;
+        margin-top: 35px;
+        grid-template-columns: 600px 1fr;
+    }
+
+    .text-details-info {
+        font-size: 24px;
+        letter-spacing: 0.1px;
+    }
+
+    .text-details-content {
+        font-size: 34px;
+        letter-spacing: 0.35px;
+    }
+
+    span.outlet > ul {
+        margin-left: -42px;
+        margin-top: 12px;
+        column-gap: 33px;
+    }
+    
+    span.outlet > ul > li:before {
+        font-size: 26px;
+    }
+    
+    span.outlet > ul > li {
+        margin-top: 35px;
+    }
+
+    span.outlet > ul > li:nth-child(3n) {
+        margin-top: 35px;
+    }
+
+    span.outlet > ul > li:first-child {
+        margin-top: 0px;
+    }
+
+    .capital-average {
+        margin-top: 53px;
+        margin-left: 150px;
+        margin-bottom: 215px;
+    }
+
+    .capital-average > .text-details-content {
+        margin-top: 5px;
+    }
+
+    div.header-background > div.bowl1 > img#bowl {
+        width: 735px;
+        height: 755px;
+        margin-top: 700px;
+        right: -275px;
+    }
+
+    div.header-background > div.bowl2 > img#bowl {
+        width: 826px;
+        height: 790px;
+        margin-top: -530px;
+    }
+
+    
+    div.section-info {
+        margin-top: 340px;
+        margin-left: 15px;
+    }
+
+    div.section-info > div.hightlight {
+        margin-bottom: 500px !important;
+    }
+
+    div.section-info > div.highlight > * {
+        font-size: 60px !important;
+        letter-spacing: -0.5px;
+    }
+
+    div.section-info > div.sub-highlight {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    div.section-info > div.sub-highlight > * {
+        font-size: 25px !important;
+        letter-spacing: -0.5px !important;
+        line-height: 25px !important;
+    }
+
+    .line-break {
+        height: 30px;
+    }
+
+    #lx-how {
+        margin-left: 15px;
+    }
+
+    #lx-how > .container > .row > .col-12 > img {
+        margin-top: 21px;
+    }
+
+    .how-title {
+        font-size: 35px;
+        letter-spacing: -0.20px;
+    }
+
+    div.works-container {
+        grid-template-columns: 360px 360px 360px;
+        margin-bottom: 55px;
+    }
+
+    div.card {
+        width: 330px;
+        height: 350px;
+    }
+
+    .card-img-top {
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+    }
+
+    div.card-body {
+        margin-top: 28px;
+    }
+
+    h5.card-title {
+        font-size: 24px;
+        margin-top: 132px;
+        margin-bottom: 30px;
+    }
+
+    p.card-text {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        word-spacing: 2px;
+        line-height: 28px;
+    }
+
+    .why-title {
+        margin-top: 50px;
+        margin-left: 15px;
+        word-spacing: 2px;
+        font-size: 34px;
+    }
+
+    #lx-why-container > .row > .col-12 > img {
+        margin-top: 23px;
+        margin-right: -30px;
+    }
+
+    div.why-container {
+        grid-template-columns: 360px 360px 360px 360px;
+        margin-bottom: 95px;
+    }
+
+    div.why-container > div.card {
+        height: 400px;
+    }
+
+    div.why-container > div.card > img {
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+
+    div.why-container > div.card > div.card-title {
+        margin-left: 10px;
+        word-spacing: -1px;
+    }
+
+    div.why-container > div.card > div.card-body {
+        margin-left: 10px;
+    }
+
+    #lx-project > .row > .col-12 > h4{
+        font-size: 35px;
+        margin-top: 45px;
+    }
+
+    div.funding-container {
+        margin-top: 25px;
+    }
+
+    #btn-invest {
+        margin-top: 68px;
+        font-size: 14px;
+        height: 55px;
+        padding-top: 16px;
+        margin-bottom: 100px;
+    }
+
+    .emoji {
+        font-size: 64px;
+    }
+
+    .brand1 {
+        margin-left: -55px;
+        margin-top: 55px;
+    }
+
+    .brand2 {
+        margin-left: 12px;
+        margin-top: -10px;
+    }
+
+    .brand3 {
+        margin-top: 60px;
+        margin-bottom: 28px;
+    }
+
+    .brand4 {
+        margin-bottom: 40px;
+    }
+
+    .text-brand {
+        font-size: 36px;
+        font-weight: 300;
+        white-space: nowrap;
+        letter-spacing: 0.5px;
+        line-height: 45px;
+    }
+
+    #booking {
+        height: 55px;
+        margin-left: 15px;
+        padding-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .contact-container {
+        margin-left: -80px;
+    }
+
+    .btn-whatsapp {
+        width: 154px;
+        height: 53px;
+        padding-top: 10px;
+    }
+
+    .btn-whatsapp > span {
+        font-size: 14px;
+        letter-spacing: 2px;
     }
 }
 
