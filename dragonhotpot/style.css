@@ -498,14 +498,9 @@ div.header-background > div.title h3 {
     line-height: 33pt;
 }
 
-.row.details-company {
+.details-company {
     margin-left: 140px;
     margin-top: 70px;
-}
-
-div.details-content-grid {
-    display: grid;
-    grid-template-columns: 408px 1fr;
 }
 
 .dhp-icon {
@@ -536,11 +531,11 @@ div.details-content-grid {
 
 span.outlet > ul {
     -moz-column-count: 2;
-    -moz-column-gap: 25px;
+    -moz-column-gap: 0px;
     -webkit-column-count: 2;
-    -webkit-column-gap: 25px;
+    -webkit-column-gap: 0px;
     column-count: 2;
-    column-gap: 25px;
+    column-gap: 0px;
     list-style: none;
     margin-left: -41px;
     margin-top: 8px;
@@ -558,7 +553,6 @@ span.outlet > ul > li:before {
     display: grid;
     justify-content: center;
     margin-top: 27px;
-    margin-left: 90px;
     margin-bottom: 145px;
 }
 
@@ -575,25 +569,25 @@ div.section-info {
     margin-bottom: 50px;
 }
 
-div.section-info > div.highlight{
+div.highlight{
     margin-bottom: 30px;
 }
 
-div.section-info > div.highlight > h3 {
+div.highlight > h3 {
     font-family: Inter !important;
     font-weight: 300;
     font-size: 40px;
     margin-bottom: 0px;
 }
 
-div.section-info > div.highlight > span {
+div.highlight > span {
     font-family: Inter !important;
     font-weight: 300;
     font-size: 40px;
     margin-bottom: 0px;
 }
 
-div.section-info > div.sub-highlight > p {
+div.sub-highlight  > p {
     font-family: Inter !important;
     font-size: 17px;
     letter-spacing: -0.3px;
@@ -803,12 +797,6 @@ div.carousel-card {
         margin-left: 20px;
     }
 
-    div.details-content-grid {
-        margin-left: 100px;
-        margin-top: 35px;
-        grid-template-columns: 600px 1fr;
-    }
-
     .text-details-info {
         font-size: 24px;
         letter-spacing: 0.1px;
@@ -822,7 +810,6 @@ div.carousel-card {
     span.outlet > ul {
         margin-left: -42px;
         margin-top: 12px;
-        column-gap: 33px;
     }
     
     span.outlet > ul > li:before {
@@ -841,9 +828,13 @@ div.carousel-card {
         margin-top: 0px;
     }
 
+    .details-company {
+        margin-left: 100px;
+    }
+    
+
     .capital-average {
         margin-top: 53px;
-        margin-left: 150px;
         margin-bottom: 215px;
     }
 
@@ -874,17 +865,17 @@ div.carousel-card {
         margin-bottom: 500px !important;
     }
 
-    div.section-info > div.highlight > * {
+    div.highlight > * {
         font-size: 60px !important;
         letter-spacing: -0.5px;
     }
 
-    div.section-info > div.sub-highlight {
+    div.sub-highlight  {
         margin-top: 10px;
         margin-bottom: 50px;
     }
 
-    div.section-info > div.sub-highlight > * {
+    div.sub-highlight  > * {
         font-size: 25px !important;
         letter-spacing: -0.5px !important;
         line-height: 25px !important;
@@ -1072,19 +1063,12 @@ div.carousel-card {
         padding-top: 72px;
     }
 
-    h1 {
-        font-size: 24px;
-        font-weight: 600;
+    img.dhp-icon {
+        width: 150px;
     }
 
-    h2, h3{
+    .text-details-info {
         font-size: 24px;
-        font-weight: 400;
-    }
-
-    h4 {
-        font-size: 18px;
-        font-weight: 600;
     }
 
     h5 {
@@ -1127,10 +1111,8 @@ div.carousel-card {
         margin-top: -280px;
     }
 
-    div.details-content-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2em;
-        margin-left: 20px;
+    .details-company {
+        margin-left: 50px;
     }
 
     .text-details-info {
@@ -1177,7 +1159,6 @@ div.carousel-card {
         margin-bottom: 5px;
     }
 
-
 }
 
 @media (max-width: 1000px) {
@@ -1205,15 +1186,9 @@ div.carousel-card {
     div.header-background {
         background-size: 560px, cover;
     }
-
-    div.details-content-grid {
-        grid-template-columns: 300px 1fr;
-        margin-left: 0px;
-    }
-
     
-    .row.details-company {
-        margin-left: 0px;
+    .details-company {
+        margin-left: 50px;
         margin-top: 70px;
     }
     
@@ -1221,7 +1196,6 @@ div.carousel-card {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
-        column-gap: 0px;
         margin-left: -40px;
     }
     
@@ -1290,12 +1264,6 @@ div.carousel-card {
         font-weight: bold;
     }
 
-    div.details-content-grid {
-        grid-template-columns: 1fr;
-        grid-gap: 2em;
-        margin-left: 20px;
-    }
-
     span.outlet > ul {
         -moz-column-count: 1;
         -webkit-column-count: 1;
@@ -1306,7 +1274,6 @@ div.carousel-card {
     .capital-average {
         display: grid;
         justify-content: start;
-        margin-left: 20px;
         margin-bottom: 210px;
     }
 
@@ -1377,11 +1344,11 @@ div.carousel-card {
         line-height: 20px;
     }
 
-    div.section-info > div.highlight > * {
+    div.highlight > * {
         font-size: 28px !important;
     }
 
-    div.section-info > div.sub-highlight > * {
+    div.sub-highlight  > * {
         font-size: 16px;
     }
 
@@ -1393,10 +1360,6 @@ div.carousel-card {
         grid-template-columns: 250px;
     }
 
-    div.details-content-grid {
-        margin-left: 0px
-    }
-
     .text-details-info {
         font-size: 24px;
     }
@@ -1406,19 +1369,23 @@ div.carousel-card {
         font-weight: bold;
     }
 
+    .details-company {
+        margin-left: 20px;
+    }
+
     div.section-info {
         margin-top: 130px;
     }
 
-    div.section-info > div.highlight > * {
+    div.highlight > * {
         font-size: 24px;
     }
 
-    div.section-info > div.highlight > span {
+    div.highlight > span {
         display: block;
     }
 
-    div.section-info > div.sub-highlight > p {
+    div.sub-highlight > p {
         font-size: 16px;
         text-align: center;
         letter-spacing: 0.15px;
@@ -1428,7 +1395,7 @@ div.carousel-card {
         margin-right: 20px;
     }
 
-    div.section-info > div.sub-highlight > span {
+    div.sub-highlight  > span {
         font-size: 16px;
         text-align: center;
         letter-spacing: 0.15px;
