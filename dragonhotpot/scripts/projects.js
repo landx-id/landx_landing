@@ -27,6 +27,7 @@ fetch("https://api.landx.id/", {
         totalPurchasePrice
         token {
           symbol
+          name
         }
       }
     }
@@ -58,7 +59,7 @@ fetch("https://api.landx.id/", {
       /* for easier management */
       var currentProject = projects[i]["landXProperty"];
       var projectDirectory = currentProject["token"]["symbol"];
-      var projectName = currentProject["name"];
+      var projectName = currentProject["token"]["name"];
       var projectCategory = currentProject["category"];
       var fundingProgress;
       var totalFunding = numeral(currentProject["totalPurchasePrice"]).format("0,0");

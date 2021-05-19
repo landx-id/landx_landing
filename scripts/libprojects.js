@@ -76,7 +76,7 @@ function createProjectDividendDetails(dividendSchedule, annualRentYield, annualR
     <div class="col">
         <div class="text-left">
             <span class="small-text">Periode Dividen</span>
-            <i class="fa fa-info-circle" style="font-size: 9px; color:seagreen;" data-toggle="tooltip" title="${dividendPeriodDesc}"></i>
+            <i class="fa fa-info-circle" style="font-size: 10px; color:seagreen;" data-toggle="tooltip" title="${dividendPeriodDesc}"></i>
             <p class="text-primary" style="font-weight: bold;">${dividendSchedule}</p>
         </div>
     </div>
@@ -84,7 +84,7 @@ function createProjectDividendDetails(dividendSchedule, annualRentYield, annualR
         <div class="text-left text-primary">
             <span class="small-text" style="display: block;">
                 Estimasi Dividen
-                <i class="fa fa-info-circle" style="font-size: 9px; color:seagreen;" data-toggle="tooltip" title="${dividendEstimates}"></i>
+                <i class="fa fa-info-circle" style="font-size: 10px; color:seagreen;" data-toggle="tooltip" title="${dividendEstimates}"></i>
             </span>
             <span style="display: inline-block; font-size: medium; font-weight: bold;">${annualRentYield}-${annualRentYieldUpper}%</span>
             <span style="font-size: x-small;"> Per Tahun</span>
