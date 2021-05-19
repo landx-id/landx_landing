@@ -1122,6 +1122,10 @@ div.carousel-card {
         margin-top: -280px;
     }
 
+    .details-company {
+        margin-left: 50px;
+    }
+
     div.details-content-grid {
         grid-template-columns: 1fr 1fr;
         grid-gap: 0px;
@@ -1172,7 +1176,6 @@ div.carousel-card {
         margin-bottom: 5px;
     }
 
-
 }
 
 @media (max-width: 1000px) {
@@ -1208,7 +1211,7 @@ div.carousel-card {
 
     
     .details-company {
-        margin-left: 0px;
+        margin-left: 50px;
         margin-top: 70px;
     }
     
@@ -1221,10 +1224,6 @@ div.carousel-card {
     
     div.header-background > div.title {
         margin-top: 380px;
-    }
-
-    .details-company {
-        margin-left: 50px;
     }
 }
 
