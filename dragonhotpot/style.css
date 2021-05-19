@@ -503,11 +503,6 @@ div.header-background > div.title h3 {
     margin-top: 70px;
 }
 
-div.details-content-grid {
-    display: grid;
-    grid-template-columns: 408px 1fr;
-}
-
 .dhp-icon {
     margin-top: 72px;
     height: auto;
@@ -800,12 +795,6 @@ div.carousel-card {
         margin-top: 107px;
         width: 310px;
         margin-left: 20px;
-    }
-
-    div.details-content-grid {
-        margin-left: 100px;
-        margin-top: 35px;
-        grid-template-columns: 600px 1fr;
     }
 
     .text-details-info {
@@ -1126,12 +1115,6 @@ div.carousel-card {
         margin-left: 50px;
     }
 
-    div.details-content-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0px;
-        margin-left: 20px;
-    }
-
     .text-details-info {
         font-size: 20px;
     }
@@ -1203,12 +1186,6 @@ div.carousel-card {
     div.header-background {
         background-size: 560px, cover;
     }
-
-    div.details-content-grid {
-        grid-template-columns: 300px 1fr;
-        margin-left: 0px;
-    }
-
     
     .details-company {
         margin-left: 50px;
@@ -1285,12 +1262,6 @@ div.carousel-card {
         font-family: Arsenal !important;
         color: #8e3825;
         font-weight: bold;
-    }
-
-    div.details-content-grid {
-        grid-template-columns: 1fr;
-        grid-gap: 2em;
-        margin-left: 20px;
     }
 
     span.outlet > ul {
@@ -1387,10 +1358,6 @@ div.carousel-card {
 
     div.why-container {
         grid-template-columns: 250px;
-    }
-
-    div.details-content-grid {
-        margin-left: 0px
     }
 
     .text-details-info {
