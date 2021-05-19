@@ -109,7 +109,7 @@ fetch("https://api.landx.id/", {
         $("#description").text(projectDescription);
         $("#address").text(projectAddress);
         $("#map-picture").attr("src", mapPicture);
-        $("#download-prospectus").attr("href", `/prospektus/${projectDirectory}.pdf`);
+        $("#download-prospectus").attr("href", `https://landx.id/prospektus/${projectDirectory}.pdf`);
         $("#progress-bar").attr("style", `width: ${progressBar}%`)
         $("#progress-bar").attr("aria-valuenow", progressBar)
         $("#dividend-period-desc").attr("title", dividendPeriodDesc);

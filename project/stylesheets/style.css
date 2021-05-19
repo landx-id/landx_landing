@@ -88,7 +88,7 @@ div.projects-container {
 }
 
 .button-back {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -102,9 +102,19 @@ div.projects-container {
 }
 
 @media (max-width: 992px) {
-
     div.projects-container {
         grid-template-columns: 300px 300px 300px;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .detail, .sub-detail-2 {
+        font-size: 18px;
+    }
+    .sub-detail, .detail-2 {
+        font-size: 10px;
     }
 }
 
@@ -147,14 +157,14 @@ div.projects-container {
     }
 
     .button-back {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 414px) {
 
     .main-title {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .detail, .sub-detail-2 {
