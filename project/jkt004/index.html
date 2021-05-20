@@ -52,26 +52,6 @@
     <!-- Light Slider -->
     <link type="text/css" rel="stylesheet" href="../../stylesheets/lightslider.min.css" />
     <script src="../../scripts/lightslider.min.js" defer></script>
-    <script>
-        $(document).ready(function() {
-            $("#content-slider").lightSlider({
-                loop:true,
-                keyPress:true,
-            });
-            $('#image-gallery').lightSlider({
-                gallery:true,
-                item:1,
-                thumbItem:9, /* total images */
-                slideMargin: 0,
-                speed:1000,
-                auto:true,
-                loop:true,
-                onSliderLoad: function() {
-                    $('#image-gallery').removeClass('cS-hidden');
-                }  
-            });
-        });
-    </script>
   </head>
 
   <body>
@@ -180,188 +160,7 @@
         </div>
     </div>
 
-    <div class="container">
-        <!-- Carousel Gallery -->
-        <div class="row">
-            <div class="col-md-6 left-box">
-                <div class="item">            
-                    <div class="">
-                        <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                            <li data-thumb="https://landx.id/images/JKT004/01.png"> 
-                                <img src="https://landx.id/images/JKT004/01.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/02.png"> 
-                                <img src="https://landx.id/images/JKT004/02.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/03.png"> 
-                                <img src="https://landx.id/images/JKT004/03.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/04.png"> 
-                                <img src="https://landx.id/images/JKT004/04.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/05.png"> 
-                                <img src="https://landx.id/images/JKT004/05.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/06.png"> 
-                                <img src="https://landx.id/images/JKT004/06.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/07.png"> 
-                                <img src="https://landx.id/images/JKT004/07.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/08.png"> 
-                                <img src="https://landx.id/images/JKT004/08.png" class="slider-img" />
-                            </li>
-                            <li data-thumb="https://landx.id/images/JKT004/09.png"> 
-                                <img src="https://landx.id/images/JKT004/09.png" class="slider-img" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 right-box pull-md-right box-2">
-                <!-- Directory -->
-                <div class="row">
-                    <p id="project-directory">Directory</p>
-                </div>
-                <!-- Title -->
-                <div class="row-cols-1">
-                    <div class="row">
-                        <p class="main-title" id="project-name">Project Name</p>
-                    </div>
-                    <div class="row">
-                        <p class="main-title" id="project-issuername">- Project Issuer Name</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <button class="btn rounded-pill semi-transparent-button" id="project-category">Category</button>
-                </div>
-                <!-- Current Project Details -->
-                <div class="row">
-                    <div class="col">
-                        <div class="row">
-                            <p class="detail" id="funding-progress">Rp 000.000.000</p>
-                        </div>
-                        <div class="row">
-                            <p class="sub-detail" id="total-funding">dari Rp 000.000.000 Total Pendanaan</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <p class="detail" id="remaining-days">00</p>
-                        </div>
-                        <div class="row">
-                            <p class="sub-detail">Hari Lagi</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Progress Bar -->
-                <div class="row mt-3">
-                    <div class="col-12">
-                        <div class="progress xs custom-progress">
-                            <div class="progress-bar progress-bar-aqua" id="progress-bar" style="width: 50%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                <!-- <span class="sr-only">100% Complete</span> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col">
-                        <div class="row">
-                            <p class="detail-2">Harga Per Lot</p>
-                        </div>
-                        <div class="row">
-                            <p class="sub-detail-2" id="lot-price">Rp 0.000.000</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <p class="detail-2">Jumlah Lot</p>
-                        </div>
-                        <div class="row">
-                            <p class="sub-detail-2" id="total-lot">0000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col-auto pl-0">
-                                <span class="detail-2" style="display: inline;">Periode Dividen</span>
-                                <i class="fa fa-info-circle" style="font-size: 12px; color:seagreen;" data-toggle="tooltip" id="dividend-period-desc"></i>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="sub-detail-2" id="dividend-period">Bulanan</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="col-auto pl-0">
-                                <span class="detail-2">Estimasi Dividen</span>
-                                <i class="fa fa-info-circle" style="font-size: 12px; color:seagreen;" data-toggle="tooltip" id="dividend-estimates"></i>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="sub-detail-2" id="dividend-estimation">0-0% Per Tahun</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-buttons">
-                    <div class="col">
-                        <a href="#" id="btn-invest">
-                            <button class="btn btn-primary btn-detail-bottom" style="width: 100%; box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14)">BELI VIA APP</button>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" id="download-prospectus">
-                            <button class="btn btn-outline-success btn-detail-bottom" style="width: 100%;">DOWNLOAD PROSPEKTUS</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Only for separator -->
-    <div class="mt-5 mb-5">
-        <hr>
-    </div>
-
-    <!-- Description -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 left-box">
-                <div class="row mt-4">
-                    <p class="description-title">DESKRIPSI USAHA</p>
-                </div>
-                <div class="row mt-4 mr-3">
-                    <p class="description-content" id="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget lacinia magna. Quisque eget purus et orci egestas consectetur.
-                        Suspendisse vehicula ultrices ipsum, sit amet efficitur lectus suscipit vel. Praesent lacinia eleifend bibendum.
-                        Nam gravida tortor nec purus auctor, quis malesuada purus commodo. Pellentesque tortor lectus, tincidunt nec viverra non, lacinia at magna.
-                        In eu ipsum eget felis pretium vulputate. Integer eget posuere odio, sed pretium tortor. Sed tristique velit a hendrerit bibendum.
-                        Praesent vitae nisi euismod, euismod turpis a, porttitor neque. Aliquam congue aliquet maximus. Mauris imperdiet massa sed libero sagittis, a commodo purus laoreet.
-                        Morbi lacinia purus non lacus rhoncus, id euismod odio venenatis. Integer congue urna sed erat accumsan, at euismod magna volutpat. Vestibulum sodales ante in ipsum eleifend ultricies.
-                        Aliquam varius lectus a lectus pulvinar bibendum. Sed id mi ac nibh volutpat fermentum. Nam ac velit tortor.
-                        Nulla eget luctus libero. Vivamus quis orci blandit, dapibus purus imperdiet, venenatis augue. Quisque ac justo sed eros scelerisque
-                        tincidunt sit amet ac purus. Nunc sagittis et leo vel hendrerit. Donec finibus felis ac dolor dapibus tempor. Donec eu orci vitae velit laoreet efficitur.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 left-box pull-md-right">
-                <div class="row mt-4">
-                    <p class="description-title">ALAMAT & PETA</p>
-                </div>
-                <div class="row mt-4">
-                    <p class="description-content" id="address">
-                    Jl. Medan Merdeka Utara No.3, RT.2/RW.3, Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110
-                </div>
-                <div class="row mt-4">
-                    <img src="../../images/JKT001/map.png" alt="" style="width: 100%;" id="map-picture">
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="root"></div>
 
     <!-- Only for separator -->
     <div class="mt-5">
@@ -559,6 +358,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
     <script src="../../scripts/libprojects.js"></script>
     <script src="../../scripts/projects.js"></script>
-    <script src="../script/base.js"></script>
+    <!-- <script src="../script/base.js"></script> -->
+
+    <!-- React JS -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- React Components -->
+    <script src="../script/components/carousel-gallery.js"></script>
+    <script src="../script/components/project-symbol.js"></script>
+    <script src="../script/components/project-title.js"></script>
+    <script src="../script/components/project-category.js"></script>
+    <script src="../script/components/project-funding-details.js"></script>
+    <script src="../script/components/project-progress-bar.js"></script>
+    <script src="../script/components/project-lot-price.js"></script>
+    <script src="../script/components/project-dividend-details.js"></script>
+    <script src="../script/components/project-app-prospectus.js"></script>
+    <script src="../script/components/project-desc-details.js"></script>
+    <script src="../script/components/project-wrapper.js"></script>
+
+    <!-- Run React -->
+    <script src="../script/init.js"></script>
+    <script src="../script/main.js"></script>
   </body>
 </html>

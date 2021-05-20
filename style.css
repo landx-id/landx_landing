@@ -509,6 +509,7 @@ div.carousel-card {
     position: absolute;
     top: -2.3em;
     margin-left: 70%;
+    z-index: 99;
 }
 
 .funding-container {
