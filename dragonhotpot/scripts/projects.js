@@ -90,7 +90,7 @@ fetch("https://api.landx.id/", {
           remainingDays = 0;
       }
 
-      if (fundingProgress == totalFunding) {
+      if (fundingProgress >= totalFunding) {
         isSold = true;
       }
 
@@ -178,7 +178,8 @@ fetch("https://api.landx.id/", {
             sold.innerHTML = createSoldImg('..');
         
             itemCard.append(sold);
-        }
+          }
+
           itemCard.append(image);
           itemCard.append(itemCardBody);
           item.append(itemCard);
