@@ -93,9 +93,9 @@ function createProjectDividendDetails(dividendSchedule, annualRentYield, annualR
     `;
 }
 
-function createSoldImg() {
+function createSoldImg(relativePath) {
     return `
-        <img src="../img/habis-terjual.png">
+        <img src="${relativePath}/img/habis-terjual.png">
     `;
 }
 
