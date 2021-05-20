@@ -142,7 +142,7 @@ fetch("https://api.landx.id/", {
           /* Set the text based on its image directory */
           var itemCardBodyRow1 = document.createElement("div");
           itemCardBodyRow1.setAttribute("class", "row")
-          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, `/project/${projectDirectory.toLowerCase()}`);
+          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, "https://landxapp.page.link/dhp");
 
           /* Project Category */
           var itemCardBodyRow2 = document.createElement("div");
@@ -191,13 +191,5 @@ fetch("https://api.landx.id/", {
           cardBase.append(slide);
       }
       base.append(cardBase);
-  }
-
-  if (getMobileOperatingSystem() == "iOS") {
-    var btnInvest = document.getElementById("btn-invest");
-    btnInvest.href = "https://apps.apple.com/id/app/landx/id1453823676";
-  } else {
-    var btnInvest = document.getElementById("btn-invest");
-    btnInvest.href = "https://play.google.com/store/apps/details?id=store.numoney.landxapp&hl=en&gl=US";
   }
 });
