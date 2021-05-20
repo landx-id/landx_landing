@@ -120,6 +120,7 @@ fetch("https://api.landx.id/", {
 
         for (var j = 0; j < currentProject["previewImages"].length; j++) {
             var item = document.createElement("div");
+
             if (j == 0) {
                 /* first active class */
                 item.setAttribute("class", "carousel-item active");
@@ -191,6 +192,7 @@ fetch("https://api.landx.id/", {
             slide.append(carouselBase);
             cardBase.append(slide);
         }
+
         base.append(cardBase);
     }
 
