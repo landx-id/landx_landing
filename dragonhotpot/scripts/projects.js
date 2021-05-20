@@ -92,6 +92,7 @@ fetch("https://api.landx.id/", {
 
       if (fundingProgress >= totalFunding) {
         isSold = true;
+        remainingDays = 0;
       }
 
       var slide = document.createElement("div");
