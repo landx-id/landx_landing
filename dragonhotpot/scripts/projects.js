@@ -167,21 +167,19 @@ fetch("https://api.landx.id/", {
 
             /* Each of card details for carousel */
             itemCardBody.append(itemCardBodyRow1);
-
-            if (isSold) {
-                var sold = document.createElement("div");
-                sold.setAttribute("class", "sold-out");
-                sold.innerHTML = createSoldImg();
-
-                itemCardBody.append(sold);
-            }
-
             itemCardBody.append(itemCardBodyRow2);
             itemCardBody.append(itemCardBodyRow3);
             itemCardBody.append(itemCardBodyRow4);
             itemCardBody.append(itemCardBodyRow5);
             
             /* Append the card to the carousel */
+            if (isSold) {
+                var sold = document.createElement("div");
+                sold.setAttribute("class", "sold-out");
+                sold.innerHTML = createSoldImg();
+
+                itemCard.append(sold);
+            }
             itemCard.append(image);
             itemCard.append(itemCardBody);
             item.append(itemCard);
