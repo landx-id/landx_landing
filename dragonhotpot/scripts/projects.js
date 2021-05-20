@@ -76,7 +76,7 @@ fetch("https://api.landx.id/", {
       var dividendSchedule = currentProject["dividendSchedule"];
       var annualRentYield = parseFloat(currentProject["annualRentYield"]) * 100;
       var annualRentYieldUpper = parseFloat(currentProject["annualRentYieldUpper"]) * 100;
-
+      var isSold = false
 
       if (currentProject["launchProgress"] == null) {
         // market closed,
@@ -88,6 +88,10 @@ fetch("https://api.landx.id/", {
 
       if (remainingDays < 0) {
           remainingDays = 0;
+      }
+
+      if (fundingProgress >= totalFunding) {
+        isSold = true;
       }
 
       var slide = document.createElement("div");
@@ -168,6 +172,14 @@ fetch("https://api.landx.id/", {
           itemCardBody.append(itemCardBodyRow5);
           
           /* Append the card to the carousel */
+          if (isSold) {
+            var sold = document.createElement("div");
+            sold.setAttribute("class", "sold-out");
+            sold.innerHTML = createSoldImg('..');
+        
+            itemCard.append(sold);
+          }
+
           itemCard.append(image);
           itemCard.append(itemCardBody);
           item.append(itemCard);
