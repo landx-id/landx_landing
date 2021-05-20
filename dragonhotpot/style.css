@@ -712,6 +712,7 @@ div.carousel-card {
     position: absolute;
     margin-top: -50px;
     margin-left: 210px;
+    z-index: 99;
 }
 
 
