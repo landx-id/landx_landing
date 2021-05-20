@@ -93,6 +93,12 @@ function createProjectDividendDetails(dividendSchedule, annualRentYield, annualR
     `;
 }
 
+function createSoldImg() {
+    return `
+        <img src="../img/habis-terjual.png">
+    `;
+}
+
 function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 

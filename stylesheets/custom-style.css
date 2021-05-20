@@ -1,0 +1,9 @@
+.sold-out {
+    position: relative;
+}
+
+.sold-out > img {
+    position: absolute;
+    top: -230px;
+    left: -20px;
+}
