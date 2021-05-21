@@ -25,6 +25,9 @@ fetch("https://api.landx.id/", {
         settlementDate
         tokenSupply
         totalPurchasePrice
+        token {
+          name
+        }
       }
     }
   }`})
@@ -56,7 +59,7 @@ fetch("https://api.landx.id/", {
       /* for easier management */
       var currentProject = projects[i]["landXProperty"];
       var projectDirectory = currentProject["mapImageUrl"].split("/")[4];
-      var projectName = currentProject["name"];
+      var projectName = currentProject["token"]["name"];
       var projectCategory = currentProject["category"];
       var fundingProgress = numeral(currentProject["launchProgress"] * currentProject["totalPurchasePrice"]).format("0,0");
       var totalFunding = numeral(currentProject["totalPurchasePrice"]).format("0,0");
@@ -73,9 +76,16 @@ fetch("https://api.landx.id/", {
       var dividendSchedule = currentProject["dividendSchedule"];
       var annualRentYield = parseFloat(currentProject["annualRentYield"]) * 100;
       var annualRentYieldUpper = parseFloat(currentProject["annualRentYieldUpper"]) * 100;
+      var isSold = false;
+      var relativePath = $("#relative-path").val();
 
       if (remainingDays < 0) {
           remainingDays = 0;
+      }
+
+      if (fundingProgress >= totalFunding) {
+        isSold = true;
+        remainingDays = 0;
       }
 
       var slide = document.createElement("div");
@@ -156,6 +166,14 @@ fetch("https://api.landx.id/", {
           itemCardBody.append(itemCardBodyRow5);
           
           /* Append the card to the carousel */
+          if (isSold) {
+            var sold = document.createElement("div");
+            sold.setAttribute("class", "sold-out");
+            sold.innerHTML = createSoldImg(relativePath);
+
+            itemCard.append(sold);
+          }
+
           itemCard.append(image);
           itemCard.append(itemCardBody);
           item.append(itemCard);

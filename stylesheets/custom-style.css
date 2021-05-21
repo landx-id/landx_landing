@@ -52,7 +52,7 @@ span {
 }
 
 span.card-title {
-    font-size: medium;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -87,4 +87,14 @@ span.card-title {
 .semi-transparent-button:hover {
     background-color: #e4f6e8;
     color: rgb(34, 139, 80);
+}
+
+.sold-out {
+    position: relative;
+}
+
+.sold-out > img {
+    position: absolute;
+    top: -3px;
+    left: -3px;
 }
