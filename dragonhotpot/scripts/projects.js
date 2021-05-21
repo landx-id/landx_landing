@@ -27,6 +27,7 @@ fetch("https://api.landx.id/", {
         totalPurchasePrice
         token {
           symbol
+          name
         }
       }
     }
@@ -58,7 +59,7 @@ fetch("https://api.landx.id/", {
       /* for easier management */
       var currentProject = projects[i]["landXProperty"];
       var projectDirectory = currentProject["token"]["symbol"];
-      var projectName = currentProject["name"];
+      var projectName = currentProject["token"]["name"];
       var projectCategory = currentProject["category"];
       var fundingProgress;
       var totalFunding = numeral(currentProject["totalPurchasePrice"]).format("0,0");
@@ -75,7 +76,7 @@ fetch("https://api.landx.id/", {
       var dividendSchedule = currentProject["dividendSchedule"];
       var annualRentYield = parseFloat(currentProject["annualRentYield"]) * 100;
       var annualRentYieldUpper = parseFloat(currentProject["annualRentYieldUpper"]) * 100;
-
+      var isSold = false
 
       if (currentProject["launchProgress"] == null) {
         // market closed,
@@ -87,6 +88,11 @@ fetch("https://api.landx.id/", {
 
       if (remainingDays < 0) {
           remainingDays = 0;
+      }
+
+      if (fundingProgress >= totalFunding) {
+        isSold = true;
+        remainingDays = 0;
       }
 
       var slide = document.createElement("div");
@@ -137,7 +143,7 @@ fetch("https://api.landx.id/", {
           /* Set the text based on its image directory */
           var itemCardBodyRow1 = document.createElement("div");
           itemCardBodyRow1.setAttribute("class", "row")
-          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, `/project/${projectDirectory.toLowerCase()}`);
+          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, "https://landxapp.page.link/dhp");
 
           /* Project Category */
           var itemCardBodyRow2 = document.createElement("div");
@@ -167,6 +173,14 @@ fetch("https://api.landx.id/", {
           itemCardBody.append(itemCardBodyRow5);
           
           /* Append the card to the carousel */
+          if (isSold) {
+            var sold = document.createElement("div");
+            sold.setAttribute("class", "sold-out");
+            sold.innerHTML = createSoldImg('..');
+        
+            itemCard.append(sold);
+          }
+
           itemCard.append(image);
           itemCard.append(itemCardBody);
           item.append(itemCard);
@@ -178,13 +192,5 @@ fetch("https://api.landx.id/", {
           cardBase.append(slide);
       }
       base.append(cardBase);
-  }
-
-  if (getMobileOperatingSystem() == "iOS") {
-    var btnInvest = document.getElementById("btn-invest");
-    btnInvest.href = "https://apps.apple.com/id/app/landx/id1453823676";
-  } else {
-    var btnInvest = document.getElementById("btn-invest");
-    btnInvest.href = "https://play.google.com/store/apps/details?id=store.numoney.landxapp&hl=en&gl=US";
   }
 });
