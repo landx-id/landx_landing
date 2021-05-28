@@ -17,6 +17,8 @@ div.projects-container {
 #project-category {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 12px;
+    padding: 3px 15px;
 }
 
 .slider-img {
@@ -29,11 +31,6 @@ div.projects-container {
     font-weight: bold;
     font-size: 24px;
     color: #5e798d;
-}
-
-#project-category {
-    font-size: 12px;
-    padding: 3px 15px;
 }
 
 .card-body {

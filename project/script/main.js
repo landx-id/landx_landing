@@ -1,6 +1,6 @@
 /* Fetch two times (?) */
 
-listOfProjects = {};
+var listOfProjects = {};
 
 fetch("https://api.landx.id/", {
     method: "POST",

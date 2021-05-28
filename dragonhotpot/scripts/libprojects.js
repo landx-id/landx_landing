@@ -64,7 +64,7 @@ function createProjectLotDetails(lotPrice, totalLot) {
     `;
 }
 
-function createProjectDividendDetails(dividendSchedule, annualRentYield, annualRentYieldUpper) {
+function createProjectDividendDetail(dividendSchedule, annualRentYield, annualRentYieldUpper) {
     var dividendPeriodDesc = "Periode dividen aktual akan tetap mengacu pada laporan keuangan dan " +
         "persetujuan Rapat Umum Pemegang Saham (RUPS).";
     var dividendEstimates = "Disclaimer: kinerja masa lalu bukan merupakan indikasi kinerja masa depan. Estimasi dividen adalah " + 
