@@ -1,190 +1,104 @@
 var listOfProjects = {};
 
+function toIDR(money) {
+    return Intl.NumberFormat("id-ID",{
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      }).format(money);
+}
+
 fetch("https://api.landx.id/", {
-  method: "POST",
-  mode: "cors",
-  headers: {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-  },
-  body: JSON.stringify({query: `{
-    currencies {
-      landXProperty {
-        address
-        annualRentYield
-        annualRentYieldUpper
-        category
-        dividendSchedule
-        id
-        initialTokenPrice
-        launchProgress
-        mapImageUrl
-        name
-        previewImages
-        propertyPrice
-        settlementDate
-        tokenSupply
-        totalPurchasePrice
-        token {
-          name
+    method: "POST",
+    mode: "cors",
+    headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    },
+    body: JSON.stringify({query: `{
+        currencies {
+            landXProperty {
+                address
+                annualRentYield
+                annualRentYieldUpper
+                category
+                dividendSchedule
+                id
+                initialTokenPrice
+                launchProgress
+                mapImageUrl
+                name
+                previewImages
+                propertyPrice
+                settlementDate
+                tokenSupply
+                totalPurchasePrice
+                token {
+                    name
+                }
+            }
         }
-      }
-    }
-  }`})
+    }`})
 })
 .then(r => r.json())
 .then(data => listOfProjects = data)
 .then(() => {
-  
-  listOfProjects["data"]["currencies"].forEach(function(item, index) {
-      if ( item["landXProperty"] == null 
+    /* Remove empty project(s) */
+    listOfProjects["data"]["currencies"].forEach(function(item, index) {
+        if ( item["landXProperty"] == null
         || item["landXProperty"] == "") {
-          delete listOfProjects["data"]["currencies"][index];
-      }
-  });
+            delete listOfProjects["data"]["currencies"][index];
+        }
+    });
 
-  var projects = [];
+    /* Rearrange projects */
+    var projects = [];
 
-  for (var key in listOfProjects["data"]["currencies"]) {
-    projects.push(listOfProjects["data"]["currencies"][key]);
-  }
+    for (var key in listOfProjects["data"]["currencies"]) {
+        projects.push(listOfProjects["data"]["currencies"][key]);
+    }
 
-  var cardName = "carouselCards";
-  var base = document.getElementById("base-cards");
+    /* Get the last three projects
+     * and make the details
+     */
+    var lastThree = [];
+    for (var i = projects.length - 3; i < projects.length; i++) {
+        var tmpProject = projects[i]["landXProperty"];
+        tmpProject.fundingProgress = toIDR(tmpProject["launchProgress"] * tmpProject["totalPurchasePrice"]);
+        tmpProject.totalFunding = toIDR(tmpProject["totalPurchasePrice"]);
 
-  for (var i = projects.length - 4; i < projects.length; i++) {
-      var cardBase = document.createElement("div");
-      cardBase.setAttribute("class", "project-item");
+        /* Calculate the remaining days */
+        const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
+        const today = new Date().getTime();
+        tmpProject.remainingDays = (tmpProject["settlementDate"] - today) / oneDay;
 
-      /* for easier management */
-      var currentProject = projects[i]["landXProperty"];
-      var projectDirectory = currentProject["mapImageUrl"].split("/")[4];
-      var projectName = currentProject["token"]["name"];
-      var projectCategory = currentProject["category"];
-      var fundingProgress = numeral(currentProject["launchProgress"] * currentProject["totalPurchasePrice"]).format("0,0");
-      var totalFunding = numeral(currentProject["totalPurchasePrice"]).format("0,0");
+        tmpProject["launchProgress"] *= 100;
+        tmpProject["initialTokenPrice"] = toIDR(tmpProject["initialTokenPrice"]);
+        tmpProject["tokenSupply"] = parseInt(tmpProject["tokenSupply"], 10);
+        tmpProject["annualRentYield"] = parseFloat(tmpProject["annualRentYield"]) * 100;
+        tmpProject["annualRentYieldUpper"] = parseFloat(tmpProject["annualRentYieldUpper"]) * 100;
+        tmpProject.isSold = false;
 
-      /* calculate the remaining days */
-      const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
-      const today = new Date().getTime();
-      var remainingDays = (currentProject["settlementDate"] - today) / oneDay;
-      /*------------------------------*/
-      
-      var progress = parseFloat(currentProject["launchProgress"] * 100);
-      var lotPrice = numeral(currentProject["initialTokenPrice"]).format("0,0");
-      var totalLot = parseInt(currentProject["tokenSupply"], 10);
-      var dividendSchedule = currentProject["dividendSchedule"];
-      var annualRentYield = parseFloat(currentProject["annualRentYield"]) * 100;
-      var annualRentYieldUpper = parseFloat(currentProject["annualRentYieldUpper"]) * 100;
-      var isSold = false;
-      var relativePath = $("#relative-path").val();
+        if (tmpProject.remainingDays < 0) {
+            tmpProject.remainingDays = 0;
+        }
 
-      if (remainingDays < 0) {
-          remainingDays = 0;
-      }
+        if (tmpProject["launchProgress"] == null) {
+            // market closed,
+            // make assumption that it has been bought completely
+            tmpProject.fundingProgress = toIDR(tmpProject["totalPurchasePrice"]);
+        } else {
+            tmpProject.fundingProgress = toIDR(tmpProject["launchProgress"] * tmpProject["totalPurchasePrice"]);
+        }
 
-      if (fundingProgress >= totalFunding) {
-        isSold = true;
-        remainingDays = 0;
-      }
+        if (tmpProject.fundingProgress >= tmpProject.totalFunding) {
+            tmpProject.isSold = true;
+            tmpProject.remainingDays = 0;
+        }
 
-      var slide = document.createElement("div");
+        lastThree.push(tmpProject);
+    }
 
-      slide.setAttribute("class", "carousel");
-      slide.setAttribute("id", `${cardName}${i}`);
-      slide.setAttribute("data-interval", "false");
-
-      var listImages = document.createElement("ol");
-      listImages.setAttribute("class","carousel-indicators carousel-bottom");
-
-      for (var j = 0; j < currentProject["previewImages"].length; j++) {
-          var images = document.createElement("li");
-          images.setAttribute("data-target", `#${cardName}${i}`);
-          images.setAttribute("data-slide-to", `${j}`);
-
-          if (j == 0) {
-              images.setAttribute("class", "active")
-          }
-
-          listImages.append(images);
-      }
-
-      var carouselBase = document.createElement("div");
-      carouselBase.setAttribute("class", "carousel-inner");
-
-      for (var j = 0; j < currentProject["previewImages"].length; j++) {
-          var item = document.createElement("div");
-          if (j == 0) {
-            /* first active class */
-            item.setAttribute("class", "carousel-item active");
-          } else {
-            item.setAttribute("class", "carousel-item");
-          }
-
-          /* start of each card */
-          var itemCard = document.createElement("div");
-          itemCard.setAttribute("class", "carousel-card");
-
-          /* preview image */
-          var image = document.createElement("img");
-          image.setAttribute("class", "img-fluid carousel-img");
-          image.setAttribute("src", currentProject["previewImages"][j]);
-
-          var itemCardBody = document.createElement("div");
-          itemCardBody.setAttribute("class", "card-body");
-
-          /* Set the text based on its image directory */
-          var itemCardBodyRow1 = document.createElement("div");
-          itemCardBodyRow1.setAttribute("class", "row")
-          itemCardBodyRow1.innerHTML = createProjectHeader(projectDirectory, projectName, `https://landx.id/project/${projectDirectory.toLowerCase()}`);
-
-          /* Project Category */
-          var itemCardBodyRow2 = document.createElement("div");
-          itemCardBodyRow2.setAttribute("class", "row");
-          itemCardBodyRow2.innerHTML = createProjectCategory(projectCategory);
-
-          /* Project Progress */
-          var itemCardBodyRow3 = document.createElement("div");
-          itemCardBodyRow3.setAttribute("class", "row");
-          itemCardBodyRow3.innerHTML = createProjectProgress(fundingProgress, totalFunding, Math.floor(remainingDays), progress);
-
-          /* Lot Details */
-          var itemCardBodyRow4 = document.createElement("div");
-          itemCardBodyRow4.setAttribute("class", "row");
-          itemCardBodyRow4.innerHTML = createProjectLotDetails(lotPrice, totalLot);
-
-          /* Dividend Details */
-          var itemCardBodyRow5 = document.createElement("div")
-          itemCardBodyRow5.setAttribute("class", "row");
-          itemCardBodyRow5.innerHTML = createProjectDividendDetails(dividendSchedule, annualRentYield, annualRentYieldUpper);
-
-          /* Each of card details for carousel */
-          itemCardBody.append(itemCardBodyRow1);
-          itemCardBody.append(itemCardBodyRow2);
-          itemCardBody.append(itemCardBodyRow3);
-          itemCardBody.append(itemCardBodyRow4);
-          itemCardBody.append(itemCardBodyRow5);
-          
-          /* Append the card to the carousel */
-          if (isSold) {
-            var sold = document.createElement("div");
-            sold.setAttribute("class", "sold-out");
-            sold.innerHTML = createSoldImg(relativePath);
-
-            itemCard.append(sold);
-          }
-
-          itemCard.append(image);
-          itemCard.append(itemCardBody);
-          item.append(itemCard);
-          carouselBase.append(item);
-
-          /* Append each carousel card to its base */
-          slide.append(listImages);
-          slide.append(carouselBase);
-          cardBase.append(slide);
-      }
-
-      base.append(cardBase);
-  }
+    CreateCard(lastThree);
 });
