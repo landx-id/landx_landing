@@ -1,8 +1,10 @@
-const CardBodyButtonBuy = () => {
+const CardBodyButtonBuy = (props) => {
     return (
         <div className="row">
             <div className="col">
-                <button className="btn project-button-buy">BELI</button>
+                <a href={props.link} className="btn project-button-buy">
+                    BELI
+                </a>
             </div>
         </div>
     );

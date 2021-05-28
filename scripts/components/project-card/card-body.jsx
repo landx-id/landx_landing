@@ -2,7 +2,9 @@ const CardBody = (props) => {
     return (
         <div className="card-body custom">
             <div className="container-fluid px-0">
-                <CardBodyButtonBuy />
+                <CardBodyButtonBuy
+                    link={props.link}
+                />
                 <CardBodySymbol
                     symbol={props.token.symbol}
                 />

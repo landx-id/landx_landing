@@ -36,6 +36,7 @@ fetch("https://api.landx.id/", {
                 totalPurchasePrice
                 token {
                     name
+                    symbol
                 }
             }
         }
@@ -71,8 +72,9 @@ fetch("https://api.landx.id/", {
         /* Calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
         const today = new Date().getTime();
-        tmpProject.remainingDays = (tmpProject["settlementDate"] - today) / oneDay;
+        tmpProject.remainingDays = Math.floor((tmpProject["settlementDate"] - today) / oneDay);
 
+        tmpProject.link = `https://landx.id/project/${tmpProject["token"]["symbol"].toLowerCase()}`;
         tmpProject["launchProgress"] *= 100;
         tmpProject["initialTokenPrice"] = toIDR(tmpProject["initialTokenPrice"]);
         tmpProject["tokenSupply"] = parseInt(tmpProject["tokenSupply"], 10);

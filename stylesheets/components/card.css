@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Overrides Bootstrap's spacing */
-.no-mb-1 {
-    margin-bottom: -10px;
-}
-
-.no-mb-2 {
-    margin-bottom: -15px;
-}
-
 /* Card Style */
 .card.custom {
     width: 326px;
@@ -46,7 +37,7 @@
     height: 50px;
     letter-spacing: 1.35px;
     font-weight: bold;
-    padding: 0px 10px 0px 10px;
+    padding: 17px 10px 0px 10px;
     border-radius: 100%;
     border-width: 0px;
     background-color: #2dbe60;
