@@ -47,7 +47,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="../../stylesheets/custom-style.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 
     <!-- Light Slider -->
     <link type="text/css" rel="stylesheet" href="../../stylesheets/lightslider.min.css" />
@@ -179,7 +178,7 @@
             </div>
         </div>
     </div>
-    <div id="card-base">
+    <div id="card-base" class="mb-5 pb-5">
         <!-- Dynamic -->
     </div>
 
@@ -362,47 +361,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
-    <!-- React JS -->
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-
-    <!-- Babel Standalone -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <!-- React Components -->
-    <script src="../script/components/carousel-gallery.jsx" type="text/babel"></script>
-    <script src="../script/components/project-symbol.jsx" type="text/babel"></script>
-    <script src="../script/components/project-title.jsx" type="text/babel"></script>
-    <script src="../script/components/project-category.jsx" type="text/babel"></script>
-    <script src="../script/components/project-funding-detail.jsx" type="text/babel"></script>
-    <script src="../script/components/project-progress-bar.jsx" type="text/babel"></script>
-    <script src="../script/components/project-lot-price.jsx" type="text/babel"></script>
-    <script src="../script/components/project-dividend-detail.jsx" type="text/babel"></script>
-    <script src="../script/components/project-app-prospectus.jsx" type="text/babel"></script>
-    <script src="../script/components/project-desc-detail.jsx" type="text/babel"></script>
-    <script src="../script/components/project-wrapper.jsx" type="text/babel"></script>
-
-    <!-- Run React -->
-    <script src="../script/init.jsx" type="text/babel"></script>
-    <script src="../script/main.js" type="text/babel"></script>
-
+    <!-- Populate the data -->
+    <script src="../../reactjs-components/dist/project-detail-page.js"></script>
 
     <!-- Project Listing -->
-    <link rel="stylesheet" href="../../stylesheets/components/card.css">
-    <script src="../../scripts/components/project-card/card-carousel-inner.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-carousel-target.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-carousel.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-symbol.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-button-buy.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-name.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-category.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-funding-detail.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-progress-bar.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-lot-price.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body-dividen-detail.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-body.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/card-base.jsx" type="text/babel"></script>
-    <script src="../../scripts/components/project-card/create-card.jsx" type="text/babel"></script>
-    <script src="../../scripts/projects.js" type="text/babel"></script>
+    <script src="/project-card.js"></script>
   </body>
 </html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Card Style */
+.card.custom {
+    width: 326px;
+    height: 473px;
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow: 0 0px 5px -3px rgba(0, 0, 0, 0.2), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+}
+
+.card-body.custom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carousel-indicators.custom {
+    margin-bottom: 0px;
+}
+
+.carousel-indicators.custom > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.carousel-item.custom > img {
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sold-banner {
+    position: relative;
+}
+
+.sold-banner > .sold-image {
+    position: absolute;
+    top: -168px;
+    left: -19px;
+    z-index: 99;
+}
+
+.project-button-buy, .project-button-buy:hover {
+    font-family: Roboto;
+    font-size: 12px;
+    height: 50px;
+    letter-spacing: 1.35px;
+    font-weight: bold;
+    padding: 17px 10px 0px 10px;
+    border-radius: 100%;
+    border-width: 0px;
+    background-color: #2dbe60;
+    color: #ffffff;
+
+    position: absolute;
+    top: -42px;
+    right: 10px;
+
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.14);
+}
+
+.project-symbol {
+    font-family: Roboto !important;
+    font-size: 11px;
+    letter-spacing: 1.65px;
+    font-weight: 400;
+    color: #2dbe60;
+}
+
+.project-name {
+    font-family: Roboto !important;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5e798d;
+}
+
+.project-category {
+    font-family: Roboto !important;
+    font-size: 12px;
+    height: 20px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: #e4f6e8;
+    border-color: #bde8c7;
+    letter-spacing: 0.4px;
+    color: #2dbe60;
+    margin-bottom: 10px;
+}
+
+.progress-detail {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #2dbe60;
+    letter-spacing: 0.25px;
+    font-weight: bold;
+}
+
+.sub-progress-detail {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #9e9e9e;
+    letter-spacing: 0.4px;
+}
+
+.progress {
+    height: 4px;
+    border-radius: 4px;
+}
+
+.progress-bar-green {
+    background-color: #2dbe60;
+}
+
+.progress-detail-2 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5e798d;
+}
+
+.info-outline-circle {
+    font-size: 14px;
+    color: #2dbe60;
+    margin-bottom: -1px;
+}
