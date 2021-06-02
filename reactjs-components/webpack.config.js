@@ -27,7 +27,9 @@ var projectCardConfig = Object.assign({}, config, {
     },
     devServer: {
         contentBase: "../",
-        publicPath: "/"
+        publicPath: "/",
+        compress: true,
+        port: 8099
     },
 });
 

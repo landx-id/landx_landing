@@ -84,6 +84,10 @@ div.projects-container {
     margin-left: 10px;
 }
 
+.description-content > h1 {
+    font-size: 20px;
+}
+
 .button-back {
     font-size: 18px;
     font-weight: 500;
