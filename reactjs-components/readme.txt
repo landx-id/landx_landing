@@ -4,5 +4,8 @@ npm install react react-dom --save-dev
 npm install @babel/core @babel/preset-env @babel/preset-react babel-loader --save-dev
 npm install css-loader style-loader --save-dev
 
+# or run this instead
+npm ci
+
 # For using the live reload change the script source
 # to match with the publicPath on webpack.config.js
