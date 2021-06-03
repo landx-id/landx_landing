@@ -2,11 +2,11 @@
 
 /* Card Style */
 .card.custom {
-    width: 326px;
-    height: 473px;
+    width: 280px;
+    height: 430px;
     border-radius: 5px;
     border-width: 0px;
-    box-shadow: 0 0px 5px -3px rgba(0, 0, 0, 0.2), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0px 5px -3px rgba(0, 0, 0, 0.2), 0 3px 2 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
 }
 
 .card-body.custom {
@@ -37,15 +37,15 @@
 
 .sold-banner > .sold-image {
     position: absolute;
-    top: -168px;
-    left: -19px;
+    top: -10.5rem;
+    left: -1.2rem;
     z-index: 99;
 }
 
 .project-button-buy, .project-button-buy:hover {
     font-family: Roboto;
-    font-size: 12px;
-    height: 50px;
+    font-size: 10px;
+    height: 46px;
     letter-spacing: 1.35px;
     font-weight: bold;
     padding: 17px 10px 0px 10px;
@@ -55,15 +55,15 @@
     color: #ffffff;
 
     position: absolute;
-    top: -42px;
-    right: 10px;
+    top: -2.5rem;
+    right: 1rem;
 
     box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.14);
 }
 
 .project-symbol {
     font-family: Roboto !important;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 1.65px;
     font-weight: 400;
     color: #2dbe60;
@@ -71,14 +71,14 @@
 
 .project-name {
     font-family: Roboto !important;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: #5e798d;
 }
 
 .project-category {
     font-family: Roboto !important;
-    font-size: 12px;
+    font-size: 10px;
     height: 20px;
     padding: 0px 10px 0px 10px;
     border-radius: 10px;
@@ -91,7 +91,7 @@
 
 .progress-detail {
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     color: #2dbe60;
     letter-spacing: 0.25px;
     font-weight: bold;
@@ -99,7 +99,7 @@
 
 .sub-progress-detail {
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 10px;
     color: #9e9e9e;
     letter-spacing: 0.4px;
 }
@@ -115,13 +115,13 @@
 
 .progress-detail-2 {
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: #5e798d;
 }
 
 .info-outline-circle {
-    font-size: 14px;
+    font-size: 12px;
     color: #2dbe60;
     margin-bottom: -1px;
 }

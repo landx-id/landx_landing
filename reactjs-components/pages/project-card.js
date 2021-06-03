@@ -24,8 +24,8 @@ fetchData('https://api.landx.id/').then((listOfProjects) => {
     /* Get the last three projects
      * and make the details
      */
-    let lastThree = [];
-    for (let i = projects.length - 3; i < projects.length; i++) {
+    let latestProjects = [];
+    for (let i = projects.length - 4; i < projects.length; i++) {
         let tmpProject = projects[i].landXProperty;
         tmpProject.fundingProgress = toIDR(tmpProject.launchProgress * tmpProject.totalPurchasePrice);
         tmpProject.totalFunding = toIDR(tmpProject.totalPurchasePrice);
@@ -56,8 +56,8 @@ fetchData('https://api.landx.id/').then((listOfProjects) => {
             tmpProject.remainingDays = 0;
         }
 
-        lastThree.push(tmpProject);
+        latestProjects.push(tmpProject);
     }
 
-    CreateCard(lastThree);
+    CreateCard(latestProjects);
 })

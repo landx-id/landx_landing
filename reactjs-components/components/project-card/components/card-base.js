@@ -10,7 +10,7 @@ export const CardBase = (props) => {
     /* Take an array of landXProperty */
     for (let i = 0; i < props.length; i++) {
         cards.push(
-            <div className="col-sm-12 col-md-6 col-xl-4" key={props[i].id}>
+            <div className="col-sm-12 col-md-6 col-xl-3" key={props[i].id}>
                 <div className="card custom">
                     <CardCarousel
                         id={props[i].id}
