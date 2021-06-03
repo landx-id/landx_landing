@@ -5,10 +5,10 @@ import { CardBodySoldImage } from './card-body-sold-image.js';
 import "../stylesheets/card.css";
 
 export const CardBase = (props) => {
-    var cards = [];
+    let cards = [];
 
     /* Take an array of landXProperty */
-    for (var i = 0; i < props.length; i++) {
+    for (let i = 0; i < props.length; i++) {
         cards.push(
             <div className="col-sm-12 col-md-6 col-xl-4" key={props[i].id}>
                 <div className="card custom">

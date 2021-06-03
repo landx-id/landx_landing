@@ -1,9 +1,9 @@
 import React from 'react';
 
 export const CardCarouselInner = (props) => {
-    var carouselItem = [];
+    let carouselItem = [];
 
-    for (var i = 0; i < props.previewImages.length; i++) {
+    for (let i = 0; i < props.previewImages.length; i++) {
         /* Set the first item to be active */
         if (i == 0) {
             carouselItem.push(

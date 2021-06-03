@@ -1,53 +1,53 @@
-import { CreateCard } from './components/create-card.js';
-import './stylesheets/card.css';
+import { initializeProject } from '../components/project-detail-page/components/initialize-project.js';
+import { fetchData } from '../util/common.js';
+import { toIDR } from '../util/currency.js';
+import { CreateCard } from '../components/project-card/components/create-card.js';
 
-var listOfProjects = {};
+/* Styles */
+import '../components/project-detail-page/stylesheets/style.css';
 
-function toIDR(money) {
-    return Intl.NumberFormat("id-ID",{
-        style: "currency",
-        currency: "IDR",
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-      }).format(money);
-}
 
-fetch("https://api.landx.id/", {
-    method: "POST",
-    mode: "cors",
-    headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-    },
-    body: JSON.stringify({query: `{
-        currencies {
-            landXProperty {
-                address
-                annualRentYield
-                annualRentYieldUpper
-                category
-                dividendSchedule
-                id
-                initialTokenPrice
-                launchProgress
-                mapImageUrl
-                name
-                previewImages
-                propertyPrice
-                settlementDate
-                tokenSupply
-                totalPurchasePrice
-                token {
-                    name
-                    symbol
-                }
+fetchData('https://api.landx.id').then((listOfProjects) => {
+    let currentProject = null;
+
+    let id = $("#project-id").val();
+
+    console.log(listOfProjects);
+
+    listOfProjects["data"]["currencies"].forEach(function(item, index) {
+        if (item["landXProperty"] != null && item["landXProperty"] != "") {
+            if(item["landXProperty"]["id"] == id) {
+                currentProject = item["landXProperty"];
             }
         }
-    }`})
-})
-.then(r => r.json())
-.then(data => listOfProjects = data)
-.then(() => {
+    });
+
+    if (currentProject != null) {
+        
+        let previewImages = currentProject["previewImages"];
+
+        initializeProject(currentProject);
+        console.log(currentProject);
+
+        // Show the carousel gallery
+        $("#content-slider").lightSlider({
+            loop:true,
+            keyPress:true,
+        });
+        $('#image-gallery').lightSlider({
+            gallery:true,
+            item: 1,
+            thumbItem: previewImages.length,
+            slideMargin: 0,
+            speed: 1000,
+            auto: true,
+            loop: true,
+            onSliderLoad: function() {
+                $('#image-gallery').removeClass('cS-hidden');
+            }  
+        });
+    }
+
     /* Remove empty projects */
     listOfProjects["data"]["currencies"].forEach(function(item, index) {
         if ( item["landXProperty"] == null
@@ -57,18 +57,18 @@ fetch("https://api.landx.id/", {
     });
 
     /* Rearrange projects */
-    var projects = [];
+    let projects = [];
 
-    for (var key in listOfProjects["data"]["currencies"]) {
+    for (let key in listOfProjects["data"]["currencies"]) {
         projects.push(listOfProjects["data"]["currencies"][key]);
     }
 
     /* Get the last three projects
      * and make the details
      */
-    var lastThree = [];
-    for (var i = projects.length - 3; i < projects.length; i++) {
-        var tmpProject = projects[i]["landXProperty"];
+    let lastThree = [];
+    for (let i = projects.length - 3; i < projects.length; i++) {
+        let tmpProject = projects[i]["landXProperty"];
         tmpProject["fundingProgress"] = toIDR(tmpProject["launchProgress"] * tmpProject["totalPurchasePrice"]);
         tmpProject["totalFunding"] = toIDR(tmpProject["totalPurchasePrice"]);
 
@@ -107,4 +107,4 @@ fetch("https://api.landx.id/", {
     }
 
     CreateCard(lastThree);
-});
+})

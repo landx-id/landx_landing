@@ -7,15 +7,7 @@ import { ProjectProgressBar } from './project-progress-bar.js';
 import { ProjectLotPrice } from './project-lot-price.js';
 import { ProjectDividendDetail } from './project-dividend-detail.js';
 import { ProjectAppProspectus } from './project-app-prospectus.js';
-
-function toIDR(money) {
-    return Intl.NumberFormat("id-ID",{
-        style: "currency",
-        currency: "IDR",
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-      }).format(money);
-}
+import { toIDR } from '../../../util/currency.js';
 
 /* Assembly all the components */
 export class ProjectWrapper extends React.Component {

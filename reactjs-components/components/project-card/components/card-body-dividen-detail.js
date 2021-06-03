@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const CardBodyDividendDetail = (props) => {
-    return(
+    return (
         <div className="row mt-3">
             <div className="col">
                 <div className="row">

@@ -1,6 +1,6 @@
 const path = require('path');
 
-var config = {
+let config = {
     // mode: "development",
     mode: "production",
     module: {
@@ -18,9 +18,9 @@ var config = {
     },
 };
 
-var projectCardConfig = Object.assign({}, config, {
+let projectCardConfig = Object.assign({}, config, {
     name: "project-card",
-    entry: "./src/components/project-card/app.js",
+    entry: "./pages/project-card.js",
     output: {
         path: path.join(__dirname, "dist"),
         filename: "project-card.js"
@@ -33,9 +33,9 @@ var projectCardConfig = Object.assign({}, config, {
     },
 });
 
-var projectDetailPageConfig = Object.assign({}, config, {
+let projectDetailPageConfig = Object.assign({}, config, {
     name: "project-detail",
-    entry: "./src/components/project-detail-page/app.js",
+    entry: "./pages/project-detail-page.js",
     output: {
         path: path.join(__dirname, "dist"),
         filename: "project-detail-page.js"
