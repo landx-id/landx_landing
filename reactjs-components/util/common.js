@@ -42,3 +42,9 @@ export function fetchData(url) {
         return data;
     });
 }
+
+export function calculateRemainingDays(settlementDate) {
+    const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
+    const today = new Date().getTime();
+    return Math.floor((settlementDate - today) / oneDay);
+}

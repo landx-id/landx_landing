@@ -1,5 +1,5 @@
 import { CreateCard } from '../components/project-card/components/create-card';
-import { fetchData } from '../util/common.js';
+import { fetchData, calculateRemainingDays } from '../util/common.js';
 import { toIDR } from '../util/currency.js';
 
 /* Styles */
@@ -29,11 +29,7 @@ fetchData('https://api.landx.id/').then((listOfProjects) => {
         let tmpProject = projects[i].landXProperty;
         tmpProject.fundingProgress = toIDR(tmpProject.launchProgress * tmpProject.totalPurchasePrice);
         tmpProject.totalFunding = toIDR(tmpProject.totalPurchasePrice);
-
-        /* Calculate the remaining days */
-        const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
-        const today = new Date().getTime();
-        tmpProject.remainingDays = Math.floor((tmpProject.settlementDate - today) / oneDay);
+        tmpProject.remainingDays = calculateRemainingDays(tmpProject.settlementDate);
 
         tmpProject.link = `https://landx.id/project/${tmpProject.token.symbol.toLowerCase()}`;
         tmpProject.initialTokenPrice = toIDR(tmpProject.initialTokenPrice);
