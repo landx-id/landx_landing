@@ -6,7 +6,7 @@ import { CardBodyCategory } from './card-body-category.js';
 import { CardBodyFundingDetail } from './card-body-funding-detail.js';
 import { CardBodyProgressBar } from './card-body-progress-bar.js';
 import { CardBodyLotPrice } from './card-body-lot-price.js';
-import { CardBodyDividendDetail } from './card-body-dividen-detail.js';
+import { CardBodyDividendDetail } from './card-body-dividend-detail.js';
 import { CardBodySoldImage } from './card-body-sold-image.js';
 
 export const CardBody = (props) => {

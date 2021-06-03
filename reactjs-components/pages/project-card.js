@@ -25,7 +25,7 @@ fetchData('https://api.landx.id/').then((listOfProjects) => {
      * and make the details
      */
     let latestProjects = [];
-    for (let i = projects.length - 4; i < projects.length; i++) {
+    for (let i = projects.length - 2; i < projects.length; i++) {
         let tmpProject = projects[i].landXProperty;
         tmpProject.fundingProgress = toIDR(tmpProject.launchProgress * tmpProject.totalPurchasePrice);
         tmpProject.totalFunding = toIDR(tmpProject.totalPurchasePrice);

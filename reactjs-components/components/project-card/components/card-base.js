@@ -7,13 +7,13 @@ import "../stylesheets/card.css";
 export const CardBase = (props) => {
     let cards = [];
 
-    /* Take an array of landXProperty */
+    /* Take an array of landXProperty's values */
     for (let i = 0; i < props.length; i++) {
         cards.push(
-            <div className="col-sm-12 col-md-6 col-xl-3" key={props[i].id}>
+            <div className="col-sm-12 col-md-6 col-xl-3" key={i}>
                 <div className="card custom">
                     <CardCarousel
-                        id={props[i].id}
+                        id={`project-${i}`}
                         totalImages={props[i].previewImages.length}
                         previewImages={props[i].previewImages}
                     />
