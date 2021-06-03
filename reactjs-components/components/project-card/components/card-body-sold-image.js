@@ -1,9 +1,10 @@
 import React from 'react';
+import soldout from '../../../../img/habis-terjual.png';
 
 export const CardBodySoldImage = (props) => {
     return (
         <div className="sold-banner">
-            <img src={`${props.relativePath}img/habis-terjual.png`} className="sold-image"/>
+            <img src={soldout} className="sold-image"/>
         </div>
     );
 }
