@@ -163,7 +163,7 @@ fetch("https://api.landx.id/", {
           /* Dividend Details */
           var itemCardBodyRow5 = document.createElement("div")
           itemCardBodyRow5.setAttribute("class", "row");
-          itemCardBodyRow5.innerHTML = createProjectDividendDetails(dividendSchedule, annualRentYield, annualRentYieldUpper);
+          itemCardBodyRow5.innerHTML = createProjectDividendDetail(dividendSchedule, annualRentYield, annualRentYieldUpper);
 
           /* Each of card details for carousel */
           itemCardBody.append(itemCardBodyRow1);

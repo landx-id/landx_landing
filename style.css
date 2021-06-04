@@ -418,104 +418,112 @@ img.testimonyProfile{
     padding:16px 16px 0px; 
     min-height: 264px; 
     border-radius: 14px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 img.landxFlow {
     height: 400px;
 }
 
-/* MEDIA BREAKPOINT */
+/* Carousel of Cards */
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
+/* Button Outline Without Changing Colour */
 
-    .navbar {
-        padding: 16px;
-        height: 72px;
-    }
-
-    div.hamburgerMenu img{
-        height: 24px;
-    }
-
-    div.landxLogo img{
-        height: 24px;
-        padding-left:0px;
-        padding-right: 32px;
-    }
-
-    div.heroPhone img {
-        width: 288px;
-    } 
-  
-    div.progress-bar{
-        width: 15%;
-    }
-
-    h1.bottomCTATitle {
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    img.landxFlow {
-        height: 30px;
-    }
-
-
+.btn-outline-primary:hover {
+    background-color: inherit !important;
+    color: #2e9452 !important;
 }
 
-/* Small devices (landscape phones, less than 768px */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 16px;
-        height: 72px;
+/* Carousel Navigator*/
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-bottom {
+    margin-bottom: 25px;
+}
+
+/* Project Category */
+.semi-transparent-button {
+    background-color: #e4f6e8 !important;
+    border-color: #bde8c7 !important;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2dbe60 !important;
+}
+.semi-transparent-button:hover {
+    background-color: #e4f6e8;
+    color: rgb(34, 139, 80);
+}
+
+
+/* Card details */
+
+div.carousel-card {
+    width: auto; 
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 14px; 
+    border-color: #e5e5e5;
+    color: white;
+    background-color: white;
+    width: 280px;
+    min-height: 450px;
+}
+
+.card-body {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+}
+
+.small-text {
+    font-family: Roboto;
+    color: #9e9e9e;
+    font-size: 12px !important;
+    letter-spacing: 0.4px;
+}
+.region-code {
+    font-size: 11px;
+    letter-spacing: 1.65px;
+    font-family: 'Roboto';
+}
+.text-primary {
+    font-family: Roboto;
+}
+
+.carousel-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.btn-buy {
+    position: absolute;
+    top: -2.3em;
+    margin-left: 70%;
+    z-index: 99;
+}
+
+.funding-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;
+}
+
+/* MEDIA BREAKPOINT */
+
+@media (max-width: 1200px) {
+    .funding-container {
+        grid-template-columns: 300px 300px;
     }
-
-    div#hamburgerMenu img{
-        width: 24px;
-    }
-
-    div.landxLogo img{
-        height: 24px;
-        padding-left:0px;
-        padding-right: 32px;
-    }
-
-    button.demo-fab {
-        width: 96px;
-        height: 96px;
-        left: 33%;
-        top: 36%;
-    }
-
-    button.demo-fab h5 {
-        font-size: 16px;
-        margin: 0px;
-    }
-
-    div.heroPhone {
-        margin: auto;
-        position: relative;
-    }
-
-    div.heroPhone img {
-        width: 288px;
-    
-    } 
-
-    div img.iconlx {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    p.left{
-        text-align: center;
-    }
-
-    .copyright {
-        margin-top: 0px;
-    }
-
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -580,12 +588,114 @@ img.landxFlow {
     img.landxFlow {
         height: 200px;
     }
+
+    .funding-container {
+        grid-template-columns: 300px 300px;
+    }
     
+}
+
+/* Small devices (landscape phones, less than 768px */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px;
+        height: 72px;
+    }
+
+    div#hamburgerMenu img{
+        width: 24px;
+    }
+
+    div.landxLogo img{
+        height: 24px;
+        padding-left:0px;
+        padding-right: 32px;
+    }
+
+    button.demo-fab {
+        width: 96px;
+        height: 96px;
+        left: 33%;
+        top: 36%;
+    }
+
+    button.demo-fab h5 {
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    div.heroPhone {
+        margin: auto;
+        position: relative;
+    }
+
+    div.heroPhone img {
+        width: 288px;
+    
+    } 
+
+    div img.iconlx {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.left{
+        text-align: center;
+    }
+
+    .copyright {
+        margin-top: 0px;
+    }
+
+    .funding-container {
+        grid-template-columns: 300px 300px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+
+    .funding-container {
+        grid-template-columns: 300px;
+    }
+
+    .navbar {
+        padding: 16px;
+        height: 72px;
+    }
+
+    div.hamburgerMenu img{
+        height: 24px;
+    }
+
+    div.landxLogo img{
+        height: 24px;
+        padding-left:0px;
+        padding-right: 32px;
+    }
+
+    div.heroPhone img {
+        width: 288px;
+    } 
+  
+    div.progress-bar{
+        width: 15%;
+    }
+
+    h1.bottomCTATitle {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    img.landxFlow {
+        height: 30px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    
+
 
 
 }
