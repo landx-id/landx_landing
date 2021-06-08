@@ -4,13 +4,17 @@ import { CardBody } from './card-body.js';
 import { CardBodySoldImage } from './card-body-sold-image.js';
 import "../stylesheets/card.css";
 
+function redirectTo(link) {
+    location.href = link;
+}
+
 export const CardBase = (props) => {
     let cards = [];
 
     /* Take an array of landXProperty's values */
     for (let i = 0; i < props.length; i++) {
         cards.push(
-            <div className="col-12 col-md-auto col-xl-3" key={i}>
+            <div className="col-12 col-md-auto col-xl-3" key={i} onClick={() => redirectTo(props[i].link)}>
                 <div className="card custom">
                     <CardCarousel
                         id={`project-${i}`}

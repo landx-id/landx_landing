@@ -11,8 +11,6 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
 
     let id = $("#project-id").val();
 
-    console.log(listOfProjects);
-
     listOfProjects.data.currencies.forEach(function(item, index) {
         if (item.landXProperty != null && item.landXProperty != "") {
             if(item.landXProperty.id == id) {
@@ -26,7 +24,6 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
         let previewImages = currentProject.previewImages;
 
         initializeProject(currentProject);
-        console.log(currentProject);
 
         // Show the carousel gallery
         $("#content-slider").lightSlider({
@@ -38,7 +35,8 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
             item: 1,
             thumbItem: previewImages.length,
             slideMargin: 0,
-            speed: 1000,
+            speed: 1500,
+            pause: 5000,
             auto: true,
             loop: true,
             onSliderLoad: function() {

@@ -7,6 +7,7 @@
     border-radius: 5px;
     border-width: 0px;
     box-shadow: 0 0px 5px -3px rgba(0, 0, 0, 0.2), 0 3px 2 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
 }
 
 .card-body.custom {
@@ -76,7 +77,7 @@
     color: #5e798d;
 }
 
-.project-category {
+.project-category, .project-category:hover {
     font-family: Roboto !important;
     font-size: 10px;
     height: 20px;
