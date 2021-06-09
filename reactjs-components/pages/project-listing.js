@@ -14,7 +14,7 @@ CreateFilter({
     projects: [],
 });
 
-fetchData('http://api.nmx.127.0.0.1.nip.io:8080/').then((data) => {
+fetchData('https://api.landx.id').then((data) => {
     let category = new Set();
 
     data["data"]["currencies"].forEach(function(item) {
