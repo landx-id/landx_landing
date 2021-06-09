@@ -1,48 +1,18 @@
-import {CreateCard} from '../components/project-card/components/create-card';
-import {capitalizeTheFirstLetterOfEachWord, fetchData} from "../util/common";
-import {fromIDR, toIDR} from "../util/currency";
+import {fetchData} from "../util/common";
+import {toIDR} from "../util/currency";
+import {CreateFilter} from "../components/project-filter/create-filter";
+import {CreateCard} from "../components/project-card/components/create-card";
+import {ProjectCountPortal} from "../components/project-filter/project-count-portal";
 
 let projects = [];
-let renderedProjects = [];
 
-let buttonFilter = document.getElementById('btnFilter');
-let buttonReset = document.getElementById('btnResetFilter');
-let sorterForm = document.getElementById('sorterForm');
-let categoryForm = document.getElementById('categoryForm');
-let minimumRangeForm = document.getElementById('minimumRange');
-let maximumRangeForm = document.getElementById('maximumRange');
-let slider = document.getElementById('slider-range').noUiSlider;
-let countText = document.getElementById('projectCount');
 
-buttonFilter.addEventListener("click", () => {
-    filter();
-    CreateCard(renderedProjects);
-    countText.textContent = renderedProjects.length.toString();
+CreateFilter({
+    minimumRange: 1000000,
+    maximumRange: 5000000,
+    categories: [],
+    projects: [],
 });
-
-minimumRangeForm.addEventListener("change", () => {
-    slider.set(
-        [fromIDR(minimumRangeForm.val()), fromIDR(maximumRangeForm.val())]);
-});
-
-maximumRangeForm.addEventListener("change", () => {slider.set(
-    [fromIDR(minimumRangeForm.val()), fromIDR(maximumRangeForm.val())]);
-});
-
-
-buttonReset.addEventListener("click", () => {
-    sorterForm.value = 'settlementDate';
-    categoryForm.value = 'allCategory';
-    minimumRangeForm.value = toIDR(1000000);
-    maximumRangeForm.value = toIDR(5000000);
-    slider.set([1000000, 5000000]);
-
-    renderedProjects = [...projects];
-    filter();
-    CreateCard(renderedProjects);
-    countText.textContent = renderedProjects.length.toString();
-});
-
 
 fetchData('http://api.nmx.127.0.0.1.nip.io:8080/').then((data) => {
     let category = new Set();
@@ -87,34 +57,12 @@ fetchData('http://api.nmx.127.0.0.1.nip.io:8080/').then((data) => {
             projects.push(project);
         }
     });
+    projects = projects.sort((a, b) => a["settlementDate"] > b["settlementDate"] ? -1 : 1)
 
-    renderedProjects = [...projects];
-    filter();
-    CreateCard(renderedProjects);
-    countText.textContent = renderedProjects.length.toString();
-
-    category.forEach((category) => {
-        categoryForm.innerHTML += `<option value="${category}">${capitalizeTheFirstLetterOfEachWord(category)}</option>`;
-    })
+    CreateFilter({
+        minimumRange: 1000000,
+        maximumRange: 5000000,
+        categories: category,
+        projects: projects,
+    });
 });
-
-function filter() {
-    let filter_sort = sorterForm.value;
-    let filter_category = categoryForm.value;
-    let filter_minimum_value = fromIDR(minimumRangeForm.value);
-    let filter_maximum_value = fromIDR(maximumRangeForm.value);
-
-    renderedProjects = projects.filter(
-        (property) =>
-            fromIDR(property['initialTokenPrice']) >= filter_minimum_value
-            && fromIDR(property['initialTokenPrice']) <= filter_maximum_value
-    )
-
-    if (filter_category !== 'allCategory') {
-        renderedProjects = renderedProjects.filter(
-            (property) => !filter_category.localeCompare(property["category"])
-        )
-    }
-    renderedProjects.sort((a, b) => a[filter_sort] > b[filter_sort] ? -1 : 1)
-}
-

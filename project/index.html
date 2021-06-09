@@ -49,9 +49,6 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="../stylesheets/custom-style.css">
 
-    <!-- Custom Slider -->
-    <script src="../scripts/custom-slider.js"></script>
-
     <!-- Iconify -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
@@ -161,55 +158,7 @@
                 <div class="headlineTitle px-3 text-secondary text-center font-weight-normal">
                     <h3 class="text-primary">Pilih Proyek Favoritmu</h3>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="row col-md-5 col-sm-12 order-md-1 order-1">
-                        <div class="col-md-6 col-sm-12">
-                            <label for="minimumRange" class="text-primary" style="font-size: small;">Minimum Price</label>
-                            <input type="text" id="minimumRange" class="form-control custom-input" placeholder="">
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <label for="maximumRange" class="text-primary" style="font-size: small;">Maximum Price</label>
-                            <input type="text" id="maximumRange" class="form-control custom-input" placeholder="">
-                        </div>
-                    </div>
-
-                    <div class="row col-md-7 col-sm-12 order-md-2 order-3">
-                        <div class="col-md-4 col-sm-12">
-                            <label for="categoryForm" class="text-primary" style="font-size: small;">Kategori</label>
-                            <select class="custom-select" id="categoryForm">
-                                <option selected value="allCategory">Semua Kategori</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-4 col-sm-12">
-                            <label for="sorterForm" class="text-primary" style="font-size: small;">Urutkan</label>
-                            <select class="custom-select" id="sorterForm">
-                                <option selected value="settlementDate">Sisa Hari</option>
-                                <option value="name">Nama</option>
-                                <option value="symbol">Kode Saham</option>
-                                <option value="launchProgress">Perkembangan</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-4 col-sm-12 align-self-end">
-                            <button class="btn btn-primary" id="btnFilter">TERAPKAN FILTER</button>
-                        </div>
-                    </div>
-
-                    <div class="row col-md-5 col-sm-12 mt-4 order-md-3 order-2">
-                        <div class="col-md-12 col-sm-12">
-                            <div id="slider-range"></div>
-
-                            <div class="text-primary">
-                                <div class="row mt-2">
-                                    <small class="col text-left align-self-start">1 Juta</small>
-                                    <small class="col text-right align-self-end">5 Juta</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-md-7 col-sm-12 order-md-4 order-4">
-                    </div>
+                <div id="base-filter">
 
                 </div>
             </div>
@@ -219,18 +168,12 @@
 
     <div class="d-flex justify-content-center">
         <div class="p-2">
-            <span class="text-primary" style="font-weight: bold; font-family: 'Inter' !important; font-size: 16px; letter-spacing: 0.15px;">
-                <span id="projectCount">0</span> Project sesuai Filter
-            </span>
-            <span class="filter-link ml-2" style="color: #2dbe60 !important;" id="btnResetFilter">
-                RESET FILTER
-                </a>
-            </span>
+            <span id="projectCount" />
         </div>
     </div>
 
     <!-- Start Here -->
-    <div id="card-base" class="mb-5 pb-5">
+    <div id="card-base" class="mt-3 mb-5 pb-5">
         <!-- Dynamic -->
     </div>
     <!-- Ends here -->

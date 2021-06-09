@@ -1,0 +1,15 @@
+.rc-slider-track {
+    background-color: #2dbe60;
+}
+
+.rc-slider-handle {
+    border: solid 2px #2dbe60;
+}
+
+.rc-slider-handle:hover{
+    border-color: #2dbe60;
+}
+
+.filter-link {
+    cursor: pointer;
+}
