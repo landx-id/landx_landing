@@ -1,4 +1,5 @@
 const path = require('path');
+const glob = require('glob');
 
 let config = {
     // mode: "development",
@@ -26,12 +27,19 @@ let config = {
     },
 };
 
-let projectCardConfig = Object.assign({}, config, {
-    name: "project-card",
-    entry: "./pages/project-card.js",
+pages = glob.sync("./pages/*.js")
+entryPages = {}
+for (const page of pages) {
+    let name = page.split('/')[2].split('.')[0]
+    entryPages[name] = page;
+}
+
+let pagesConfig = Object.assign({}, config, {
+    name: "page",
+    entry: entryPages,
     output: {
         path: path.join(__dirname, "dist"),
-        filename: "project-card.js"
+        filename: "[name].js"
     },
     devServer: {
         contentBase: "../",
@@ -41,15 +49,6 @@ let projectCardConfig = Object.assign({}, config, {
     },
 });
 
-let projectDetailPageConfig = Object.assign({}, config, {
-    name: "project-detail",
-    entry: "./pages/project-detail-page.js",
-    output: {
-        path: path.join(__dirname, "dist"),
-        filename: "project-detail-page.js"
-    },
-});
-
 module.exports = [
-    projectCardConfig, projectDetailPageConfig,
+    pagesConfig
 ];

@@ -27,8 +27,9 @@ html, body {
     font-family: 'Inter' !important;
     /* font-weight: 500; */
     font-size: x-small;
-    height: 60%;
-    margin-top: 14%;
+    height: 38px;
+    align-content: center;
+    margin-top: 5%;
 }
 
 a > span {
@@ -97,4 +98,8 @@ span.card-title {
     position: absolute;
     top: -3px;
     left: -3px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea277a8aff76a04f41e8cbc72478e7027b77ef62
