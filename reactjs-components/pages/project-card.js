@@ -23,8 +23,6 @@ fetchData('https://api.landx.id/').then((listOfProjects) => {
 
     projects = projects.sort((a, b) => a["settlementDate"] > b["settlementDate"] ? -1 : 1);
 
-    console.log(projects);
-
     /* Get the last three projects
      * and make the details
      */
