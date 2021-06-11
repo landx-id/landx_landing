@@ -48,3 +48,12 @@ export function calculateRemainingDays(settlementDate) {
     const today = new Date().getTime();
     return Math.floor((settlementDate - today) / oneDay);
 }
+
+export function capitalizeTheFirstLetterOfEachWord(words) {
+    let separateWord = words.toLowerCase().split(' ');
+    for (let i = 0; i < separateWord.length; i++) {
+        separateWord[i] = separateWord[i].charAt(0).toUpperCase() +
+            separateWord[i].substring(1);
+    }
+    return separateWord.join(' ');
+}

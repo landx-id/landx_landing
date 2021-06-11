@@ -6,3 +6,7 @@ export function toIDR(money) {
         maximumFractionDigits: 0,
     }).format(money);
 }
+
+export function fromIDR(money) {
+    return Number(money.replace(/[^0-9\,]+/g,""));
+}
