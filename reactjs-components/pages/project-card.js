@@ -21,9 +21,11 @@ fetchData('https://api.landx.id/').then((listOfProjects) => {
         projects.push(listOfProjects.data.currencies[key]);
     }
 
-    projects = projects.sort((a, b) => a["settlementDate"] > b["settlementDate"] ? -1 : 1);
+    projects = projects.sort((a, b) =>
+         a["landXProperty"]["settlementDate"] > b["landXProperty"]["settlementDate"] ? -1 : 1
+    );
 
-    /* Get the last three projects
+    /* Get the latest projects
      * and make the details
      */
     let latestProjects = [];
