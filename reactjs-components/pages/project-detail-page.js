@@ -11,8 +11,6 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
 
     let id = $("#project-id").val();
 
-    console.log(listOfProjects);
-
     listOfProjects.data.currencies.forEach(function(item, index) {
         if (item.landXProperty != null && item.landXProperty != "") {
             if(item.landXProperty.id == id) {
@@ -26,7 +24,6 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
         let previewImages = currentProject.previewImages;
 
         initializeProject(currentProject);
-        console.log(currentProject);
 
         // Show the carousel gallery
         $("#content-slider").lightSlider({
@@ -38,7 +35,8 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
             item: 1,
             thumbItem: previewImages.length,
             slideMargin: 0,
-            speed: 1000,
+            speed: 1500,
+            pause: 5000,
             auto: true,
             loop: true,
             onSliderLoad: function() {
@@ -62,11 +60,15 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
         projects.push(listOfProjects.data.currencies[key]);
     }
 
-    /* Get the last three projects
+    projects = projects.sort((a, b) => 
+        a["landXProperty"]["settlementDate"] > b["landXProperty"]["settlementDate"] ? -1 : 1
+    );
+
+    /* Get the latest projects
      * and make the details
      */
     let latestProjects = [];
-    for (let i = projects.length - 4; i < projects.length; i++) {
+    for (let i = 0; i < 4; i++) {
         let tmpProject = projects[i].landXProperty;
         tmpProject.fundingProgress = toIDR(tmpProject.launchProgress * tmpProject.totalPurchasePrice);
         tmpProject.totalFunding = toIDR(tmpProject.totalPurchasePrice);
