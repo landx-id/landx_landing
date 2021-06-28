@@ -82,7 +82,6 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
 
         if (tmpProject.remainingDays < 0) {
             tmpProject.remainingDays = 0;
-            tmpProject.isSold = true;
         }
 
         if (tmpProject.launchProgress == null) {
@@ -93,7 +92,7 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
             tmpProject.fundingProgress = toIDR(tmpProject.launchProgress * tmpProject.totalPurchasePrice);
         }
 
-        if (tmpProject.fundingProgress >= tmpProject.totalFunding) {
+        if (tmpProject.launchProgress == null || tmpProject.launchProgress >= 1.0) {
             tmpProject.isSold = true;
             tmpProject.remainingDays = 0;
         }
