@@ -48,7 +48,7 @@ fetchData('https://api.landx.id').then((data) => {
                 project["fundingProgress"] = toIDR(project["launchProgress"] * project["totalPurchasePrice"]);
             }
 
-            if (project["fundingProgress"] >= project["totalFunding"]) {
+            if (project["launchProgress"] == null || project["launchProgress"] >= 1.0) {
                 project["isSold"] = true;
                 project["remainingDays"] = 0;
             }
