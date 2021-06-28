@@ -39,7 +39,6 @@ fetchData('https://api.landx.id').then((data) => {
 
             if (project["remainingDays"] < 0) {
                 project["remainingDays"] = 0;
-                project["isSold"] = true;
             }
 
             if (project["launchProgress"] == null) {

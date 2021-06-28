@@ -82,7 +82,6 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
 
         if (tmpProject.remainingDays < 0) {
             tmpProject.remainingDays = 0;
-            tmpProject.isSold = true;
         }
 
         if (tmpProject.launchProgress == null) {
