@@ -23,8 +23,7 @@ export const ProjectDescDetail = (props) => {
                     </p>
                 </div>
                 <div className="row mt-4">
-                    <p className="description-content">
-                        {props.address}
+                    <p className="description-content" dangerouslySetInnerHTML={{__html: converter.makeHtml(props.address)}}>
                     </p>
                 </div>
                 <div className="row mt-4">
