@@ -1,6 +1,6 @@
 $.when($.ready).then(function () {
     const raisedFunds = 74025000000;
-    const dividendPayout = 1773420000;
+    const dividendPayout = 1925344009;
 
     fetch('https://mobile.landx.id/mobile/landing_data')
         .then(data => data.json())
