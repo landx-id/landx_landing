@@ -16,9 +16,12 @@ export const CardBody = (props) => {
                 {props.isSold == true &&
                     <CardBodySoldImage relativePath={props.relativePath} />
                 }
-                <CardBodyButtonBuy
+
+                {props.isSold == false &&
+                    <CardBodyButtonBuy
                     link={props.link}
                 />
+                }
                 <CardBodySymbol
                     symbol={props.token.symbol}
                 />
