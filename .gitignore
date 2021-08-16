@@ -7,3 +7,5 @@ _site/
 .jekyll-metadata
 
 reactjs-components/node_modules
+
+.DS_Store
