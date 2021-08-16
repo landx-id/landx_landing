@@ -18,7 +18,7 @@ $.when($.ready).then(function () {
 
             $('#property-count').text(landingData.property_count);
             $('#registered-users').text(numeral(landingData.registered_users).format('0,0'));
-            $('#raised-funds').text((numeral(landingData.raised_fund) + 2720000000).format('0.00 a'));
+            $('#raised-funds').text((numeral(landingData.raised_fund + 2720000000)).format('0.00 a'));
             $('#dividend-payout').text(numeral(parseInt(landingData.dividend_payout)).format('0.00 a'));
         });
 });
