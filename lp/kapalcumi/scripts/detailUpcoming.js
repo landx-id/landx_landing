@@ -28,8 +28,8 @@ const generateDetailUpcoming = (data) => {
             </div>
             <div class="row flex-sm-row d-flex-inline" style="background-color: #fff; width:fit-content; border-radius: 12px; margin: 30px 0px 0px 0px;">
                 <h5 class="countDown">${Math.floor(distance / (1000 * 60 * 60 * 24))} Hari : ${Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} Jam</h5>
-                <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="../img/Play Store.svg" alt="Play Store" > </a>
-                <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="../img/App Store.svg" alt="App Store" > </a>
+                <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="../../img/Play Store.svg" alt="Play Store" > </a>
+                <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="../../img/App Store.svg" alt="App Store" > </a>
             </div>
         </div>
     </div>`;

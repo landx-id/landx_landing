@@ -36,8 +36,7 @@ fetch("https://api.landx.id/", {
   }`})
 })
 .then(r => r.json())
-.then((listOfProjects) => {
-  
+.then((data) => {
     var listOfProjects = {};
     listOfProjects = data
     listOfProjects.data.currencies.forEach(function(item, index) {
@@ -178,7 +177,7 @@ fetch("https://api.landx.id/", {
         soldBanner.setAttribute("class", "sold-banner");
         var imageSoldBanner = document.createElement("img");
         imageSoldBanner.setAttribute("class", "sold-image");
-        imageSoldBanner.setAttribute("src", "../img/habis-terjual.png");
+        imageSoldBanner.setAttribute("src", "../../img/habis-terjual.png");
 
         soldBanner.append(imageSoldBanner);
         containerFluid.append(soldBanner);

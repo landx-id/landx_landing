@@ -95,7 +95,7 @@ function createProjectDividendDetail(dividendSchedule, annualRentYield, annualRe
 
 function createSoldImg(relativePath) {
     return `
-        <img src="${relativePath}/img/habis-terjual.png">
+        <img src="${relativePath}/../img/habis-terjual.png">
     `;
 }
 
