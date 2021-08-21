@@ -1,0 +1,1437 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap');
+
+/* This style include for responsiveness*/
+
+/* TYPOGRAPHY */
+
+html {
+    font-family: 'Inter' !important;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Inter' !important;
+}
+
+
+/* TEXT COLOR */
+
+.text-primary {
+    color:#5e798d !important;
+}
+
+.text-secondary{
+    color: #2dbe60 !important;
+}
+
+.text-muted {
+     color: #9e9e9e !important;
+}
+
+p {
+    margin-bottom: 4px;
+}
+
+.navActive {
+    display: block;
+}
+
+
+/* CUSTOM STYLES */
+
+.bg-light{
+    background-color:rgba(255, 255, 255, 0.900) !important;
+    border-bottom: #E7E7E7 solid 1px;
+
+
+}
+
+.navbar {
+    background-color:rgba(255, 255, 255, 0.900);
+    border-bottom: #E7E7E7 solid 1px;
+}
+
+.navbar-brand{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    
+}
+
+#navbarActive{
+    padding: 100px 0px 16px;
+}
+
+.hamburgerMenu img{
+    width: 28px;
+    cursor: pointer;
+}
+
+.landxLogo img {
+    height: 32px;
+    padding-left:248px;
+    margin: -8px 10px 0 0;
+    cursor: pointer;
+}
+
+
+.btn.btn-primary {
+    background-color: #2dbe60;
+    border-color: #2dbe60; 
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    text-align: center; 
+    color:white; 
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.btn-primary:hover {
+    color: white !important;
+    background-color: #00A339!important;
+}
+
+.btn-primary:active, :visited{
+    color: white !important;
+    background-color: #2dbe60!important;
+}
+
+.headlineTitle {
+    padding: 144px 0px 32px;
+}
+
+.btn-outline-primary {
+    background-color: white; 
+    border-color: #2dbe60; 
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    text-align: center; 
+    color:#2dbe60; 
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active {
+    border-color: #00A339;
+    color: white;
+    background-color:#2dbe60!important;
+}
+
+#lx-hero {
+    background-image: url(../img/heroBackground.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+button.demo-fab {
+    width: 136px;
+    height: 136px;
+    background-color: #2dbe60;
+    background-image: url(../img/demoFAB-bacground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    box-shadow:0px 6px 12px #bebebe;
+    color: white;
+    position: absolute;
+    left: 36%;
+    top: 36%;
+}
+
+button.demo-fab:hover {
+    color: #00A339;
+}
+
+.heroPhone{
+    position: relative;
+}
+
+
+.storeContainer img{
+    height: 72px;
+    cursor: pointer;
+}
+
+#lx-why {
+    background-image: url(../img/whyChoseLandxBackground3.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+div.card {
+    width: auto; 
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 14px; 
+    border-color: #e5e5e5;
+    color: white;
+    width: 15rem;
+}
+
+div.progress {
+    width: 100%;
+    height: 8px;
+    text-align: left;
+}
+
+div.progress-bar {
+    background-color: #2dbe60;
+}
+
+#lx-divider {
+    height: 2px;
+    background-color: #f8f8f8;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+#lx-dividerPrimary {
+    height: 1px;
+    background-color:#ccd7df;
+}
+
+
+.lx-fab {
+    width: 56px;
+    height: 56px;
+    background-color: #2dbe60;
+    border-radius: 100%;
+    border-color: #00b242;
+    z-index: 2;
+    box-shadow:0px 6px 12px #bebebe;
+    position: absolute;
+    right: 16px;
+    top: 204px;
+}
+
+
+.modal-body-store {
+    background-image: url(../img/StoreModalBackground.png);
+    background-repeat: none;
+    background-size: cover;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: #2dbe60;
+    border-radius: 8px;
+    padding: 0;
+}
+
+button.close img  {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    color: #5e798d;
+}
+
+#lx-how {
+    background-color: #EAEFF4;
+    background-repeat: no-repeat;
+}
+
+
+div.lx-CTA {
+    background-image: url(../img/CTA-3.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow:0px 6px 12px #bebebe; 
+}
+
+#lx-footer{
+    background-image: url(../img/footerBackground.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-color: #eaeff4;
+    margin: 0px;
+}
+
+li.list-group-item {
+    font: 'Inter', sans-serif 16px normal;
+    color: #5e798d;
+    letter-spacing: 0.44px;
+    line-height: 48px;
+    padding: 0px ;
+    background: none;
+    border: none;
+}
+
+
+li.list-group-item-title {
+    font: 'Inter';
+    font-size: 16px;
+    font-weight: 900;
+    color: #5e798d;
+    letter-spacing: 0.44px;
+    line-height: 48px;
+    padding: 0px ;
+    background: none;
+    border: none;
+    list-style-type: none;
+}
+
+#lx-icon{
+    width: 32px;
+    height: 32px;
+}
+
+th{
+    font: 'Inter';
+    font-size: 16px;
+    font-weight: 700;
+    color: #2dbe60;
+}
+
+td{
+    font: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #2dbe60;
+}
+
+.table-background{
+    background-color: #f8f8f8;
+    border: none;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+.iconlx{
+    display: block;
+    height: 96px;
+    padding: 24px 0px 0px;
+    margin-bottom: 16px;
+}
+
+img.testimonyProfile{
+    width: 96px;
+    margin: auto;
+    margin-bottom: 232px;
+}
+
+.carousel-caption {
+    margin-top: 16px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/prevIcon.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/nextIcon.svg);
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #CCD7DFff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.socMed {
+    width: 32px;
+    height: 32px;
+}
+
+
+.copyright {
+    padding-bottom: 40px;
+    margin-top:-70px;
+}
+
+
+.nav-item {
+    width: 100%;
+    height: 48px;
+}
+
+.nav-item span{
+    display: block;
+    width: 32px;
+    height: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover span {
+    border-bottom: 2px solid #2dbe60;
+}
+
+.nav-item:active span {
+    border-bottom: 2px solid #2dbe60;
+}
+
+.nav-item a.nav-link.text-primary:hover {
+    color: #2dbe60 !important; 
+}
+
+.nav-item a.nav-link.text-primary:active {
+    color: #5e798d !important; 
+}
+
+.nav-item a.nav-link.text-primary:visited {
+    color: #5e798d !important; 
+}
+
+
+.modal-content{
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+.demoPhone img{
+    margin: auto;
+}
+
+.card-img-top{
+    height: auto; 
+    padding-bottom:8px; 
+    border-radius: 14px 14px 0px 0px;
+}
+
+div.card-body {
+    padding:16px 16px 0px; 
+    min-height: 264px; 
+    border-radius: 14px;
+}
+
+img.landxFlow {
+    height: 400px;
+}
+
+/* Card */
+.card-img-top {
+    position:absolute;
+    top: 10%;
+    left: 5%;
+    width: 25%;
+    height: 25%;
+}
+
+h5.card-title {
+    font-family: Inter !important;
+    font-weight: bold;
+    margin-top: 5em;
+    color:#5e798d !important;
+}
+
+.card-text {
+    font-family: Inter !important;
+    color: #5e798d !important;
+}
+
+.why-ico {
+    width: 70px;
+    height: 70px;
+    margin-top: -1em;
+}
+
+
+/* Typography */
+.text-header {
+    text-align: center;
+    font-size: 60px; 
+    font-weight: 500;
+    color: #8e3825;
+    font-style: Inter !important;
+    display: block;
+}
+
+
+/* Header Banner */
+div.header-background {
+    background-image: url(assets/Header-image-01-min.png), url(assets/Header-background-min.png);
+    background-position-x: center, center;
+    background-position-y: -205px, center;
+    background-size: 660px, cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.header-background > div.bowl1 > img#bowl {
+    position: absolute;
+    margin-top: 475px;
+    width: 505px;
+    height: 510px;
+    right: -200px;
+}
+
+div.header-background > div.bowl2 > img#bowl {
+    position: absolute;
+    margin-top: -360px;
+    width: 565px;
+    height: 535px;
+    left: -70px;
+}
+
+div.header-background > div.title {
+    margin-top: 473px;
+}
+
+div.header-background > div.title h3 {
+    font-family: Arsenal !important;
+    color: #8e3825;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 33pt;
+}
+
+.details-company {
+    margin-left: 140px;
+    margin-top: 70px;
+}
+
+.dhp-icon {
+    margin-top: 72px;
+    height: auto;
+    width: 210px;
+}
+
+.text-details-info {
+    font-family: Arsenal !important;
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    color: #8e3825;
+    display: block;
+}
+
+.text-details-info {
+    margin-bottom: 9px;
+}
+
+.text-details-content {
+    font-family: Arsenal !important;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    color: #8e3825;
+}
+
+span.outlet > ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+    list-style: none;
+    margin-left: -41px;
+    margin-top: 8px;
+}
+
+span.outlet > ul > li {
+    margin: 0 0 22px 0;
+}
+
+span.outlet > ul > li:before {
+    content: "🥘";
+}
+
+.capital-average {
+    display: grid;
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 145px;
+}
+
+.capital-average > .text-details-info {
+    margin-bottom: 5px;
+}
+
+div.section-info {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: #8e3825;
+    margin-top: 233px;
+    margin-bottom: 50px;
+}
+
+div.highlight{
+    margin-bottom: 30px;
+}
+
+div.highlight > h3 {
+    font-family: Inter !important;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+div.highlight > span {
+    font-family: Inter !important;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+div.sub-highlight  > p {
+    font-family: Inter !important;
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    line-height: 17px;
+}
+
+.line-break {
+    height: 30px;
+}
+
+div.works-container {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    justify-content: center;
+}
+
+div.why-container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+}
+
+div.why-container > div.card {
+    height: 350px;
+}
+
+#btn-invest {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+div.why-container > div.card > img {
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+div.why-container > div.card > div.card-title {
+    margin-left: 10px;
+    word-spacing: -1px;
+}
+
+div.why-container > div.card > div.card-body {
+    margin-left: 10px;
+}
+
+div.funding-container > div#base-cards{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.emoji{
+    font-size: 100px;
+}
+
+.btn-whatsapp, .btn-whatsapp:hover, .btn-whatsapp:active {
+    background-color: white !important;
+    color: #2dbe60 !important;
+}
+
+.btn-whatsapp > img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-whatsapp > span {
+    font-size: 24px;
+}
+
+div.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+div.contact-container > div{
+    margin-right: 1em;
+}
+
+
+/* Card details */
+div.carousel-card {
+    width: auto; 
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 14px; 
+    border-color: #e5e5e5;
+    color: white;
+    background-color: white;
+    width: 18rem;
+    height: 28rem;
+}
+
+.small-text {
+    font-family: Roboto;
+    color: #9e9e9e;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+
+.region-code {
+    font-size: 11px;
+    letter-spacing: 1.65px;
+    font-family: Roboto;
+}
+
+.text-primary {
+    font-family: Roboto;
+}
+
+.carousel-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.carousel-card > .card-body {
+    margin-top: -10px;
+}
+
+.btn-buy {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 210px;
+    z-index: 99;
+}
+
+
+/* Project Category */
+.semi-transparent-button {
+    background-color: #e4f6e8 !important;
+    border-color: #bde8c7 !important;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2dbe60 !important;
+}
+.semi-transparent-button:hover {
+    background-color: #e4f6e8;
+    color: rgb(34, 139, 80);
+}
+
+
+.text-brand {
+    font-family: Inter;
+    font-size: 32px;
+}
+
+/* MEDIA BREAKPOINT */
+
+/* High to Low*/
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    div.funding-container > div#base-cards {
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+}
+
+/* Non HiDPI screen (1440px and up) */
+
+@media (min-width: 1440px) {
+
+    .navbar {
+        padding: 32px;
+        height: 135px;
+    }
+
+    div.hamburgerMenu img {
+        width: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    div.landxLogo img {
+        height: 48px;
+        margin-top: 4px;
+        margin-left: -15px;
+    }
+
+    div.header-background {
+        background-size: 970px 940px, cover;
+        background-position-x: center, center;
+        background-position-y: -300px, center;
+    }
+
+    div.header-background > div.title {
+        margin-top: 700px;
+        margin-left: 15px;
+    }
+    
+    div.header-background > div.title h3 {
+        font-size: 60px;
+        letter-spacing: -0.5px;
+        line-height: 68px;
+    }
+
+    .dhp-icon {
+        margin-top: 107px;
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    .text-details-info {
+        font-size: 24px;
+        letter-spacing: 0.1px;
+    }
+
+    .text-details-content {
+        font-size: 34px;
+        letter-spacing: 0.35px;
+    }
+
+    span.outlet > ul {
+        margin-left: -42px;
+        margin-top: 12px;
+    }
+    
+    span.outlet > ul > li:before {
+        font-size: 26px;
+    }
+    
+    span.outlet > ul > li {
+        margin-top: 35px;
+    }
+
+    span.outlet > ul > li:nth-child(3n) {
+        margin-top: 35px;
+    }
+
+    span.outlet > ul > li:first-child {
+        margin-top: 0px;
+    }
+
+    .details-company {
+        margin-left: 100px;
+    }
+    
+
+    .capital-average {
+        margin-top: 53px;
+        margin-bottom: 215px;
+    }
+
+    .capital-average > .text-details-content {
+        margin-top: 5px;
+    }
+
+    div.header-background > div.bowl1 > img#bowl {
+        width: 735px;
+        height: 755px;
+        margin-top: 700px;
+        right: -275px;
+    }
+
+    div.header-background > div.bowl2 > img#bowl {
+        width: 826px;
+        height: 790px;
+        margin-top: -530px;
+    }
+
+    
+    div.section-info {
+        margin-top: 340px;
+        margin-left: 15px;
+    }
+
+    div.section-info > div.hightlight {
+        margin-bottom: 500px !important;
+    }
+
+    div.highlight > * {
+        font-size: 60px !important;
+        letter-spacing: -0.5px;
+    }
+
+    div.sub-highlight  {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    div.sub-highlight  > * {
+        font-size: 25px !important;
+        letter-spacing: -0.5px !important;
+        line-height: 25px !important;
+    }
+
+    .line-break {
+        height: 30px;
+    }
+
+    #lx-how {
+        margin-left: 15px;
+    }
+
+    #lx-how > .container > .row > .col-12 > img {
+        margin-top: 21px;
+    }
+
+    .how-title {
+        font-size: 35px;
+        letter-spacing: -0.20px;
+    }
+
+    div.works-container {
+        grid-template-columns: 360px 360px 360px;
+        margin-bottom: 55px;
+    }
+
+    div.card {
+        width: 330px;
+        height: 350px;
+    }
+
+    .card-img-top {
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+    }
+
+    div.card-body {
+        margin-top: 28px;
+    }
+
+    h5.card-title {
+        font-size: 24px;
+        margin-top: 132px;
+        margin-bottom: 30px;
+    }
+
+    p.card-text {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        word-spacing: 2px;
+        line-height: 28px;
+    }
+
+    .why-title {
+        margin-top: 50px;
+        margin-left: 15px;
+        word-spacing: 2px;
+        font-size: 34px;
+    }
+
+    #lx-why-container > .row > .col-12 > img {
+        margin-top: 23px;
+        margin-right: -30px;
+    }
+
+    div.why-container {
+        grid-template-columns: 360px 360px 360px 360px;
+        margin-bottom: 95px;
+    }
+
+    div.why-container > div.card {
+        height: 400px;
+    }
+
+    div.why-container > div.card > img {
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+
+    div.why-container > div.card > div.card-title {
+        margin-left: 10px;
+        word-spacing: -1px;
+    }
+
+    div.why-container > div.card > div.card-body {
+        margin-left: 10px;
+    }
+
+    #lx-project > .row > .col-12 > h4{
+        font-size: 35px;
+        margin-top: 45px;
+    }
+
+    div.funding-container {
+        margin-top: 25px;
+    }
+
+    #btn-invest {
+        margin-top: 68px;
+        font-size: 14px;
+        height: 55px;
+        padding-top: 16px;
+        margin-bottom: 100px;
+    }
+
+    .emoji {
+        font-size: 64px;
+    }
+
+    .brand1 {
+        margin-left: -55px;
+        margin-top: 55px;
+    }
+
+    .brand2 {
+        margin-left: 12px;
+        margin-top: -10px;
+    }
+
+    .brand3 {
+        margin-top: 60px;
+        margin-bottom: 28px;
+    }
+
+    .brand4 {
+        margin-bottom: 40px;
+    }
+
+    .text-brand {
+        font-size: 36px;
+        font-weight: 300;
+        white-space: nowrap;
+        letter-spacing: 0.5px;
+        line-height: 45px;
+    }
+
+    #booking {
+        height: 55px;
+        margin-left: 15px;
+        padding-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .contact-container {
+        margin-left: -80px;
+    }
+
+    .btn-whatsapp {
+        width: 154px;
+        height: 53px;
+        padding-top: 10px;
+    }
+
+    .btn-whatsapp > span {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    
+    .btn-buy {
+        top: 20px;
+    }
+}
+
+/* Consider this a laptop devices */
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding: 16px;
+        height: 72px;
+    }
+
+    div#hamburgerMenu img{
+        width: 24px;
+        padding-left:0px;
+    }
+
+    div.landxLogo img{
+        height: 24px;
+    }
+
+    #navbarActive{
+        padding-top: 72px;
+    }
+
+    img.dhp-icon {
+        width: 150px;
+    }
+
+    .text-details-info {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .copyright {
+        margin-top: 0px;
+    }
+
+    btn.demo-fab {
+        left: 100px;
+        top: 532px;
+    }
+
+    img.landxFlow {
+        height: 200px;
+    }
+
+    img.dhp-icon {
+        width: auto;
+    }
+
+
+    div.header-background > div.bowl1 > img#bowl {
+        width: 350px;
+        height: auto;
+        right: -150px;
+    }
+
+    div.header-background > div.bowl2 > img#bowl {
+        width: 450px;
+        height: auto;
+        margin-top: -280px;
+    }
+
+    .details-company {
+        margin-left: 50px;
+    }
+
+    .text-details-info {
+        font-size: 20px;
+    }
+
+    .text-details-content {
+        font-size: 20px;
+    }
+
+    .capital-average {
+        display: grid;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    span.outlet > ul {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        margin-left: -40px;
+    }
+    
+
+    div.works-container {
+        grid-template-columns: 250px 250px 250px;
+    }
+
+    div.why-container {
+        grid-template-columns: 250px 250px;
+    }
+
+    div.funding-container > div#base-cards {
+        grid-template-columns: 300px 300px;
+    }
+    
+    .btn-whatsapp > span {
+        font-size: 14px;
+        height: 54px;
+        width: 152px;
+    }
+
+    .btn-whatsapp > img {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 16px;
+        height: 72px;
+    }
+
+    div#hamburgerMenu img{
+        width: 24px;
+        padding-left:0px;
+    }
+
+    div.landxLogo img{
+        height: 24px;
+        padding-left: 0px;
+        padding-right: 32px;
+    }
+
+    #navbarActive{
+        padding-top: 72px;
+    }
+
+
+    div.header-background {
+        background-size: 560px, cover;
+    }
+    
+    .details-company {
+        margin-left: 50px;
+        margin-top: 70px;
+    }
+    
+    span.outlet > ul {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        margin-left: -40px;
+    }
+    
+    div.header-background > div.title {
+        margin-top: 380px;
+    }
+}
+
+/* Phones (portrait phones, less than 700px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px;
+        height: 72px;
+    }
+
+    div#hamburgerMenu img{
+        width: 24px;
+        padding-left:0px;
+    }
+
+    div.landxLogo img{
+        height: 24px;
+        padding-left: 0px;
+        padding-right: 32px;
+    }
+
+    #navbarActive{
+        padding-top: 72px;
+    }
+
+    img.dhp-icon {
+        width: 150px;
+    }
+
+    .text-details-info {
+        font-size: 18px;
+    }
+
+    .text-details-content {
+        font-size: 18px;
+        display: block;
+    }
+
+    div.header-background {
+        background-size: 480px, cover;
+    }
+
+    div.header-background > div.bowl1 > img#bowl {
+        margin-top: 350px;
+        width: 350px;
+    }
+
+    div.header-background > div.bowl2 > img#bowl {
+        margin-top: -193px;
+        width: 350px;
+        left: -123px;
+    }
+
+    div.header-background > div.title {
+        margin-top: 300px;
+    }
+
+    div.header-background > div.title h3 {
+        font-family: Arsenal !important;
+        color: #8e3825;
+        font-weight: bold;
+    }
+
+    span.outlet > ul {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        margin-left: -40px;
+    }
+
+    .capital-average {
+        display: grid;
+        justify-content: start;
+        margin-bottom: 210px;
+    }
+
+    div.works-container {
+        grid-template-columns: 250px 250px;
+    }
+
+    div.why-container {
+        grid-template-columns: 250px 250px;
+    }
+
+    div.funding-container > div#base-cards{
+        grid-template-columns: 300px;
+        margin-left: 40px;
+    }
+    
+    .btn-whatsapp > span {
+        font-size: 14px;
+        height: 54px;
+        width: 152px;
+    }
+
+    .btn-whatsapp > img {
+        margin-bottom: 5px;
+    }
+
+    div.contact-container {
+        display: grid;
+    }
+
+    div.contact-container > div.content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    div.header-background {
+        background-position-y: -100px, center;
+        background-size: 280px, cover;
+    }
+
+    div.header-background > div.bowl1 > img#bowl {
+        height: 209px;
+        width: auto;
+        right: -115px;
+        margin-top: 340px;
+    }
+
+    div.header-background > div.bowl2 > img#bowl {
+        height: 285px;
+        width: auto;
+        left: -100px;
+        margin-top: -163px;
+    }
+
+    .dhp-icon {
+        margin-top: 20px;
+    }
+    
+    
+    div.title {
+        margin-top: 50px;
+    }
+
+    div.header-background > div.title h3 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    div.highlight > * {
+        font-size: 28px !important;
+    }
+
+    div.sub-highlight  > * {
+        font-size: 16px;
+    }
+
+    div.works-container {
+        grid-template-columns: 250px;
+    }
+
+    div.why-container {
+        grid-template-columns: 250px;
+    }
+
+    .text-details-info {
+        font-size: 24px;
+    }
+
+    .text-details-content {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .details-company {
+        margin-left: 20px;
+    }
+
+    div.section-info {
+        margin-top: 130px;
+    }
+
+    div.highlight > * {
+        font-size: 24px;
+    }
+
+    div.highlight > span {
+        display: block;
+    }
+
+    div.sub-highlight > p {
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        line-height: 24px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    div.sub-highlight  > span {
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        line-height: 24px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        display: block;
+    }
+
+    .how-title > span{
+        font-size: 20px;
+        display: block;
+    }
+
+    #lx-how > .container > .row > .col-12 > img {
+        width: 40px;
+        height: auto;
+    }
+
+    div.why-container {
+        margin-bottom: 30px;
+    }
+
+    div.why-container > div.card > img {
+        margin-top: -10px;
+        margin-left: 8px;
+    }
+
+    .line-break {
+        height: 20px;
+    }
+
+    .text-brand {
+        font-size: 20px;
+    }
+}
