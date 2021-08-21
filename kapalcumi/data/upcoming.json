@@ -1,0 +1,17 @@
+{
+    "upcoming": [
+        {
+            "kapal-cumi": {
+                "images": "assets/2.png",
+                "title": "Kapal Cumi",
+                "description": "Aliquam varius lectus a lectus pulvinar bibendum. Sed id mi ac nibh volutpat fermentum. Nam ac velit tortor. Nulla eget luctus libero. Vivamus quis orci blandit, dapibus purus imperdiet, venenatis augue.",
+                "link": "https://landx.id/kapalcumi/",
+                "expired_at": "2021.08.26 11:00",
+                "dividendSchedule": "Per 12 bulan",
+                "annualRentYield": "0.02",
+                "annualRentYieldUpper": "0.25",
+                "initialTokenPrice": "1000000.0"
+            }
+        }
+    ]
+}
