@@ -1,5 +1,5 @@
 const generateDetailUpcoming = (data) => {
-    const expiredAt = new Date(data.expired_at).getTime(); //convert date and time to unix time
+    const expiredAt = new Date(data.listing_at).getTime(); //convert date and time to unix time
     const now = Date.now();
     const distance = expiredAt - now;
 
@@ -34,7 +34,7 @@ const generateDetailUpcoming = (data) => {
         </div>
     </div>`;
 }
-$.getJSON("data/upcoming.json", function(data) {
+$.getJSON("../../lottie/upcoming.json", function(data) {
     console.log(data); // this will show the info it in firebug console
     var upcoming_detail = document.getElementById("root");
     upcoming_detail.innerHTML = generateDetailUpcoming(data.upcoming[0]["kapal-cumi"]);
