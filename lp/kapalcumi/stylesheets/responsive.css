@@ -1,0 +1,654 @@
+@media only screen and (max-width: 600px) {
+    .headlineTitle {
+        padding: 90px 0px 20px;
+    }
+
+    .kembali{
+        font-size: 15px;
+    }
+
+    .container-upcoming {
+        background-image: url('../assets/detail_mobile.png');
+        background-repeat: no-repeat;
+        background-size: 100% 525px;
+        border-radius: 16px;
+        padding: 25px;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        background-color: #33722f;
+    }
+
+    .title-project-upcoming {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 0px 0px;
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 300px;
+    }
+
+    .description-project-upcoming {
+        width: 100%;
+        height: auto;
+        margin: 10px 0px 25px 0;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: 0.44px;
+        color: #fff;
+        text-align: justify;
+    }
+    
+    .info {
+        margin: auto;
+    }
+
+    .subInfo{
+        width: 100%;
+    }
+
+    .caption-project {
+        width: 95px;
+        height: 20px;
+        margin: 2px 10px 6px 0;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.25px;
+        color: #fff;
+    }
+
+    .caption-val-project {
+        height: 29px;
+        margin: 6px 0 0;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+    }
+
+    .periode {
+        width: 108px;
+        margin: 2px 7px 2px 0;
+    }
+
+    .val-periode {
+        margin: 4px 4px 0 0;
+    }
+    
+    .deviden {
+        width: 113px;
+        margin: 2px 0 0;
+    }
+    
+    .val-deviden {
+        margin: 3.9px 0 0;
+    }
+
+    .kotakPutih-bawah {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 12px;
+        margin: 30px 0px 0px 0px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .countDown {
+        width: 100%;
+        height: fit-content;
+        font-size: 25px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        color: #5e798d;
+        text-align: center;
+        margin: 30px 20px 30px 20px;
+    }
+
+    .headlineTitle {
+        padding: 100px 0px 25px;
+    }
+
+    .kembali{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container-upcoming {
+        background-image: url('../assets/detail_mobile.png');
+        background-repeat: no-repeat;
+        background-size: 100% 525px;
+        border-radius: 16px;
+        padding: 25px;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        background-color: #33722f;
+    }
+
+    .title-project-upcoming {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 0px 0px;
+        font-family: Inter;
+        font-size: 2rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 300px;
+    }
+
+    .description-project-upcoming {
+        width: 100%;
+        height: auto;
+        margin: 10px 0px 25px 0;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: 0.44px;
+        color: #fff;
+        text-align: justify;
+    }
+    
+    .info {
+        justify-content: space-evenly;
+    }
+
+    .caption-project {
+        width: 95px;
+        height: 20px;
+        margin: 2px 10px 6px 0;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.25px;
+        color: #fff;
+    }
+
+    .caption-val-project {
+        height: 29px;
+        margin: 6px 0 0;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+    }
+
+    .periode {
+        width: 108px;
+        margin: 2px 7px 2px 0;
+    }
+
+    .val-periode {
+        margin: 4px 4px 0 0;
+    }
+    
+    .deviden {
+        width: 113px;
+        margin: 2px 0 0;
+    }
+    
+    .val-deviden {
+        margin: 3.9px 0 0;
+    }
+
+    .kotakPutih-bawah {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 12px;
+        margin: 30px 0px 0px 0px;
+        justify-content: center;
+    }
+
+    .countDown {
+        width: 100%;
+        height: fit-content;
+        font-size: 30px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        color: #5e798d;
+        text-align: center;
+        margin: 30px 20px 30px 20px;
+    }
+
+    .headlineTitle {
+        padding: 100px 0px 25px;
+    }
+
+    .kembali{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container-upcoming {
+        background-image: url('../assets/detail.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 16px;
+        padding: 15px 15px 15px 15px;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+    }
+
+    .title-project-upcoming {
+        width: 48%;
+        height: auto;
+        margin: 0px 155px 0px 0px;
+        font-family: Inter;
+        font-size: 21px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        color: #fff;
+        text-align: justify;
+    }
+
+    .description-project-upcoming {
+        width: 305px;
+        height: auto;
+        margin: 30px 155px 32px 0;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: -1.56px;
+        color: #fff;
+        text-align: justify;
+    }
+
+    .caption-project {
+        width: 95px;
+        height: auto;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.25px;
+        color: #fff;
+    }
+    .caption-val-project {
+        width: auto;
+        height: 29px;
+        margin: 6px 0 0;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+    }
+    .fill{
+        width: 779px;
+        height: 107px;
+        margin: 64px 0 0;
+        padding: 24px 31px 23px 24.5px;
+        border-radius: 12px;
+        background-color: #fff;
+    }
+    .countDown{
+        width: fit-content;
+        height: fit-content;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        color: #5e798d;
+        text-align: center;
+        margin: 17px 10px 17px 17px;
+    }
+    .button-back{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .info {
+        margin-left: 0px;
+        width: 390px;
+        justify-content: space-between;
+    }
+    .periode {
+        width: 108px;
+        margin: 2px 7px 2px 0;
+    }
+    .val-periode {
+        width: auto;
+        margin: 4px 4px 0 0;
+    }
+    
+    .deviden {
+        width: 113px;
+        margin: 2px 0 0;
+    }
+    .val-deviden {
+        width: auto;
+        margin: 3.9px 0 0;
+    }
+
+    .kotakPutih-bawah{
+        background-color: #fff;
+        width:fit-content;
+        border-radius: 12px;
+        margin: 30px 0px 0px 0px;
+        padding: 3px 3px 0px 0px;
+    }
+
+    .storeContainer img {
+        height: 55px;
+        cursor: pointer;
+    }
+
+    .headlineTitle {
+        padding: 100px 0px 21px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container-upcoming {
+        background-image: url('../assets/detail.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 16px;
+        padding: 25px 25px 25px 25px;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+    }
+
+    .title-project-upcoming {
+        width: 48%;
+        height: auto;
+        margin: 0px 155px 0px 0px;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        color: #fff;
+        text-align: justify;
+    }
+
+    .description-project-upcoming {
+        width: 402px;
+        height: auto;
+        margin: 30px 155px 32px 0;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: -0.56px;
+        color: #fff;
+        text-align: justify;
+    }
+
+    .caption-project{
+        width: 95px;
+        height: 20px;
+        margin: 2px 69px 6px 0;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.25px;
+        color: #fff;
+    }
+    .caption-val-project{
+        width: 164px;
+        height: 29px;
+        margin: 6px 0 0;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+    }
+    .fill{
+        width: 779px;
+        height: 107px;
+        margin: 64px 0 0;
+        padding: 24px 31px 23px 24.5px;
+        border-radius: 12px;
+        background-color: #fff;
+    }
+    .countDown{
+        width: fit-content;
+        height: fit-content;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        color: #5e798d;
+        text-align: center;
+        margin: 16px 10px 10px 25px;
+    }
+    .button-back{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .info{
+        margin-left: 0px;
+        width: 530px;
+    }
+    .periode{
+        width: 108px;
+        margin: 2px 7px 2px 0;
+    }
+    .val-periode{
+        width: 135px;
+        margin: 4px 4px 0 0;
+    }
+    
+    .deviden{
+        width: 113px;
+        margin: 2px 0 0;
+    }
+    .val-deviden{
+        width: 209px;
+        margin: 3.9px 0 0;
+    }
+
+    .kotakPutih-bawah{
+        background-color: #fff;
+        width:fit-content;
+        border-radius: 12px;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .storeContainer img {
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .headlineTitle {
+        padding: 115px 0px 21px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container-upcoming{
+        background-image: url('../assets/detail.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 16px; 
+        padding: 30px 30px 30px 30px;
+        width: 1110px;
+        height: auto;
+        margin: 0px auto
+    }
+    .title-project-upcoming{
+        width: 48%;
+        height: auto;
+        margin: 0px 155px 0px 0px;
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        color: #fff;
+        text-align: justify;
+    }
+
+    .description-project-upcoming {
+        width: 490px;
+        height: auto;
+        margin: 30px 155px 32px 0;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: -0.56px;
+        color: #fff;
+        text-align: justify;
+    }
+
+    .caption-project{
+        width: 95px;
+        height: 20px;
+        margin: 2px 69px 6px 0;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.25px;
+        color: #fff;
+    }
+    .caption-val-project{
+        width: 164px;
+        height: 29px;
+        margin: 6px 0 0;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+    }
+    .fill{
+        width: 779px;
+        height: 107px;
+        margin: 64px 0 0;
+        padding: 24px 31px 23px 24.5px;
+        border-radius: 12px;
+        background-color: #fff;
+    }
+    .countDown {
+        width: fit-content;
+        height: fit-content;
+        font-size: 21px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.25px;
+        color: #5e798d;
+        text-align: center;
+        margin: 20px 10px 10px 20px;
+    }
+    .button-back{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .info{
+        margin-left: 0px;
+        width: 565px;
+    }
+    .periode{
+        width: 108px;
+        margin: 2px 7px 2px 0;
+    }
+    .val-periode{
+        width: 135px;
+        margin: 4px 4px 0 0;
+    }
+    
+    .deviden{
+        width: 113px;
+        margin: 2px 0 0;
+    }
+    .val-deviden{
+        width: 209px;
+        margin: 3.9px 0 0;
+    }
+
+    .kotakPutih-bawah{
+        background-color: #fff;
+        width:fit-content;
+        border-radius: 12px;
+        margin: 30px 0px 0px 0px;
+        padding-bottom: 0px;
+    }
+
+    .storeContainer img {
+        height: 68px;
+        cursor: pointer;
+    }
+}
+
