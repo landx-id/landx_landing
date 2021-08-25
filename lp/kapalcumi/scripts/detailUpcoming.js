@@ -4,7 +4,6 @@ const generateDetailUpcoming = (data) => {
     const distance = expiredAt - now;
     const day = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    console.log("Hari : "+day);
 
     return `
     <div class="container">

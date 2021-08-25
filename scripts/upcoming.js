@@ -16,8 +16,6 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
     }
   });
 
-  console.log("OKEKEKEKEK"+temp.length);
-
   if(temp.length > 0){
     temp.sort((a, b) =>{
       let time_a = new Date(a.listing_at).getTime();

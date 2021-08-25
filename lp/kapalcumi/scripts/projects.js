@@ -51,10 +51,7 @@ fetch("https://api.landx.id/", {
          a["landXProperty"]["settlementDate"] > b["landXProperty"]["settlementDate"] ? -1 : 1
     );
 
-    console.log(projects);
-    console.log("DATA");
     var cardName = "carouselCards";
-
     if(document.getElementById("row") == null){
       var base = document.getElementById("card-base");
       var container = document.createElement("div");
@@ -169,7 +166,6 @@ fetch("https://api.landx.id/", {
         containerFluid.setAttribute("class", "container-fluid px-0");
 
         if(isSold){
-          //kode here
           /**Start sold Banner*/
           var soldBanner = document.createElement("div");
           soldBanner.setAttribute("class", "sold-banner");
@@ -180,20 +176,21 @@ fetch("https://api.landx.id/", {
           soldBanner.append(imageSoldBanner);
           containerFluid.append(soldBanner);
           /**End sold Banner*/
+
+        }else{
+
+          /**Start Buy Button*/
+          var divBuyButton = document.createElement("div");
+          divBuyButton.setAttribute("class", "row");
+
+          var divSubBuyButton = document.createElement("div");
+          divSubBuyButton.setAttribute("class", "col");
+          divSubBuyButton.innerHTML = `<a href="https://landx.id/project/${projectDirectory.toLowerCase()}" class="btn project-button-buy">BELI</a>`;
+
+          divBuyButton.append(divSubBuyButton);
+          containerFluid.append(divBuyButton);
+          /**End Buy Button*/
         }
-
-        /**Start Buy Button*/
-        var divBuyButton = document.createElement("div");
-        divBuyButton.setAttribute("class", "row");
-
-        var divSubBuyButton = document.createElement("div");
-        divSubBuyButton.setAttribute("class", "col");
-        divSubBuyButton.innerHTML = `<a href="https://landx.id/project/${projectDirectory.toLowerCase()}" class="btn project-button-buy">BELI</a>`;
-
-        divBuyButton.append(divSubBuyButton);
-        containerFluid.append(divBuyButton);
-        /**End Buy Button*/
-
 
         /**Start kode token*/
         var divKodeToken = document.createElement("div");
