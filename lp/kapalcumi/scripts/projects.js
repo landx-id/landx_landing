@@ -1,7 +1,3 @@
-function detail(url){
-  location.href = url;
-}
-
 fetch("https://api.landx.id/", {
   method: "POST",
   mode: "cors",
@@ -55,6 +51,8 @@ fetch("https://api.landx.id/", {
          a["landXProperty"]["settlementDate"] > b["landXProperty"]["settlementDate"] ? -1 : 1
     );
 
+    console.log(projects);
+    console.log("DATA");
     var cardName = "carouselCards";
 
     if(document.getElementById("row") == null){
@@ -85,7 +83,7 @@ fetch("https://api.landx.id/", {
         /* calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
         const today = new Date().getTime();
-        var remainingDays = (currentProject["settlementDate"] - today) / oneDay;
+        var remainingDays = numeral((currentProject["settlementDate"] - today) / oneDay).format("0,0");
         /*------------------------------*/
         
         var progress = parseFloat(currentProject["launchProgress"] * 100);
@@ -116,7 +114,6 @@ fetch("https://api.landx.id/", {
 
         var cardBase = document.createElement("div");
         cardBase.setAttribute("class", "col-12 col-md-auto col-xl-3");
-        cardBase.setAttribute("onClick", `detail('https://landx.id/project/${projectDirectory.toLowerCase()}')`);
 
         var cardCustome = document.createElement("div");
         cardCustome.setAttribute("class", "card custom");
@@ -171,17 +168,32 @@ fetch("https://api.landx.id/", {
         var containerFluid = document.createElement("div");
         containerFluid.setAttribute("class", "container-fluid px-0");
 
-        //kode here
-        /**Start sold Banner*/
-        var soldBanner = document.createElement("div");
-        soldBanner.setAttribute("class", "sold-banner");
-        var imageSoldBanner = document.createElement("img");
-        imageSoldBanner.setAttribute("class", "sold-image");
-        imageSoldBanner.setAttribute("src", "../../img/habis-terjual.png");
+        if(isSold){
+          //kode here
+          /**Start sold Banner*/
+          var soldBanner = document.createElement("div");
+          soldBanner.setAttribute("class", "sold-banner");
+          var imageSoldBanner = document.createElement("img");
+          imageSoldBanner.setAttribute("class", "sold-image");
+          imageSoldBanner.setAttribute("src", "../../img/habis-terjual.png");
 
-        soldBanner.append(imageSoldBanner);
-        containerFluid.append(soldBanner);
-        /**End sold Banner*/
+          soldBanner.append(imageSoldBanner);
+          containerFluid.append(soldBanner);
+          /**End sold Banner*/
+        }
+
+        /**Start Buy Button*/
+        var divBuyButton = document.createElement("div");
+        divBuyButton.setAttribute("class", "row");
+
+        var divSubBuyButton = document.createElement("div");
+        divSubBuyButton.setAttribute("class", "col");
+        divSubBuyButton.innerHTML = `<a href="https://landx.id/project/${projectDirectory.toLowerCase()}" class="btn project-button-buy">BELI</a>`;
+
+        divBuyButton.append(divSubBuyButton);
+        containerFluid.append(divBuyButton);
+        /**End Buy Button*/
+
 
         /**Start kode token*/
         var divKodeToken = document.createElement("div");
@@ -216,7 +228,7 @@ fetch("https://api.landx.id/", {
         <div class="col-8">
             <div class="row">
                 <div class="col">
-                    <p class="progress-detail">Rp ${totalFunding}</p>
+                    <p class="progress-detail">Rp ${fundingProgress}</p>
                 </div>
             </div>
             <div class="row">
@@ -228,7 +240,7 @@ fetch("https://api.landx.id/", {
         <div class="col-4">
             <div class="row">
                 <div class="col">
-                    <p class="progress-detail">Rp ${remainingDays}</p>
+                    <p class="progress-detail">${remainingDays}</p>
                 </div>
             </div>
             <div class="row">
@@ -247,7 +259,7 @@ fetch("https://api.landx.id/", {
         divProgresProject.innerHTML = `
         <div class="col">
           <div class="progress sm">
-            <div class="progress-bar progress-bar-green" style="width: 100%;"></div>
+            <div class="progress-bar progress-bar-green" style="width: ${progress}%;"></div>
           </div>
         </div>
         `;
