@@ -2,11 +2,15 @@
     "upcoming": [
         {
             "kapal-cumi": {
-                "images": "assets/2.png",
+                "images": [
+                    "lp/kapalcumi/assets/thumnail.png",
+                    "lp/kapalcumi/assets/detail.png",
+                    "lp/kapalcumi/assets/detail_mobile.png"
+                ],
                 "title": "Anargya Sinar Maritim - Bisnis Properti Kapal",
                 "description": "Pernahkah Anda kepikiran punya kapal pribadi? Di LandX, punya kapal sendiri bukan lagi sekadar mimpi. Pertama kalinya, bisnis properti kapal listing di LandX. Anda bisa jadi owner kapal perikanan yang hasil komoditinya didistribusikan setiap hari.",
-                "link": "https://landx.id/kapalcumi/",
-                "expired_at": "2021.08.25 11:00",
+                "link": "https://landx.id/lp/kapalcumi/",
+                "listing_at": "2021.08.25 11:00",
                 "dividendSchedule": "Per 4 bulan",
                 "annualRentYield": "0.1",
                 "annualRentYieldUpper": "0.15",
