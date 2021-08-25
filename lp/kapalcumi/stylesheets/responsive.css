@@ -3,7 +3,7 @@
         padding: 90px 0px 20px;
     }
 
-    .kembali{
+    .btnBack{
         font-size: 15px;
     }
 
@@ -103,7 +103,7 @@
         margin: 3.9px 0 0;
     }
 
-    .kotakPutih-bawah {
+    .whiteBox-under {
         background-color: #fff;
         width: 100%;
         border-radius: 12px;
@@ -130,7 +130,7 @@
         padding: 100px 0px 25px;
     }
 
-    .kembali{
+    .btnBack{
         font-size: 16px;
     }
 }
@@ -228,7 +228,7 @@
         margin: 3.9px 0 0;
     }
 
-    .kotakPutih-bawah {
+    .whiteBox-under {
         background-color: #fff;
         width: 100%;
         border-radius: 12px;
@@ -254,7 +254,7 @@
         padding: 100px 0px 25px;
     }
 
-    .kembali{
+    .btnBack{
         font-size: 16px;
     }
 }
@@ -374,7 +374,7 @@
         margin: 3.9px 0 0;
     }
 
-    .kotakPutih-bawah{
+    .whiteBox-under{
         background-color: #fff;
         width:fit-content;
         border-radius: 12px;
@@ -507,7 +507,7 @@
         margin: 3.9px 0 0;
     }
 
-    .kotakPutih-bawah{
+    .whiteBox-under{
         background-color: #fff;
         width:fit-content;
         border-radius: 12px;
@@ -638,7 +638,7 @@
         margin: 3.9px 0 0;
     }
 
-    .kotakPutih-bawah{
+    .whiteBox-under{
         background-color: #fff;
         width:fit-content;
         border-radius: 12px;

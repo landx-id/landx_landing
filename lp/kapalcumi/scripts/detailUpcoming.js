@@ -26,7 +26,7 @@ const generateDetailUpcoming = (data) => {
                     <h4 class="caption-val-project val-deviden" id="deviden-upcoming">${parseFloat(data.annualRentYield) * 100}-${parseFloat(data.annualRentYieldUpper) * 100}% Per Periode</h4>
                 </div>
             </div>
-            <div class="row flex-sm-row d-flex-inline kotakPutih-bawah storeContainer">
+            <div class="row flex-sm-row d-flex-inline whiteBox-under storeContainer">
                 <h5 class="countDown">${Math.floor(distance / (1000 * 60 * 60 * 24))} Hari : ${Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} Jam</h5>
                 <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="../../img/Play Store.svg" alt="Play Store" > </a>
                 <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="../../img/App Store.svg" alt="App Store" > </a>
