@@ -116,7 +116,7 @@ fetch("https://api.landx.id/", {
 
         var cardBase = document.createElement("div");
         cardBase.setAttribute("class", "col-12 col-md-auto col-xl-3");
-        cardBase.setAttribute("onClick", `detail('https://landx.id/project/${projectDirectory.toLowerCase()}')`);
+        cardBase.setAttribute("onClick", `detail('https://landx.id/project/#${projectDirectory.toLowerCase()}')`);
 
         var cardCustome = document.createElement("div");
         cardCustome.setAttribute("class", "card custom");

@@ -12,8 +12,10 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
     let id = $("#project-id").val();
 
     listOfProjects.data.currencies.forEach(function(item, index) {
+        
         if (item.landXProperty != null && item.landXProperty != "") {
-            if(item.landXProperty.id == id) {
+            // change from id based to symbols based 
+            if(item.landXProperty.token.symbol == id) {
                 currentProject = item.landXProperty;
             }
         }
@@ -73,7 +75,7 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
         tmpProject.fundingProgress = toIDR(tmpProject.launchProgress * tmpProject.totalPurchasePrice);
         tmpProject.totalFunding = toIDR(tmpProject.totalPurchasePrice);
         tmpProject.remainingDays = calculateRemainingDays(tmpProject.settlementDate);
-        tmpProject.link = `https://landx.id/project/${tmpProject.token.symbol.toLowerCase()}`;
+        tmpProject.link = `https://landx.id/project/#/${tmpProject.token.symbol.toLowerCase()}`;
         tmpProject.initialTokenPrice = toIDR(tmpProject.initialTokenPrice);
         tmpProject.tokenSupply = parseInt(tmpProject.tokenSupply, 10);
         tmpProject.annualRentYield = parseFloat(tmpProject.annualRentYield) * 100;
