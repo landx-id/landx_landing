@@ -185,7 +185,7 @@ fetch("https://api.landx.id/", {
 
           var divSubBuyButton = document.createElement("div");
           divSubBuyButton.setAttribute("class", "col");
-          divSubBuyButton.innerHTML = `<a href="hhttp://localhost:8099/##${projectDirectory.toLowerCase()}" class="btn project-button-buy">BELI</a>`;
+          divSubBuyButton.innerHTML = `<a href="https://landx.id/project/#${projectDirectory.toLowerCase()}" class="btn project-button-buy">BELI</a>`;
 
           divBuyButton.append(divSubBuyButton);
           containerFluid.append(divBuyButton);
