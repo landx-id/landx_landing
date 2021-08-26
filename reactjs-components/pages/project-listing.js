@@ -30,7 +30,7 @@ fetchData('https://api.landx.id').then((data) => {
             const today = new Date().getTime();
             project["remainingDays"] = Math.floor((project["settlementDate"] - today) / oneDay);
 
-            project["link"] = `http://localhost:8099/project/#${project["token"]["symbol"].toLowerCase()}`;
+            project["link"] = `https://landx.id/project/#${project["token"]["symbol"].toLowerCase()}`;
             project["initialTokenPrice"] = toIDR(project["initialTokenPrice"]);
             project["tokenSupply"] = parseInt(project["tokenSupply"], 10);
             project["annualRentYield"] = parseFloat(project["annualRentYield"]) * 100;
