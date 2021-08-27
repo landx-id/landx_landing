@@ -16,12 +16,12 @@ export const CardBase = (props) => {
                 // check if url doesnt have hash(#) path
                 if (window.location.pathname.indexOf("project") >= 1) {
                     location.href = props[i].link;
-                    console.log
+                    console.log;
                     location.reload();
                 } else {
                     location.href = props[i].link; 
                 }
-                window.scrollTo( props[i].link);
+                window.scrollTo(0.0);
             }}>
             <div className="card custom">
                     <CardCarousel
