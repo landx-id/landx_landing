@@ -13,7 +13,7 @@ const header = () => {
         <meta name="description" content="Miliki dan Nikmati Keuntungan dari Bisnis Rendah Risiko Mulai dari Rp. 1 juta. Equity Crowdfunding Berizin dan Diawasi OJK.">
 
         <!-- google tag manager -->
-        <script src="scripts/tag.js"></script>
+        <script src="https://landx.id/scripts/tag.js"></script>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
