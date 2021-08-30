@@ -167,7 +167,9 @@ const footer = () => {
     `;
 }
 document.getElementById("footer").innerHTML = footer();
-
+$(document).ready(function () {
+    $('head').append('<link href="https://landx.id/img/LandX-faveicon.png" rel="shortcut icon" type="image/x-icon" />');
+});
 // template script
 $.getScript("https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js");
 $.getScript("https://code.jquery.com/jquery-3.4.1.min.js");
