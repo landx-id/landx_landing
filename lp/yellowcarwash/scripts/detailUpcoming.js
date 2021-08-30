@@ -26,7 +26,7 @@ const generateDetailUpcoming = (data) => {
                 </div>
                 <div class="subInfo">
                     <h6 class="caption-project deviden">Estimasi Dividen</h6>
-                    <h4 class="caption-val-project val-deviden" id="deviden-upcoming">${parseFloat(data.annualRentYield) * 100}-${parseFloat(data.annualRentYieldUpper) * 100}% Per Periode</h4>
+                    <h4 class="caption-val-project val-deviden" id="deviden-upcoming">${parseFloat(data.annualRentYield) * 100}-${parseFloat(data.annualRentYieldUpper) * 100}% Per Tahun</h4>
                 </div>
             </div>
             <div class="row flex-sm-row d-flex-inline whiteBox-under storeContainer">
