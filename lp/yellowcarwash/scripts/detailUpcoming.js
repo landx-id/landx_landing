@@ -37,6 +37,7 @@ const generateDetailUpcoming = (data) => {
         </div>
     </div>`;
 }
+
 $.getJSON("../../lottie/upcoming.json", function(data) {
     console.log(data); // this will show the info it in firebug console
     var upcoming_detail = document.getElementById("root");

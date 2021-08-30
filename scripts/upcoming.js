@@ -7,6 +7,9 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
   let temp = [];
   const now = Date.now();
 
+  console.log(typeof(dataUpcoming.upcoming[0]));
+  
+
   dataUpcoming.upcoming.forEach(val => {
     let key = Object.keys(val);
     let listing_at = new Date(val[key].listing_at).getTime();
