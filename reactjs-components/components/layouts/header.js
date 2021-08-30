@@ -9,11 +9,11 @@ const header = () => {
     <!-- NAVIGATION -->
     <nav class="navbar d-flex-inline fixed-top navbar-expand-lg py-4 mb-3">
             <div class="float-sm-left float-md-left float-lg-left hamburgerMenu">
-                <img src="img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="https://landx.id/img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
             </div>
             <div class="navbar-brand float-sm-none landxLogo" href="">
-                <a href="index.html">
-                    <img src="img/LandX_Logo.png" alt="LandX_Logo">
+                <a href="/">
+                    <img src="https://landx.id/img/LandX_Logo.png" alt="LandX_Logo">
                 </a>
             </div>
             <div>
@@ -75,7 +75,7 @@ const header = () => {
                             <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="contact.html">Kontak</a>
+                            <a class="nav-link text-primary" href="https://landx.id/contact.html">Kontak</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
