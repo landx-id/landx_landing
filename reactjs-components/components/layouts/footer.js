@@ -162,8 +162,17 @@ const footer = () => {
         </div>
 
     </div>
-
-    
+    </body>
+</html>
     `;
 }
 document.getElementById("footer").innerHTML = footer();
+$(document).ready(function () {
+    $('head').append('<link href="https://landx.id/img/LandX-faveicon.png" rel="shortcut icon" type="image/x-icon" />');
+});
+// template script
+$.getScript("https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js");
+$.getScript("https://code.jquery.com/jquery-3.4.1.min.js");
+$.getScript("https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js");
+$.getScript("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js");
+$.getScript("https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js");
