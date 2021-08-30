@@ -54,13 +54,14 @@ const header = () => {
 
         <!-- Light Slider -->
         <link type="text/css" rel="stylesheet" href="https://landx.id/stylesheets/lightslider.min.css" />
-        <script src="https://landx.id//scripts/lightslider.min.js" defer></script>
+        <script src="https://landx.id/scripts/lightslider.min.js" defer></script>
     
         <!-- Iconify -->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     
         <!-- Showdown JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+
         
     </head>
 

@@ -42,76 +42,72 @@
     <script type="text/javascript" src="../reactjs-components/components/layouts/header.js"></script>
     <script type="text/javascript" src="../reactjs-components/components/layouts/footer.js"></script>
 
-    <script src="../reactjs-components/dist/project-listing.js?v=1"></script>
+    <script src="../reactjs-components/dist/project-listing.js"></script>
 
     <div id="replaceable2"></div>
-        <script>
-
-            $(window).on('hashchange', function(e){
+    <script>
+        $(window).on('hashchange', function(e){
                 var origEvent = e.originalEvent;
                 console.log('Going to: ' + origEvent.newURL + ' from: ' + origEvent.oldURL);
                location.reload()
             });
-
-            $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-
-                var getindex = window.location.pathname.indexOf("index.html");
-                if(window.location.href.indexOf('index.html') > -1) {// or 0 
-                window.location.href = window.location.href.replace('index.html', '');
-                // window.location.reload();
-                }
-                var url = $(location).attr('href'),
-                    parts = url.split("/"),
-                    last_part = parts[parts.length - 2];
-                    
-                if (last_part == "#") {
-                    last_part = parts[parts.length - 1];
-                }
-
+        $(document).ready(function () {
+            var getindex = window.location.pathname.indexOf("index.html");
+            if(window.location.href.indexOf('index.html') > -1) {// or 0 
+            window.location.href = window.location.href.replace('index.html', '');
+            // window.location.reload();
+            }
+            var url = $(location).attr('href'),
+                parts = url.split("/"),
+                last_part = parts[parts.length - 2];
                 
+            if (last_part == "#") {
+                last_part = parts[parts.length - 1];
+            }
 
-                if (last_part != "project") {
-                    $("#replaceable").replaceWith(`
-                 <!-- Button for Back -->
-                    <div class="container">
-                        <!-- Headline & Phone -->
-                        <div class="row mx-auto">
-                            <div class="headlineTitle">
-                                <a href="../project">
-                                    <img src="../../img/atom-icon-arrow-6.svg" style="margin-bottom: 3px;">
-                                    <span class="text-primary button-back">Kembali ke Semua Proyek</span>
-                                </a>
-                            </div>
+            
+
+            if (last_part != "project") {
+                $("#replaceable").replaceWith(`
+                <!-- Button for Back -->
+                <div class="container">
+                    <!-- Headline & Phone -->
+                    <div class="row mx-auto">
+                        <div class="headlineTitle">
+                            <a href="../project">
+                                <img src="../../img/atom-icon-arrow-6.svg" style="margin-bottom: 3px;">
+                                <span class="text-primary button-back">Kembali ke Semua Proyek</span>
+                            </a>
                         </div>
                     </div>
-                
-                    <div id="root"></div>
-                
-                    <!-- Only for separator -->
-                    <div class="mt-5">
-                        <hr>
-                    </div>
-                
-                    <!-- Projects -->
-                    <div class="container">
-                        <div class="row pt-5">
-                            <div class="col-12">
-                                <h4 class="text-center text-primary">Proyek Lainnya</h4>
-                                <img src="../../img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4 mt-4">
-                            </div>
+                </div>
+            
+                <div id="root"></div>
+            
+                <!-- Only for separator -->
+                <div class="mt-5">
+                    <hr>
+                </div>
+            
+                <!-- Projects -->
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-12">
+                            <h4 class="text-center text-primary">Proyek Lainnya</h4>
+                            <img src="../../img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4 mt-4">
                         </div>
                     </div>
-                    <div id="card-base" class="mb-5 pb-5">
-                        <!-- Dynamic -->
-                    </div>
-                    <input type="hidden" id="project-id" value="`+last_part.toUpperCase()+`">
-                `);
-                var myscript = document.createElement('script');
-                myscript.setAttribute('src','../../reactjs-components/dist/project-detail-page.js');
-                document.getElementsByTagName('head')[0].appendChild(myscript);
-                }
-            });
-        </script>
+                </div>
+                <div id="card-base" class="mb-5 pb-5">
+                    <!-- Dynamic -->
+                </div>
+                <input type="hidden" id="project-id" value="`+last_part.toUpperCase()+`">
+            `);
+            var myscript = document.createElement('script');
+            myscript.setAttribute('src','https://landx.id/reactjs-components/dist/project-detail-page.js');
+            document.getElementsByTagName('head')[0].appendChild(myscript);
+            }
+        });
+    </script>
     
         
