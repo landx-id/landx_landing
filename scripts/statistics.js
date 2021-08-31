@@ -1,4 +1,5 @@
 $.when($.ready).then(function () {
+  
     fetch('https://mobile.landx.id/mobile/landing_data')
         .then(data => data.json())
         .then(landingData => {
