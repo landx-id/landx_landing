@@ -33,7 +33,7 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
         let cardUpcoming = `
         <div class="col-12 col-md-auto col-xl-3" onClick="detail('${temp[i].link}')">
           <div class="card custom">
-            <img class="thumnail" src="${temp[i].images[0]}">
+            <img class="thumnail" src="lp/${temp[i].images[0]}">
             <img class="label-soon" src="img/soon-listing.png">
             <h5 class="title-thumnail">${temp[i].title}</h5>
             <div class="canv">

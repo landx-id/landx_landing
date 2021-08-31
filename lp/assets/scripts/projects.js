@@ -171,7 +171,7 @@ fetch("https://api.landx.id/", {
           soldBanner.setAttribute("class", "sold-banner");
           var imageSoldBanner = document.createElement("img");
           imageSoldBanner.setAttribute("class", "sold-image");
-          imageSoldBanner.setAttribute("src", "../../img/habis-terjual.png");
+          imageSoldBanner.setAttribute("src", "../img/habis-terjual.png");
 
           soldBanner.append(imageSoldBanner);
           containerFluid.append(soldBanner);

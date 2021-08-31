@@ -62,9 +62,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 
     <!-- Custom Style -->
-    <link rel="stylesheet" href="stylesheets/custom-style.css">
     <link rel="stylesheet" href="../stylesheets/card.css">
-    <link rel="stylesheet" href="stylesheets/responsive.css">
+    <link rel="stylesheet" href="assets/stylesheets/responsive.css">
   </head>
 
   <body>
@@ -379,121 +378,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
     <!-- Populate the data -->
-    <script type="text/javascript" src="scripts/date.js"></script>
-    <script type="text/javascript" src="scripts/detailUpcoming.js"></script>
-    <script type="text/javascript" src="scripts/projects.js"></script>
-    <script>
-        const generateDetailUpcoming = (data) => {
-            console.log(`Data ${data}`);
-            const expiredAt = new Date(data.listing_at).getTime(); //convert date and time to unix time
-            const now = Date.now();
-            const distance = expiredAt - now;
-            const day = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-            return `
-            <div class="container">
-                <div class="container-upcoming">
-                    <div class="title-project-upcoming" id="title-upcoming">
-                        ${data.title}
-                    </div>
-                    <div class="description-project-upcoming" id="description-upcoming">
-                        ${data.description}
-                    </div>
-                    <div class="row info">
-                        <div class="subInfo">
-                            <h6 class="caption-project">Harga Per Lot</h6>
-                            <h4 class="caption-val-project" id="price-lot-upcoming">Rp ${numeral(data.initialTokenPrice).format("0,0")}</h4>
-                        </div>
-                        <div class="subInfo">
-                            <h6 class="caption-project periode">Periode Dividen</h6>
-                            <h4 class="caption-val-project val-periode" id="periode-upcoming">${data.dividendSchedule}</h4>
-                        </div>
-                        <div class="subInfo">
-                            <h6 class="caption-project deviden">Estimasi Dividen</h6>
-                            <h4 class="caption-val-project val-deviden" id="deviden-upcoming">${parseFloat(data.annualRentYield) * 100}-${parseFloat(data.annualRentYieldUpper) * 100}% Per Periode</h4>
-                        </div>
-                    </div>
-                    <div class="row flex-sm-row d-flex-inline whiteBox-under storeContainer">
-                        <h5 class="countDown">${day > 0 ? day : 0} Hari : ${hours > 0 ? hours : 0} Jam</h5>
-                        <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="../../img/Play Store.svg" alt="Play Store" > </a>
-                        <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="../../img/App Store.svg" alt="App Store" > </a>
-                    </div>
-                </div>
-            </div>`;
-        }
-
-        $(document).ready(function () {
-            var url = $(location).attr('href'),
-                parts = url.split("/"),
-                last_part = parts[parts.length - 2];
-
-            if (last_part == "#") {
-                last_part = parts[parts.length - 1];
-
-                $.getJSON("../lottie/upcoming.json", function(data) {
-                    console.log(data); // this will show the info it in firebug console
-                    let isExistProject = false;
-                    let temp = [];
-                    data.upcoming.forEach((v, i) => {
-
-                        if(last_part.toLowerCase() === Object.keys(v)[0]){
-                            isExistProject = true;
-                            temp.push({'index':i, 'name_project':Object.keys(v)[0]});
-                            return;
-                        }
-                    });
-
-                    if(isExistProject){
-                        var upcoming_detail = document.getElementById("root");
-                        console.log(data.upcoming[0]);
-                        // upcoming_detail.innerHTML = generateDetailUpcoming(data.upcoming[0][last_part.toLowerCase()[0]]);
-                    }
-                    
-                });
-            }
-
-            // if (last_part != "project") {
-            //     $("#replaceable").replaceWith(`
-            //  <!-- Button for Back -->
-            //     <div class="container">
-            //         <!-- Headline & Phone -->
-            //         <div class="row mx-auto">
-            //             <div class="headlineTitle">
-            //                 <a href="../project">
-            //                     <img src="../../img/atom-icon-arrow-6.svg" style="margin-bottom: 3px;">
-            //                     <span class="text-primary button-back">Kembali ke Semua Proyek</span>
-            //                 </a>
-            //             </div>
-            //         </div>
-            //     </div>
-            
-            //     <div id="root"></div>
-            
-            //     <!-- Only for separator -->
-            //     <div class="mt-5">
-            //         <hr>
-            //     </div>
-            
-            //     <!-- Projects -->
-            //     <div class="container">
-            //         <div class="row pt-5">
-            //             <div class="col-12">
-            //                 <h4 class="text-center text-primary">Proyek Lainnya</h4>
-            //                 <img src="../../img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4 mt-4">
-            //             </div>
-            //         </div>
-            //     </div>
-            //     <div id="card-base" class="mb-5 pb-5">
-            //         <!-- Dynamic -->
-            //     </div>
-            //     <input type="hidden" id="project-id" value="`+last_part.toUpperCase()+`">
-            // `);
-            // var myscript = document.createElement('script');
-            // myscript.setAttribute('src','../../reactjs-components/dist/project-detail-page.js');
-            // document.getElementsByTagName('head')[0].appendChild(myscript);
-            // }
-        });
-    </script>
+    <script type="text/javascript" src="assets/scripts/date.js"></script>
+    <script type="text/javascript" src="assets/scripts/detailUpcoming.js"></script>
+    <script type="text/javascript" src="assets/scripts/projects.js"></script>
   </body>
 </html>
