@@ -8,9 +8,10 @@
     }
 
     .container-upcoming {
-        background-image: url('../assets/detail_mobile.png');
+        background-image: url('../images/landingpage/');
         background-repeat: no-repeat;
-        background-size: 100% 525px;
+        /* background-size: 100% 525px; */
+        background-position: top;
         border-radius: 16px;
         padding: 25px;
         width: 100%;
@@ -139,7 +140,8 @@
     .container-upcoming {
         background-image: url('../assets/detail_mobile.png');
         background-repeat: no-repeat;
-        background-size: 100% 525px;
+        /* background-size: 100% 525px; */
+        background-position: top;
         border-radius: 16px;
         padding: 25px;
         width: 100%;
