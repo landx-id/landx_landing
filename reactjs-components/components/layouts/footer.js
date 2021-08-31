@@ -12,8 +12,8 @@ const footer = () => {
                     <h3 class="text-center text-primary font-weight-normal px-4 py-5">Kini memiliki bisnis dan properti jadi jauh lebih mudah. <br> Unduh aplikasi LandX sekarang!</h3>
                     <!-- Play & App Store -->
                     <div class="row flex-sm-row d-flex-inline justify-content-center storeContainer pb-5">
-                        <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="img/Play Store.svg" alt="Play Store" > </a>
-                        <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="img/App Store.svg" alt="App Store" > </a>
+                        <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="https://landx.id/img/Play Store.svg" alt="Play Store" > </a>
+                        <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="https://landx.id/img/App Store.svg" alt="App Store" > </a>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@ const footer = () => {
             <div class="row flex-sm-row flex-md-row flex-lg-row pt-5 mt-5">
                 <div class="col-12">
                     <h6 class="text-center text-primary my-5">BERIZIN & DIAWASI OLEH</h6>
-                    <img src="img/ojk-logo@2x.png" alt="logo_OJK" class="mx-auto d-block " alt="OJK Logo">
+                    <img src="https://landx.id/img/ojk-logo@2x.png" alt="logo_OJK" class="mx-auto d-block " alt="OJK Logo">
                 </div>
 
                 <div class="container">
@@ -35,15 +35,15 @@ const footer = () => {
 
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                     <h6 class="text-center text-primary my-5">TELAH TERDAFTAR OLEH KEMENTRIAN KOMUNIKASI DAN INFORMATIKA</h6>
-                    <img src="img/logo_kominfo.png" alt="logo_kominfo" class="mx-auto d-block my-5">
+                    <img src="https://landx.id/img/logo_kominfo.png" alt="logo_kominfo" class="mx-auto d-block my-5">
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                     <h6 class="text-center text-primary my-5">DIDUKUNG OLEH</h6>
-                    <img src="img/BV_Certification_ISO27001.png" alt="ISO-Logo" class="mx-auto d-block my-5 w-75">
+                    <img src="https://landx.id/img/BV_Certification_ISO27001.png" alt="ISO-Logo" class="mx-auto d-block my-5 w-75">
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                     <h6 class="text-center text-primary my-5">MEMBER OF</h6>
-                    <img src="img/Logo_ALUDI.png" alt="logo_ALUDI" class="mx-auto d-block my-5 w-75">
+                    <img src="https://landx.id/img/Logo_ALUDI.png" alt="logo_ALUDI" class="mx-auto d-block my-5 w-75">
                 </div>
             </div>
         </div>
@@ -87,13 +87,13 @@ const footer = () => {
                 <div class="row flex-sm-column flex-md-row flex-lg-row">
                     <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
                         <a href="https://id.linkedin.com/company/landx-id?trk=public_profile_topcard_current_company">
-                            <img src="img/ico_linkedin.svg" alt="LandX LinkedIn" class="socMed mr-3">
+                            <img src="https://landx.id/img/ico_linkedin.svg" alt="LandX LinkedIn" class="socMed mr-3">
                         </a>
                         <a href="https://www.facebook.com/landx.id">
-                            <img src="img/ico_facebook.svg" alt="LandX Facebook" class="socMed mr-3">
+                            <img src="https://landx.id/img/ico_facebook.svg" alt="LandX Facebook" class="socMed mr-3">
                         </a>
                         <a  href="https://www.instagram.com/landx.id/">
-                            <img src="img/ico_instagram.svg" alt="LandX Instagram" class="socMed mr-3">
+                            <img src="https://landx.id/img/ico_instagram.svg" alt="LandX Instagram" class="socMed mr-3">
                         </a>
                     </div>
 
@@ -143,7 +143,7 @@ const footer = () => {
                                 <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="contact.html">Kontak</a>
+                                <a class="nav-link text-primary" href="https://landx.id/contact.html">Kontak</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
