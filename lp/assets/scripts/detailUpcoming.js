@@ -31,8 +31,8 @@ const generateDetailUpcoming = (data) => {
             </div>
             <div class="row flex-sm-row d-flex-inline whiteBox-under storeContainer">
                 <h5 class="countDown">${day > 0 ? day : 0} Hari : ${hours > 0 ? hours : 0} Jam</h5>
-                <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="../img/Play Store.svg" alt="Play Store" > </a>
-                <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="../img/App Store.svg" alt="App Store" > </a>
+                <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="/img/Play Store.svg" alt="Play Store" > </a>
+                <a href="https://apps.apple.com/id/app/landx/id1453823676"> <img src="/img/App Store.svg" alt="App Store" > </a>
             </div>
         </div>
     </div>`;

@@ -31,7 +31,7 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
         <div class="col-12 col-md-auto col-xl-3" onClick="detail('${temp[i].link}')">
           <div class="card custom">
             <img class="thumnail" src="lp/${temp[i].images[0]}">
-            <img class="label-soon" src="img/soon-listing.png">
+            <img class="label-soon" src="/img/soon-listing.png">
             <h5 class="title-thumnail">${temp[i].title}</h5>
             <div class="canv">
               <span class="count-down-thumnail text-count-down-thumnail">${Math.floor(distance / (1000 * 60 * 60 * 24))} Hari : ${Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} Jam</span>
