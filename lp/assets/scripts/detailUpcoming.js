@@ -50,14 +50,14 @@ $(document).ready(function () {
             let isExistProject = false;
             let temp = [];
             data.upcoming.forEach((v, i) => {
-                if(last_part.toLowerCase() === Object.keys(v)[0]){
+                if (last_part.toLowerCase() === Object.keys(v)[0]) {
                     isExistProject = true;
                     temp.push({'index':i, 'name_project':last_part.toLowerCase()});
                     return;
                 }
             });
 
-            if(isExistProject){
+            if (isExistProject) {
                 var upcoming_detail = document.getElementById("root");
                 upcoming_detail.innerHTML = generateDetailUpcoming(data.upcoming[temp[0].index][temp[0].name_project]);
             }

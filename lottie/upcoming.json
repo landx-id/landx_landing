@@ -9,7 +9,7 @@
                 ],
                 "title": "Anargya Sinar Maritim - Bisnis Properti Kapal",
                 "description": "Pernahkah Anda kepikiran punya kapal pribadi? Di LandX, punya kapal sendiri bukan lagi sekadar mimpi. Pertama kalinya, bisnis properti kapal listing di LandX. Anda bisa jadi owner kapal perikanan yang hasil komoditinya didistribusikan setiap hari.",
-                "link": "https://landx.id/lp/#/kapalcumi/",
+                "link": "lp/#/kapalcumi",
                 "listing_at": "2021.08.25 11:00",
                 "dividendSchedule": "Per 4 bulan",
                 "annualRentYield": "0.1",
@@ -20,14 +20,14 @@
         {
             "yellowcarwash": {
                 "images": [
-                    "assets/images/YCW/thumnail.png",
-                    "assets/images/YCW/detail.png",
-                    "assets/images/YCW/detail_mobile.png"
+                    "assets/images/YLW1/thumnail.png",
+                    "assets/images/YLW1/detail.png",
+                    "assets/images/YLW1/detail_mobile.png"
                 ],
                 "title": "Yellow Car Wash - Bisnis Cuci Mobil",
                 "description": "Bisnis Carwash Sustain 14 Tahun Listing di LandX! Mana tempat yang paling sering didatangi para pemilik mobil selain SPBU? Jawabannya adalah tempat cuci mobil. Dalam sehari, bisnis carwash didatangi 100-200 customer.",
-                "link": "https://landx.id/lp/#/yellowcarwash/",
-                "listing_at": "2021.08.31 11:00",
+                "link": "lp/#/yellowcarwash",
+                "listing_at": "2022.08.31 11:00",
                 "dividendSchedule": "Per 4 bulan",
                 "annualRentYield": "0.1",
                 "annualRentYieldUpper": "0.18",
