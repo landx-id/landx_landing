@@ -78,6 +78,12 @@
                     last_part = parts[parts.length - 1];
                 }
 
+                if (last_part.includes("?")) {
+                    var splitstring = last_part.split('?');
+                    last_part = splitstring[0];
+                }
+
+
                 if (last_part != "project") {
                     $("#replaceable").replaceWith(`
                     <!-- Button for Back -->
