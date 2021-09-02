@@ -1,7 +1,3 @@
-function detail(url){
-  location.href = url;
-}
-
 fetch("https://api.landx.id/", {
   method: "POST",
   mode: "cors",
