@@ -35,7 +35,7 @@ fetchData('https://api.landx.id/').then((listOfProjects) => {
         tmpProject.totalFunding = toIDR(tmpProject.totalPurchasePrice);
         tmpProject.remainingDays = calculateRemainingDays(tmpProject.settlementDate);
 
-        tmpProject.link = `https://landx.id/project/#/${tmpProject.token.symbol.toLowerCase()}`;
+        tmpProject.link = `/project/#/${tmpProject.token.symbol.toLowerCase()}`;
         tmpProject.initialTokenPrice = toIDR(tmpProject.initialTokenPrice);
         tmpProject.tokenSupply = parseInt(tmpProject.tokenSupply, 10);
         tmpProject.annualRentYield = parseFloat(tmpProject.annualRentYield) * 100;

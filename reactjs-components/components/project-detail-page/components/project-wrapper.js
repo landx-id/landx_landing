@@ -24,7 +24,7 @@ export class ProjectWrapper extends React.Component {
         var dividendSchedule = this.props.project["dividendSchedule"];
         var annualRentYield = parseFloat(this.props.project["annualRentYield"]) * 100;
         var annualRentYieldUpper = parseFloat(this.props.project["annualRentYieldUpper"]) * 100;
-        var prospectusLink = `https://landx.id/prospektus/${symbolName}.pdf`;
+        var prospectusLink = `/prospektus/${symbolName}.pdf`;
 
         /* calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds

@@ -8,9 +8,7 @@
     }
 
     .container-upcoming {
-        background-image: url('../assets/detail_mobile.png');
         background-repeat: no-repeat;
-        /* background-size: 100% 525px; */
         background-position: top;
         border-radius: 16px;
         padding: 25px;
@@ -32,7 +30,7 @@
         line-height: normal;
         letter-spacing: -0.5px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
         margin-top: 300px;
     }
 
@@ -48,7 +46,7 @@
         line-height: 1.75;
         letter-spacing: 0.44px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
     
     .info {
@@ -138,9 +136,7 @@
 
 @media only screen and (min-width: 600px) {
     .container-upcoming {
-        background-image: url('../assets/detail_mobile.png');
         background-repeat: no-repeat;
-        /* background-size: 100% 525px; */
         background-position: top;
         border-radius: 16px;
         padding: 25px;
@@ -162,7 +158,7 @@
         line-height: normal;
         letter-spacing: -0.5px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
         margin-top: 300px;
     }
 
@@ -178,7 +174,7 @@
         line-height: 1.75;
         letter-spacing: 0.44px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
     
     .info {
@@ -263,7 +259,6 @@
 
 @media only screen and (min-width: 768px) {
     .container-upcoming {
-        background-image: url('../assets/detail.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 16px;
@@ -285,7 +280,7 @@
         line-height: normal;
         letter-spacing: -0.5px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
 
     .description-project-upcoming {
@@ -300,7 +295,7 @@
         line-height: 1.75;
         letter-spacing: -1.56px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
 
     .caption-project {
@@ -396,7 +391,6 @@
 
 @media screen and (min-width: 992px){
     .container-upcoming {
-        background-image: url('../assets/detail.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 16px;
@@ -418,7 +412,7 @@
         line-height: normal;
         letter-spacing: -0.5px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
 
     .description-project-upcoming {
@@ -433,7 +427,7 @@
         line-height: 1.75;
         letter-spacing: -0.56px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
 
     .caption-project{
@@ -528,7 +522,6 @@
 
 @media only screen and (min-width: 1200px) {
     .container-upcoming{
-        background-image: url('../assets/detail.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 16px; 
@@ -549,7 +542,7 @@
         line-height: normal;
         letter-spacing: -0.5px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
 
     .description-project-upcoming {
@@ -564,7 +557,7 @@
         line-height: 1.75;
         letter-spacing: -0.56px;
         color: #fff;
-        text-align: justify;
+        text-align: left;
     }
 
     .caption-project{

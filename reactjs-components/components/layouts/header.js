@@ -13,13 +13,13 @@ const header = () => {
         <meta name="description" content="Miliki dan Nikmati Keuntungan dari Bisnis Rendah Risiko Mulai dari Rp. 1 juta. Equity Crowdfunding Berizin dan Diawasi OJK.">
 
         <!-- google tag manager -->
-        <script src="https://landx.id/scripts/tag.js"></script>
+        <script src="/scripts/tag.js"></script>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <!-- LX Custom CSS -->
-        <link rel="stylesheet" href="https://landx.id/style.css">
+        <link rel="stylesheet" href="/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap" rel="stylesheet">
         <!-- Facebook Pixel Code -->
         <script>
@@ -49,12 +49,12 @@ const header = () => {
 
 
         <!-- Custom Style -->
-        <link rel="stylesheet" href="https://landx.id/stylesheets/custom-style.css">
-        <link rel="stylesheet" href="https://landx.id/stylesheets/card.css">
+        <link rel="stylesheet" href="/stylesheets/custom-style.css">
+        <link rel="stylesheet" href="/stylesheets/card.css">
 
         <!-- Light Slider -->
-        <link type="text/css" rel="stylesheet" href="https://landx.id/stylesheets/lightslider.min.css" />
-        <script src="https://landx.id/scripts/lightslider.min.js" defer></script>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/lightslider.min.css" />
+        <script src="/scripts/lightslider.min.js" defer></script>
     
         <!-- Iconify -->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -74,11 +74,11 @@ const header = () => {
         <!-- NAVIGATION -->
         <nav class="navbar d-flex-inline fixed-top navbar-expand-lg py-4 mb-3">
                 <div class="float-sm-left float-md-left float-lg-left hamburgerMenu">
-                    <img src="https://landx.id/img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
                 </div>
                 <div class="navbar-brand float-sm-none landxLogo" href="">
                     <a href="/">
-                        <img src="https://landx.id/img/LandX_Logo.png" alt="LandX_Logo">
+                        <img src="/img/LandX_Logo.png" alt="LandX_Logo">
                     </a>
                 </div>
                 <div>
@@ -100,7 +100,7 @@ const header = () => {
                                 <h6 class="nav-link text-secondary font-weight-bold">PERUSAHAAN</h6>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="https://landx.id/blog/">Blog</a>
+                                <a class="nav-link text-primary" href="blog/">Blog</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
@@ -128,7 +128,7 @@ const header = () => {
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="https://landx.id/blog/faq-landx/">FAQ</a>
+                                <a class="nav-link text-primary" href="blog/faq-landx/">FAQ</a>
                                 <span></span>
                             </li>
                         </ul>
@@ -140,7 +140,7 @@ const header = () => {
                                 <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="https://landx.id/contact.html">Kontak</a>
+                                <a class="nav-link text-primary" href="contact.html">Kontak</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
