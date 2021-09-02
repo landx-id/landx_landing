@@ -1,7 +1,3 @@
-function detail(url){
-  location.href = url;
-}
-
 $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
   
   let temp = [];
@@ -24,11 +20,14 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
     });
 
     setTimeout(function(){
-      for(let i = temp.length - 1; i >= 0; i--){
+      let root = document.getElementById("card-base").children[0].children[0];
+      let limit = temp.length > 4 ? (temp.length - 4) : 0;
+      
+      for(let i = temp.length - 1; i >= limit; i--){
         let expiredAt = new Date(temp[i].listing_at).getTime(); //convert date and time to unix time
         let distance = expiredAt - now;
         let cardUpcoming = `
-        <div class="col-12 col-md-auto col-xl-3" onClick="detail('${temp[i].link}')">
+        <div class="col-12 col-md-auto col-xl-3" onClick="location.href ='${temp[i].link}'">
           <div class="card custom">
             <img class="thumnail" src="lp/${temp[i].images[0]}">
             <img class="label-soon" src="/img/soon-listing.png">
@@ -40,9 +39,10 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
           </div>
         </div>`;
 
-        document.getElementById("card-base").children[0].children[0].insertAdjacentHTML('afterbegin', cardUpcoming);   
+        root.removeChild(root.lastElementChild); 
+        root.insertAdjacentHTML('afterbegin', cardUpcoming);
       }
-    }, 5000); 
+    }, 2500); 
   }
 });
 

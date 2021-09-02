@@ -1,3 +1,7 @@
+function detail(url){
+  location.href = url;
+}
+
 fetch("https://api.landx.id/", {
   method: "POST",
   mode: "cors",
@@ -66,7 +70,7 @@ fetch("https://api.landx.id/", {
     }
 
     const numbChildren = $("#row").children().length == 0 ? 4 : 3;
-
+    
     for (var i = 0; i < numbChildren; i++) {
 
         /* for easier management */
@@ -108,12 +112,11 @@ fetch("https://api.landx.id/", {
             remainingDays = 0;
         }
 
-
         var cardBase = document.createElement("div");
         cardBase.setAttribute("class", "col-12 col-md-auto col-xl-3");
-
         var cardCustome = document.createElement("div");
         cardCustome.setAttribute("class", "card custom");
+        cardCustome.setAttribute("onclick", `location.href ='/project/#/${projectDirectory.toLowerCase()}'`);
 
         var slide = document.createElement("div");
         slide.setAttribute("class", "carousel slide");
@@ -185,7 +188,7 @@ fetch("https://api.landx.id/", {
 
           var divSubBuyButton = document.createElement("div");
           divSubBuyButton.setAttribute("class", "col");
-          divSubBuyButton.innerHTML = `<a href="/project/${projectDirectory.toLowerCase()}" class="btn project-button-buy">BELI</a>`;
+          divSubBuyButton.innerHTML = `<a href="/project/#/${projectDirectory.toLowerCase()}" class="btn project-button-buy">BELI</a>`;
 
           divBuyButton.append(divSubBuyButton);
           containerFluid.append(divBuyButton);
