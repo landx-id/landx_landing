@@ -3,6 +3,8 @@
 <head>
     <!-- Light Slider -->
     <link type="text/css" rel="stylesheet" href="../../stylesheets/lightslider.min.css" />
+    <link id="favicon" rel="icon" type="image/png" href="https://landx.id/img/LandX-faveicon.png"/>
+
 </head>
 
 <body>
@@ -72,7 +74,7 @@
                     parts = url.split("/"),
                     last_part = parts[parts.length - 2];
                                                                                               
-                if (last_part == "#") {
+                if (last_part.includes("#")) {
                     last_part = parts[parts.length - 1];
                 }
 
