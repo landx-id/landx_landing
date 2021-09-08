@@ -25,7 +25,7 @@
                     "assets/images/YLW1/detail_mobile.png"
                 ],
                 "title": "Yellow Car Wash - Bisnis Cuci Mobil",
-                "description": "Bisnis Carwash Sustain 14 Tahun Listing di LandX! Mana tempat yang paling sering didatangi para pemilik mobil selain SPBU? Jawabannya adalah tempat cuci mobil. Dalam sehari, bisnis carwash didatangi 100-200 customer.",
+                "description": "Bisnis Carwash Sustain 14 Tahun Listing di LandX!<br>Mana tempat yang paling sering didatangi para pemilik mobil selain SPBU?<br>Jawabannya adalah tempat cuci mobil. Dalam sehari, bisnis carwash didatangi 100-200 customer.",
                 "link": "/lp/#/yellowcarwash",
                 "listing_at": "2021.08.31 11:00",
                 "dividendSchedule": "Per 4 bulan",
@@ -48,7 +48,7 @@
                 "dividendSchedule": "Per 3 bulan",
                 "annualRentYield": "0.15",
                 "annualRentYieldUpper": "0.25",
-                "initialTokenPrice": "1000000 .0"
+                "initialTokenPrice": "1000000.0"
             }
         }
     ]
