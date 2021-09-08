@@ -167,7 +167,7 @@ const footer = () => {
 }
 document.getElementById("footer").innerHTML = footer();
 $(document).ready(function () {
-    $('head').append('<link href="img/LandX-faveicon.png" rel="shortcut icon" type="image/x-icon" />');
+    $('head').append('<link href="/img/LandX-faveicon.png" rel="shortcut icon" type="image/x-icon" />');
 });
 
 // template script

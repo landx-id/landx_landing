@@ -5,7 +5,7 @@ const header = () => {
     <html lang="en">
     <head>
         <title>LandX | Investasi Bisnis dan Properti Semudah Belanja Online</title>
-        <link id="favicon" rel="icon" type="image/png" href="img/LandX-faveicon.png"/>
+        <link id="favicon" rel="icon" type="image/png" href="/img/LandX-faveicon.png"/>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
