@@ -3,7 +3,7 @@
 <head>
     <!-- Light Slider -->
     <link type="text/css" rel="stylesheet" href="/stylesheets/lightslider.min.css" />
-    <script src="../../scripts/lightslider.min.js" defer></script>
+    <script src="/scripts/lightslider.min.js" defer></script>
 
     <!-- Iconify -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -128,14 +128,14 @@
                         <input type="hidden" id="project-id" value="`+last_part.toUpperCase()+`">
                     `);
                     var myscript = document.createElement('script');
-                    myscript.setAttribute('src','../../reactjs-components/dist/project-detail-page.js');
+                    myscript.setAttribute('src','/reactjs-components/dist/project-detail-page.js');
                     document.getElementsByTagName('head')[0].appendChild(myscript);
                 }else{
                     var myscript = document.createElement('script');
-                    myscript.setAttribute('src','../scripts/lightslider.min.js');
+                    myscript.setAttribute('src','/scripts/lightslider.min.js');
                     document.getElementsByTagName('body')[0].appendChild(myscript);
                     var myscript = document.createElement('script');
-                    myscript.setAttribute('src','../reactjs-components/dist/project-listing.js?v=1');
+                    myscript.setAttribute('src','/reactjs-components/dist/project-listing.js?v=1');
                     document.getElementsByTagName('body')[0].appendChild(myscript);
                 }
             });
