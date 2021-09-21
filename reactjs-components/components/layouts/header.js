@@ -63,6 +63,15 @@ const header = () => {
         <!-- Showdown JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207958011-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-207958011-1');
+        </script>
+
         
     </head>
 
