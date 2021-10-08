@@ -21,7 +21,7 @@ const footer = () => {
         <!--Membership-->
         <div class="container">
             <div class="row flex-sm-row flex-md-row flex-lg-row pt-5 mt-5">
-                <div class="col-12 mt-5 pt-5">
+                <div class="col-12 mt-5 pt-5 izin">
                     <h6 class="text-center text-primary my-5">BERIZIN & DIAWASI OLEH</h6>
                     <img src="/img/ojk-logo@2x.png" alt="LandX merupakan platform equity crowdfunding terpercaya di Indonesia yang telah terdaftar dan diawasi OJK" class="mx-auto d-block " alt="OJK Logo">
                 </div>

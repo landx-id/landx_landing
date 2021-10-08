@@ -1032,6 +1032,19 @@ div.carousel-card {
     .hero-button-app img {
         padding-right: 0;
     }
+
+    .izin{
+        top: 50px;
+    }
+
+    .izin h6 {
+        margin-bottom: 20px !important
+    }
+
+    .izin img{
+        width: 200px;
+        margin-bottom: 22px
+    }
 }
 
 @media (max-width: 320px) {

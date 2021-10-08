@@ -91,12 +91,12 @@ const header = () => {
                     <img src="/img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
                 </div>
                 <div id="desktop-menu" class="row col-6 col-sm-6 d-flex justify-content-between">
-                    <a href="#why"><p class="text-primary text-center">Mengapa LandX</p></a>
+                    <a href="/"><p class="text-primary text-center">Mengapa LandX</p></a>
                     <a href="https://landx.id/project/" target="_blank"><p class="text-primary text-center">Proyek</p></a>
-                    <a href="#"><p class="text-primary text-center">Cara Kerja</p></a>
+                    <a href="/"><p class="text-primary text-center">Cara Kerja</p></a>
                     <a href="https://landx.id/contact" target="_blank"><p class="text-primary text-center">Kontak</p></a>
                     <a href="https://landx.id/blog/" target="_blank"><p class="text-primary text-center">Blog</p></a>
-                    <a href="#"><p class="text-primary text-center">Perusahaan</p></a>
+                    <a href="/"><p class="text-primary text-center">Perusahaan</p></a>
                 </div>
                 <a class="desktop-view" href="pendaftaran-perusahaan.html">
                     <button type="button" class="btn btn-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
