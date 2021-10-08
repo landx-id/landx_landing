@@ -71,8 +71,6 @@ const header = () => {
 
             gtag('config', 'UA-207958011-1');
         </script>
-
-        
     </head>
 
     <body>
@@ -83,21 +81,29 @@ const header = () => {
         
         <!-- NAVIGATION -->
         <nav class="navbar d-flex-inline fixed-top navbar-expand-lg py-4 mb-3">
-                <div class="float-sm-left float-md-left float-lg-left hamburgerMenu">
+            <div class="container">
+                <div class="float-sm-left float-md-left float-lg-left">
+                    <a href="/">
+                        <img src="/img-new/logo_landx.webp" alt="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" class="hamburgerMenu">
+                    </a>
+                </div>
+                <div class="mobile-view float-sm-right float-md-right float-lg-right hamburgerMenu">
                     <img src="/img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
                 </div>
-                <div class="navbar-brand float-sm-none landxLogo" href="">
-                    <a href="/">
-                        <img src="/img/LandX_Logo.png" alt="LandX_Logo">
-                    </a>
+                <div id="desktop-menu" class="row col-6 col-sm-6 d-flex justify-content-between">
+                    <a href="#why"><p class="text-primary text-center">Mengapa LandX</p></a>
+                    <a href="https://landx.id/project/" target="_blank"><p class="text-primary text-center">Proyek</p></a>
+                    <a href="#"><p class="text-primary text-center">Cara Kerja</p></a>
+                    <a href="https://landx.id/contact" target="_blank"><p class="text-primary text-center">Kontak</p></a>
+                    <a href="https://landx.id/blog/" target="_blank"><p class="text-primary text-center">Blog</p></a>
+                    <a href="#"><p class="text-primary text-center">Perusahaan</p></a>
                 </div>
-                <div>
-                    <a href="pendaftaran-perusahaan.html">
-                        <button type="button" class="btn btn-outline-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
-                            PENDAFTARAN PERUSAHAAN
-                        </button>
-                    </a>
-                </div>
+                <a class="desktop-view" href="pendaftaran-perusahaan.html">
+                    <button type="button" class="btn btn-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
+                        PENDAFTARAN PERUSAHAAN
+                    </button>
+                </a>
+            </div>
         </nav>
 
         <!-- COLLAPSE NAVIGATION -->
@@ -107,65 +113,40 @@ const header = () => {
                     <div class="col-sm-4">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
                             <li class="nav-item">
-                                <h6 class="nav-link text-secondary font-weight-bold">PERUSAHAAN</h6>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary" href="blog/">Blog</a>
+                                <a class="nav-link text-left text-primary font-weight-bold">Mengapa LandX</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="about-landx.html">Tentang LandX</a>
+                                <a class="nav-link text-left text-primary font-weight-bold" href="">Proyek</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="syarat-dan-ketentuan.html">Syarat & Ketentuan</a>
+                                <a class="nav-link text-left text-primary font-weight-bold" href="">Cara Kerja</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="privacy-policy.html">Kebijakan Privasi</a>
+                                <a class="nav-link text-left text-primary font-weight-bold" href="">Kontak</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="service-level-agreement.html">Service Level Agreement</a>
+                                <a class="nav-link text-left text-primary font-weight-bold" href="https://landx.id/blog/">Blog</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary" href="kebijakan-isms.html">Kebijakan ISMS</a>
-                                <span></span>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary" href="mitigasi-risiko.html">Mitigasi Risiko</a>
-                                <span></span>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary" href="blog/faq-landx/">FAQ</a>
+                                <a class="nav-link text-left text-primary font-weight-bold" href="">Perusahaan</a>
                                 <span></span>
                             </li>
                         </ul>
                     </div>
-
-                    <div class="col-sm-4">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
-                            <li class="nav-item">
-                                <h6 class="nav-link text-secondary font-weight-bold">DUKUNGAN</h6>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary" href="contact.html">Kontak</a>
-                                <span></span>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary" href="mailto:hello@landx.id">hello@landx.id</a>
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-4 mt-4 pb-3">
-                    <a href="pendaftaran-perusahaan.html">
-                        <button type="button" class="btn btn-outline-primary btn-sm float-sm-right float-md-right d-sm-block d-lg-none">
-                            PENDAFTARAN PERUSAHAAN
-                        </button>
-                    </a>
+                    <div class="col-sm-4 mt-4 pb-3" style="
+                    display: flex;
+                    justify-content: center;
+                ">
+                        <a href="pendaftaran-perusahaan.html">
+                            <button type="button" class="btn btn-primary btn-sm float-sm-right float-md-right d-sm-block d-lg-none">
+                                PENDAFTARAN PERUSAHAAN
+                            </button>
+                        </a>
                     </div>
 
                 </div>
