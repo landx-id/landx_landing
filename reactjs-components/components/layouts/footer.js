@@ -87,23 +87,23 @@ const footer = () => {
                 <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
                         <li class="nav-item">
-                            <a class="nav-link text-left text-primary font-weight-bold" href="#">Mengapa LandX</a>
+                            <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#why-landx">Mengapa LandX</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-left text-primary font-weight-bold" href="https://landx.id/project/" target="_blank">Proyek</a>
+                            <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#ongoing-projects">Proyek</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-left text-primary font-weight-bold" href="#">Cara Kerja</a>
+                            <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#how-it-works">Cara Kerja</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-left text-primary font-weight-bold" href="https://landx.id/contact" target="_blank">Kontak</a>
+                            <a class="nav-link text-left text-primary font-weight-bold" href="/contact.html" target="_blank">Kontak</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-left text-primary font-weight-bold" href="https://landx.id/blog/" target="_blank">Blog</a>
+                            <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#landx-blog">Blog</a>
                             <span></span>
                         </li>
                     </ul>
@@ -115,31 +115,31 @@ const footer = () => {
                             <h6 class="nav-link text-left text-primary font-weight-bold">Perusahaan</h6>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="">Karir</a>
+                            <a class="nav-link text-primary" href="https://www.linkedin.com/company/landx-id/jobs/">Karir</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="syarat-dan-ketentuan.html">Syarat & Ketentuan</a>
+                            <a class="nav-link text-primary" href="/syarat-dan-ketentuan.html">Syarat & Ketentuan</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="privacy-policy.html">Kebijakan Privasi</a>
+                            <a class="nav-link text-primary" href="/privacy-policy.html">Kebijakan Privasi</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="service-level-agreement.html">Service Level Agreement</a>
+                            <a class="nav-link text-primary" href="/service-level-agreement.html">Service Level Agreement</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="kebijakan-isms.html">Kebijakan ISMS</a>
+                            <a class="nav-link text-primary" href="/kebijakan-isms.html">Kebijakan ISMS</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="mitigasi-risiko.html">Mitigasi Risiko</a>
+                            <a class="nav-link text-primary" href="/mitigasi-risiko.html">Mitigasi Risiko</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="blog/faq-landx/">FAQ</a>
+                            <a class="nav-link text-primary" href="https://landx.id/blog/faq-landx/">FAQ</a>
                             <span></span>
                         </li>
                     </ul>
@@ -169,7 +169,32 @@ const footer = () => {
 document.getElementById("footer").innerHTML = footer();
 $(document).ready(function () {
     $('head').append('<link href="/img/LandX-faveicon.png" rel="shortcut icon" type="image/x-icon" />');
+    $('.hamburgerMenu').on('click', function() {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);  
+    });
+
+    $('a.inlink').on('click', function() {
+        var urlHash = $(this).attr('href').split("#")[1];
+        gotoLink(urlHash);
+    });
 });
+
+$(window).on("load", function () {
+    var urlHash = window.location.href.split("#")[1];
+    gotoLink(urlHash);
+});
+
+function gotoLink(urlHash) {
+    if (urlHash &&  $('#' + urlHash).length ) {
+        $('html,body').animate({
+            scrollTop: $('#' + urlHash).offset().top-200
+        }, 1000);
+
+        $('#navbarActive').collapse('hide');
+    }
+  };
 
 // template script
 $.getScript("https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js");

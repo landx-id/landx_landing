@@ -261,7 +261,7 @@ button.close img  {
     background-repeat: no-repeat;
 }
 
-#lx-how-new {
+.how-card {
     background-color: #f8f8f8;
     background-repeat: no-repeat;
     padding-bottom: 2px;

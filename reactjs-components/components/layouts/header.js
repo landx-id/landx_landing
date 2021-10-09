@@ -91,12 +91,12 @@ const header = () => {
                     <img src="/img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
                 </div>
                 <div id="desktop-menu" class="row col-6 col-sm-6 d-flex justify-content-between">
-                    <a href="/"><p class="text-primary text-center">Mengapa LandX</p></a>
-                    <a href="https://landx.id/project/" target="_blank"><p class="text-primary text-center">Proyek</p></a>
-                    <a href="/"><p class="text-primary text-center">Cara Kerja</p></a>
-                    <a href="https://landx.id/contact" target="_blank"><p class="text-primary text-center">Kontak</p></a>
-                    <a href="https://landx.id/blog/" target="_blank"><p class="text-primary text-center">Blog</p></a>
-                    <a href="/"><p class="text-primary text-center">Perusahaan</p></a>
+                    <a href="/#why-landx" class="inlink"><p class="text-primary text-center">Mengapa LandX</p></a>
+                    <a href="/#ongoing-projects" class="inlink"><p class="text-primary text-center">Proyek</p></a>
+                    <a href="/#how-it-works" class="inlink"><p class="text-primary text-center">Cara Kerja</p></a>
+                    <a href="/contact.html"><p class="text-primary text-center">Kontak</p></a>
+                    <a href="/#landx-blog" class="inlink"><p class="text-primary text-center">Blog</p></a>
+                    <a href="/about-landx.html"><p class="text-primary text-center">Perusahaan</p></a>
                 </div>
                 <a class="desktop-view" href="pendaftaran-perusahaan.html">
                     <button type="button" class="btn btn-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
@@ -113,27 +113,27 @@ const header = () => {
                     <div class="col-sm-4">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold">Mengapa LandX</a>
+                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#why-landx">Mengapa LandX</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold" href="">Proyek</a>
+                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#ongoing-projects">Proyek</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold" href="">Cara Kerja</a>
+                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#how-it-works">Cara Kerja</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold" href="">Kontak</a>
+                                <a class="nav-link text-left text-primary font-weight-bold" href="/contact.html">Kontak</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold" href="https://landx.id/blog/">Blog</a>
+                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#landx-blog">Blog</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold" href="">Perusahaan</a>
+                                <a class="nav-link text-left text-primary font-weight-bold" href="/about-landx.html">Perusahaan</a>
                                 <span></span>
                             </li>
                         </ul>
