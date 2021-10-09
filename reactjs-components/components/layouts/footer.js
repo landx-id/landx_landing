@@ -191,8 +191,6 @@ function gotoLink(urlHash) {
         $('html,body').animate({
             scrollTop: $('#' + urlHash).offset().top-200
         }, 1000);
-
-        $('#navbarActive').collapse('hide');
     }
   };
 
