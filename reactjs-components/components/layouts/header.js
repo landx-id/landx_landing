@@ -113,7 +113,7 @@ const header = () => {
                     <div class="col-sm-4">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#why-landx">Mengapa LandX</a>
+                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#why-landx-mobile">Mengapa LandX</a>
                                 <span></span>
                             </li>
                             <li class="nav-item">
