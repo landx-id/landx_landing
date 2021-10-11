@@ -71,7 +71,48 @@ const header = () => {
 
             gtag('config', 'UA-207958011-1');
         </script>
-        
+        <style>
+        /* square buttons */
+            .rec.rec-arrow {
+                border-radius: 0;
+            }
+            /* round buttons on hover */
+            .rec.rec-arrow:hover {
+                border-radius: 50%;
+            }
+            /* hide disabled buttons */
+            .rec.rec-arrow {
+                display: none;
+            }
+            /* disable default outline on focused items */
+            /* add custom outline on focused items */
+            .rec-carousel-item:focus {
+                outline: none;
+                box-shadow: inset 0 0 1px 1px lightgrey;
+            }
+            button.rec-dot.rec-dot_active{
+            background-color: #2dbe60;
+            box-shadow: 0 0 1px 3px #2dbe60;
+            }
+
+            button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+            box-shadow: 0 0 1px 3px rgba(235,16,16,0.1);
+            }
+            @media only screen and (max-width: 768px) {
+                /* For desktop: */
+                .cardproject {
+                    width: 100%;
+                    padding:0px;
+                }
+              }
+              @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                .cardproject {
+                    width: 100%;
+                    padding:150px;
+                }
+              }
+        </style>
     </head>
 
     <body>

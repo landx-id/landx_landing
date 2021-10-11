@@ -21,13 +21,10 @@ export const CreateCard = (props) => {
     
 
     ReactDOM.render(
-        <div className="container">
-            <div className="row align-center">
-            
+        <div className="cardproject">
             <Carousel breakPoints={breakPoints} >
                 {CardBase(props)}
             </Carousel>
-            </div>
         </div>
 
         , document.getElementById("card-base")
