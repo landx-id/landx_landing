@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CardBase } from './card-base.js';
+import { CardBasefilter } from './card-base-filter';
 
 export const CreateCardPortal = (props) => {
 
@@ -8,7 +8,7 @@ export const CreateCardPortal = (props) => {
         ReactDOM.createPortal(
         <div className="container">
             <div className="row">
-                {CardBase(props)}
+                {CardBasefilter(props)}
             </div>
         </div>
 
