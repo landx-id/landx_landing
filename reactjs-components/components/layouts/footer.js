@@ -8,7 +8,7 @@ const footer = () => {
         <div style="position:relative">
             <div class="container lx-CTA-move" >
                     <div class="col-sm-12 col-sm-12 col-lg-12 lx-CTA">
-                        <h3 class="text-center text-primary font-weight-normal px-4 py-5">Kini memiliki bisnis dan properti jadi jauh lebih mudah. <br> Unduh aplikasi LandX sekarang!</h3>
+                        <h3 class="text-center text-secondary font-weight-bold px-4 py-5">Kini memiliki bisnis dan properti jadi jauh lebih mudah. <br> Unduh aplikasi LandX sekarang!</h3>
                         <!-- Play & App Store -->
                         <div class="row flex-sm-row d-flex-inline justify-content-center storeContainer pb-5">
                             <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="/img/Play Store.webp" alt="Play Store" > </a>
@@ -38,11 +38,11 @@ const footer = () => {
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                     <h6 class="text-center text-primary my-5">DIDUKUNG OLEH</h6>
-                    <img src="/img-new/logo_iso.webp" alt="LandX telah memilki sertifikasi ISO 27001 sehingga investasi anda melalui equity crowdfunding menjadi lebih mudah" class="mx-auto d-block my-5 w-75">
+                    <img src="/img-new/logo_iso.webp" alt="LandX telah memilki sertifikasi ISO 27001 sehingga investasi anda melalui equity crowdfunding menjadi lebih mudah" class="mx-auto d-block my-5">
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                     <h6 class="text-center text-primary my-5">MEMBER OF</h6>
-                    <img src="/img/Logo_ALUDI.png" alt="logo_ALUDI" class="mx-auto d-block my-5 w-75">
+                    <img src="/img-new/Logo_ALUDI.webp" alt="logo_ALUDI" class="mx-auto d-block my-5">
                 </div>
             </div>
         </div>
