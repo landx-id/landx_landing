@@ -20,16 +20,16 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
     });
 
     setTimeout(function(){
-      let root = document.getElementById("card-base").children[0].children[0];
+      let root = document.getElementById("card-base-upcoming");
       let limit = temp.length > 4 ? (temp.length - 4) : 0;
       
       for(let i = temp.length - 1; i >= limit; i--){
         let expiredAt = new Date(temp[i].listing_at).getTime(); //convert date and time to unix time
         let distance = expiredAt - now;
         let cardUpcoming = `
-        <div class="col-12 col-md-auto col-xl-3" onClick="location.href ='${temp[i].link}'">
+        <div class="col-auto mx-auto mb-5" onClick="location.href ='${temp[i].link}'">
           <div class="card custom">
-            <img class="thumnail" src="lp/${temp[i].images[0]}">
+            <img class="thumnail" src="https://landx.id/lp/${temp[i].images[0]}">
             <img class="label-soon" src="/img/soon-listing.png">
             <h5 class="title-thumnail">${temp[i].title}</h5>
             <div class="canv">
@@ -38,9 +38,7 @@ $.getJSON("lottie/upcoming.json", function(dataUpcoming) {
             <p class="detial-thumnail">PELAJARI LEBIH LANJUT</p>
           </div>
         </div>`;
-
-        root.removeChild(root.lastElementChild); 
-        root.insertAdjacentHTML('afterbegin', cardUpcoming);
+        root.insertAdjacentHTML('afterend', cardUpcoming);
       }
     }, 2500); 
   }
