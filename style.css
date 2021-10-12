@@ -672,6 +672,26 @@ div.carousel-card {
     height: 500px;
     width: 50%;
 }
+.dropdownNav{
+    display:none;
+    background-color:#ffffff;
+    position:absolute;
+    z-index: 1;
+    width:max-content;
+}
+
+#arrow-nav-down{
+    display: inline-block;
+}
+
+#arrow-nav-up{
+    display: none;
+}
+
+.subnav:hover .dropdownNav {display: block;}
+.subnav:hover p {color: #f5f8fa;}
+.subnav:hover #arrow-nav-down{display: none;}
+.subnav:hover #arrow-nav-up{display: inline-block;}
 
 /* MEDIA BREAKPOINT */
 
