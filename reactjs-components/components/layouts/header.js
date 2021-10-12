@@ -109,7 +109,8 @@ const header = () => {
                 /* For desktop: */
                 .cardproject {
                     width: 100%;
-                    padding:150px;
+                    padding-left:150px;
+                    padding-right:150px;
                 }
               }
         </style>
