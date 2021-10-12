@@ -138,7 +138,7 @@ const header = () => {
                     <a href="/#ongoing-projects" class="inlink"><p class="text-primary text-center">Proyek</p></a>
                     <a href="/#how-it-works" class="inlink"><p class="text-primary text-center">Cara Kerja</p></a>
                     <a href="/contact.html"><p class="text-primary text-center">Kontak</p></a>
-                    <a href="/#landx-blog" class="inlink"><p class="text-primary text-center">Blog</p></a>
+                    <a href="https://landx.id/blog/" class="inlink"><p class="text-primary text-center">Blog</p></a>
                     <div class="subnav" style="position:relative; display:inline-block;">
                         <p class="text-primary text-center">Perusahaan <i class="fa fa-angle-down" id="arrow-nav-down"></i><i class="fa fa-angle-up" id="arrow-nav-up"></i></p>
                         <div class="dropdownNav">
