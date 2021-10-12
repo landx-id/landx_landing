@@ -139,7 +139,18 @@ const header = () => {
                     <a href="/#how-it-works" class="inlink"><p class="text-primary text-center">Cara Kerja</p></a>
                     <a href="/contact.html"><p class="text-primary text-center">Kontak</p></a>
                     <a href="/#landx-blog" class="inlink"><p class="text-primary text-center">Blog</p></a>
-                    <a href="/about-landx.html"><p class="text-primary text-center">Perusahaan</p></a>
+                    <div class="subnav" style="position:relative; display:inline-block;">
+                        <p class="text-primary text-center">Perusahaan <i class="fa fa-angle-down" id="arrow-nav-down"></i><i class="fa fa-angle-up" id="arrow-nav-up"></i></p>
+                        <div class="dropdownNav">
+                            <a href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank" class="nav-link inlink"><p class="text-primary text-left">Karir</p></a>
+                            <a href="/syarat-dan-ketentuan.html" class="nav-link inlink"><p class="text-primary text-left">Syarat & Ketentuan</p></a>
+                            <a href="/privacy-policy.html" class="nav-link inlink"><p class="text-primary text-left">Kebijakan Privasi</p></a>
+                            <a href="/service-level-agreement.html" class="nav-link inlink"><p class="text-primary text-left">Service Level Agreement</p></a>
+                            <a href="/kebijakan-isms.html" class="nav-link inlink"><p class="text-primary text-left">Kebijakan ISMS</p></a>
+                            <a href="/mitigasi-risiko.html" class="nav-link inlink"><p class="text-primary text-left">Mitigasi Risiko</p></a>
+                            <a href="/blog/faq-landx" class="nav-link inlink"><p class="text-primary text-left">FAQ</p></a>
+                        </div>
+                    </div>                    
                 </div>
                 <a class="desktop-view" href="pendaftaran-perusahaan.html">
                     <button type="button" class="btn btn-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
@@ -176,22 +187,18 @@ const header = () => {
                                 <span></span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-left text-primary font-weight-bold" href="/about-landx.html">Perusahaan</a>
+                                <p class="nav-link text-left text-primary font-weight-bold" onclick="submenuPerusahaan()">Perusahaan <i class="fa fa-angle-down"></i></p>
                                 <span></span>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-4 mt-4 pb-3" style="
-                    display: flex;
-                    justify-content: center;
-                ">
+                    <div class="col-sm-4 mt-4 pb-3" style="display: flex; justify-content: center;">
                         <a href="pendaftaran-perusahaan.html">
                             <button type="button" class="btn btn-primary btn-sm float-sm-right float-md-right d-sm-block d-lg-none">
                                 PENDAFTARAN PERUSAHAAN
                             </button>
                         </a>
                     </div>
-
                 </div>
             </div>
         </nav>

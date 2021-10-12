@@ -194,6 +194,18 @@ function gotoLink(urlHash) {
     }
   };
 
+function submenuPerusahaan(){
+    let classArrowDown = document.querySelector("#arrow-nav-down").classList.contains('visible');
+    let classArrowUp = document.querySelector("#arrow-nav-up").classList.contains('visible');
+    // if(classArrowDown.contains('visible')){
+    //     classArrowDown.remove.apply(classArrowDown, 'visible')
+    //     classArrowDown.add.apply(classArrowDown, 'invisible')
+
+    //     classArrowUp.remove.apply(classArrowUp, 'invisible')
+    //     classArrowUp.add.apply(classArrowUp, 'visible')
+    // }
+}
+
 // template script
 $.getScript("https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js");
 $.getScript("/scripts/lightslider.min.js");
