@@ -370,7 +370,7 @@ button.close img  {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.35px;
-    color: #2dbe60;
+    color: #2dbe60 !important;
     text-transform: uppercase;
 }
 

@@ -17,7 +17,7 @@ $.when($.ready).then(function () {
                     mobileView += `
                     <div class="carousel-item custom${index === 0 ? ' active' : ''}">
                         <div class="col-12">
-                            <div class="card-body p-4" style="border-radius: 12px !important;">
+                            <div class="card-body p-4" style="border-radius: 14px !important;">
                                 <p class="rss-categori">${category}</p>
                                 <p class="rss-title">${title}</p>
                                 <p class="rss-description">${description}</p>
@@ -31,7 +31,7 @@ $.when($.ready).then(function () {
 
                     desktopView += `
                     <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="border-radius: 14px !important;">
                             <p class="rss-categori">${category}</p>
                             <p class="rss-title">${title}</p>
                             <p class="rss-description">${description}</p>
