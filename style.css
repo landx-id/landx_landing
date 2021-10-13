@@ -270,15 +270,12 @@ button.close img  {
 .how-item-box{
     border-radius: 12px !important;
     background-image: linear-gradient( #fff, #d8ffeb);
-    /* width: 320px !important;
-    height: 300px !important; */
+    height: 290px !important;
 }
 
 .flow-item-box{
     border-radius: 12px !important;
     background-color:#ffffff;
-    /* width: 250px !important;
-    height: 275px !important; */
 }
 
 .text-heading{
@@ -314,12 +311,7 @@ button.close img  {
 }
 
 .ilustration-heading{
-    /* position: absolute; */
-    /* height: 45%;
-    width: auto; */
-    /* display: relative; */
     width: 50%;
-    /* background-color: antiquewhite; */
     margin: 0 auto;
 }
 
@@ -1126,6 +1118,10 @@ div.carousel-card {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
+}
 
-
+@media (min-width: 1088px){
+    div.rec-pagination{
+        display: none !important;
+    }
 }
