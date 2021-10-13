@@ -357,22 +357,29 @@ button.close img  {
 }
 
 .rss-btn-detail-blog{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.35px;
     text-align: center;
-    color: #2dbe60;
     padding: 8px 16px;
     width: 100%;
     background-color: #ffffff;
     border: none;
     margin-top: 24px;
+}
+
+.rss-btn-detail-blog a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.35px;
+    color: #2dbe60 !important;
     text-transform: uppercase;
 }
 
+.border-nav{
+    border-bottom: 1px solid #e5e5e5;
+}
+
 div.lx-CTA {
-    background-image: url(img/CTA-3.png);
+    background-image: url(img-new/CTA_Background.webp);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -393,7 +400,7 @@ div.lx-CTA {
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center; */
-    background-color: #eaeff4;
+    background-color: #f8f8f8;
     margin-top: 220px;
 }
 
@@ -672,6 +679,47 @@ div.carousel-card {
     height: 500px;
     width: 50%;
 }
+.dropdownNav{
+    display:none;
+    background-color:#ffffff;
+    position:absolute;
+    z-index: 1;
+    width:max-content;
+}
+
+#arrow-nav-down{
+    display: inline-block;
+}
+
+#arrow-nav-up{
+    display: none;
+}
+
+#arrow-nav-down-mobile{
+    display: inline-block;
+}
+
+#arrow-nav-up-mobile{
+    display: none;
+}
+.subnav:hover .dropdownNav {display: block;}
+.subnav:hover p {color: #f5f8fa;}
+.subnav:hover #arrow-nav-down{display: none;}
+.subnav:hover #arrow-nav-up{display: inline-block;}
+
+#dropdown-mobile{
+    list-style-type: none;
+    display:none;
+}
+.show-submenu{
+    display: inline-block !important;
+}
+
+.hide-submenu{
+    display: none !important;
+}
+/* .subnav-mobile:hover #arrow-nav-down-mobile{display: none;}
+.subnav-mobile:hover #arrow-nav-up-mobile{display: inline-block;} */
 
 /* MEDIA BREAKPOINT */
 
