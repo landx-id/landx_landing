@@ -374,6 +374,10 @@ button.close img  {
     text-transform: uppercase;
 }
 
+.border-nav{
+    border-bottom: 1px solid #e5e5e5;
+}
+
 div.lx-CTA {
     background-image: url(img-new/CTA_Background.webp);
     background-repeat:no-repeat;
@@ -691,10 +695,31 @@ div.carousel-card {
     display: none;
 }
 
+#arrow-nav-down-mobile{
+    display: inline-block;
+}
+
+#arrow-nav-up-mobile{
+    display: none;
+}
 .subnav:hover .dropdownNav {display: block;}
 .subnav:hover p {color: #f5f8fa;}
 .subnav:hover #arrow-nav-down{display: none;}
 .subnav:hover #arrow-nav-up{display: inline-block;}
+
+#dropdown-mobile{
+    list-style-type: none;
+    display:none;
+}
+.show-submenu{
+    display: inline-block !important;
+}
+
+.hide-submenu{
+    display: none !important;
+}
+/* .subnav-mobile:hover #arrow-nav-down-mobile{display: none;}
+.subnav-mobile:hover #arrow-nav-up-mobile{display: inline-block;} */
 
 /* MEDIA BREAKPOINT */
 

@@ -142,12 +142,12 @@ const header = () => {
                     <div class="subnav" style="position:relative; display:inline-block;">
                         <p class="text-primary text-center">Perusahaan <i class="fa fa-angle-down" id="arrow-nav-down"></i><i class="fa fa-angle-up" id="arrow-nav-up"></i></p>
                         <div class="dropdownNav">
-                            <a href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank" class="nav-link inlink"><p class="text-primary text-left">Karir</p></a>
-                            <a href="/syarat-dan-ketentuan.html" class="nav-link inlink"><p class="text-primary text-left">Syarat & Ketentuan</p></a>
-                            <a href="/privacy-policy.html" class="nav-link inlink"><p class="text-primary text-left">Kebijakan Privasi</p></a>
-                            <a href="/service-level-agreement.html" class="nav-link inlink"><p class="text-primary text-left">Service Level Agreement</p></a>
-                            <a href="/kebijakan-isms.html" class="nav-link inlink"><p class="text-primary text-left">Kebijakan ISMS</p></a>
-                            <a href="/mitigasi-risiko.html" class="nav-link inlink"><p class="text-primary text-left">Mitigasi Risiko</p></a>
+                            <a href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank" class="nav-link inlink border-nav"><p class="text-primary text-left">Karir</p></a>
+                            <a href="/syarat-dan-ketentuan.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Syarat & Ketentuan</p></a>
+                            <a href="/privacy-policy.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Kebijakan Privasi</p></a>
+                            <a href="/service-level-agreement.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Service Level Agreement</p></a>
+                            <a href="/kebijakan-isms.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Kebijakan ISMS</p></a>
+                            <a href="/mitigasi-risiko.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Mitigasi Risiko</p></a>
                             <a href="/blog/faq-landx" class="nav-link inlink"><p class="text-primary text-left">FAQ</p></a>
                         </div>
                     </div>                    
@@ -166,30 +166,52 @@ const header = () => {
                 <div class="row">
                     <div class="col-sm-4">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mb-3 pt-2">
-                            <li class="nav-item">
+                            <li class="nav-item border-nav">
                                 <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#why-landx-mobile">Mengapa LandX</a>
                                 <span></span>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item border-nav">
                                 <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#ongoing-projects">Proyek</a>
                                 <span></span>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item border-nav">
                                 <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#how-it-works">Cara Kerja</a>
                                 <span></span>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item border-nav">
                                 <a class="nav-link text-left text-primary font-weight-bold" href="/contact.html">Kontak</a>
                                 <span></span>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item border-nav">
                                 <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#landx-blog">Blog</a>
                                 <span></span>
                             </li>
-                            <li class="nav-item">
-                                <p class="nav-link text-left text-primary font-weight-bold" onclick="submenuPerusahaan()">Perusahaan <i class="fa fa-angle-down"></i></p>
-                                <span></span>
+                            <li class="nav-item border-nav" onclick="showMenu()">
+                                <p class="nav-link text-left text-primary font-weight-bold">Perusahaan <i class="fa fa-angle-down" id="arrow-nav-down-mobile"></i><i class="fa fa-angle-up" id="arrow-nav-up-mobile"></i></p>
                             </li>
+                            <ul id="dropdown-mobile">
+                                <li class="nav-item border-nav">
+                                    <a class="nav-link text-left text-primary font-weight-normal inlink" href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank">Karir</a>
+                                </li>
+                                <li class="nav-item border-nav">
+                                    <a class="nav-link text-left text-primary font-weight-normal inlink" href="/syarat-dan-ketentuan.html">Syarat & Ketentuan</a>
+                                </li>
+                                <li class="nav-item border-nav">
+                                    <a class="nav-link text-left text-primary font-weight-normal inlink" href="/privacy-policy.html">Kebijakan Privasi</a>
+                                </li>
+                                <li class="nav-item border-nav">
+                                    <a class="nav-link text-left text-primary font-weight-normal" href="/service-level-agreement.html">Service Level Agreement</a>
+                                </li>
+                                <li class="nav-item border-nav">
+                                    <a class="nav-link text-left text-primary font-weight-normal" href="/kebijakan-isms.html">Kebijakan ISMS</a>
+                                </li>
+                                <li class="nav-item border-nav">
+                                    <a class="nav-link text-left text-primary font-weight-normal" href="/mitigasi-risiko.html">Mitigasi Resiko</a>
+                                </li>
+                                <li class="nav-item border-nav">
+                                    <a class="nav-link text-left text-primary font-weight-normal" href="/blog/faq-landx">FAQ</a>
+                                </li>
+                            </ul>
                         </ul>
                     </div>
                     <div class="col-sm-4 mt-4 pb-3" style="display: flex; justify-content: center;">
