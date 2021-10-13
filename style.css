@@ -357,22 +357,25 @@ button.close img  {
 }
 
 .rss-btn-detail-blog{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.35px;
     text-align: center;
-    color: #2dbe60;
     padding: 8px 16px;
     width: 100%;
     background-color: #ffffff;
     border: none;
     margin-top: 24px;
+}
+
+.rss-btn-detail-blog a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.35px;
+    color: #2dbe60;
     text-transform: uppercase;
 }
 
 div.lx-CTA {
-    background-image: url(img/CTA-3.png);
+    background-image: url(img-new/CTA_Background.webp);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -393,7 +396,7 @@ div.lx-CTA {
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center; */
-    background-color: #eaeff4;
+    background-color: #f8f8f8;
     margin-top: 220px;
 }
 

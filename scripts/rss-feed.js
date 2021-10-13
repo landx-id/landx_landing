@@ -21,7 +21,9 @@ $.when($.ready).then(function () {
                                 <p class="rss-categori">${category}</p>
                                 <p class="rss-title">${title}</p>
                                 <p class="rss-description">${description}</p>
-                                <a class="rss-btn-detail-blog" href="${link}" target="_blank">Selengkapnya di blog</a>
+                                <div class="rss-btn-detail-blog">
+                                    <a href="${link}" target="_blank">Selengkapnya di blog</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -33,7 +35,9 @@ $.when($.ready).then(function () {
                             <p class="rss-categori">${category}</p>
                             <p class="rss-title">${title}</p>
                             <p class="rss-description">${description}</p>
-                            <a class="rss-btn-detail-blog" href="${link}" target="_blank">Selengkapnya di blog</a>
+                            <div class="rss-btn-detail-blog">
+                                <a href="${link}" target="_blank">Selengkapnya di blog</a>
+                            </div>
                         </div>
                     </div>
                     `;
