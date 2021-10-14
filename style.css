@@ -1120,7 +1120,7 @@ div.carousel-card {
 
 }
 
-@media (min-width: 1088px){
+@media (min-width: 1520px){
     div.rec-pagination{
         display: none !important;
     }
