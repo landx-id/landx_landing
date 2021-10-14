@@ -182,14 +182,17 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-    var urlHash = window.location.href.split("#")[1];
-    gotoLink(urlHash);
+    var uri = window.location.href.split("#")
+    if (!uri[0].endsWith('project/')) {
+        var urlHash = uri[1];
+        gotoLink(urlHash);
+    }
 });
 
 function gotoLink(urlHash) {
-    if (urlHash &&  '#' + urlHash.length ) {
+    if (urlHash &&  $('#' + urlHash).length ) {
         $('html,body').animate({
-            scrollTop: $('body').offset().top-200
+            scrollTop: $('#' + urlHash).offset().top-200
         }, 1000);
     }
   };
