@@ -182,9 +182,9 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-    const listSectionId = ['why-landx','ongoing-projects','how-it-works'];
-    var urlHash = window.location.href.split("#")[1];
-    if(listSectionId.includes(urlHash)){
+    var uri = window.location.href.split("#")
+    if (!uri[0].endsWith('project/')) {
+        var urlHash = uri[1];
         gotoLink(urlHash);
     }
 });
