@@ -8,10 +8,10 @@ $.when($.ready).then(function () {
             let mobileView = "";
             let desktopView = "";
             items.forEach((element, index) => {
-                let title = element.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-                let description = element.getElementsByTagName("description")[0].childNodes[0].nodeValue;
-                let link = element.getElementsByTagName("link")[0].childNodes[0].nodeValue;
-                let category = element.getElementsByTagName("category")[0].childNodes[0].nodeValue;
+                let title = element.getElementsByTagName("title")[0] != undefined ? element.getElementsByTagName("title")[0].childNodes[0].nodeValue : "";
+                let description = element.getElementsByTagName("description")[0] != undefined ? element.getElementsByTagName("description")[0].childNodes[0].nodeValue : "";
+                let link = element.getElementsByTagName("link")[0] != undefined ? element.getElementsByTagName("link")[0].childNodes[0].nodeValue : "";
+                let category = element.getElementsByTagName("category")[0] != undefined ? element.getElementsByTagName("category")[0].childNodes[0].nodeValue : "LandX";
                 
                 if(index <= 2){
                     mobileView += `
