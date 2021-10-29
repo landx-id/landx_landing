@@ -8,7 +8,7 @@ const footer = () => {
         <div style="position:relative">
             <div class="container lx-CTA-move" >
                     <div class="col-sm-12 col-sm-12 col-lg-12 lx-CTA">
-                        <h3 class="text-center text-secondary font-weight-bold px-4 py-5">Kini memiliki bisnis dan properti jadi jauh lebih mudah. <br> Unduh aplikasi LandX sekarang!</h3>
+                        <h2 class="text-center text-secondary font-weight-bold px-4 py-5">Kini memiliki bisnis dan properti jadi jauh lebih mudah. <br> Unduh aplikasi LandX sekarang!</h2>
                         <!-- Play & App Store -->
                         <div class="row flex-sm-row d-flex-inline justify-content-center storeContainer pb-5">
                             <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp"> <img src="/img/Play Store.webp" alt="Play Store" > </a>
@@ -22,8 +22,8 @@ const footer = () => {
         <div class="container">
             <div class="row flex-sm-row flex-md-row flex-lg-row pt-5 mt-5">
                 <div class="col-12 mt-5 pt-5 izin">
-                    <h6 class="text-center text-primary my-5">BERIZIN & DIAWASI OLEH</h6>
-                    <img src="/img-new/logo_OJK_2.webp" alt="LandX merupakan platform equity crowdfunding terpercaya di Indonesia yang telah terdaftar dan diawasi OJK" class="mx-auto d-block " alt="OJK Logo">
+                    <h2 class="text-center text-primary my-5">BERIZIN & DIAWASI OLEH</h2>
+                    <img src="/img-new/logo_OJK_2.webp" alt="logo_OJK" title="logo_OJK" class="mx-auto d-block">
                 </div>
 
                 <div class="container">
@@ -33,15 +33,15 @@ const footer = () => {
                 </div>
 
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                    <h6 class="text-center text-primary my-5">TELAH TERDAFTAR OLEH KEMENTRIAN KOMUNIKASI DAN INFORMATIKA</h6>
+                    <h2 class="text-center text-primary my-5">TELAH TERDAFTAR OLEH KEMENTRIAN KOMUNIKASI DAN INFORMATIKA</h2>
                     <img src="/img-new/logo_kemenkominfo.webp" alt="logo_kominfo" class="mx-auto d-block my-5">
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                    <h6 class="text-center text-primary my-5">DIDUKUNG OLEH</h6>
+                    <h2 class="text-center text-primary my-5">DIDUKUNG OLEH</h2>
                     <img src="/img-new/logo_iso.webp" alt="LandX telah memilki sertifikasi ISO 27001 sehingga investasi anda melalui equity crowdfunding menjadi lebih mudah" class="mx-auto d-block my-5">
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                    <h6 class="text-center text-primary my-5">MEMBER OF</h6>
+                    <h2 class="text-center text-primary my-5">MEMBER OF</h2>
                     <img src="/img-new/Logo_ALUDI.webp" alt="logo_ALUDI" class="mx-auto d-block my-5">
                 </div>
             </div>
@@ -57,7 +57,7 @@ const footer = () => {
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <p class="text-left text-primary font-weight-bold">Disclaimer</p> <br>
+                    <h2 class="text-left text-primary font-weight-bold">Disclaimer</h2> <br>
                     <p class="text-left text-primary">
                         PT Numex Teknologi Indonesia (“LandX” atau “Penyelenggara”) hadir dalam rangka mendukung program pemerintah di bidang perumahan dengan mengembangkan bisnis layanan urun dana bersama, dengan mempertemukan Pemodal dan pihak pengembang properti (“Penerbit”) (selanjutnya Pemodal dan Penerbit disebut bersama-sama sebagai “Pengguna”). Pada layanan urun dana ini, timbulnya hubungan perdata terjadi apabila Pemodal sepakat untuk membeli saham yang ditawarkan oleh Penerbit, sehingga segala risiko yang timbul dari hubungan tersebut akan menjadi tanggung jawab masing-masing pihak. Risiko yang timbul dari hak sebagai Pemodal untuk menerima dividen dari Penerbit merupakan risiko yang wajib ditanggung oleh Pemodal sesuai kebijakan dividen Penerbit. LandX hanya bertindak sebagai layanan urun dana yang mempertemukan antara Pemodal dengan Penerbit, dan tidak bertindak sebagai pelaku usaha yang menjalankan usaha untuk mengumpulkan dana terkait atau pengelola investasi (Penerbit). Sesuai dengan Pasal 23 Peraturan Otoritas Jasa Keuangan No. 37 Tahun 2018 tentang Layanan Urun Dana melalui Penawaran Saham Berbasis Teknologi Informasi atau Equity Crowdfunding (“POJK 37/2018”), kami menyatakan bahwa:
                     </p>

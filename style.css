@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap');
 
-
-
-
 /* TYPOGRAPHY */
 
 html {
@@ -12,10 +9,6 @@ html {
 h1, h2, h3, h4, h5, h6, p{
     font-family: 'Inter' !important;
 }
-
-
-
-
 
 /* TEXT COLOR */
 
@@ -38,8 +31,6 @@ p {
 .navActive {
     display: block;
 }
-
-
 
 /* CUSTOM STYLES */
 
@@ -97,7 +88,6 @@ p {
     padding-left:248px;
     cursor: pointer;
 }
-
 
 .btn.btn-primary {
     background-color: #2dbe60;
