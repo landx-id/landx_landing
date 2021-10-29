@@ -103,7 +103,7 @@ const footer = () => {
                             <span></span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#landx-blog">Blog</a>
+                            <a class="nav-link text-left text-primary font-weight-bold inlink" href="https://landx.id/blog/">Blog</a>
                             <span></span>
                         </li>
                     </ul>
