@@ -4,17 +4,7 @@ const header = () => {
     <!doctype html>
     <html lang="en">
     <head>
-        <title>LandX | Investasi Bisnis dan Properti Semudah Belanja Online</title>
-        <link id="favicon" rel="icon" type="image/png" href="/img/LandX-faveicon.png"/>
-
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Miliki dan Nikmati Keuntungan dari Bisnis Rendah Risiko Mulai dari Rp. 1 juta. Equity Crowdfunding Berizin dan Diawasi OJK.">
-
-        <!-- google tag manager -->
-        <script src="/scripts/tag.js"></script>
-
+        
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -127,11 +117,11 @@ const header = () => {
             <div class="container">
                 <div class="float-sm-left float-md-left float-lg-left">
                     <a href="/">
-                        <img src="/img-new/logo_landx.webp" alt="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" class="hamburgerMenu">
+                        <img src="/img-new/logo_landx.webp" alt="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" title="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" class="hamburgerMenu">
                     </a>
                 </div>
                 <div class="mobile-view float-sm-right float-md-right float-lg-right hamburgerMenu">
-                    <img src="/img/hamburgerMenu.svg" alt="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/img/hamburgerMenu.svg" alt="Menu" title="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
                 </div>
                 <div id="desktop-menu" class="row col-6 col-sm-6 d-flex justify-content-between">
                     <a href="/#why-landx" class="inlink"><p class="text-primary text-center">Mengapa LandX</p></a>

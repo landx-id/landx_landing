@@ -710,6 +710,30 @@ div.carousel-card {
 .hide-submenu{
     display: none !important;
 }
+
+.font-size-statistik-p{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.font-size-statistik-h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.font-size-heading-section{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.font-size-subheading-section{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.font-size-header-footer{
+    font-size: 16px;
+}
 /* .subnav-mobile:hover #arrow-nav-down-mobile{display: none;}
 .subnav-mobile:hover #arrow-nav-up-mobile{display: inline-block;} */
 
