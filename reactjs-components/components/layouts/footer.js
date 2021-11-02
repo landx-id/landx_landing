@@ -115,7 +115,7 @@ const footer = () => {
                             <h6 class="nav-link text-left text-primary font-weight-bold">Perusahaan</h6>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="https://www.linkedin.com/company/landx-id/jobs/">Karir</a>
+                            <a class="nav-link text-primary" href="http://landx.id/blog/jobs-at-landx/">Karir</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
