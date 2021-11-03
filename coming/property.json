@@ -7,7 +7,7 @@
             "previewImages": [
                 "https://landx.id/images/JKT002/1.webp"
             ],
-            "type": "saham"
+            "type": "Retail"
         },
         {
             "symbol": "PDGM",
@@ -16,7 +16,7 @@
             "previewImages": [
                 "https://landx.id/images/JKT002/1.webp"
             ],
-            "type": "saham"
+            "type": "Restoran"
         }
     ]
 }
