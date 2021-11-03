@@ -1,22 +1,3 @@
 {
-    "data": [
-        {
-            "symbol": "XIMI",
-            "name": "XIMIVOGUE",
-            "description": "Korean Based Design Brand",
-            "previewImages": [
-                "https://landx.id/images/JKT002/1.webp"
-            ],
-            "type": "Retail"
-        },
-        {
-            "symbol": "PDGM",
-            "name": "Padang Merdeka",
-            "description": "",
-            "previewImages": [
-                "https://landx.id/images/JKT002/1.webp"
-            ],
-            "type": "Restoran"
-        }
-    ]
+    "data": []
 }
