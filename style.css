@@ -734,18 +734,6 @@ div.carousel-card {
 .font-size-header-footer{
     font-size: 16px;
 }
-
-#btn-schedule-call-desktop{
-    display: block;
-}
-
-#btn-schedule-call-collapse{
-    display: none;
-}
-
-#btn-schedule-call-expanded-mobile{
-    display: none;
-}
 /* .subnav-mobile:hover #arrow-nav-down-mobile{display: none;}
 .subnav-mobile:hover #arrow-nav-up-mobile{display: inline-block;} */
 
@@ -948,18 +936,6 @@ div.carousel-card {
     .ilustration-heading div{
         padding-bottom: 0px !important;
     }
-
-    #btn-schedule-call-desktop{
-        display: none;
-    }
-    
-    #btn-schedule-call-collapse{
-        display: none;
-    }
-    
-    #btn-schedule-call-expanded-mobile{
-        display: block;
-    }
     
 }
 
@@ -1142,42 +1118,6 @@ div.carousel-card {
         height: auto;
         width: 230px !important;
         left: 55px;
-    }
-
-    #btn-schedule-call-collapse{
-        padding: 10px !important;
-    }
-
-    #btn-schedule-call-collapse img {
-        width: 25px;
-    }
-
-    #btn-schedule-call-collapse a img {
-        width: 25px;
-    }
-
-    .floating-button {
-        background: linear-gradient(#55da90, #36c66d);
-        border-radius: 30px !important;
-        position: fixed;
-        text-decoration: none;
-        font-size: 12px !important;
-        box-shadow: none !important;
-        border: none !important;
-        bottom: 30px;
-        right: 8px;
-        z-index: 1030;
-    }
-
-    #btn-schedule-call-expanded-mobile{
-        width: 40px;
-    }
-
-    .floating-button-v {
-        position: fixed;
-        bottom: 30px;
-        right: 8px;
-        z-index: 1030;
     }
 }
 
