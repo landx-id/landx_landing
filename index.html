@@ -16,52 +16,13 @@
         
         <!-- google tag manager -->
         <script src="/scripts/tag.js"></script>
-        <style>
-            .floating-button{
-                background: linear-gradient(#55da90, #36c66d);
-                color: #FFFFFF;
-                padding: 10px 30px !important;
-                border-radius: 30px !important;
-                position: fixed;
-                text-decoration: none;
-                font-size: 15px !important;
-                box-shadow: none !important;
-                border: none !important;
-                bottom: 20px;
-                right: 20px;
-                z-index: 1030;
-                text-align: center;
-            }
-            .floating-button-v{
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                z-index: 1030;
-            }
-        </style>
     </head>
     
     <body>
     <!-- SECTION Header, <html> <head> <body> included -->
     <div id="header"></div>
 
-    <a href="https://calendly.com/hello-landx/15min" class="btn btn-success floating-button" id="btn-schedule-call-desktop">
-        <div class="row">
-            <img src="/img/icon/schedule_call_icon_mobile_expanded.webp" alt="" srcset="" style="margin-right: 12px;">
-            Jadwalkan panggilan dengan kami !
-        </div>
-    </a>
-    
-    <div class="btn btn-success floating-button" id="btn-schedule-call-collapse" style="padding: 10px 10px !important;">
-        <a href="https://calendly.com/hello-landx/15min">
-            <img src="/img/icon/schedule_call_icon_mobile_expanded.webp" alt="" srcset="">
-            Jadwalkan panggilan dengan kami !
-        </a>
-        <img src="/img/icon/schedule_call_icon_mobile_close.svg" alt="" srcset="" id="btn-close-collapse">
-    </div>
-    <img src="/img/icon/schedule_call_icon_mobile_collapse.webp" alt="" srcset="" class="floating-button-v" id="btn-schedule-call-expanded-mobile">
-
-
+       
     <!-- HERO SECTION -->
     <div id="lx-hero">
         <div class="container">
@@ -451,19 +412,6 @@
     <!-- Project Listing -->
     <script src="reactjs-components/dist/project-card.js"></script>
     <script src="scripts/rss-feed.js"></script>
-    <script type="text/javascript">
-    $.when($.ready).then(function () {
-        document.getElementById("btn-schedule-call-expanded-mobile").onclick = function() {
-            document.getElementById("btn-schedule-call-expanded-mobile").style.display = "none";
-            document.getElementById("btn-schedule-call-collapse").style.display = "block";
-        };
-
-        document.getElementById("btn-close-collapse").onclick = function() {
-            document.getElementById("btn-schedule-call-expanded-mobile").style.display = "block";
-            document.getElementById("btn-schedule-call-collapse").style.display = "none";
-        };
-    });
-    </script>
 
     
   
