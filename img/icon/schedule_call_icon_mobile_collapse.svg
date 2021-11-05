@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Schedule_call_icon_mobile_collapse</title>
+    <defs>
+        <linearGradient x1="50%" y1="-35.1291191%" x2="50%" y2="132.119315%" id="linearGradient-1">
+            <stop stop-color="#59E099" offset="0%"></stop>
+            <stop stop-color="#2DBE60" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="48" height="48" rx="24"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Schedule_call_icon_mobile_collapse">
+            <g id="Rectangle" fill="url(#linearGradient-1)">
+                <use xlink:href="#path-2"></use>
+                <use xlink:href="#path-2"></use>
+            </g>
+            <path d="M16.8333333,22.3933333 C18.7533333,26.1666667 21.84,29.2533333 25.62,31.1733333 L28.5533333,28.2333333 C28.92,27.8666667 29.4466667,27.76 29.9066667,27.9066667 C31.4,28.4 33.0066667,28.6666667 34.6666667,28.6666667 C35.4066667,28.6666667 36,29.26 36,30 L36,34.6666667 C36,35.4066667 35.4066667,36 34.6666667,36 C22.1466667,36 12,25.8533333 12,13.3333333 C12,12.5933333 12.6,12 13.3333333,12 L18,12 C18.74,12 19.3333333,12.5933333 19.3333333,13.3333333 C19.3333333,14.9933333 19.6,16.6 20.0933333,18.0933333 C20.24,18.5533333 20.1333333,19.08 19.7666667,19.4466667 L16.8333333,22.3933333 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
