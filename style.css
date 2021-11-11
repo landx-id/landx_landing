@@ -746,6 +746,20 @@ div.carousel-card {
 #btn-schedule-call-expanded-mobile{
     display: none;
 }
+
+#banner{
+    background-color: #1a86c0;
+    height: fit-content;
+    padding: 10px;
+}
+
+#close_banner{
+    margin-right:30px;
+}
+
+#mob-up{
+    display: none;
+}
 /* .subnav-mobile:hover #arrow-nav-down-mobile{display: none;}
 .subnav-mobile:hover #arrow-nav-up-mobile{display: inline-block;} */
 
@@ -754,6 +768,27 @@ div.carousel-card {
 @media (max-width: 1200px) {
     .funding-container {
         grid-template-columns: 300px 300px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .funding-container {
+        grid-template-columns: 300px 300px;
+    }
+
+    #hanging{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    #hanging span{
+        animation: animate 20s linear infinite;
+    }
+
+    @keyframes animate {
+        100%{
+            transform: translate(-100%, 0);
+        }
     }
 }
 
@@ -892,9 +927,18 @@ div.carousel-card {
         left: 35%;
     }
 
+    .ilustration-heading-up img {
+        position: relative;
+        height: auto;
+        width: 250px !important;
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+    }
+
     .text-heading {
         width: 100%;
-        padding-top: 200px;
+        padding-top: 5%;
     }
 
     .hero-title {
@@ -959,6 +1003,51 @@ div.carousel-card {
     
     #btn-schedule-call-expanded-mobile{
         display: block;
+    }
+
+    .fixed-top{
+        position: static;
+    }
+
+    #banner{
+        background-color: #1a86c0;
+        height: fit-content;
+        padding: 30px;
+    }
+
+    #close_banner{
+        position: absolute !important;
+        right: -20px !important;
+        top: 10px !important;
+    }
+
+    #hanging{
+        white-space: normal;
+        padding: 2px 2px 2px 8px !important;
+    }
+
+    #hanging span{
+        animation: none;
+    }
+
+    #mob-ilustration{
+        display: none !important;
+    }
+
+    #mob-up{
+        display: block !important;
+    }
+
+    #headline{
+        margin-top: 0px !important;
+    }
+
+    #navbar{
+        margin-bottom: 0px !important;
+    }
+
+    .text-heading{
+        margin-top: 0px !important;
     }
     
 }
@@ -1105,11 +1194,11 @@ div.carousel-card {
 
 @media (max-width: 414px) {
     .ilustration-heading img {
-        position: absolute;
-        top: 80px;
+        position: relative !important;
+        top: -614px;
         height: auto;
         width: 230px !important;
-        left: 100px;
+        left: 70px;
     }
 
     .hero-button-app {

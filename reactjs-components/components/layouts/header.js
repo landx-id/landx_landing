@@ -111,44 +111,53 @@ const header = () => {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P9LT23"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        
         <!-- NAVIGATION -->
-        <nav class="navbar d-flex-inline fixed-top navbar-expand-lg py-4 mb-3">
-            <div class="container">
-                <div class="float-sm-left float-md-left float-lg-left">
-                    <a href="/">
-                        <img src="/img-new/logo_landx.webp" alt="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" title="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" class="hamburgerMenu">
+
+        <div class="fixed-top" id="fixed-top">
+            <div class="row" id="banner">
+              <div class="container d-flex justify-content-center align-items-center h-100" id="hanging">
+                <span style="color:#FFFF;">Hati-hati dengan segala jenis penipuan. LandX tidak memiliki grup Telegram! Akun resmi Customer Service LandX adalah <img src="/img/icon/wa_icon.svg"> 0811 9562 878</span>
+              </div>
+              <img id="close_banner" src="/img/icon/close_icon.svg">
+            </div>
+
+            <nav id="navbar" class="navbar d-flex-inline navbar-expand-lg py-4 mb-3">
+                <div class="container">
+                    <div class="float-sm-left float-md-left float-lg-left">
+                        <a href="/">
+                            <img src="/img-new/logo_landx.webp" alt="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" title="LandX Platform Equity Crowdfunding Indonesia yang akan membantu investasi bisnis jangka panjang anda" class="hamburgerMenu">
+                        </a>
+                    </div>
+                    <div class="mobile-view float-sm-right float-md-right float-lg-right hamburgerMenu">
+                        <img src="/img/hamburgerMenu.svg" alt="Menu" title="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <div id="desktop-menu" class="row col-6 col-sm-6 d-flex justify-content-between">
+                        <a href="/#why-landx" class="inlink"><p class="text-primary text-center">Mengapa LandX</p></a>
+                        <a href="/#ongoing-projects" class="inlink"><p class="text-primary text-center">Proyek</p></a>
+                        <a href="/#how-it-works" class="inlink"><p class="text-primary text-center">Cara Kerja</p></a>
+                        <a href="/contact.html"><p class="text-primary text-center">Kontak</p></a>
+                        <a href="https://landx.id/blog/" class="inlink"><p class="text-primary text-center">Blog</p></a>
+                        <div class="subnav" style="position:relative; display:inline-block;">
+                            <p class="text-primary text-center">Perusahaan <i class="fa fa-angle-down" id="arrow-nav-down"></i><i class="fa fa-angle-up" id="arrow-nav-up"></i></p>
+                            <div class="dropdownNav">
+                                <a href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank" class="nav-link inlink border-nav"><p class="text-primary text-left">Karir</p></a>
+                                <a href="/syarat-dan-ketentuan.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Syarat & Ketentuan</p></a>
+                                <a href="/privacy-policy.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Kebijakan Privasi</p></a>
+                                <a href="/service-level-agreement.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Service Level Agreement</p></a>
+                                <a href="/kebijakan-isms.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Kebijakan ISMS</p></a>
+                                <a href="/mitigasi-risiko.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Mitigasi Risiko</p></a>
+                                <a href="/blog/faq-landx" class="nav-link inlink"><p class="text-primary text-left">FAQ</p></a>
+                            </div>
+                        </div>                    
+                    </div>
+                    <a class="desktop-view" href="pendaftaran-perusahaan.html">
+                        <button type="button" class="btn btn-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
+                            PENDAFTARAN PERUSAHAAN
+                        </button>
                     </a>
                 </div>
-                <div class="mobile-view float-sm-right float-md-right float-lg-right hamburgerMenu">
-                    <img src="/img/hamburgerMenu.svg" alt="Menu" title="Menu" data-toggle="collapse" data-target="#navbarActive" aria-controls="navbarActive" aria-expanded="false" aria-label="Toggle navigation">
-                </div>
-                <div id="desktop-menu" class="row col-6 col-sm-6 d-flex justify-content-between">
-                    <a href="/#why-landx" class="inlink"><p class="text-primary text-center">Mengapa LandX</p></a>
-                    <a href="/#ongoing-projects" class="inlink"><p class="text-primary text-center">Proyek</p></a>
-                    <a href="/#how-it-works" class="inlink"><p class="text-primary text-center">Cara Kerja</p></a>
-                    <a href="/contact.html"><p class="text-primary text-center">Kontak</p></a>
-                    <a href="https://landx.id/blog/" class="inlink"><p class="text-primary text-center">Blog</p></a>
-                    <div class="subnav" style="position:relative; display:inline-block;">
-                        <p class="text-primary text-center">Perusahaan <i class="fa fa-angle-down" id="arrow-nav-down"></i><i class="fa fa-angle-up" id="arrow-nav-up"></i></p>
-                        <div class="dropdownNav">
-                            <a href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank" class="nav-link inlink border-nav"><p class="text-primary text-left">Karir</p></a>
-                            <a href="/syarat-dan-ketentuan.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Syarat & Ketentuan</p></a>
-                            <a href="/privacy-policy.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Kebijakan Privasi</p></a>
-                            <a href="/service-level-agreement.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Service Level Agreement</p></a>
-                            <a href="/kebijakan-isms.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Kebijakan ISMS</p></a>
-                            <a href="/mitigasi-risiko.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Mitigasi Risiko</p></a>
-                            <a href="/blog/faq-landx" class="nav-link inlink"><p class="text-primary text-left">FAQ</p></a>
-                        </div>
-                    </div>                    
-                </div>
-                <a class="desktop-view" href="pendaftaran-perusahaan.html">
-                    <button type="button" class="btn btn-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
-                        PENDAFTARAN PERUSAHAAN
-                    </button>
-                </a>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <!-- COLLAPSE NAVIGATION -->
         <nav class="align-items-start collapse navbar-collapse bg-light transparent sticky-top" id="navbarActive">

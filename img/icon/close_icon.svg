@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Close_icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LandX-Web_v2" transform="translate(-1885.000000, -15.000000)">
+            <g id="Actions-/-Navigation-/-close--filled-/-20" transform="translate(1884.000000, 14.000000)">
+                <path d="M10,1.25 C5.125,1.25 1.25,5.125 1.25,10 C1.25,14.875 5.125,18.75 10,18.75 C14.875,18.75 18.75,14.875 18.75,10 C18.75,5.125 14.875,1.25 10,1.25 Z M13.375,14.375 L10,11 L6.625,14.375 L5.625,13.375 L9,10 L5.625,6.625 L6.625,5.625 L10,9 L13.375,5.625 L14.375,6.625 L11,10 L14.375,13.375 L13.375,14.375 Z" id="Fill" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <polyline id="Inner-Fill" fill="#000000" opacity="0" points="9 10 5.625 6.625 6.625 5.625 10 9 13.375 5.625 14.375 6.625 11 10 14.375 13.375 13.375 14.375 10 11 6.625 14.375 5.625 13.375 9 10"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

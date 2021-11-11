@@ -179,6 +179,18 @@ $(document).ready(function () {
         var urlHash = $(this).attr('href').split("#")[1];
         gotoLink(urlHash);
     });
+
+    $('#close_banner').on('click', function() {
+        var userAgent = navigator.userAgent;
+        if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(userAgent)) {
+            document.getElementById("fixed-top").style.position = "fixed";
+        }else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(userAgent)) {
+            document.getElementById("fixed-top").style.position = "fixed";
+        }
+
+        document.getElementById('banner').style.display = 'none';
+    });
+
 });
 
 $(window).on("load", function () {
