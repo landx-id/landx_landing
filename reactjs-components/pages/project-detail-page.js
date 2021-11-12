@@ -22,7 +22,6 @@ fetchData('https://api.landx.id').then((listOfProjects) => {
     if (currentProject != null) {
         
         let previewImages = currentProject.previewImages;
-
         initializeProject(currentProject);
 
         // Show the carousel gallery
