@@ -11,7 +11,7 @@ export const CarouselGallery = (props) => {
     });
 
     return (
-        <div className="col-md-6 left-box">
+        <div className="col-lg-6 col-md-12 col-sm-12 left-box">
             <div className="item">
                 <div>
                     <ul id="image-gallery" className="gallery list-unstyled cS-hidden">
