@@ -17,7 +17,7 @@ export class ProjectWrapper extends React.Component {
         var projectIssuerName = this.props.project["issuerName"];
         var category = this.props.project["category"];
         var fundingProgress;
-        var totalFunding = toIDR(this.props.project["totalPurchasePrice"]);
+        var totalFunding = this.props.project["totalPurchasePrice"];
         var progressBar = this.props.project["launchProgress"] * 100;
         var lotPrice = toIDR(this.props.project["initialTokenPrice"]);
         var totalLot = parseInt(this.props.project["tokenSupply"], 10);
@@ -39,14 +39,17 @@ export class ProjectWrapper extends React.Component {
         if (this.props.project["launchProgress"] == null) {
             // market closed,
             // make assumption that it has been bought completely
-            fundingProgress = toIDR(this.props.project["totalPurchasePrice"]);
+            fundingProgress = this.props.project["totalPurchasePrice"];
         } else {
-            fundingProgress = toIDR(this.props.project["launchProgress"] * this.props.project["totalPurchasePrice"]);
+            fundingProgress = this.props.project["launchProgress"] * this.props.project["totalPurchasePrice"];
         }
 
         if (fundingProgress >= totalFunding) {
             remainingDays = 0;
         }
+
+        fundingProgress = toIDR(fundingProgress);
+        totalFunding = toIDR(totalFunding);
 
         return (
             <div className="col-md-6 right-box pull-md-right box-2">
