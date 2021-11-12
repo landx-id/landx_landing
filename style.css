@@ -1049,6 +1049,23 @@ div.carousel-card {
     .text-heading{
         margin-top: 0px !important;
     }
+
+    .headlineTitle{
+        padding: 20px 0px 20px;
+    }
+
+    .row-buttons{
+        margin-left: -5% !important;
+    }
+
+    #button-buy{
+        margin-bottom: 5%;
+    }
+
+    /* #detail-project{
+        padding-left: 35px;
+        padding-top: 20px;
+    } */
     
 }
 
@@ -1126,6 +1143,15 @@ div.carousel-card {
     .hero-button-app {
         display: flex;
         justify-content: center;
+    }
+
+    .row-buttons{
+        margin-left: -5% !important;
+        margin-right: 1%;
+    }
+
+    #button-buy{
+        margin-bottom: 5%;
     }
 }
 

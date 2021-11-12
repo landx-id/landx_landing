@@ -52,7 +52,7 @@ export class ProjectWrapper extends React.Component {
         totalFunding = toIDR(totalFunding);
 
         return (
-            <div className="col-md-6 right-box pull-md-right box-2">
+            <div className="col-lg-6 col-md-12 col-sm-12 right-box pull-md-right box-2">
                 <ProjectSymbol
                     name={symbolName}
                 />

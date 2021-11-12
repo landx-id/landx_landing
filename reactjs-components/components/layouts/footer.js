@@ -182,10 +182,15 @@ $(document).ready(function () {
 
     $('#close_banner').on('click', function() {
         var userAgent = navigator.userAgent;
-        if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(userAgent)) {
+        if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(userAgent) || 
+        /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(userAgent)
+        ) {
             document.getElementById("fixed-top").style.position = "fixed";
-        }else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(userAgent)) {
-            document.getElementById("fixed-top").style.position = "fixed";
+
+            var temp = document.getElementsByClassName('headlineTitle');
+            if (temp.length > 0) {
+                document.getElementById('headlineTitle').style.paddingTop = "90px";
+            }
         }
 
         document.getElementById('banner').style.display = 'none';

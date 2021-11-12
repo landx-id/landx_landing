@@ -5,7 +5,7 @@ export const ProjectDescDetail = (props) => {
 
     return (
         <div className="row">
-            <div className="col-md-6 left-box">
+            <div className="col-lg-6 col-md-12 col-sm-12 left-box">
                 <div className="row mt-4">
                     <p className="description-title">
                         DESKRIPSI USAHA
@@ -16,7 +16,7 @@ export const ProjectDescDetail = (props) => {
                     </p>
                 </div>
             </div>
-            <div className="col-md-6 right-box">
+            <div className="col-lg-6 col-md-12 col-sm-12 right-box">
                 <div className="row mt-4">
                     <p className="description-title">
                         ALAMAT & PETA
