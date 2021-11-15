@@ -115,7 +115,7 @@ const footer = () => {
                             <h6 class="nav-link text-left text-primary font-weight-bold">Perusahaan</h6>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="http://landx.id/blog/jobs-at-landx/">Karir</a>
+                            <a class="nav-link text-primary" href="/blog/jobs-at-landx/">Karir</a>
                             <span></span>
                         </li>
                         <li class="nav-item">
@@ -186,10 +186,14 @@ $(document).ready(function () {
         /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(userAgent)
         ) {
             document.getElementById("fixed-top").style.position = "fixed";
-
-            var temp = document.getElementsByClassName('headlineTitle');
+            var temp = document.getElementsByClassName('backToAllProject');
             if (temp.length > 0) {
-                document.getElementById('headlineTitle').style.paddingTop = "90px";
+                document.getElementById('backToAllProject').style.paddingTop = "90px";
+            }
+
+            var temp = document.querySelector(".title-page");
+            if(temp != null){
+                $("div").removeClass("title-page");
             }
         }
 

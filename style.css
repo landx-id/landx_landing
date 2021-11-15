@@ -123,7 +123,7 @@ p {
 }
 
 .headlineTitle {
-    padding: 144px 0px 32px;
+    padding: 80px 0px 32px;
 }
 
 .btn-outline-primary {
@@ -887,11 +887,6 @@ div.carousel-card {
         margin-bottom: 30px;
     }
 
-    /* .text-heading {
-        width: 50%;
-        padding: 67px 18px;
-    } */
-
     .mobile-view {
         display: block !important;
     }
@@ -903,15 +898,6 @@ div.carousel-card {
     #desktop-menu{
         display: none !important;
     }
-
-    /* .ilustration-heading img {
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        height: auto;
-        width: 70% !important;
-        left: 20%;
-    } */
 
     .ilustration-heading {
         display: flex;
@@ -1051,7 +1037,7 @@ div.carousel-card {
     }
 
     .headlineTitle{
-        padding: 20px 0px 20px;
+        padding: 30px 0px 20px;
     }
 
     .row-buttons{
@@ -1062,11 +1048,10 @@ div.carousel-card {
         margin-bottom: 5%;
     }
 
-    /* #detail-project{
-        padding-left: 35px;
-        padding-top: 20px;
-    } */
-    
+    .title-page{
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px */
