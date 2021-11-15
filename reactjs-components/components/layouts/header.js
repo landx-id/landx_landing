@@ -4,7 +4,8 @@ const header = () => {
     <!doctype html>
     <html lang="en">
     <head>
-        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -136,11 +137,11 @@ const header = () => {
                         <a href="/#ongoing-projects" class="inlink"><p class="text-primary text-center">Proyek</p></a>
                         <a href="/#how-it-works" class="inlink"><p class="text-primary text-center">Cara Kerja</p></a>
                         <a href="/contact.html"><p class="text-primary text-center">Kontak</p></a>
-                        <a href="https://landx.id/blog/" class="inlink"><p class="text-primary text-center">Blog</p></a>
+                        <a href="/blog" class="inlink"><p class="text-primary text-center">Blog</p></a>
                         <div class="subnav" style="position:relative; display:inline-block;">
                             <p class="text-primary text-center">Perusahaan <i class="fa fa-angle-down" id="arrow-nav-down"></i><i class="fa fa-angle-up" id="arrow-nav-up"></i></p>
                             <div class="dropdownNav">
-                                <a href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank" class="nav-link inlink border-nav"><p class="text-primary text-left">Karir</p></a>
+                                <a href="/blog/jobs-at-landx/" target="_blank" class="nav-link inlink border-nav"><p class="text-primary text-left">Karir</p></a>
                                 <a href="/syarat-dan-ketentuan.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Syarat & Ketentuan</p></a>
                                 <a href="/privacy-policy.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Kebijakan Privasi</p></a>
                                 <a href="/service-level-agreement.html" class="nav-link inlink border-nav"><p class="text-primary text-left">Service Level Agreement</p></a>
@@ -150,7 +151,7 @@ const header = () => {
                             </div>
                         </div>                    
                     </div>
-                    <a class="desktop-view" href="pendaftaran-perusahaan.html">
+                    <a class="desktop-view" href="/pendaftaran-perusahaan.html">
                         <button type="button" class="btn btn-primary float-md-right float-lg-right d-none d-sm-none d-xs-none d-lg-block">
                             PENDAFTARAN PERUSAHAAN
                         </button>
@@ -182,7 +183,7 @@ const header = () => {
                                 <span></span>
                             </li>
                             <li class="nav-item border-nav">
-                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#landx-blog">Blog</a>
+                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/blog">Blog</a>
                                 <span></span>
                             </li>
                             <li class="nav-item border-nav" onclick="showMenu()">
@@ -190,7 +191,7 @@ const header = () => {
                             </li>
                             <ul id="dropdown-mobile">
                                 <li class="nav-item border-nav">
-                                    <a class="nav-link text-left text-primary font-weight-normal inlink" href="https://www.linkedin.com/company/landx-id/jobs/" target="_blank">Karir</a>
+                                    <a class="nav-link text-left text-primary font-weight-normal inlink" href="/blog/jobs-at-landx/" target="_blank">Karir</a>
                                 </li>
                                 <li class="nav-item border-nav">
                                     <a class="nav-link text-left text-primary font-weight-normal inlink" href="/syarat-dan-ketentuan.html">Syarat & Ketentuan</a>
@@ -214,7 +215,7 @@ const header = () => {
                         </ul>
                     </div>
                     <div class="col-sm-4 mt-4 pb-3" style="display: flex; justify-content: center;">
-                        <a href="pendaftaran-perusahaan.html">
+                        <a href="/pendaftaran-perusahaan.html">
                             <button type="button" class="btn btn-primary btn-sm float-sm-right float-md-right d-sm-block d-lg-none">
                                 PENDAFTARAN PERUSAHAAN
                             </button>
