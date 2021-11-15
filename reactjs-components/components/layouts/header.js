@@ -183,7 +183,7 @@ const header = () => {
                                 <span></span>
                             </li>
                             <li class="nav-item border-nav">
-                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/#landx-blog">Blog</a>
+                                <a class="nav-link text-left text-primary font-weight-bold inlink" href="/blog">Blog</a>
                                 <span></span>
                             </li>
                             <li class="nav-item border-nav" onclick="showMenu()">
