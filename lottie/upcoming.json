@@ -2,7 +2,6 @@
     "upcoming": [
         {
             "HONG": {
-                "title": "Bisnis Restoran",
                 "link": "/lp/#/hong",
                 "listing_at": "2021.11.25 11:00",
                 "images": [
@@ -15,7 +14,7 @@
                     "/images/HONG/7.webp",
                     "/images/HONG/8.webp"
                 ],
-                "thumnail": "#",
+                "thumnail": "/images/HONG/thumnail.webp",
                 "description": "<strong>PROJECT HONG TANG</strong>. Restoran dessert terbaik yang menyajikan lebih dari 100 menu dessert berkualitas premium dan disukai semua kalangan. HONG TANG berencana untuk membuka 5 outlet baru dan 2 multibrand FnB outlet bernama TANG Kitchen. Lewat patungan bisnis di LandX, Kamu bisa ikut berinvestasi dan memiliki saham HONG TANG mulai dari 1 jutaan saja. Miliki segera saham HONG TANG, download dan verifikasi sekarang juga agar tidak kehabisan!"
             }
         }

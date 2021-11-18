@@ -136,7 +136,7 @@
 .title-thumnail{
     width: 280px;
     height: 43px;
-    margin: -165px 0px 11px 0px;
+    margin: -130px 0px 11px 0px;
     font-family: Inter;
     font-size: 20px;
     font-weight: bold;
@@ -182,6 +182,8 @@
     height: fit-content;
     padding-top: 20px;
     text-align: center;
+    position: absolute;
+    bottom: 32px;
 }
 .label-soon{
     width: 60%;

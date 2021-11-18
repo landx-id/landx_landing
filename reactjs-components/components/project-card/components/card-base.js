@@ -38,8 +38,7 @@ export const CardBase = (props) => {
             <div class="card custom">
                 <img class="thumnail" src={temp[i].thumnail}/>
                 <img class="label-soon" src="/img/soon-listing.png"/>
-                <h5 class="title-thumnail">{temp[i].title}</h5>
-            <p class="detial-thumnail">PELAJARI LEBIH LANJUT</p>
+                <p class="detial-thumnail">PELAJARI LEBIH LANJUT</p>
             </div>
         </div>
         );
