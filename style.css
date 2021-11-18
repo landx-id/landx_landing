@@ -123,7 +123,7 @@ p {
 }
 
 .headlineTitle {
-    padding: 80px 0px 32px;
+    padding: 165px 0px 32px;
 }
 
 .btn-outline-primary {
@@ -1223,6 +1223,7 @@ div.carousel-card {
 
     .izin{
         top: 50px;
+        margin-top: 85px !important;
     }
 
     .izin h6 {

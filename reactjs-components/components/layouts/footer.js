@@ -211,9 +211,9 @@ $(window).on("load", function () {
 });
 
 function gotoLink(urlHash) {
-    if (urlHash &&  $('#' + urlHash).length ) {
+    if (urlHash &&  '#' + urlHash.length ) {
         $('html,body').animate({
-            scrollTop: $('#' + urlHash).offset().top-200
+            scrollTop: $('body').offset().top-200
         }, 1000);
     }
   };
