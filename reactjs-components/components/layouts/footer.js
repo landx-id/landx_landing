@@ -168,6 +168,11 @@ const footer = () => {
 }
 document.getElementById("footer").innerHTML = footer();
 $(document).ready(function () {
+    let curretLink = window.location.href.split("/");
+    if(curretLink[3] == 'schedule-thanks.html'){
+        var footer = document.getElementById('lx-footer');
+        footer.parentNode.removeChild(footer);
+    }
     $('head').append('<link href="/img/LandX-faveicon.png" rel="shortcut icon" type="image/x-icon" />');
     $('.hamburgerMenu').on('click', function() {
         $('html,body').animate({

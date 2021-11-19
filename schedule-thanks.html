@@ -1,0 +1,51 @@
+<div id="header"></div>
+<style>
+    #title-error{
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.15px;
+        text-align: center;
+        color: #5e798d;
+    }
+
+    #desc-error{
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: 0.44px;
+        text-align: center;
+        color: #5e798d;
+    }
+
+    #btn-back{
+        text-transform:uppercase;
+        color: white;
+    }
+
+    @media (max-width: 360px) {
+        #img-error{
+            width: 100%;
+        }
+    }
+</style>
+<div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div style="text-align: center !important;" class="col-lg-6 col-md-12 col-sm-12">
+        <img id="img-error" src="/img/schedule_thank_you.webp" alt="" srcset="">
+        <h5 id="title-error" class="text-center">Terima kasih telah menjadwalkan panggilan</h5>
+        <p id="desc-error">Yuk cari tahu project yang tersedia saat ini dengan klik tombol dibawah</p>
+        <a href="/project" id="btn-back" type="button" class="btn btn-success">LIHAT PROJECT</a>
+    </div>
+</div>
+
+<!--CTA & FOOTER-->
+<div id="footer"></div>
+
+ <!-- template script -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script type="text/javascript" src="reactjs-components/components/layouts/header.js"></script>
+ <script type="text/javascript" src="reactjs-components/components/layouts/footer.js"></script>
