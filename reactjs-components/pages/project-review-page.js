@@ -1,4 +1,4 @@
-import { initializeProject } from '../components/project-review-page/components/initialize-project';
+import { initializeReviewProject } from '../components/project-review-page/components/initialize-project';
 
 /* Styles */
 import '../components/project-review-page/stylesheets/style.css';
@@ -18,7 +18,7 @@ fetch('/lottie/upcoming.json')
 
     if(currentProject.length > 0){
         let previewImages = currentProject[0].images;
-        initializeProject(currentProject[0]);
+        initializeReviewProject(currentProject[0]);
 
         // Show the carousel gallery
         $("#content-slider").lightSlider({

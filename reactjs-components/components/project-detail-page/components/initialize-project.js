@@ -5,9 +5,19 @@ import { ProjectDescDetail } from "./project-desc-detail";
 import { ProjectWrapper } from "./project-wrapper";
 
 
-export const initializeProject = (project) => {
+export const initializeDetailProject = (project) => {
     ReactDOM.render(
         <div>
+            <div className="container">
+                <div className="row mx-auto">
+                    <div className="headlineTitle backToAllProject" id="backToAllProject">
+                        <a href="../project">
+                            <img id="backButton" src="/img/atom-icon-arrow-6.svg"/>
+                            <span className="text-primary button-back">Kembali ke Semua Proyek</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div className="container">
                 <div className="row">
                     <CarouselGallery
