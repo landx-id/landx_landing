@@ -159,8 +159,11 @@
     width: fit-content;
     height: fit-content;
     padding: 10px 10px 10px 10px;
+    border-radius: 8px;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    border: solid 1px #fff;
+    /* background-color: rgba(216, 216, 216, 0.24); */
 }
 
 .text-count-down-thumnail{

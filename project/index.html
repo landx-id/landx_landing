@@ -12,6 +12,7 @@
 
     <!-- Showdown JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+
 </head>
 
 <body>
@@ -95,27 +96,36 @@
                 if (last_part != "project") {
                     $("#replaceable").replaceWith(`
                     <!-- Button for Back -->
+                        <div class="container">
+                            <!-- Headline & Phone -->
+                            <div class="row mx-auto">
+                                <div class="headlineTitle backToAllProject" id="backToAllProject">
+                                    <a href="../project">
+                                        <img src="/img/atom-icon-arrow-6.svg" style="margin-bottom: 3px;">
+                                        <span class="text-primary button-back">Kembali ke Semua Proyek</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     
                         <div id="root"></div>
                     
-                        <div id="other-project">
-                            <!-- Only for separator -->
-                            <div class="mt-5">
-                                <hr>
-                            </div>
-                        
-                            <!-- Projects -->
-                            <div class="container">
-                                <div class="row pt-5">
-                                    <div class="col-12">
-                                        <h4 class="text-center text-primary">Proyek Lainnya</h4>
-                                        <img src="/img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4 mt-4">
-                                    </div>
+                        <!-- Only for separator -->
+                        <div class="mt-5">
+                            <hr>
+                        </div>
+                    
+                        <!-- Projects -->
+                        <div class="container">
+                            <div class="row pt-5">
+                                <div class="col-12">
+                                    <h4 class="text-center text-primary">Proyek Lainnya</h4>
+                                    <img src="/img/titleDivider.png" alt="titleDivider" class="mx-auto d-block mb-4 mt-4">
                                 </div>
                             </div>
-                            <div id="card-base" class="mb-5 pb-5">
-                                <!-- Dynamic -->
-                            </div>
+                        </div>
+                        <div id="card-base" class="mb-5 pb-5">
+                            <!-- Dynamic -->
                         </div>
                         <input type="hidden" id="project-id" value="`+last_part.toUpperCase()+`">
                     `);
@@ -138,5 +148,7 @@
                 $('[data-toggle="tooltip"]').tooltip();
             });
         </script>
+    
+        
 </body>
 </html>

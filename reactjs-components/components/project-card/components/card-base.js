@@ -36,7 +36,7 @@ export const CardBase = (props) => {
             location.href = temp[i].link; 
             }}>
             <div class="card custom">
-                <img class="thumnail" src={temp[i].thumbnail}/>
+                <img class="thumnail" src={temp[i].thumnail}/>
                 <img class="label-soon" src="/img/soon-listing.png"/>
                 <p class="detial-thumnail">PELAJARI LEBIH LANJUT</p>
             </div>
