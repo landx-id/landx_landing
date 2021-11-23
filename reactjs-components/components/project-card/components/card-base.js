@@ -37,7 +37,7 @@ export const CardBase = (props) => {
             }}>
             <div class="card custom">
                 <img class="thumnail" src={temp[i].thumbnail}/>
-                <img class="label-soon" src="/img/soon-listing.png"/>
+                <img class="label-soon" src="/img/soon-listing.webp"/>
                 <p class="detial-thumnail">PELAJARI LEBIH LANJUT</p>
             </div>
         </div>
