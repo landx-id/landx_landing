@@ -11,7 +11,7 @@ const header = () => {
 
         
         <!-- LX Custom CSS -->
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/style.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap" rel="stylesheet">
         <!-- Facebook Pixel Code -->
         <script>
