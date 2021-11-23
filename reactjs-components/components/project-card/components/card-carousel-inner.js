@@ -12,7 +12,7 @@ export const CardCarouselInner = (props) => {
         if (i == 0) {
             carouselItem.push(
                 <div className="carousel-item custom active" key={i}>
-                    <img className="d-block w-100" src={props.previewImages[i]}/>
+                    <img className="d-block w-100" src={path}/>
                 </div>
             )
         } else {
