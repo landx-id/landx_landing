@@ -26,12 +26,11 @@ fetch('/lottie/upcoming.json')
             const now = Date.now();
             let listingAt = new Date(currentProject[0].listing_at).getTime();
             let distance = listingAt - now;
-            let days = Math.floor((distance) / (1000 * 60 * 60 * 24));
 
-            if(days > 0){
+            if(distance > 0){
                 isComingProject = true;
                 let previewImages = currentProject[0].images;
-                currentProject[0]['day'] = days;
+                currentProject[0]['day'] =  Math.floor((distance) / (1000 * 60 * 60 * 24));
                 currentProject[0]['hour'] = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
                 initializeReviewProject(currentProject[0]);
 
