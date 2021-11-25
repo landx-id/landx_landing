@@ -13,9 +13,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="LandX adalah platform equity crowdfunding terpercaya yang telah berizin dan diawasi OJK. Equity crowdfunding merupakan skema investasi ke UKM potensial dengan modal 1 Jutaan">
         <link rel="canonical" href="https://landx.id/"/>
-        
-        <!-- google tag manager -->
-        <script src="/scripts/tag.js"></script>
 
         <style>
             .floating-button{
@@ -47,11 +44,17 @@
                 z-index: 2000;
                 position: fixed;
             }
+
+            #preloader img{
+                position: absolute;
+                top: 45%;
+                left: 45%;
+            }
         </style>
     </head>
     
     <body>
-        <div id="preloader"></div>
+        <div id="preloader"><img src="/img/preload.gif"/></div>
     <!-- SECTION Header, <html> <head> <body> included -->
     <div id="header"></div>
 
@@ -466,10 +469,10 @@
     <script type="text/javascript" src="reactjs-components/components/layouts/header.js"></script>
     <script type="text/javascript" src="reactjs-components/components/layouts/footer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js" integrity="sha384-3hgmRzlUcHmQydKeUIr2tGXvJZs5gK6VZ+LVpzUkHtkRo2A8fuCMdfN3vw2h9DPJ" crossorigin="anonymous"></script>
-    <script src="scripts/statistics.js"></script>
+    <script src="/scripts/statistics.min.js"></script>
     <!-- Project Listing -->
-    <script src="reactjs-components/dist/project-card.js"></script>
-    <script src="scripts/rss-feed.js"></script>
+    <script src="/reactjs-components/dist/project-card.js"></script>
+    <script src="/scripts/rss-feed.min.js"></script>
     <script type="text/javascript">
         $.when($.ready).then(function () {
             document.getElementById("btn-schedule-call-expanded-mobile").onclick = function() {

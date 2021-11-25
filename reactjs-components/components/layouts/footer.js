@@ -204,7 +204,6 @@ $(document).ready(function () {
 
         document.getElementById('banner').style.display = 'none';
     });
-
 });
 
 $(window).on("load", function () {
@@ -234,5 +233,4 @@ $.getScript("https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.
 $.getScript("/scripts/lightslider.min.js");
 $.getScript("https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js");
 $.getScript("https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js");
-$.getScript("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js");
 $.getScript("/scripts/tag.js");
