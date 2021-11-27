@@ -5,7 +5,7 @@ export const CardCarouselInner = (props) => {
 
     for (let i = 0; i < props.previewImages.length; i++) {
         let temp = props.previewImages[i].split("/");
-        temp[(temp.length - 1)] = "lite/" + temp[(temp.length - 1)];
+        temp[(temp.length - 1)] = temp[(temp.length - 1)];
         let path = temp.join("/");
         
         /* Set the first item to be active */
