@@ -10,7 +10,8 @@ export function fetchData(url) {
         },
         body: JSON.stringify({
             query: `{
-                currencies {
+                currencies(limit:5, page:1) {
+                    name
                     landXProperty {
                         id
                         name
