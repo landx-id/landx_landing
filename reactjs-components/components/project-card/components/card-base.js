@@ -45,6 +45,13 @@ export const CardBase = (props) => {
     }
 
     for (let i = 0; i < (4 - temp.length); i++) {
+        let images;
+        if('previewImagesLite' in props[i]){
+            images = props[i].previewImagesLite;
+        }else{
+            images = props[i].previewImages;
+        }
+        
         cards.push(
             <div className="col-auto mx-auto mb-5" key={i} onClick={() => {
                 // check for project page redirect.
@@ -63,7 +70,7 @@ export const CardBase = (props) => {
                     <CardCarousel
                         id={`project-${i}`}
                         totalImages={props[i].previewImages.length}
-                        previewImages={props[i].previewImages}
+                        previewImages={images}
                     />
                     {CardBody(props[i])}
                 </div>
