@@ -4,9 +4,7 @@ export const CardCarouselInner = (props) => {
     let carouselItem = [];
 
     for (let i = 0; i < props.previewImages.length; i++) {
-        let temp = props.previewImages[i].split("/");
-        temp[(temp.length - 1)] = temp[(temp.length - 1)];
-        let path = temp.join("/");
+        let path = props.previewImages[i];
         
         /* Set the first item to be active */
         if (i == 0) {

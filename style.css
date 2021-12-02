@@ -758,7 +758,7 @@ div.carousel-card {
 }
 
 #mob-up{
-    display: none;
+    display: none !important;
 }
 
 #as{
@@ -958,13 +958,14 @@ div.carousel-card {
         left: 35%;
     }
 
-    .ilustration-heading-up img {
+    .ilustration-heading-up {
         position: relative;
         height: auto;
         width: 250px !important;
         display: flex;
         justify-content: center;
         width: 100% !important;
+        padding-top: 0px !important;
     }
 
     .text-heading {
