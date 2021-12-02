@@ -50,6 +50,35 @@
                 top: 45%;
                 left: 45%;
             }
+
+            #videoExplainer {
+                position:fixed;
+                padding:0;
+                margin:0;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                background:rgba(128, 127, 127, 0.5);
+                z-index: 2000;
+                display: none;
+            }
+
+            #close-video-explainer{
+                position: absolute;
+                right: 23vw;
+                top: 7vh;
+            }
+
+            #canva-ve{
+                width: 50vw;
+                height: 85vh;
+            }
+
+            #canva-mini-video{
+                width: 560px;
+                height: 315px;
+            }
         </style>
     </head>
     
@@ -85,8 +114,8 @@
         <div class="container">
             <!-- Headline & Phone -->
             <div id="headline" class="row mx-auto flex-lg-row flex-md-row flex-sm-row mt-5">
-                <div id="mob-up" class="ilustration-heading-up mt-5 pt-5">
-                    <img src="/img-new/hero_image.webp" alt="Mulai investasi bisnis jangka panjang bersama LandX" title="Mulai investasi bisnis jangka panjang bersama LandX">
+                <div id="mob-up" class="ilustration-heading-up mt-5 pt-5 w-100 h-100 d-flex justify-content-center align-items-center">
+                    <iframe width="100%" height="192" src="https://www.youtube.com/embed/Y03A0VgY_ug?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="text-heading mt-5 mb-5">
                     
@@ -106,8 +135,11 @@
                         </a>
                     </div>
                 </div>
-                <div id="mob-ilustration" class="ilustration-heading mt-5 pt-5">
-                    <img src="/img-new/hero_image.webp" alt="Mulai investasi bisnis jangka panjang bersama LandX" title="Mulai investasi bisnis jangka panjang bersama LandX">
+                <div id="mob-ilustration" class="ilustration-heading mt-5 pl-5 d-flex justify-content-center align-items-center">
+                    <div id="canva-mini-video">
+                        <div id="cover-mini-video" style="position: absolute; background:transparent; width: 507px; height: 316px;"></div>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y03A0VgY_ug?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -458,6 +490,14 @@
             </div>
         </div>
     </div>
+    <div id="videoExplainer">
+        <div class="col-lg-12 col-md-12 col-sm-12 h-100 d-flex justify-content-center align-items-center">
+            <div id="canva-ve">
+                <img id="close-video-explainer" src="/img/icon/close_icon.svg">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y03A0VgY_ug?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- SECTION footer, </html>-->
     <div id="footer"></div>
@@ -482,6 +522,14 @@
             document.getElementById("btn-close-collapse").onclick = function() {
                 document.getElementById("btn-schedule-call-expanded-mobile").style.display = "block";
                 document.getElementById("btn-schedule-call-collapse").style.display = "none";
+            };
+
+            document.getElementById("cover-mini-video").onclick = function() {
+                document.getElementById("videoExplainer").style.display = "block";
+            };
+
+            document.getElementById("close-video-explainer").onclick = function() {
+                document.getElementById("videoExplainer").style.display = "none";
             };
         });
         document.getElementById('preloader').style.display = "none";
