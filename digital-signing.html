@@ -27,10 +27,22 @@
             y: 460,
             fixed: false,
           },
-        }).on("after-sign", (data) => {
-          alert("test");
+        }).on('after-action', (data) => {
+          // Redirecti after sign/review doc
+          alert("after-action");
           window.location = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
-        });
+        })
+        .on('after-sign', (data) => {
+          // Redirecti after sign doc
+          alert("after-sign");
+
+          window.location = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
+        })
+        .on('after-review', (data) => {
+          alert("after-sign");
+
+          window.location = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
+        })
       }
     </script>
   </body>
