@@ -28,7 +28,7 @@
             fixed: false,
           },
         }).on("after-sign", (data) => {
-          location.href = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
+          window.location = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
         });
       }
     </script>
