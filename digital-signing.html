@@ -28,26 +28,14 @@
             fixed: false,
           },
         }).on('after-action', (data) => {
-          // Redirecti after sign/review doc
-          console.log("after-action triggered");
-
           window.location = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
         })
         .on('after-sign', (data) => {
-          // Redirecti after sign doc
-          console.log("after-sign triggered");
-
-
           window.location = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
         })
         .on('after-review', (data) => {
-          console.log("after-review triggered");
-
           window.location = "app://store.numoney.landxapp/document-signing-completed?doc_token=" + documentToken;
         });
-
-        console.log("done at privy");
-
       }
     </script>
   </body>
