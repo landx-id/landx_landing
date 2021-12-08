@@ -1,6 +1,62 @@
-export function fetchData(url) {
+export function fetchData(url, limit=0, page=0) {
     /* Fetch from the API url */
-
+    let srcQuery=``;
+    if(limit == 0 && page == 0){
+        srcQuery = `{
+            currencies{
+                landXProperty {
+                    id
+                    name
+                    issuerName
+                    mapImageUrl
+                    launchProgress
+                    totalPurchasePrice
+                    category
+                    settlementDate
+                    initialTokenPrice
+                    tokenSupply
+                    dividendSchedule
+                    annualRentYield
+                    annualRentYieldUpper
+                    description
+                    address
+                    token {
+                        name
+                        symbol
+                    }
+                    previewImages
+                }
+            }
+        }`
+    }else{
+        srcQuery = `{
+            currencies (limit:${limit}, page:${page}){
+                name
+                landXProperty {
+                    id
+                    name
+                    issuerName
+                    mapImageUrl
+                    launchProgress
+                    totalPurchasePrice
+                    category
+                    settlementDate
+                    initialTokenPrice
+                    tokenSupply
+                    dividendSchedule
+                    annualRentYield
+                    annualRentYieldUpper
+                    description
+                    address
+                    token {
+                        name
+                        symbol
+                    }
+                    previewImages
+                }
+            }
+        }`
+    }
     return fetch(url, {
         method: "POST",
         mode: "cors",
@@ -9,33 +65,7 @@ export function fetchData(url) {
             "Accept": "application/json",
         },
         body: JSON.stringify({
-            query: `{
-                currencies(limit:5, page:1) {
-                    name
-                    landXProperty {
-                        id
-                        name
-                        issuerName
-                        mapImageUrl
-                        launchProgress
-                        totalPurchasePrice
-                        category
-                        settlementDate
-                        initialTokenPrice
-                        tokenSupply
-                        dividendSchedule
-                        annualRentYield
-                        annualRentYieldUpper
-                        description
-                        address
-                        token {
-                            name
-                            symbol
-                        }
-                        previewImages
-                    }
-                }
-            }`
+            query: srcQuery
         })
     })
     .then(r => r.json())

@@ -59,7 +59,7 @@ fetch('/lottie/upcoming.json')
         }
 
         if(isComingProject == false){
-            fetchData('https://api.landx.id').then((listOfProjects) => {
+            fetchData('https://api.landx.id', 4, 1).then((listOfProjects) => {
                 let currentProject = null;
     
                 let id = $("#project-id").val();

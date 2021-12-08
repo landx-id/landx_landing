@@ -5,7 +5,7 @@ import { toIDR } from '../util/currency.js';
 /* Styles */
 import '../components/project-card/stylesheets/card.css';
 
-fetchData('https://api.landx.id/').then((listOfProjects) => {
+fetchData('https://api.landx.id/', 4, 1).then((listOfProjects) => {
     /* Remove empty projects */
     listOfProjects.data.currencies.forEach(function(item, index) {
         if ( item.landXProperty == null
