@@ -15,6 +15,10 @@ export const Filter = (props) => {
     const [category, setCategory] = useState('allCategory');
     const [sort, setSort] = useState('settlementDate');
     const [project, setProject] = useState(props.projects)
+    const [limit, setLimit] = useState(9);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPage, setTotalPage] = useState(countTotalPage(project));
+    const [tempData, setTempData] = useState(updateTempData(project));
 
     function reset() {
         setMinRange(props.minimumRange);
@@ -38,6 +42,44 @@ export const Filter = (props) => {
         }
         renderedProjects = renderedProjects.sort((a, b) => a[sort] > b[sort] ? -1 : 1)
         setProject(renderedProjects);
+        setTempData(updateTempData(renderedProjects));
+        setTotalPage(countTotalPage(renderedProjects));
+        setCurrentPage(1)
+    }
+
+    function nextPage(){
+        if(currentPage < totalPage){
+            let next = currentPage + 1;
+            setCurrentPage(next)
+        }
+    }
+
+    function prevPage(){
+        if(currentPage > 1){
+            let prev = currentPage - 1;
+            setCurrentPage(prev)
+        }
+    }
+
+    function countTotalPage(projects){
+        return Math.ceil(projects.length / limit)
+    }
+
+    function updateTempData(projects){
+        let data = [];
+        let temp = [];
+        let epoch = 0;
+        for(let i=0; i < projects.length; i++){
+            temp.push(projects[i]);
+            epoch++;
+
+            if(epoch >= limit || i == (projects.length-1)){
+                data.push(temp);
+                temp = [];
+                epoch = 0;
+            }
+        }
+        return data;
     }
 
     return (
@@ -107,7 +149,7 @@ export const Filter = (props) => {
             </div>
             <div className="row col-md-7 col-sm-12 order-md-4 order-4">
             </div>
-            {CreateCardPortal(project)}
+            { tempData.length != 0 ? <CreateCardPortal project={tempData[currentPage-1]} nextPage={nextPage} prevPage={prevPage}/> : ""}
         </div>
     )
 }
