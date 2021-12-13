@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header.background-header {
+  background: radial-gradient(
+    circle at center,
+    rgba(115, 224, 139, 1) 0%,
+    rgba(0, 163, 38, 1) 100%
+  );
+  min-width: 100%;
+  min-height: 1239px;
+}
+
+header .box {
+  max-width: 1320px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+header .banner-img {
+  width: 70%;
+  height: 638px;
+  max-width: 1500px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-96 {
+  margin-top: 96px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #00912d;
+  font-weight: 700;
+  font-size: 24px;
+  width: 375px;
+  height: 53px;
+  border-radius: 30px;
+  margin-top: 18px;
+}
+.btn-white:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 16px;
+  width: 375px;
+  height: 53px;
+  border-radius: 26px;
+  border: 3px solid #fff;
+}
+.btn-outline-white:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+section {
+  min-height: 774px;
+}
+
+section.background-section {
+  background: linear-gradient(
+    270deg,
+    rgba(45, 190, 96, 1) 0%,
+    rgba(185, 255, 176, 0.2) 100%
+  );
+}
+
+.box-video {
+  margin-top: -25%;
+  background-color: red;
+  width: 100%;
+  height: 655px;
+}
+
+section .h4-green {
+  color: #00a339;
+  font-size: 25px;
+  font-weight: 700;
+}
+section .h2-green {
+  background: -webkit-linear-gradient(
+    102deg,
+    rgba(122, 204, 140, 1) 0%,
+    rgba(4, 117, 30, 1) 75%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  header .banner-img {
+    width: 120%;
+  }
+
+  header h1 {
+    font-size: 16px;
+  }
+
+  .btn-white {
+    font-size: 16px;
+    width: 270px;
+    height: 40px;
+  }
+
+  .btn-outline-white {
+    font-size: 16px;
+    width: 270px;
+    height: 40px;
+  }
+}
