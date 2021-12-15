@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="LandX adalah platform equity crowdfunding terpercaya yang telah berizin dan diawasi OJK. Equity crowdfunding merupakan skema investasi ke UKM potensial dengan modal 1 Jutaan">
+  <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.ico" />
   <title>LandX Cuan</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./responsive.css" />
@@ -19,16 +20,17 @@
 <body>
   <header class='background-header bg-radial-green'>
     <div class="container px-0 d-none d-lg-block">
-      <div class="row">
+      <div class="row d-none d-lg-block">
         <div class="col">
           <div class="box">
-            <img src="./assets/images/banner.webp" class='banner-img' alt="banner" />
+            <img src="./assets/images/KV-Desktop.webp" class='banner-img' alt="banner" />
           </div>
         </div>
       </div>
     </div>
-    <div class='d-lg-none'>
-      <img src="./assets/images/banner.webp" width="100%" alt="banner" />
+    <div class='box d-lg-none'>
+      <img src="./assets/images/KV-Desktop.webp" class='banner-img d-none d-sm-block d-lg-none' alt="banner" />
+      <img src="./assets/images/KV-Mobile.webp" class='banner-img d-sm-none' alt="banner" />
     </div>
     <div class="container text-center">
       <div class="row">
@@ -39,12 +41,24 @@
       </div>
       <div class="row">
         <div class="col">
-          <button class="btn btn-white">Download Aplikasi LandX</button>
+          <a class="btn btn-white" href="https://play.google.com/store/apps/details?id=store.numoney.landxapp">Download
+            Aplikasi LandX</a>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <button class="btn btn-outline-white">Ingatkan Saya</button>
+          <a href="https://sendy.landx.id/subscription?f=7MlPrs1pHK3LfJpBLI1sWWnzSbXnzAHm7Yqtuft763Lwo3763AxOiv8GnfaG8G9pEwKyzGH892hj8VFy763c9tFKC6iBdA"
+            class="btn btn-outline-white btn-mb">Ingatkan Saya</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <iframe class='box-video' src="https://www.youtube.com/embed/Y03A0VgY_ug?rel=0&showinfo=0&autohide=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -52,15 +66,10 @@
 
   <section class='bg-linear-gradient-270 section-1'>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="box-video" />
-        </div>
-      </div>
       <div>
-        <div class="col text-center">
-          <h4 class='h4-green mt-96'>KHUSUS PENGGUNA BARU!</h4>
-          <h2 class='h2-green mb-64'>Beli Lot dan Nikmati Voucher-nya</h2>
+        <div class="col text-left text-md-center">
+          <h4 class='h4-green'>KHUSUS PENGGUNA BARU!</h4>
+          <h2 class='h2-green'>Beli Lot dan Nikmati Voucher-nya</h2>
         </div>
       </div>
       <div class="row">
@@ -82,10 +91,7 @@
       <div class="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row">
         <div class="col-12 col-md-5">
           <h1 class='qna'>
-            Mengapa Harus
-          </h1>
-          <h1 class='qna'>
-            Investasi di LandX?
+            Mengapa Harus Investasi di LandX?
           </h1>
           <p class='qna-p'>
             Bacon ipsum dolor amet filet mignon leberkas chuck, cupim prosciutto tenderloin tail. Meatball cupim
@@ -96,65 +102,65 @@
             turducken landjaeger shoulder.
           </p>
         </div>
-        <div class="col-12 col-md-6">
-          <img src="./assets/images/smartphone.png" style="margin-top: -110px; width: 100%" alt="smartphone" />
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <img src="./assets/images/cta-1-desktop.webp" class="landx-smart" alt="smartphone" />
         </div>
       </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="row"></div>
-          <div class="swiper-slide col-4">
-            <div class="card text-center bg-card d-block">
-              <div class="container-card-icon d-flex">
-                <img src="./assets/images/star.webp" class="card-img-top card-icon m-auto" alt="jewely">
+      <div class="swipper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide col-4">
+              <div class="card text-center bg-card d-block">
+                <div class="container-card-icon d-flex">
+                  <img src="./assets/images/star.webp" class="card-img-top card-icon m-auto" alt="jewely">
+                </div>
+                <div class="card-body">
+                  <h5 class="f-card-title">Bisnis-bisnis Terbaik</h5>
+                  <p class="f-card-text">Pengguna LandX mendapatkan akses ke bisnis-bisnis yang teruji dan sudah
+                    diseleksi
+                    secara ketat</p>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="f-card-title">Bisnis-bisnis Terbaik</h5>
-                <p class="f-card-text">Pengguna LandX mendapatkan akses ke bisnis-bisnis yang teruji dan sudah
-                  diseleksi
-                  secara ketat</p>
+            </div>
+            <div class="swiper-slide col-4">
+              <div class="card text-center bg-card d-block">
+                <div class="container-card-icon d-flex">
+                  <img src="./assets/images/time.webp" class="card-img-top card-icon m-auto" alt="jewely">
+                </div>
+                <div class="card-body">
+                  <h5 class="f-card-title">Investasi Bagi Hasil</h5>
+                  <p class="f-card-text">Laporan keuangan tepat waktu dan pembagian hasil investasi transaparan</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide col-4">
+              <div class="card text-center bg-card d-block" style='padding-top: 0'>
+                <div class="container-card-icon d-flex">
+                  <img src="./assets/images/jewely.webp" class="card-img-top card-icon m-auto" alt="jewely">
+                </div>
+                <div class="card-body" style="margin-top: 14px">
+                  <h5 class="f-card-title">Investasi Aman untuk Pemula</h5>
+                  <p class="f-card-text">Sebagian besar bisnis yang terdaftar memiliki aset dasar properti yang bernilai
+                    tinggi, sehingga dapat melindungi investor apabila terjadi risiko kegagalan bisnis</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide col-4">
-            <div class="card text-center bg-card d-block">
-              <div class="container-card-icon d-flex">
-                <img src="./assets/images/time.webp" class="card-img-top card-icon m-auto" alt="jewely">
-              </div>
-              <div class="card-body">
-                <h5 class="f-card-title">Investasi Bagi Hasil</h5>
-                <p class="f-card-text">Laporan keuangan tepat waktu dan pembagian hasil investasi transaparan</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide col-4">
-            <div class="card text-center bg-card d-block" style='padding-top: 0'>
-              <div class="container-card-icon d-flex">
-                <img src="./assets/images/jewely.webp" class="card-img-top card-icon m-auto" alt="jewely">
-              </div>
-              <div class="card-body" style="margin-top: 14px">
-                <h5 class="f-card-title">Investasi Aman untuk Pemula</h5>
-                <p class="f-card-text">Sebagian besar bisnis yang terdaftar memiliki aset dasar properti yang bernilai
-                  tinggi, sehingga dapat melindungi investor apabila terjadi risiko kegagalan bisnis</p>
-              </div>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
     </div>
   </section>
 
   <section class="section-3 bg-linear-gradient-270">
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-left text-sm-center">
         <div class="col">
           <h1 class='title'>Cara Dapatin Cuan</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-6 m-auto">
+        <div class="col-12 col-md-6 m-auto">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -179,9 +185,40 @@
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellat
-                  iusto eos aperiam labore natus? Eos voluptate at quidem animi saepe magni maxime recusandae hic, velit
-                  perspiciatis dignissimos asperiores amet.</div>
+                <div class="accordion-body">
+                  <div>
+                    Tanggal promo: 20 Desember 2021 - 31 Desember 2021
+                  </div>
+                  <div>
+                    Berlaku untuk pengguna baru LandX
+                  </div>
+                  <div>
+                    Lakukan pembelian melalui aplikasi LandX
+                  </div>
+                  <div>
+                    Pembelian berlaku untuk satu project dan tidak berlaku kelipatan
+                  </div>
+                  <div>
+                    Syaratnya:
+                  </div>
+                  <div>
+                    Untuk pembelian 1 lot akan mendapatkan voucher senilai Rp.25,000
+                  </div>
+                  <div>
+                    Untuk pembelian 3 lot akan mendapatkan voucher senilai Rp.75,000
+                  </div>
+                  <div>
+                    Untuk pembelian 5 lot akan mendapatkan voucher senilai Rp.125,000
+                  </div>
+                  <div>
+                    Cashback akan dikirimkan ke deposit pengguna aplikasi LandX terhitung 2x24 jam sejak melakukan
+                    pembelian lot
+                  </div>
+                  <div>
+                    Jika kamu memiliki pertanyaan, silahkan hubungi kami melalui call center kami 08119562878 atau
+                    081381862878, email di hello@landx.id atau via Instagram di landx.id
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -194,13 +231,19 @@
     <section class='section-4'>
       <div class="bg-section-4 bg-radial-green">
         <div class="row">
-          <div class="col-md-6">
-            <img src="./assets/images/smartphone.png" width="100%" alt="landX smartphone" />
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="./assets/images/cta-1-desktop.webp" class='landx-smart-2 d-none d-sm-block'
+              alt="landX smartphone" />
+            <img src="./assets/images/KV-5-Footer-Mobile.webp" class='landx-smart-2 d-sm-none' alt="landX smartphone" />
           </div>
-          <div class="col-md-6 text-center d-flex justify-content-center align-items-center flex-column">
+          <div class="col-12 col-md-6 text-center d-flex justify-content-center align-items-center flex-column">
             <h1 class='title'>Gabung Sekarang dan</h1>
             <h1 class='title'>Ikutan CUAN-nya!</h1>
-            <button class="btn btn-white mt-56">Download Aplikasi LandX</button>
+            <a href="https://play.google.com/store/apps/details?id=store.numoney.landxapp">
+              <a class="btn btn-white"
+                href="https://play.google.com/store/apps/details?id=store.numoney.landxapp">Download
+                Aplikasi LandX</a>
+            </a>
           </div>
         </div>
       </div>
@@ -211,14 +254,16 @@
       </div>
       <div class="row">
         <div class="col">
-          <button class="btn btn-outline-success d-flex align-items-center justify-content-between mx-auto mt-3">WA
+          <a class="btn btn-outline-success d-flex align-items-center justify-content-between mx-auto mt-3"
+            href="https://wa.me/628119562878">WA
             Customer
             Service
-            1 <i class="fas fa-chevron-right"></i></button>
-          <button class="btn btn-outline-success d-flex align-items-center justify-content-between mt-3 mx-auto">WA
+            1 <img src="./assets/icons/chevron-right-solid.svg" class="w-icon" alt="" /></a>
+          <a class="btn btn-outline-success d-flex align-items-center justify-content-between mt-3 mx-auto"
+            href="https://wa.me/6281381862878">WA
             Customer
             Service
-            2 <i class="fas fa-chevron-right"></i></button>
+            2 <img src=" ./assets/icons/chevron-right-solid.svg" class="w-icon" alt="" /></a>
         </div>
       </div>
     </section>
@@ -229,41 +274,46 @@
       <div class="row">
         <div class="col-md-4">
           <ul class="nav-1">
-            <li><a href="#">Mengapa LandX</a></li>
-            <li><a href="#">Proyek</a></li>
-            <li><a href="#">Cara Kerja</a></li>
-            <li><a href="#">Kontak</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="https://landx.id/#why-landx">Mengapa LandX</a></li>
+            <li><a href="https://landx.id/#ongoing-projects">Proyek</a></li>
+            <li><a href="https://landx.id/#how-it-works">Cara Kerja</a></li>
+            <li><a href="https://landx.id/contact.html">Kontak</a></li>
+            <li><a href="https://landx.id/blog">Blog</a></li>
           </ul>
         </div>
 
         <div class="col-md-4">
           <ul class="nav-1">
-            <li><a href="#">Perusahaan</a></li>
+            <li>Perusahaan</li>
           </ul>
           <ul class="nav-2">
-            <li><a href="#">Karir</a></li>
-            <li><a href="#">Syarat & Ketentuan</a></li>
-            <li><a href="#">Kebijakan Privasi</a></li>
-            <li><a href="#">Service Level Agreement</a></li>
-            <li><a href="#">Kebijakan ISMS</a></li>
-            <li><a href="#">Mitigasi Resiko</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="https://landx.id/blog/jobs-at-landx/">Karir</a></li>
+            <li><a href="https://landx.id/syarat-dan-ketentuan.html">Syarat & Ketentuan</a></li>
+            <li><a href="https://landx.id/privacy-policy.html">Kebijakan Privasi</a></li>
+            <li><a href="https://landx.id/service-level-agreement.html">Service Level Agreement</a></li>
+            <li><a href="https://landx.id/kebijakan-isms.html">Kebijakan ISMS</a></li>
+            <li><a href="https://landx.id/mitigasi-risiko.html">Mitigasi Resiko</a></li>
+            <li><a href="https://landx.id/blog/faq-landx/">FAQ</a></li>
           </ul>
         </div>
 
         <div class="col-md-4">
           <div class="row">
-            <div class="col social-icon mb-64">
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
+            <div class="col social-icon">
+              <a href="https://id.linkedin.com/company/landx-id?trk=public_profile_topcard_current_company"
+                class='social-bg-icon'><img src="./assets/icons/linkedin-brands.svg" class='social-icon'
+                  alt="linkedin" /></a>
+              <a href="https://www.facebook.com/landx.id" class='social-bg-icon mx-4'><img
+                  src="./assets/icons/facebook-square-brands.svg" alt="facebook" class='social-icon' /></a>
+              <a href="https://www.instagram.com/landx.id" class='social-bg-icon'><img
+                  src="./assets/icons/instagram-brands.svg" alt="instagram" class='social-icon' /></a>
+
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-              <p class="copyright">&copy; 2020 LandX Indonesia. All Rights Reserved.</p>
+              <p class="copyright">&copy; 2021 LandX Indonesia. All Rights Reserved.</p>
             </div>
           </div>
         </div>
