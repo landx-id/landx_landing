@@ -19,6 +19,7 @@
   }
   .section-2 .card-icon {
     width: 80px;
+    height: 80px;
   }
   .section-2 .f-card-title {
     font-size: 20px;
@@ -101,6 +102,7 @@
   }
   .section-2 .card-icon {
     height: 70px;
+    width: 70px;
   }
   .section-2 .f-card-title {
     font-size: 16px;
@@ -154,6 +156,7 @@
   }
   .section-2 .card-icon {
     width: 72px;
+    height: 72px;
   }
   .section-2 .f-card-title {
     font-size: 16px;
@@ -276,6 +279,7 @@
   }
   .section-2 .card-icon {
     width: 72px;
+    height: 72px;
   }
 
   .section-4 .w-icon {
