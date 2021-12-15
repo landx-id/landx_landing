@@ -1,21 +1,18 @@
 {
     "upcoming": [
         {
-            "HONG": {
-                "link": "/project/#/hong",
-                "listing_at": "2021.11.25 11:00",
+            "PDM1": {
+                "link": "/project/#/pdm1",
+                "listing_at": "2021.12.16 11:00",
                 "images": [
-                    "/images/HONG/1.webp",
-                    "/images/HONG/2.webp",
-                    "/images/HONG/3.webp",
-                    "/images/HONG/4.webp",
-                    "/images/HONG/5.webp",
-                    "/images/HONG/6.webp",
-                    "/images/HONG/7.webp",
-                    "/images/HONG/8.webp"
+                    "/images/PDM1/1.webp",
+                    "/images/PDM1/2.webp",
+                    "/images/PDM1/3.webp",
+                    "/images/PDM1/4.webp",
+                    "/images/PDM1/5.webp"
                 ],
-                "thumbnail": "/images/HONG/thumbnail.webp",
-                "description": "<strong>PROJECT HONG TANG</strong>. Restoran dessert terbaik yang menyajikan lebih dari 100 menu dessert berkualitas premium dan disukai semua kalangan. HONG TANG berencana untuk membuka 5 outlet baru dan 2 multibrand FnB outlet bernama TANG Kitchen. Lewat patungan bisnis di LandX, Kamu bisa ikut berinvestasi dan memiliki saham HONG TANG mulai dari 1 jutaan saja. Miliki segera saham HONG TANG, download dan verifikasi sekarang juga agar tidak kehabisan!"
+                "thumbnail": "/images/PDM1/thumbnail.webp",
+                "description": "Restoran Padang dengan segudang makanan yang menggugah selera"
             }
         }
     ]
