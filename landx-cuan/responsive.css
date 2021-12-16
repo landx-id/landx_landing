@@ -202,8 +202,11 @@
   }
   header .banner-img {
     width: 100%;
-    height: 340px;
-    margin-right: -38px;
+    height: 627px;
+  }
+  header .btn-banner {
+    margin-top: -134px;
+    margin-bottom: 20px;
   }
   .box-video {
     max-width: 328px;
@@ -246,14 +249,13 @@
   }
 
   .btn-white {
-    font-size: 16px;
-    width: 270px;
+    font-size: 14px;
+    width: 220px;
     height: 40px;
   }
-
   .btn-outline-white {
-    font-size: 16px;
-    width: 270px;
+    font-size: 14px;
+    width: 220px;
     height: 40px;
   }
 
