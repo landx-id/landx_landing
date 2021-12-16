@@ -140,9 +140,8 @@
   }
 
   .section-1 {
-    min-height: 1460px;
+    min-height: 1100px;
     padding-top: 130px;
-    min-height: 1235px;
   }
 
   .section-2 .landx-smart {
@@ -198,14 +197,14 @@
 
 @media screen and (max-width: 576px) {
   header.background-header {
-    min-height: 650px;
+    min-height: 790px;
   }
   header .banner-img {
     width: 100%;
-    height: 627px;
+    height: 611px;
   }
   header .btn-banner {
-    margin-top: -134px;
+    margin-top: -155px;
     margin-bottom: 20px;
   }
   .box-video {
@@ -231,7 +230,7 @@
   }
 
   .section-1 {
-    min-height: 1010px;
+    min-height: 835px;
   }
 
   .section-2 .qna-p {

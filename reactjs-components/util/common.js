@@ -1,7 +1,7 @@
-export function fetchData(url, limit=0, page=0) {
+export function fetchData(url, limit = 0, page = 0) {
     /* Fetch from the API url */
-    let srcQuery=``;
-    if(limit == 0 && page == 0){
+    let srcQuery = ``;
+    if (limit == 0 && page == 0) {
         srcQuery = `{
             currencies{
                 landXProperty {
@@ -28,7 +28,7 @@ export function fetchData(url, limit=0, page=0) {
                 }
             }
         }`
-    }else{
+    } else {
         srcQuery = `{
             currencies (limit:${limit}, page:${page}){
                 name
@@ -68,10 +68,57 @@ export function fetchData(url, limit=0, page=0) {
             query: srcQuery
         })
     })
-    .then(r => r.json())
-    .then((data) => {
-        return data;
-    });
+        .then(r => r.json())
+        .then((data) => {
+            return data;
+        });
+}
+export function fetchDataNoLimit(url) {
+    /* Fetch from the API url */
+    let srcQuery = ``;
+
+    srcQuery = `{
+            currencies {
+                name
+                landXProperty {
+                    id
+                    name
+                    issuerName
+                    mapImageUrl
+                    launchProgress
+                    totalPurchasePrice
+                    category
+                    settlementDate
+                    initialTokenPrice
+                    tokenSupply
+                    dividendSchedule
+                    annualRentYield
+                    annualRentYieldUpper
+                    description
+                    address
+                    token {
+                        name
+                        symbol
+                    }
+                    previewImages
+                }
+            }
+        }`
+    return fetch(url, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+        body: JSON.stringify({
+            query: srcQuery
+        })
+    })
+        .then(r => r.json())
+        .then((data) => {
+            return data;
+        });
 }
 
 export function calculateRemainingDays(settlementDate) {

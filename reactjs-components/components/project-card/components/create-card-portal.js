@@ -12,18 +12,20 @@ export const CreateCardPortal = (props) => {
     }
     return (
         ReactDOM.createPortal(
-        <div className="container">
-            <div className="row">
-                {CardBasefilter(props.project)}
+            <div className="container">
+                <div className="row">
+                    {CardBasefilter(props.project)}
+                </div>
+
+                <div className="row">
+                    <div className="col d-flex flex-column flex-sm-row justify-content-center mx-5">
+                        <button className="btn btn-primary" onClick={prevPage}>Sebelumnya</button>
+                        <button className="btn btn-primary mb-3 mb-sm-0" onClick={nextPage}>Selanjutnya</button>
+                    </div>
+                </div>
             </div>
 
-            <div className="row d-flex justify-content-center">
-                <button className="btn btn-primary" onClick={prevPage}>Prev</button>
-                <button className="btn btn-primary" onClick={nextPage}>Next</button>
-            </div>
-        </div>
-
-        , document.getElementById("card-base")
+            , document.getElementById("card-base")
         )
     )
 }
