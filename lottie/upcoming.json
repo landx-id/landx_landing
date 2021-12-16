@@ -1,17 +1,17 @@
 {
     "upcoming": [
         {
-            "PDM1": {
-                "link": "/project/#/pdm1",
+            "PMBB": {
+                "link": "/project/#/pmbb",
                 "listing_at": "2021.12.16 11:00",
                 "images": [
-                    "/images/PDM1/1.webp",
-                    "/images/PDM1/2.webp",
-                    "/images/PDM1/3.webp",
-                    "/images/PDM1/4.webp",
-                    "/images/PDM1/5.webp"
+                    "/images/PMBB/1.webp",
+                    "/images/PMBB/2.webp",
+                    "/images/PMBB/3.webp",
+                    "/images/PMBB/4.webp",
+                    "/images/PMBB/5.webp"
                 ],
-                "thumbnail": "/images/PDM1/thumbnail.webp",
+                "thumbnail": "/images/PMBB/thumbnail.webp",
                 "description": "Restoran Padang dengan segudang makanan yang menggugah selera"
             }
         }
