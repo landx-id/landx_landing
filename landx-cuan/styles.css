@@ -17,10 +17,12 @@ header .box {
 }
 
 header .banner-img {
-  width: 70%;
-  height: 638px;
-  max-width: 1500px;
-  margin-left: -35px;
+  height: 907px;
+  max-width: 100%;
+}
+header .btn-banner {
+  margin-top: -175px;
+  margin-bottom: 150px;
 }
 
 header h1 {
