@@ -203,6 +203,10 @@
     width: 360px;
     height: 611px;
   }
+  header .banner-mobile {
+    width: 320px;
+    height: 611px;
+  }
   header .btn-banner {
     margin-top: -155px;
     margin-bottom: 20px;
