@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { CardBasefilter } from './card-base-filter';
+import Carousel from 'react-elastic-carousel'
 
 export const CreateCardPortal = (props) => {
+    const breakPoints = [
+        { width: 1, itemsToShow: 1 },
+        { width: 550, itemsToShow: 2 },
+        { width: 992, itemsToShow: 3 },
+    ]
+
     function prevPage() {
         props.prevPage();
     }
@@ -14,7 +21,9 @@ export const CreateCardPortal = (props) => {
         ReactDOM.createPortal(
             <div className="container">
                 <div className="row">
-                    {CardBasefilter(props.project)}
+                    <Carousel breakPoints={breakPoints}>
+                        {CardBasefilter(props.project)}
+                    </Carousel>
                 </div>
 
                 <div className="row">

@@ -18,11 +18,11 @@ export const CardBasefilter = (props) => {
                     location.href = props[i].link;
                     location.reload();
                 } else {
-                    location.href = props[i].link; 
+                    location.href = props[i].link;
                 }
                 window.scrollTo(0, 0);
             }}>
-            <div className="card custom">
+                <div className="card custom">
                     <CardCarousel
                         id={`project-${i}`}
                         totalImages={props[i].previewImages.length}
