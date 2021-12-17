@@ -27,7 +27,7 @@ export const CreateCardPortal = (props) => {
                 </div>
 
                 <div className="row">
-                    <div className="col d-flex flex-column flex-sm-row justify-content-center mx-5">
+                    <div className="col d-flex flex-column flex-sm-row justify-content-center mx-5 mt-3 mt-xl-2">
                         <button className="btn btn-primary" onClick={prevPage}>Sebelumnya</button>
                         <button className="btn btn-primary mb-3 mb-sm-0" onClick={nextPage}>Selanjutnya</button>
                     </div>
