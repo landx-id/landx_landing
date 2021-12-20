@@ -23,15 +23,11 @@ export const CardBasefilter = (props) => {
                 window.scrollTo(0, 0);
             }}>
                 <div className="card custom">
-                    {props[i].previewImages ?
-                        <CardCarousel
-                            id={`project-${i}`}
-                            totalImages={props[i].previewImages.length}
-                            previewImages={props[i].previewImages}
-                        />
-                        :
-                        'loading'
-                    }
+                    <CardCarousel
+                        id={`project-${i}`}
+                        totalImages={props[i].previewImages.length}
+                        previewImages={props[i].previewImages}
+                    />
                     {CardBody(props[i])}
                 </div>
             </div>
