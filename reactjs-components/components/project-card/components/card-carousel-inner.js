@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import spinner from '../../../../img/spinner.gif';
 
 export const CardCarouselInner = (props) => {
     let carouselItem = [];
     const [loadImg, setLoadImg] = useState(true)
 
     const handleLoadImage = () => {
-        console.log(loadImg)
         setLoadImg(false)
     }
 
@@ -16,15 +16,13 @@ export const CardCarouselInner = (props) => {
         if (i == 0) {
             carouselItem.push(
                 <div className="carousel-item custom active" key={i}>
-                    {loadImg ? <center className='my-5'><div class="spinner-border text-success" role="status"><span class="sr-only">Loading...</span></div></center>
-                        : <img className="d-block w-100" src={path} loading='lazy' onLoad={() => handleLoadImage()} />}
+                    <img className={loadImg ? 'd-block mx-auto my-5' : 'd-block w-100'} style={loadImg ? { height: '40px', width: '40px !important' } : { '': '' }} src={loadImg ? spinner : path} loading='lazy' onLoad={() => handleLoadImage()} />
                 </div>
             )
         } else {
             carouselItem.push(
                 <div className="carousel-item custom" key={i}>
-                    {loadImg ? <center className='my-5'><div class="spinner-border text-success" role="status"><span class="sr-only">Loading...</span></div></center>
-                        : <img className="d-block w-100" src={path} loading='lazy' />}
+                    <img className={loadImg ? 'd-block mx-auto my-5' : 'd-block w-100'} style={loadImg ? { height: '40px' } : { '': '' }} src={loadImg ? spinner : path} loading='lazy' />
                 </div>
             );
         }
