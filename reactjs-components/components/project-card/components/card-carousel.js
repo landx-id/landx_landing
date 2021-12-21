@@ -11,9 +11,7 @@ export const CardCarousel = (props) => {
                     totalImages={props.totalImages}
                 />
             </ol>
-            <CardCarouselInner
-                previewImages={props.previewImages}
-            />
+            <CardCarouselInner previewImages={props.previewImages} />
         </div>
     );
 }
