@@ -1,18 +1,18 @@
 {
     "upcoming": [
         {
-            "PMBB": {
-                "link": "/project/#/pmbb",
+            "CAPT": {
+                "link": "/project/#/capt",
                 "listing_at": "2021.12.16 11:00",
                 "images": [
-                    "/images/PMBB/1.webp",
-                    "/images/PMBB/2.webp",
-                    "/images/PMBB/3.webp",
-                    "/images/PMBB/4.webp",
-                    "/images/PMBB/5.webp"
+                    "/images/CAPT/1.webp",
+                    "/images/CAPT/2.webp",
+                    "/images/CAPT/3.webp",
+                    "/images/CAPT/4.webp",
+                    "/images/CAPT/5.webp"
                 ],
-                "thumbnail": "/images/PMBB/thumbnail.webp",
-                "description": "Restoran Padang dengan segudang makanan yang menggugah selera"
+                "thumbnail": "/images/CAPT/thumbnail.webp",
+                "description": "Kapal yang digunakan untuk mengangkut barang dan ditarik dengan kapal tunda atau dengan mesin pendorong digunakan untuk mengangkut dan membawa muatan."
             }
         }
     ]
