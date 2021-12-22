@@ -1,13 +1,13 @@
 {
     "data": [
         {
-            "symbol": "PDM1",
-            "name": "Padang Merdeka",
-            "description": "Restoran Padang dengan segudang makanan yang menggugah selera",
+            "symbol": "CAPT",
+            "name": "Kapal Tongkang",
+            "description": "Kapal yang digunakan untuk mengangkut barang dan ditarik dengan kapal tunda atau dengan mesin pendorong digunakan untuk mengangkut dan membawa muatan.",
             "previewImages": [
-                "https://landx.id/images/PDM1/1.webp"
+                "https://landx.id/images/CAPT/1.webp"
             ],
-            "type": "Restoran"
+            "type": "Jasa Sewa"
         }
     ]
 }
