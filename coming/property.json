@@ -2,12 +2,12 @@
     "data": [
         {
             "symbol": "CAPT",
-            "name": "Kapal Tongkang",
-            "description": "Kapal yang digunakan untuk mengangkut barang dan ditarik dengan kapal tunda atau dengan mesin pendorong digunakan untuk mengangkut dan membawa muatan.",
+            "name": "Kapal TUG & Barge - PT Samudera Rezeki Mulia",
+            "description": "<p>Mendukung kebutuhan dalam negeri dan ekspor, Kapal Satria hadir untuk meningkatkan distribusi produksi hasil bumi Indonesia. Kapal Satria terdiri dari dua kapal, yaitu kapal tongkang yang mampu memuat 5.500 ton bahan material dan kapal tunda dengan dua induk mesin bertenaga kuda.</p><p>Kapal tongkang adalah kapal pengangkut kargo pengangkut material berat seperti batubara, bijih nikel, pasir, dan hasil bumi lainnya. Kapal tongkang tidak memiliki mesin penggerak sendiri, sehingga dibutuhkan kapal tunda yang berperan sebagai manuver dan menunda kapal tongkang.</p><p>Tak redup oleh pandemi, kapal tongkang terus berkontribusi pada rantai operasional pertambangan. Bahkan kapal yang ada saat ini tidak mencukupi kebutuhan sehingga terjadi antrian pelanggan yang menjadi peluang bagi Kapal Satria.</p>",
             "previewImages": [
                 "https://landx.id/images/CAPT/1.webp"
             ],
-            "type": "Jasa Sewa"
+            "type": "Maritim"
         }
     ]
 }
