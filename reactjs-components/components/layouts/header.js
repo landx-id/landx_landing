@@ -39,6 +39,12 @@ const header = () => {
         <link rel="stylesheet" href="/stylesheets/custom-style.css">
         <link rel="stylesheet" href="/stylesheets/card.css">
 
+        <!-- Meta Thumbnail -->
+        <meta property='og:image' content="./img-new/thumbnailLink.png" />
+        <meta itemprop="image" content="./img-new/thumbnailLink.png" />
+        <meta name="thumbnail" content="./img-new/thumbnailLink.png" />
+        <meta property="og:type" content="website" />
+
         <!-- Light Slider -->
         <link type="text/css" rel="stylesheet" href="/stylesheets/lightslider.min.css" />
         <script src="/scripts/lightslider.min.js" defer></script>
@@ -107,6 +113,9 @@ const header = () => {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P9LT23"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
+        <span itemprop="image" itemscope itemtype="image/jpeg">
+            <link itemprop="url" href="./img-new/thumbnailLink.png">
+        </span>
         <!-- NAVIGATION -->
 
         <div class="fixed-top" id="fixed-top">
