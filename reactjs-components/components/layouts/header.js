@@ -39,6 +39,9 @@ const header = () => {
         <link rel="stylesheet" href="/stylesheets/custom-style.css">
         <link rel="stylesheet" href="/stylesheets/card.css">
 
+        <!-- facebook domain verification -->
+        <meta name="facebook-domain-verification" content="f7kayy7mhaddcpu6xbwde08hlvsdfm" />
+
         <!-- Meta Thumbnail -->
         <meta property='og:image' content="./img-new/thumbnailLink.png" />
         <meta itemprop="image" content="./img-new/thumbnailLink.png" />
@@ -113,9 +116,6 @@ const header = () => {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P9LT23"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <span itemprop="image" itemscope itemtype="image/jpeg">
-            <link itemprop="url" href="./img-new/thumbnailLink.png">
-        </span>
         <!-- NAVIGATION -->
 
         <div class="fixed-top" id="fixed-top">
