@@ -39,6 +39,9 @@ const header = () => {
         <link rel="stylesheet" href="/stylesheets/custom-style.css">
         <link rel="stylesheet" href="/stylesheets/card.css">
 
+        <!-- facebook domain verification -->
+        <meta name="facebook-domain-verification" content="f7kayy7mhaddcpu6xbwde08hlvsdfm" />
+
         <!-- Meta Thumbnail -->
         <meta property='og:image' content="./img-new/thumbnailLink.png" />
         <meta itemprop="image" content="./img-new/thumbnailLink.png" />
