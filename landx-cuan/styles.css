@@ -34,6 +34,10 @@ header .btn-mb {
   margin-bottom: 56px;
 }
 
+header .img-cta {
+  width: 240px;
+}
+
 section {
   min-height: 508px;
 }
@@ -265,8 +269,8 @@ footer .copyright {
   background-color: #fff;
   color: #00912d;
   font-weight: 700;
-  font-size: 24px;
-  width: 375px;
+  font-size: 20px;
+  width: 390px;
   height: 53px;
   border-radius: 30px;
   margin-top: 18px;
@@ -285,9 +289,9 @@ footer .copyright {
   background-color: transparent;
   color: #fff;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 16px;
-  width: 375px;
+  width: 390px;
   height: 53px;
   border-radius: 26px;
   border: 3px solid #fff;

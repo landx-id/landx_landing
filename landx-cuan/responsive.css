@@ -62,7 +62,7 @@
   .btn-white,
   .btn-outline-white {
     font-size: 19px;
-    width: 340px;
+    width: 390px;
   }
 
   footer .nav-1 li a {
@@ -211,6 +211,9 @@
     margin-top: -155px;
     margin-bottom: 20px;
   }
+  header .img-cta {
+    width: 160px;
+  }
   .box-video {
     max-width: 328px;
     height: 200px;
@@ -252,13 +255,13 @@
   }
 
   .btn-white {
-    font-size: 14px;
-    width: 220px;
+    font-size: 13px;
+    width: 260px;
     height: 40px;
   }
   .btn-outline-white {
-    font-size: 14px;
-    width: 220px;
+    font-size: 13px;
+    width: 260px;
     height: 40px;
   }
 
