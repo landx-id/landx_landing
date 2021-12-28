@@ -14,7 +14,7 @@ export const ProjectDividendDetail = (props) => {
                                     data-icon="ant-design:info-circle-outlined"
                                     style={{ fontSize: "24px", color: "#2dbe60", marginBottom: "-5px", cursor: 'pointer' }}
                                 /></a>
-                            <ReactTooltip place="bottom" type="dark" effect="float" />
+                            <ReactTooltip place="bottom" type="dark" effect="solid" />
                         </p>
                     </div>
                 </div>
