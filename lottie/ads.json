@@ -1,0 +1,10 @@
+{
+    "ads":[
+        {
+            "id": 1,
+            "active": true,
+            "action": "https://landx.id/landx-cuan/",
+            "thumbnail":  "https://landx.id/landx-cuan/assets/images/thumbnail.png"
+        }
+    ]
+}

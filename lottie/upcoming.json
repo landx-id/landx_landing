@@ -2,7 +2,11 @@
     "upcoming": [
         {
             "CAPT": {
+                "name": "Kapal TUG & Barge - PT Samudera Rezeki Mulia",
+                "category": "Maritim",
                 "link": "/project/#/capt",
+                "booking_url": "https://paperform.co/",
+                "booking_count": 120,
                 "listing_at": "2021.12.27 11:00",
                 "images": [
                     "/images/CAPT/1.webp",
